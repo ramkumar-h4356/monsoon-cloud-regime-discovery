@@ -1,0 +1,23 @@
+ESTABLISHED MONSOON SCIENTIFIC QUALITY CONTROL V3
+Files processed: 12
+Variable-year records: 540
+Unique variables: 45
+Raw NaN values: 105897220
+NaNs associated with declared NaN fill attributes: 105897220
+Raw numeric fill matches: 0
+Decoded NaN values: 105897220
+Raw/decoded NaN mismatches: 0
+Infinite values: 0
+Time records not equal to 720: 0
+Years not strictly increasing: 0
+
+INTERPRETATION
+- Missing values and unusual ranges are reported, not corrected.
+- Raw NaNs, NaN fill attributes, and numeric fill sentinels are distinguished.
+- Raw and decoded NaN counts are compared.
+- Time intervals and stored coordinate precision are reported descriptively.
+- Apparent interval variation is consistent with float32 coordinate quantization; product sampling accuracy has not been independently established.
+- Cloud-area values outside 0-100 are flagged for investigation.
+- Statistical extremes are descriptive, not proof of invalid data.
+- No clustering features are selected in this stage.
+- Original NetCDF datasets are never modified.
