@@ -1,0 +1,44 @@
+
+# Raw satellite and climate datasets
+raw_data/
+
+# Extracted and processed datasets
+data/
+
+# NetCDF and compressed scientific datasets
+*.nc
+*.nc4
+*.cdf
+*.gz
+
+# Temporary files
+*.tmp
+*.tmp.nc
+data/interim/_ceres_temp/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Large model artifacts
+*.pkl
+*.joblib
+*.h5
+*.keras
+*.pt
+*.pth

@@ -1,0 +1,39 @@
+ROOT: D:\Project Simulator\monsoon_cloud_research
+================================================================================
+[FOLDER] raw_data
+    [FOLDER] CERES
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20100401-20110702.nc.gz | 946.88 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20110703-20121002.nc.gz | 945.61 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20121003-20140103.nc.gz | 931.40 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20140104-20150406.nc.gz | 921.70 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20150407-20160707.nc.gz | 970.01 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20150601-20150630.nc | 131.86 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20160708-20171008.nc.gz | 966.51 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20171009-20190109.nc.gz | 959.39 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20190110-20200411.nc.gz | 954.10 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20200412-20210713.nc.gz | 980.60 MB
+        [FILE] CERES_SYN1deg-1H_Terra-Aqua-NOAA20_Ed4.2_Subset_20210714-20211031.nc.gz | 248.87 MB
+    [FOLDER] IMD_Rainfall
+        [FILE] RFone_imd_rf_1x1_2010.nc | 3.22 MB
+        [FILE] RFone_imd_rf_1x1_2011.nc | 3.22 MB
+        [FILE] RFone_imd_rf_1x1_2012.nc | 3.23 MB
+        [FILE] RFone_imd_rf_1x1_2013.nc | 3.22 MB
+        [FILE] RFone_imd_rf_1x1_2014.nc | 3.22 MB
+        [FILE] RFone_imd_rf_1x1_2015.nc | 3.22 MB
+        [FILE] RFone_imd_rf_1x1_2016.nc | 3.23 MB
+        [FILE] RFone_imd_rf_1x1_2017.nc | 3.22 MB
+        [FILE] RFone_imd_rf_1x1_2018.nc | 3.22 MB
+        [FILE] RFone_imd_rf_1x1_2019.nc | 3.22 MB
+        [FILE] RFone_imd_rf_1x1_2020.nc | 3.23 MB
+        [FILE] RFone_imd_rf_1x1_2021.nc | 3.22 MB
+    [FOLDER] NOAA_DMI
+        [FILE] dmi.had.long.csv | 0.04 MB
+    [FOLDER] NOAA_RONI
+        [FILE] RONI.ascii.txt | 0.01 MB
+[FILE] show_folder.py | 0.00 MB
+[FILE] verify_datasets.py | 0.00 MB
+
+================================================================================
+SUMMARY
+Total files: 27
+Total size: 8.78 GB
