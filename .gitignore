@@ -1,9 +1,13 @@
+# Raw data: preserve folder structure, ignore actual files
+raw_data/**
+!raw_data/**/
+!raw_data/**/.gitkeep
 
-# Raw satellite and climate datasets
-raw_data/
-
-# Extracted and processed datasets
-data/
+# Generated data: preserve folder structure, ignore actual files
+data/**
+!data/**/
+!data/**/.gitkeep
+!data/interim/ceres_seasonal/seasonal_manifest.csv
 
 # NetCDF and compressed scientific datasets
 *.nc
