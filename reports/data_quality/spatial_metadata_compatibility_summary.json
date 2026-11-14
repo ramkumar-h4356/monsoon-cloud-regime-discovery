@@ -1,0 +1,74 @@
+{
+    "imd": {
+        "files_inspected": 12,
+        "latitude_consistent_across_years": true,
+        "longitude_consistent_across_years": true,
+        "valid_mask_identical_across_years": true,
+        "first_year_mask": {
+            "valid_cells_every_day": 357,
+            "missing_cells_every_day": 798,
+            "cells_with_temporal_variation": 0,
+            "minimum_valid_cells_per_day": 357,
+            "maximum_valid_cells_per_day": 357,
+            "daily_valid_counts_constant": true
+        },
+        "annual_time_counts": {
+            "2010": 365,
+            "2011": 365,
+            "2012": 366,
+            "2013": 365,
+            "2014": 365,
+            "2015": 365,
+            "2016": 366,
+            "2017": 365,
+            "2018": 365,
+            "2019": 365,
+            "2020": 366,
+            "2021": 365
+        }
+    },
+    "ceres": {
+        "files_inspected": 12,
+        "latitude_consistent_across_years": true,
+        "longitude_consistent_across_years": true,
+        "annual_time_counts": {
+            "2010": 720,
+            "2011": 720,
+            "2012": 720,
+            "2013": 720,
+            "2014": 720,
+            "2015": 720,
+            "2016": 720,
+            "2017": 720,
+            "2018": 720,
+            "2019": 720,
+            "2020": 720,
+            "2021": 720
+        }
+    },
+    "spatial_comparison": {
+        "common_latitude_count_exact": 32,
+        "common_longitude_count_exact": 30,
+        "exact_common_grid_cells": 960,
+        "imd_latitude_nearest_difference_degrees": 1.0,
+        "imd_longitude_nearest_difference_degrees": 3.0,
+        "imd_bounds": {
+            "south": 6.5,
+            "north": 38.5,
+            "west": 66.5,
+            "east": 100.5
+        },
+        "ceres_bounds": {
+            "south": 6.5,
+            "north": 37.5,
+            "west": 68.5,
+            "east": 97.5
+        },
+        "common_bounds": {
+            "south": 6.5,
+            "north": 37.5,
+            "west": 68.5,
+            "east": 97.5
+        }
+    }
+}

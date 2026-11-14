@@ -1,0 +1,13 @@
+dataset,year,file,status,file_size_mb,dimensions,time_count,time_start,time_end,variable_count
+imd_rainfall,2010,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2010.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2010-01-01 00:00:00,2010-12-31 00:00:00,1
+imd_rainfall,2011,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2011.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2011-01-01 00:00:00,2011-12-31 00:00:00,1
+imd_rainfall,2012,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2012.nc,OPENED,3.23,"{""TIME"": 366, ""LATITUDE"": 33, ""LONGITUDE"": 35}",366,2012-01-01 00:00:00,2012-12-31 00:00:00,1
+imd_rainfall,2013,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2013.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2013-01-01 00:00:00,2013-12-31 00:00:00,1
+imd_rainfall,2014,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2014.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2014-01-01 00:00:00,2014-12-31 00:00:00,1
+imd_rainfall,2015,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2015.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2015-01-01 00:00:00,2015-12-31 00:00:00,1
+imd_rainfall,2016,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2016.nc,OPENED,3.23,"{""TIME"": 366, ""LATITUDE"": 33, ""LONGITUDE"": 35}",366,2016-01-01 00:00:00,2016-12-31 00:00:00,1
+imd_rainfall,2017,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2017.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2017-01-01 00:00:00,2017-12-31 00:00:00,1
+imd_rainfall,2018,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2018.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2018-01-01 00:00:00,2018-12-31 00:00:00,1
+imd_rainfall,2019,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2019.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2019-01-01 00:00:00,2019-12-31 00:00:00,1
+imd_rainfall,2020,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2020.nc,OPENED,3.23,"{""TIME"": 366, ""LATITUDE"": 33, ""LONGITUDE"": 35}",366,2020-01-01 00:00:00,2020-12-31 00:00:00,1
+imd_rainfall,2021,raw_data\IMD_Rainfall\RFone_imd_rf_1x1_2021.nc,OPENED,3.221,"{""TIME"": 365, ""LATITUDE"": 33, ""LONGITUDE"": 35}",365,2021-01-01 00:00:00,2021-12-31 00:00:00,1

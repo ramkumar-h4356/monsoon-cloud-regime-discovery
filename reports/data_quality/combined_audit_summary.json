@@ -1,0 +1,20 @@
+{
+    "roni": {
+        "records": 144,
+        "years": 12,
+        "duplicate_records": 0,
+        "years_with_12_records": 12,
+        "missing_values": 0
+    },
+    "dmi": {
+        "records": 144,
+        "years": 12,
+        "duplicate_records": 0,
+        "years_with_12_records": 12,
+        "missing_values": 0
+    },
+    "ceres_files": 12,
+    "ceres_opened": 12,
+    "imd_files": 12,
+    "imd_opened": 12
+}

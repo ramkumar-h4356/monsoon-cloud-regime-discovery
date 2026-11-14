@@ -1,0 +1,14 @@
+{
+    "years": 12,
+    "eligible_continuous_variables": 36,
+    "sampled_positions_per_year": 30000,
+    "total_sampled_positions": 360000,
+    "correlation_method": "Spearman",
+    "shared_time_and_location_indices": true,
+    "pairwise_missing_value_handling": true,
+    "minimum_paired_observations": 1000,
+    "correlation_threshold": 0.9,
+    "valid_correlation_pairs": 630,
+    "high_correlation_pairs": 20,
+    "note": "Correlations use paired observations from identical sampled time and location positions. They are exploratory and descriptive; spatial and temporal autocorrelation means they should not be interpreted as independent statistical evidence."
+}

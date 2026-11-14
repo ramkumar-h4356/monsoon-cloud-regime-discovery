@@ -1,0 +1,40 @@
+{
+    "analysis": "Year-wise CERES Spearman correlation stability",
+    "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+    ],
+    "number_of_years": 12,
+    "eligible_continuous_variables": 36,
+    "expected_variable_pairs": 630,
+    "sampled_positions_per_year": 30000,
+    "total_sampled_positions": 360000,
+    "random_seed": 42,
+    "correlation_method": "Spearman",
+    "sampling_method": "One shared random sample of time-location positions per year, shared across all candidate variables.",
+    "pairwise_missing_value_handling": true,
+    "minimum_paired_observations": 1000,
+    "correlation_threshold": 0.9,
+    "annual_pair_records": 7560,
+    "valid_annual_correlations": 7560,
+    "invalid_annual_correlations": 0,
+    "pooled_high_correlation_pairs": 20,
+    "pairs_highly_correlated_in_at_least_one_year": 29,
+    "pairs_highly_correlated_in_every_valid_year": 16,
+    "interpretation_note": "Annual correlations are descriptive measures of within-year association. They are not independent statistical evidence because satellite observations may have spatial and temporal autocorrelation. Pooled correlations and annual correlations answer different questions and should not be treated as directly interchangeable. No feature is automatically removed based on these results.",
+    "outputs": [
+        "reports\\data_quality\\ceres_annual_correlation_pairs.csv",
+        "reports\\data_quality\\ceres_correlation_stability_summary.csv",
+        "reports\\data_quality\\ceres_correlation_stability_summary.json"
+    ]
+}

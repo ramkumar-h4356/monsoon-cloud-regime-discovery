@@ -1,0 +1,145 @@
+season,variable,total_observations,finite_observations,missing_observations,zero_observations,missing_fraction,zero_fraction_of_finite,long_name,units,valid_min,valid_max
+established_monsoon,cldarea_high_1h,8294400,8294400,0,1003256,0.0,0.12095582561728395,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",percent,       0,     100
+established_monsoon,cldarea_low_1h,8294400,6586573,1707827,3586094,0.20590121045524692,0.5444552121414277,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",percent,       0,     100
+established_monsoon,cldarea_mid_high_1h,8294400,8294400,0,1657168,0.0,0.19979359567901234,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",percent,       0,     100
+established_monsoon,cldarea_mid_low_1h,8294400,8294400,0,2877959,0.0,0.3469761525848765,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",percent,       0,     100
+established_monsoon,cldarea_total_1h,8294400,8294400,0,1648,0.0,0.00019868827160493828,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",percent,       0,     100
+established_monsoon,cldhght_high_1h,8294400,7291144,1003256,0,0.12095582561728395,0.0,"Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means",km,       0,      20
+established_monsoon,cldhght_low_1h,8294400,3000479,5293921,0,0.6382524353780864,0.0,"Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means",km,       0,      20
+established_monsoon,cldhght_mid_high_1h,8294400,6637232,1657168,0,0.19979359567901234,0.0,"Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means",km,       0,      20
+established_monsoon,cldhght_mid_low_1h,8294400,5416441,2877959,0,0.3469761525848765,0.0,"Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means",km,       0,      20
+established_monsoon,cldhght_total_1h,8294400,8292752,1648,0,0.00019868827160493828,0.0,"Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means",km,       0,      20
+established_monsoon,cldpress_high_1h,8294400,7291144,1003256,0,0.12095582561728395,0.0,"Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_low_1h,8294400,3000479,5293921,0,0.6382524353780864,0.0,"Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_mid_high_1h,8294400,6637232,1657168,0,0.19979359567901234,0.0,"Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_mid_low_1h,8294400,5416441,2877959,0,0.3469761525848765,0.0,"Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_top_high_1h,8294400,7291144,1003256,0,0.12095582561728395,0.0,"Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_top_low_1h,8294400,3000479,5293921,0,0.6382524353780864,0.0,"Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_top_mid_high_1h,8294400,6637232,1657168,0,0.19979359567901234,0.0,"Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_top_mid_low_1h,8294400,5416441,2877959,0,0.3469761525848765,0.0,"Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_top_total_1h,8294400,8292752,1648,0,0.00019868827160493828,0.0,"Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldpress_total_1h,8294400,8292752,1648,0,0.00019868827160493828,0.0,"Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means",hPa,       0,    1100
+established_monsoon,cldtau_high_1h,8294400,7291144,1003256,0,0.12095582561728395,0.0,"Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means",dimensionless,       0,     400
+established_monsoon,cldtau_low_1h,8294400,3000479,5293921,0,0.6382524353780864,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means",dimensionless,       0,     400
+established_monsoon,cldtau_mid_high_1h,8294400,6637232,1657168,0,0.19979359567901234,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means",dimensionless,       0,     400
+established_monsoon,cldtau_mid_low_1h,8294400,5416441,2877959,0,0.3469761525848765,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means",dimensionless,       0,     400
+established_monsoon,cldtau_total_1h,8294400,8292752,1648,0,0.00019868827160493828,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means",dimensionless,       0,     400
+established_monsoon,cldtemp_high_1h,8294400,7291144,1003256,0,0.12095582561728395,0.0,"Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means",K,     100,     350
+established_monsoon,cldtemp_low_1h,8294400,3000479,5293921,0,0.6382524353780864,0.0,"Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means",K,     100,     350
+established_monsoon,cldtemp_mid_high_1h,8294400,6637232,1657168,0,0.19979359567901234,0.0,"Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means",K,     100,     350
+established_monsoon,cldtemp_mid_low_1h,8294400,5416441,2877959,0,0.3469761525848765,0.0,"Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means",K,     100,     350
+established_monsoon,cldtemp_total_1h,8294400,8292752,1648,0,0.00019868827160493828,0.0,"Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means",K,     100,     350
+established_monsoon,iwp_high_1h,8294400,7260233,1034167,0,0.1246825569058642,0.0,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",g m-2,       0,   10000
+established_monsoon,iwp_mid_high_1h,8294400,6030614,2263786,0,0.2729294463734568,0.0,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",g m-2,       0,   10000
+established_monsoon,iwp_total_1h,8294400,7870379,424021,0,0.05112135898919753,0.0,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",g m-2,       0,   10000
+established_monsoon,lwp_low_1h,8294400,2998984,5295416,0,0.6384326774691358,0.0,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",g m-2,       0,   10000
+established_monsoon,lwp_mid_low_1h,8294400,5371321,2923079,0,0.35241596739969133,0.0,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",g m-2,       0,   10000
+established_monsoon,lwp_total_1h,8294400,6909846,1384554,0,0.1669263599537037,0.0,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",g m-2,       0,   10000
+post_monsoon,cldarea_high_1h,8294400,8294400,0,2925333,0.0,0.3526877170138889,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",percent,       0,     100
+post_monsoon,cldarea_low_1h,8294400,6591557,1702843,1659009,0.2053003231095679,0.2516869686479234,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",percent,       0,     100
+post_monsoon,cldarea_mid_high_1h,8294400,8294400,0,2961679,0.0,0.357069709683642,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",percent,       0,     100
+post_monsoon,cldarea_mid_low_1h,8294400,8294400,0,2835851,0.0,0.3418994743441358,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",percent,       0,     100
+post_monsoon,cldarea_total_1h,8294400,8294400,0,122482,0.0,0.01476683063271605,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",percent,       0,     100
+post_monsoon,cldhght_high_1h,8294400,5369067,2925333,0,0.3526877170138889,0.0,"Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means",km,       0,      20
+post_monsoon,cldhght_low_1h,8294400,4932548,3361852,0,0.40531587577160494,0.0,"Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means",km,       0,      20
+post_monsoon,cldhght_mid_high_1h,8294400,5332721,2961679,0,0.357069709683642,0.0,"Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means",km,       0,      20
+post_monsoon,cldhght_mid_low_1h,8294400,5458549,2835851,0,0.3418994743441358,0.0,"Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means",km,       0,      20
+post_monsoon,cldhght_total_1h,8294400,8171918,122482,0,0.01476683063271605,0.0,"Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means",km,       0,      20
+post_monsoon,cldpress_high_1h,8294400,5369067,2925333,0,0.3526877170138889,0.0,"Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_low_1h,8294400,4932548,3361852,0,0.40531587577160494,0.0,"Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_mid_high_1h,8294400,5332721,2961679,0,0.357069709683642,0.0,"Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_mid_low_1h,8294400,5458549,2835851,0,0.3418994743441358,0.0,"Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_top_high_1h,8294400,5369067,2925333,0,0.3526877170138889,0.0,"Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_top_low_1h,8294400,4932548,3361852,0,0.40531587577160494,0.0,"Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_top_mid_high_1h,8294400,5332721,2961679,0,0.357069709683642,0.0,"Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_top_mid_low_1h,8294400,5458549,2835851,0,0.3418994743441358,0.0,"Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_top_total_1h,8294400,8171918,122482,0,0.01476683063271605,0.0,"Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldpress_total_1h,8294400,8171918,122482,0,0.01476683063271605,0.0,"Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means",hPa,       0,    1100
+post_monsoon,cldtau_high_1h,8294400,5369067,2925333,0,0.3526877170138889,0.0,"Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means",dimensionless,       0,     400
+post_monsoon,cldtau_low_1h,8294400,4932548,3361852,0,0.40531587577160494,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means",dimensionless,       0,     400
+post_monsoon,cldtau_mid_high_1h,8294400,5332721,2961679,0,0.357069709683642,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means",dimensionless,       0,     400
+post_monsoon,cldtau_mid_low_1h,8294400,5458549,2835851,0,0.3418994743441358,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means",dimensionless,       0,     400
+post_monsoon,cldtau_total_1h,8294400,8171918,122482,0,0.01476683063271605,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means",dimensionless,       0,     400
+post_monsoon,cldtemp_high_1h,8294400,5369067,2925333,0,0.3526877170138889,0.0,"Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means",K,     100,     350
+post_monsoon,cldtemp_low_1h,8294400,4932548,3361852,0,0.40531587577160494,0.0,"Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means",K,     100,     350
+post_monsoon,cldtemp_mid_high_1h,8294400,5332721,2961679,0,0.357069709683642,0.0,"Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means",K,     100,     350
+post_monsoon,cldtemp_mid_low_1h,8294400,5458549,2835851,0,0.3418994743441358,0.0,"Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means",K,     100,     350
+post_monsoon,cldtemp_total_1h,8294400,8171918,122482,0,0.01476683063271605,0.0,"Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means",K,     100,     350
+post_monsoon,iwp_high_1h,8294400,5343695,2950705,0,0.3557466483410494,0.0,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",g m-2,       0,   10000
+post_monsoon,iwp_mid_high_1h,8294400,4721308,3573092,0,0.4307836612654321,0.0,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",g m-2,       0,   10000
+post_monsoon,iwp_total_1h,8294400,6367355,1927045,0,0.23233084972993828,0.0,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",g m-2,       0,   10000
+post_monsoon,lwp_low_1h,8294400,4930282,3364118,0,0.40558907214506174,0.0,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",g m-2,       0,   10000
+post_monsoon,lwp_mid_low_1h,8294400,5334161,2960239,0,0.35689609857253085,0.0,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",g m-2,       0,   10000
+post_monsoon,lwp_total_1h,8294400,7594202,700198,0,0.08441816165123457,0.0,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",g m-2,       0,   10000
+pre_monsoon,cldarea_high_1h,8294400,8294400,0,2460185,0.0,0.29660795235339504,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",percent,       0,     100
+pre_monsoon,cldarea_low_1h,8294400,6587150,1707250,1580284,0.20583164544753085,0.2399040556234487,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",percent,       0,     100
+pre_monsoon,cldarea_mid_high_1h,8294400,8294400,0,2809108,0.0,0.33867525077160493,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",percent,       0,     100
+pre_monsoon,cldarea_mid_low_1h,8294400,8294400,0,2670864,0.0,0.32200810185185186,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",percent,       0,     100
+pre_monsoon,cldarea_total_1h,8294400,8294400,0,42284,0.0,0.0050978973765432095,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",percent,       0,     100
+pre_monsoon,cldhght_high_1h,8294400,5834215,2460185,0,0.29660795235339504,0.0,"Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means",km,       0,      20
+pre_monsoon,cldhght_low_1h,8294400,5006866,3287534,0,0.39635585455246913,0.0,"Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means",km,       0,      20
+pre_monsoon,cldhght_mid_high_1h,8294400,5485292,2809108,0,0.33867525077160493,0.0,"Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means",km,       0,      20
+pre_monsoon,cldhght_mid_low_1h,8294400,5623536,2670864,0,0.32200810185185186,0.0,"Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means",km,       0,      20
+pre_monsoon,cldhght_total_1h,8294400,8252116,42284,0,0.0050978973765432095,0.0,"Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means",km,       0,      20
+pre_monsoon,cldpress_high_1h,8294400,5834215,2460185,0,0.29660795235339504,0.0,"Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_low_1h,8294400,5006866,3287534,0,0.39635585455246913,0.0,"Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_mid_high_1h,8294400,5485292,2809108,0,0.33867525077160493,0.0,"Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_mid_low_1h,8294400,5623536,2670864,0,0.32200810185185186,0.0,"Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_top_high_1h,8294400,5834215,2460185,0,0.29660795235339504,0.0,"Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_top_low_1h,8294400,5006866,3287534,0,0.39635585455246913,0.0,"Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_top_mid_high_1h,8294400,5485292,2809108,0,0.33867525077160493,0.0,"Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_top_mid_low_1h,8294400,5623536,2670864,0,0.32200810185185186,0.0,"Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_top_total_1h,8294400,8252116,42284,0,0.0050978973765432095,0.0,"Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldpress_total_1h,8294400,8252116,42284,0,0.0050978973765432095,0.0,"Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means",hPa,       0,    1100
+pre_monsoon,cldtau_high_1h,8294400,5834215,2460185,0,0.29660795235339504,0.0,"Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means",dimensionless,       0,     400
+pre_monsoon,cldtau_low_1h,8294400,5006866,3287534,0,0.39635585455246913,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means",dimensionless,       0,     400
+pre_monsoon,cldtau_mid_high_1h,8294400,5485292,2809108,0,0.33867525077160493,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means",dimensionless,       0,     400
+pre_monsoon,cldtau_mid_low_1h,8294400,5623536,2670864,0,0.32200810185185186,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means",dimensionless,       0,     400
+pre_monsoon,cldtau_total_1h,8294400,8252116,42284,0,0.0050978973765432095,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means",dimensionless,       0,     400
+pre_monsoon,cldtemp_high_1h,8294400,5834215,2460185,0,0.29660795235339504,0.0,"Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means",K,     100,     350
+pre_monsoon,cldtemp_low_1h,8294400,5006866,3287534,0,0.39635585455246913,0.0,"Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means",K,     100,     350
+pre_monsoon,cldtemp_mid_high_1h,8294400,5485292,2809108,0,0.33867525077160493,0.0,"Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means",K,     100,     350
+pre_monsoon,cldtemp_mid_low_1h,8294400,5623536,2670864,0,0.32200810185185186,0.0,"Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means",K,     100,     350
+pre_monsoon,cldtemp_total_1h,8294400,8252116,42284,0,0.0050978973765432095,0.0,"Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means",K,     100,     350
+pre_monsoon,iwp_high_1h,8294400,5792227,2502173,0,0.3016701630015432,0.0,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",g m-2,       0,   10000
+pre_monsoon,iwp_mid_high_1h,8294400,4854874,3439526,0,0.4146805073302469,0.0,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",g m-2,       0,   10000
+pre_monsoon,iwp_total_1h,8294400,6699625,1594775,0,0.19227129147376543,0.0,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",g m-2,       0,   10000
+pre_monsoon,lwp_low_1h,8294400,5000851,3293549,0,0.39708104263117283,0.0,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",g m-2,       0,   10000
+pre_monsoon,lwp_mid_low_1h,8294400,5491759,2802641,0,0.3378955680941358,0.0,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",g m-2,       0,   10000
+pre_monsoon,lwp_total_1h,8294400,7594668,699732,0,0.08436197916666667,0.0,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",g m-2,       0,   10000
+all_seasons,cldarea_high_1h,24883200,24883200,0,6388774,0.0,0.2567504983281893,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",percent,       0,     100
+all_seasons,cldarea_low_1h,24883200,19765280,5117920,6825387,0.20567772633744855,0.3453220495737981,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",percent,       0,     100
+all_seasons,cldarea_mid_high_1h,24883200,24883200,0,7427955,0.0,0.2985128520447531,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",percent,       0,     100
+all_seasons,cldarea_mid_low_1h,24883200,24883200,0,8384674,0.0,0.33696124292695473,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",percent,       0,     100
+all_seasons,cldarea_total_1h,24883200,24883200,0,166414,0.0,0.006687805426954733,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",percent,       0,     100
+all_seasons,cldhght_high_1h,24883200,18494426,6388774,0,0.2567504983281893,0.0,"Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means",km,       0,      20
+all_seasons,cldhght_low_1h,24883200,12939893,11943307,0,0.47997472190072016,0.0,"Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means",km,       0,      20
+all_seasons,cldhght_mid_high_1h,24883200,17455245,7427955,0,0.2985128520447531,0.0,"Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means",km,       0,      20
+all_seasons,cldhght_mid_low_1h,24883200,16498526,8384674,0,0.33696124292695473,0.0,"Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means",km,       0,      20
+all_seasons,cldhght_total_1h,24883200,24716786,166414,0,0.006687805426954733,0.0,"Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means",km,       0,      20
+all_seasons,cldpress_high_1h,24883200,18494426,6388774,0,0.2567504983281893,0.0,"Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_low_1h,24883200,12939893,11943307,0,0.47997472190072016,0.0,"Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_mid_high_1h,24883200,17455245,7427955,0,0.2985128520447531,0.0,"Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_mid_low_1h,24883200,16498526,8384674,0,0.33696124292695473,0.0,"Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_top_high_1h,24883200,18494426,6388774,0,0.2567504983281893,0.0,"Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_top_low_1h,24883200,12939893,11943307,0,0.47997472190072016,0.0,"Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_top_mid_high_1h,24883200,17455245,7427955,0,0.2985128520447531,0.0,"Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_top_mid_low_1h,24883200,16498526,8384674,0,0.33696124292695473,0.0,"Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_top_total_1h,24883200,24716786,166414,0,0.006687805426954733,0.0,"Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldpress_total_1h,24883200,24716786,166414,0,0.006687805426954733,0.0,"Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means",hPa,       0,    1100
+all_seasons,cldtau_high_1h,24883200,18494426,6388774,0,0.2567504983281893,0.0,"Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means",dimensionless,       0,     400
+all_seasons,cldtau_low_1h,24883200,12939893,11943307,0,0.47997472190072016,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means",dimensionless,       0,     400
+all_seasons,cldtau_mid_high_1h,24883200,17455245,7427955,0,0.2985128520447531,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means",dimensionless,       0,     400
+all_seasons,cldtau_mid_low_1h,24883200,16498526,8384674,0,0.33696124292695473,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means",dimensionless,       0,     400
+all_seasons,cldtau_total_1h,24883200,24716786,166414,0,0.006687805426954733,0.0,"Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means",dimensionless,       0,     400
+all_seasons,cldtemp_high_1h,24883200,18494426,6388774,0,0.2567504983281893,0.0,"Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means",K,     100,     350
+all_seasons,cldtemp_low_1h,24883200,12939893,11943307,0,0.47997472190072016,0.0,"Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means",K,     100,     350
+all_seasons,cldtemp_mid_high_1h,24883200,17455245,7427955,0,0.2985128520447531,0.0,"Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means",K,     100,     350
+all_seasons,cldtemp_mid_low_1h,24883200,16498526,8384674,0,0.33696124292695473,0.0,"Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means",K,     100,     350
+all_seasons,cldtemp_total_1h,24883200,24716786,166414,0,0.006687805426954733,0.0,"Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means",K,     100,     350
+all_seasons,iwp_high_1h,24883200,18396155,6487045,0,0.26069978941615224,0.0,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",g m-2,       0,   10000
+all_seasons,iwp_mid_high_1h,24883200,15606796,9276404,0,0.3727978716563786,0.0,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",g m-2,       0,   10000
+all_seasons,iwp_total_1h,24883200,20937359,3945841,0,0.1585745000643004,0.0,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",g m-2,       0,   10000
+all_seasons,lwp_low_1h,24883200,12930117,11953083,0,0.48036759741512347,0.0,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",g m-2,       0,   10000
+all_seasons,lwp_mid_low_1h,24883200,16197241,8685959,0,0.34906921135545266,0.0,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",g m-2,       0,   10000
+all_seasons,lwp_total_1h,24883200,22098716,2784484,0,0.11190216692386831,0.0,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",g m-2,       0,   10000

@@ -1,0 +1,27 @@
+{
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018
+  ],
+  "seasons": [
+    "established_monsoon",
+    "post_monsoon",
+    "pre_monsoon"
+  ],
+  "files_processed": 12,
+  "candidate_variables": 36,
+  "spatial_grid": [
+    32,
+    30
+  ],
+  "records": {
+    "dataset_variable": 432,
+    "utc_hour": 10368,
+    "spatial_cell": 414720,
+    "spatial_region": 3888,
+    "cloud_area_conditioned": 1116
+  },
+  "important_interpretation": "The 2016-to-2017 difference is a diagnostic discontinuity, not proof of a satellite or retrieval cause. Global attributes may not identify the GEO source contributing to each grid cell."
+}

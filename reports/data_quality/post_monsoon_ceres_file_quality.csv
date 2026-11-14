@@ -1,0 +1,13 @@
+dataset,year,file,status,file_size_mb,dimensions,time_count,time_start,time_end,variable_count
+post_monsoon_ceres,2010,data\interim\ceres_seasonal\post_monsoon\CERES_2010_post_monsoon.nc,OPENED,66.275,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2010-10-15 00:29:52.968750016,2010-11-13 23:30:07.031249984,45
+post_monsoon_ceres,2011,data\interim\ceres_seasonal\post_monsoon\CERES_2011_post_monsoon.nc,OPENED,63.767,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2011-10-15 00:30:14.062499968,2011-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2012,data\interim\ceres_seasonal\post_monsoon\CERES_2012_post_monsoon.nc,OPENED,64.215,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2012-10-15 00:30:14.062499968,2012-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2013,data\interim\ceres_seasonal\post_monsoon\CERES_2013_post_monsoon.nc,OPENED,63.897,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2013-10-15 00:30:14.062499968,2013-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2014,data\interim\ceres_seasonal\post_monsoon\CERES_2014_post_monsoon.nc,OPENED,65.96,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2014-10-15 00:30:14.062499968,2014-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2015,data\interim\ceres_seasonal\post_monsoon\CERES_2015_post_monsoon.nc,OPENED,65.176,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2015-10-15 00:30:14.062499968,2015-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2016,data\interim\ceres_seasonal\post_monsoon\CERES_2016_post_monsoon.nc,OPENED,63.135,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2016-10-15 00:30:14.062499968,2016-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2017,data\interim\ceres_seasonal\post_monsoon\CERES_2017_post_monsoon.nc,OPENED,63.151,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2017-10-15 00:30:14.062499968,2017-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2018,data\interim\ceres_seasonal\post_monsoon\CERES_2018_post_monsoon.nc,OPENED,64.329,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2018-10-15 00:30:14.062499968,2018-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2019,data\interim\ceres_seasonal\post_monsoon\CERES_2019_post_monsoon.nc,OPENED,67.585,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2019-10-15 00:30:14.062499968,2019-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2020,data\interim\ceres_seasonal\post_monsoon\CERES_2020_post_monsoon.nc,OPENED,63.295,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2020-10-15 00:30:14.062499968,2020-11-13 23:29:45.937500032,45
+post_monsoon_ceres,2021,data\interim\ceres_seasonal\post_monsoon\CERES_2021_post_monsoon.nc,OPENED,66.099,"{""time"": 720, ""lat"": 32, ""lon"": 30}",720,2021-10-15 00:30:14.062499968,2021-11-13 23:29:45.937500032,45

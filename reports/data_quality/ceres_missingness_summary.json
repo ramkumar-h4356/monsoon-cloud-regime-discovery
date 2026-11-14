@@ -1,0 +1,60 @@
+{
+  "analysis": "CERES missingness and retrieval-pattern investigation",
+  "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "seasons": [
+    "pre_monsoon",
+    "established_monsoon",
+    "post_monsoon"
+  ],
+  "eligible_variable_count": 36,
+  "dataset_count": 36,
+  "expected_dimensions": [
+    "time",
+    "lat",
+    "lon"
+  ],
+  "expected_shape": [
+    720,
+    32,
+    30
+  ],
+  "missing_definition": "Non-finite values after xarray CF decoding and mask/scale handling",
+  "zero_definition": "Exact numerical zero among finite observations",
+  "spatial_analysis": "Per-grid-cell missing fraction pooled across years within each season",
+  "hourly_analysis": "24 within-file time-index slots, pooled across days and years within each season",
+  "area_association": "Compares target-variable missingness with matching-layer cloud-area fraction. This is a diagnostic association, not a retrieval-quality test or causal conclusion.",
+  "overall_missingness": {
+    "minimum_variable_missing_fraction": 0.0,
+    "maximum_variable_missing_fraction": 0.48036759741512347,
+    "variables_over_50_percent_missing": [],
+    "variables_over_75_percent_missing": []
+  },
+  "interpretation_limitations": [
+    "Missingness patterns do not by themselves identify the reason for a missing retrieval.",
+    "Cloud-area fraction is a diagnostic comparator, not a substitute for CERES quality flags.",
+    "An exact zero is counted separately from missingness and is not automatically assumed to mean clear sky.",
+    "The 24 time slots are indexed from the start of each seasonal file; they are not converted to local solar time.",
+    "No imputation, interpolation, filtering, or modification of source data was performed.",
+    "Missingness associations do not establish causal relationships."
+  ],
+  "output_files": [
+    "ceres_missingness_by_dataset.csv",
+    "ceres_missingness_variable_summary.csv",
+    "ceres_missingness_spatial_by_season.csv",
+    "ceres_missingness_hourly_by_season.csv",
+    "ceres_missingness_area_association.csv"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "files_checked": 36,
+  "candidate_variables": 36,
+  "timestamp_monotonic_files": 36,
+  "files_with_duplicate_timestamps": 0,
+  "files_with_perfect_index_hour_match": 36,
+  "mean_index_hour_match_fraction": 1.0,
+  "note": "UTC-hour missingness is calculated using decoded NetCDF timestamps. Global metadata is retained as text for product/version/source inspection."
+}

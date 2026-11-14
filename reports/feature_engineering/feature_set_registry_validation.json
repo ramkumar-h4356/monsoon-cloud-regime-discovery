@@ -1,0 +1,18 @@
+{
+  "source_report_exists": true,
+  "eligible_candidates_expected": 36,
+  "eligible_candidates_found": 36,
+  "duplicate_variable_names": false,
+  "unclassified_variables": 0,
+  "feature_set_counts": {
+    "FS-A": 36,
+    "FS-B": 21,
+    "FS-C": 21,
+    "FS-D": 21,
+    "FS-E": 16,
+    "FS-F": 21
+  },
+  "issues": [],
+  "passed": true,
+  "interpretation": "A passed registry validates names, family classification and declared layer mappings. It does not validate scientific suitability, missing-data treatment, or clustering performance."
+}

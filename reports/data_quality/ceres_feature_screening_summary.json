@@ -1,0 +1,18 @@
+{
+    "years_inspected": 12,
+    "variables_screened": 45,
+    "eligible_candidates": 36,
+    "review_or_exclude": 4,
+    "categorical_variables": 5,
+    "high_correlation_pairs": 0,
+    "thresholds": {
+        "maximum_overall_missing_pct": 50.0,
+        "maximum_annual_missing_pct": 50.0,
+        "maximum_out_of_range_pct": 1.0,
+        "minimum_std": 1e-08,
+        "high_correlation_threshold": 0.9,
+        "correlation_method": "Spearman",
+        "samples_per_year_per_variable": 10000
+    },
+    "important_note": "This is an initial screening, not final scientific feature selection. Metadata valid_min/valid_max are screening bounds, not independent physical validation. Correlations are estimated from deterministic samples."
+}
