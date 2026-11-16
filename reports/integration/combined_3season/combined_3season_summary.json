@@ -1,0 +1,95 @@
+{
+  "title": "Combined 3-Season Cloud-Regime Discovery (SIH26078)",
+  "timestamp_utc": "2026-11-16T12:27:48.922789+00:00",
+  "total_observations": 24883200,
+  "features": 36,
+  "feature_list": [
+    "cldarea_high_1h",
+    "cldarea_mid_high_1h",
+    "cldarea_mid_low_1h",
+    "cldarea_total_1h",
+    "cldhght_total_1h",
+    "cldpress_top_total_1h",
+    "cldpress_total_1h",
+    "cldtemp_total_1h",
+    "cldtau_total_1h",
+    "lwp_total_1h",
+    "cldarea_low_1h",
+    "iwp_total_1h",
+    "cldhght_mid_low_1h",
+    "cldpress_mid_low_1h",
+    "cldpress_top_mid_low_1h",
+    "cldtemp_mid_low_1h",
+    "cldtau_mid_low_1h",
+    "cldhght_high_1h",
+    "cldpress_high_1h",
+    "cldpress_top_high_1h",
+    "cldtemp_high_1h",
+    "cldtau_high_1h",
+    "iwp_high_1h",
+    "lwp_mid_low_1h",
+    "cldhght_mid_high_1h",
+    "cldpress_mid_high_1h",
+    "cldpress_top_mid_high_1h",
+    "cldtemp_mid_high_1h",
+    "cldtau_mid_high_1h",
+    "cldhght_low_1h",
+    "cldpress_low_1h",
+    "cldpress_top_low_1h",
+    "cldtemp_low_1h",
+    "cldtau_low_1h",
+    "lwp_low_1h",
+    "iwp_mid_high_1h"
+  ],
+  "seasons": [
+    "pre_monsoon",
+    "established_monsoon",
+    "post_monsoon"
+  ],
+  "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "temporal_partitions": {
+    "train": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "holdout": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ]
+  },
+  "pca_variance": {
+    "pc1": 0.6625506961321125,
+    "pc2": 0.1690903260013549,
+    "top2_cumulative": 0.8316410221334674,
+    "top5_cumulative": 0.9438439153802552,
+    "top10_cumulative": 0.9874300078279916
+  },
+  "clustering": {
+    "algorithm": "MiniBatchKMeans",
+    "optimal_k": 4,
+    "metrics_file": "combined_3season_clustering_metrics.csv",
+    "profiles_file": "combined_3season_cluster_profiles.csv",
+    "seasonal_frequencies_file": "combined_3season_seasonal_frequencies.csv"
+  }
+}

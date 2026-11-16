@@ -1,0 +1,4 @@
+method,dimensions,trustworthiness_k12,notes
+PCA 2D Projection,2,0.9116510928642628,Global linear variance preservation
+t-SNE (Perplexity 30),2,0.9866692244889079,Local non-linear neighborhood preservation
+t-SNE (Perplexity 50),2,0.9865086699725124,Broader local non-linear neighborhood preservation
