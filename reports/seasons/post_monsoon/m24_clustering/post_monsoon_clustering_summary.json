@@ -1,0 +1,142 @@
+{
+  "milestone": "M24",
+  "title": "Post-Monsoon Cloud-Regime Clustering & Validation",
+  "created_utc": "2026-11-16T10:51:36.606528+00:00",
+  "elapsed_seconds": 21.01,
+  "input_features": "Top 5 Principal Components",
+  "total_observations": 8294400,
+  "sweep_k": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "optimal_k": 4,
+  "clustering_metrics": [
+    {
+      "k": 3,
+      "inertia": 2317313792.0,
+      "davies_bouldin_index": 0.9497,
+      "calinski_harabasz_score": 15711.4,
+      "silhouette_score": 0.7238,
+      "elapsed_seconds": 3.68
+    },
+    {
+      "k": 4,
+      "inertia": 1947648896.0,
+      "davies_bouldin_index": 1.1451,
+      "calinski_harabasz_score": 13360.9,
+      "silhouette_score": 0.6081,
+      "elapsed_seconds": 3.74
+    },
+    {
+      "k": 5,
+      "inertia": 1931674624.0,
+      "davies_bouldin_index": 1.083,
+      "calinski_harabasz_score": 10752.27,
+      "silhouette_score": 0.4554,
+      "elapsed_seconds": 3.88
+    },
+    {
+      "k": 6,
+      "inertia": 2011563520.0,
+      "davies_bouldin_index": 1.1842,
+      "calinski_harabasz_score": 8584.21,
+      "silhouette_score": 0.374,
+      "elapsed_seconds": 2.07
+    },
+    {
+      "k": 7,
+      "inertia": 1654162048.0,
+      "davies_bouldin_index": 1.2059,
+      "calinski_harabasz_score": 8717.3,
+      "silhouette_score": 0.1382,
+      "elapsed_seconds": 3.66
+    }
+  ],
+  "stability": {
+    "adjusted_rand_index_seed_variation": 0.4607,
+    "status": "MODERATELY_STABLE"
+  },
+  "regime_profiles": [
+    {
+      "regime_id": 0,
+      "meteorological_label": "Deep Convection / Thick Cirrus Anvil Shield",
+      "observation_count": 1044084,
+      "proportion_pct": 12.59,
+      "cldarea_total_1h": 0.4159,
+      "cldarea_high_1h": 1.2693,
+      "cldarea_mid_low_1h": 0.8491,
+      "cldarea_low_1h": 0.1355,
+      "cldtau_total_1h": 2.0085,
+      "cldtau_high_1h": 7.5809,
+      "iwp_total_1h": 3.2475,
+      "iwp_high_1h": 7.2325,
+      "lwp_total_1h": 2.0906,
+      "lwp_mid_low_1h": 4.0099,
+      "cldpress_top_total_1h": -0.2745,
+      "cldtemp_total_1h": -0.2774
+    },
+    {
+      "regime_id": 1,
+      "meteorological_label": "Deep Convection / Thick Cirrus Anvil Shield",
+      "observation_count": 63412,
+      "proportion_pct": 0.76,
+      "cldarea_total_1h": 0.5576,
+      "cldarea_high_1h": 2.8936,
+      "cldarea_mid_low_1h": 0.2491,
+      "cldarea_low_1h": -0.1108,
+      "cldtau_total_1h": 17.7462,
+      "cldtau_high_1h": 137.7025,
+      "iwp_total_1h": 31.5984,
+      "iwp_high_1h": 138.7555,
+      "lwp_total_1h": 3.2776,
+      "lwp_mid_low_1h": 3.7943,
+      "cldpress_top_total_1h": -0.6257,
+      "cldtemp_total_1h": -0.9055
+    },
+    {
+      "regime_id": 2,
+      "meteorological_label": "Deep Convection / Thick Cirrus Anvil Shield",
+      "observation_count": 304922,
+      "proportion_pct": 3.68,
+      "cldarea_total_1h": 0.5463,
+      "cldarea_high_1h": 2.6057,
+      "cldarea_mid_low_1h": 0.3098,
+      "cldarea_low_1h": -0.0674,
+      "cldtau_total_1h": 4.7841,
+      "cldtau_high_1h": 38.6526,
+      "iwp_total_1h": 9.8082,
+      "iwp_high_1h": 43.4322,
+      "lwp_total_1h": 1.568,
+      "lwp_mid_low_1h": 2.0921,
+      "cldpress_top_total_1h": -0.5295,
+      "cldtemp_total_1h": -0.6402
+    },
+    {
+      "regime_id": 3,
+      "meteorological_label": "Boundary-Layer Inversion / Low Stratus & Shallow Cumulus",
+      "observation_count": 6881982,
+      "proportion_pct": 82.97,
+      "cldarea_total_1h": -0.1107,
+      "cldarea_high_1h": 0.3631,
+      "cldarea_mid_low_1h": 0.4648,
+      "cldarea_low_1h": 0.5012,
+      "cldtau_total_1h": 0.1405,
+      "cldtau_high_1h": 0.441,
+      "iwp_total_1h": 0.0669,
+      "iwp_high_1h": 0.3859,
+      "lwp_total_1h": 0.0869,
+      "lwp_mid_low_1h": 0.0606,
+      "cldpress_top_total_1h": 0.204,
+      "cldtemp_total_1h": 0.1316
+    }
+  ],
+  "output_artifacts": {
+    "cluster_labels_npy": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\post_monsoon\\clustering\\post_monsoon_cluster_labels_k4.npy",
+    "metrics_csv": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\seasons\\post_monsoon\\m24_clustering\\post_monsoon_clustering_metrics.csv",
+    "profiles_csv": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\seasons\\post_monsoon\\m24_clustering\\post_monsoon_cluster_profiles.csv"
+  },
+  "status": "COMPLETED_READY_FOR_INTERPRETATION"
+}

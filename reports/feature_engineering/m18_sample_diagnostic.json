@@ -1,0 +1,587 @@
+{
+  "dataset": "data\\interim\\ceres_seasonal\\established_monsoon\\CERES_2010_established_monsoon.nc",
+  "dimensions": {
+    "time": 720,
+    "lat": 32,
+    "lon": 30
+  },
+  "variables_checked": 36,
+  "variables": [
+    {
+      "variable": "cldarea_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "percent",
+      "missing": 0,
+      "observed": 691200,
+      "matching_area": null,
+      "structural_missing": null,
+      "residual_missing": null,
+      "unknown_availability": null
+    },
+    {
+      "variable": "cldarea_mid_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "percent",
+      "missing": 0,
+      "observed": 691200,
+      "matching_area": null,
+      "structural_missing": null,
+      "residual_missing": null,
+      "unknown_availability": null
+    },
+    {
+      "variable": "cldarea_mid_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "percent",
+      "missing": 0,
+      "observed": 691200,
+      "matching_area": null,
+      "structural_missing": null,
+      "residual_missing": null,
+      "unknown_availability": null
+    },
+    {
+      "variable": "cldarea_total_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "percent",
+      "missing": 0,
+      "observed": 691200,
+      "matching_area": null,
+      "structural_missing": null,
+      "residual_missing": null,
+      "unknown_availability": null
+    },
+    {
+      "variable": "cldhght_total_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "km",
+      "missing": 81,
+      "observed": 691119,
+      "matching_area": "cldarea_total_1h",
+      "structural_missing": 81,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldpress_top_total_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 81,
+      "observed": 691119,
+      "matching_area": "cldarea_total_1h",
+      "structural_missing": 81,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldpress_total_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 81,
+      "observed": 691119,
+      "matching_area": "cldarea_total_1h",
+      "structural_missing": 81,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldtemp_total_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "K",
+      "missing": 81,
+      "observed": 691119,
+      "matching_area": "cldarea_total_1h",
+      "structural_missing": 81,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldtau_total_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "dimensionless",
+      "missing": 81,
+      "observed": 691119,
+      "matching_area": "cldarea_total_1h",
+      "structural_missing": 81,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "lwp_total_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "g m-2",
+      "missing": 136516,
+      "observed": 554684,
+      "matching_area": "cldarea_total_1h",
+      "structural_missing": 81,
+      "residual_missing": 136435,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldarea_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "percent",
+      "missing": 142082,
+      "observed": 549118,
+      "matching_area": null,
+      "structural_missing": null,
+      "residual_missing": null,
+      "unknown_availability": null
+    },
+    {
+      "variable": "iwp_total_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "g m-2",
+      "missing": 22140,
+      "observed": 669060,
+      "matching_area": "cldarea_total_1h",
+      "structural_missing": 81,
+      "residual_missing": 22059,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldhght_mid_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "km",
+      "missing": 270419,
+      "observed": 420781,
+      "matching_area": "cldarea_mid_low_1h",
+      "structural_missing": 270419,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldpress_mid_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 270419,
+      "observed": 420781,
+      "matching_area": "cldarea_mid_low_1h",
+      "structural_missing": 270419,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldpress_top_mid_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 270419,
+      "observed": 420781,
+      "matching_area": "cldarea_mid_low_1h",
+      "structural_missing": 270419,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldtemp_mid_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "K",
+      "missing": 270419,
+      "observed": 420781,
+      "matching_area": "cldarea_mid_low_1h",
+      "structural_missing": 270419,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldtau_mid_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "dimensionless",
+      "missing": 270419,
+      "observed": 420781,
+      "matching_area": "cldarea_mid_low_1h",
+      "structural_missing": 270419,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldhght_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "km",
+      "missing": 53682,
+      "observed": 637518,
+      "matching_area": "cldarea_high_1h",
+      "structural_missing": 53682,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldpress_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 53682,
+      "observed": 637518,
+      "matching_area": "cldarea_high_1h",
+      "structural_missing": 53682,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldpress_top_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 53682,
+      "observed": 637518,
+      "matching_area": "cldarea_high_1h",
+      "structural_missing": 53682,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldtemp_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "K",
+      "missing": 53682,
+      "observed": 637518,
+      "matching_area": "cldarea_high_1h",
+      "structural_missing": 53682,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldtau_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "dimensionless",
+      "missing": 53682,
+      "observed": 637518,
+      "matching_area": "cldarea_high_1h",
+      "structural_missing": 53682,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "iwp_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "g m-2",
+      "missing": 54684,
+      "observed": 636516,
+      "matching_area": "cldarea_high_1h",
+      "structural_missing": 53682,
+      "residual_missing": 1002,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "lwp_mid_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "g m-2",
+      "missing": 273584,
+      "observed": 417616,
+      "matching_area": "cldarea_mid_low_1h",
+      "structural_missing": 270419,
+      "residual_missing": 3165,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldhght_mid_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "km",
+      "missing": 171807,
+      "observed": 519393,
+      "matching_area": "cldarea_mid_high_1h",
+      "structural_missing": 171807,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldpress_mid_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 171807,
+      "observed": 519393,
+      "matching_area": "cldarea_mid_high_1h",
+      "structural_missing": 171807,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldpress_top_mid_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 171807,
+      "observed": 519393,
+      "matching_area": "cldarea_mid_high_1h",
+      "structural_missing": 171807,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldtemp_mid_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "K",
+      "missing": 171807,
+      "observed": 519393,
+      "matching_area": "cldarea_mid_high_1h",
+      "structural_missing": 171807,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldtau_mid_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "dimensionless",
+      "missing": 171807,
+      "observed": 519393,
+      "matching_area": "cldarea_mid_high_1h",
+      "structural_missing": 171807,
+      "residual_missing": 0,
+      "unknown_availability": 0
+    },
+    {
+      "variable": "cldhght_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "km",
+      "missing": 468712,
+      "observed": 222488,
+      "matching_area": "cldarea_low_1h",
+      "structural_missing": 326630,
+      "residual_missing": 0,
+      "unknown_availability": 142082
+    },
+    {
+      "variable": "cldpress_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 468712,
+      "observed": 222488,
+      "matching_area": "cldarea_low_1h",
+      "structural_missing": 326630,
+      "residual_missing": 0,
+      "unknown_availability": 142082
+    },
+    {
+      "variable": "cldpress_top_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "hPa",
+      "missing": 468712,
+      "observed": 222488,
+      "matching_area": "cldarea_low_1h",
+      "structural_missing": 326630,
+      "residual_missing": 0,
+      "unknown_availability": 142082
+    },
+    {
+      "variable": "cldtemp_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "K",
+      "missing": 468712,
+      "observed": 222488,
+      "matching_area": "cldarea_low_1h",
+      "structural_missing": 326630,
+      "residual_missing": 0,
+      "unknown_availability": 142082
+    },
+    {
+      "variable": "cldtau_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "dimensionless",
+      "missing": 468712,
+      "observed": 222488,
+      "matching_area": "cldarea_low_1h",
+      "structural_missing": 326630,
+      "residual_missing": 0,
+      "unknown_availability": 142082
+    },
+    {
+      "variable": "lwp_low_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "g m-2",
+      "missing": 468839,
+      "observed": 222361,
+      "matching_area": "cldarea_low_1h",
+      "structural_missing": 326630,
+      "residual_missing": 127,
+      "unknown_availability": 142082
+    },
+    {
+      "variable": "iwp_mid_high_1h",
+      "shape": [
+        720,
+        32,
+        30
+      ],
+      "dtype": "float32",
+      "units": "g m-2",
+      "missing": 222996,
+      "observed": 468204,
+      "matching_area": "cldarea_mid_high_1h",
+      "structural_missing": 171807,
+      "residual_missing": 51189,
+      "unknown_availability": 0
+    }
+  ]
+}

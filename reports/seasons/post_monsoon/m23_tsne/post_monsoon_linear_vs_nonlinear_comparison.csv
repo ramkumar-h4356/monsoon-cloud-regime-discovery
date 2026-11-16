@@ -1,0 +1,7 @@
+variable,spearman_PC1,spearman_PC2,spearman_tSNE1,spearman_tSNE2
+cldtau_high_1h,0.8155,-0.1422,0.4936,-0.1867
+iwp_high_1h,0.8268,-0.107,0.4918,-0.1599
+lwp_mid_low_1h,0.3452,0.6734,0.1978,0.5394
+cldtau_total_1h,0.6561,0.438,0.3594,0.4894
+cldpress_top_total_1h,-0.4264,0.1251,-0.7499,-0.0121
+cldarea_total_1h,0.5787,-0.0631,0.6683,-0.0634

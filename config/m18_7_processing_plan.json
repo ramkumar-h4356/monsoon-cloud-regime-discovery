@@ -1,0 +1,81 @@
+{
+  "milestone": "M18.7",
+  "title": "Full Dataset Processing",
+  "study_period": {
+    "start_year": 2010,
+    "end_year": 2021,
+    "include_2017_in_primary_descriptive_dataset": true
+  },
+  "expected_data": {
+    "seasons": ["pre_monsoon", "established_monsoon", "post_monsoon"],
+    "datasets": 36,
+    "timestamps_per_dataset": 720,
+    "latitude_count": 32,
+    "longitude_count": 30,
+    "feature_sets": {
+      "FS-A": 36,
+      "FS-B": 21,
+      "FS-C": 21,
+      "FS-D": 21,
+      "FS-E": 16,
+      "FS-F": 21
+    }
+  },
+  "processing_partitions": {
+    "primary_descriptive_fit": {
+      "fit_years": [2010, 2021],
+      "transform_years": [2010, 2021],
+      "include_2017": true,
+      "purpose": "Full-period exploratory cloud-regime discovery. Imputation and scaling parameters are fitted on the complete declared study period; this is not a held-out validation result."
+    },
+    "temporal_transfer_diagnostic": {
+      "fit_years": [2010, 2016],
+      "transform_years": [2018, 2021],
+      "transition_diagnostic_year": 2017,
+      "exclude_2017_from_fit_and_primary_holdout_score": true,
+      "purpose": "Assess transfer to later years without fitting on the holdout. The 2017 observing-system discontinuity is retained as a separately reported transition diagnostic, not silently mixed into the primary temporal comparison."
+    },
+    "exclude_2017_sensitivity": {
+      "fit_years": [2010, 2016, 2018, 2021],
+      "transform_years": [2010, 2016, 2018, 2021],
+      "exclude_2017": true,
+      "purpose": "Full-period descriptive sensitivity excluding 2017; compare later clustering profiles/assignments against the all-year analysis."
+    }
+  },
+  "storage": {
+    "format": "NetCDF4",
+    "compression": "zlib",
+    "compression_level": 4,
+    "dtype": "float32",
+    "indicator_dtype": "uint8",
+    "missingness_code_dtype": "uint8",
+    "one_file_per_experiment": true,
+    "separate_missingness_code_array": true,
+    "include_treatment_indicators": true,
+    "raw_netcdf_modified": false,
+    "raw_data_committed_to_git": false
+  },
+  "execution": {
+    "primary_partition_only_in_m18_7": true,
+    "temporal_transfer_and_exclude_2017_sensitivities_deferred_to_m18_8": true,
+    "chunked_time_processing": true,
+    "time_chunk_size": 24,
+    "fit_chunk_samples": 250000,
+    "out_of_core_raw_feature_memmaps": true,
+    "atomic_output_publish": true,
+    "resume_completed_experiments": true,
+    "preflight_required_before_processing": true,
+    "pilot_run_required_before_full_batch": true,
+    "raw_netcdf_modified": false
+  },
+  "outputs": {
+    "directory": "data/processed/m18_model_ready",
+    "work_directory": "data/processed/m18_work",
+    "processing_manifest_directory": "reports/feature_engineering/m18_7_processing_manifests",
+    "one_netcdf4_per_experiment": true,
+    "include_time_year_season_lat_lon_coordinates": true,
+    "feature_variables_prefix": "feature__",
+    "indicator_variables_prefix": "indicator__",
+    "missingness_code_variables_prefix": "missingness_code__"
+  }
+}

@@ -1,0 +1,5 @@
+﻿dataset,records_in_period,expected_records,duplicate_keys,missing_anomaly,sentinel_minus_9999,seasonal_structure_preserved,status,processed_records,source_duplicate_keys,processed_duplicate_keys,processed_duplicate_flags,missing_source_anomaly,missing_processed_anomaly,keys_match,missingness_match,values_match_within_1e-8,max_absolute_difference,duplicate_months,unparseable_dates,missing_after_sentinel_conversion,monthly_coverage_expected,monthly_coverage_observed,source_duplicate_months,processed_duplicate_months,unparseable_source_dates,source_monthly_coverage,processed_monthly_coverage
+RONI original,144,144,0,0,0,True,PASS,,,,,,,,,,,,,,,,,,,,
+RONI processed reconciliation,144,144,,,0,True,PASS,144,0,0,0,0,0,True,True,True,0.0,,,,,,,,,,
+DMI original,144,,,,0,,PASS,,,,,,,,,,,0,0,0,144,144,,,,,
+DMI processed reconciliation,144,144,,,0,,PASS,144,,,0,0,0,True,True,True,0.0,,,,,,0,0,0,144,144

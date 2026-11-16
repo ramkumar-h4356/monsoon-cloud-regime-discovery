@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "milestone": "M18.6",
+  "run_id": "M18-B-FS-F-SA-B-CA-A-robust-equal-854ff8df0d43",
+  "status": "PENDING",
+  "experiment": {
+    "stage": "B",
+    "feature_set": "FS-F",
+    "property_treatment": "SA-B",
+    "cloud_area_treatment": "CA-A",
+    "scaler": "robust",
+    "weighting": "equal",
+    "purpose": "structural_absence_indicator_sensitivity"
+  },
+  "feature_count": 21,
+  "feature_order": [
+    "cldarea_high_1h",
+    "cldarea_mid_high_1h",
+    "cldarea_mid_low_1h",
+    "cldarea_total_1h",
+    "cldpress_top_total_1h",
+    "cldtau_total_1h",
+    "lwp_total_1h",
+    "cldarea_low_1h",
+    "iwp_total_1h",
+    "cldpress_top_mid_low_1h",
+    "cldtau_mid_low_1h",
+    "cldpress_top_high_1h",
+    "cldtau_high_1h",
+    "iwp_high_1h",
+    "lwp_mid_low_1h",
+    "cldpress_top_mid_high_1h",
+    "cldtau_mid_high_1h",
+    "cldpress_top_low_1h",
+    "cldtau_low_1h",
+    "lwp_low_1h",
+    "iwp_mid_high_1h"
+  ],
+  "feature_families": [
+    "cloud_area",
+    "cloud_area",
+    "cloud_area",
+    "cloud_area",
+    "cloud_top_pressure",
+    "optical_depth",
+    "liquid_water_path",
+    "cloud_area",
+    "ice_water_path",
+    "cloud_top_pressure",
+    "optical_depth",
+    "cloud_top_pressure",
+    "optical_depth",
+    "ice_water_path",
+    "liquid_water_path",
+    "cloud_top_pressure",
+    "optical_depth",
+    "cloud_top_pressure",
+    "optical_depth",
+    "liquid_water_path",
+    "ice_water_path"
+  ],
+  "provenance": {
+    "config_sha256": "0dae2ee67a197bfd7ad502d40128db9ee5f98aaa047c60cf9fa1b972fde959f3",
+    "feature_registry_sha256": "bd41edfb0418d6c7d5ae49976a06fd97eb72b77b2cdb878c31dbff7725afcd5c",
+    "fit_scope": "training_partition_only",
+    "source_netcdf_modified": false
+  },
+  "validation_policy": {
+    "year_blocked": true,
+    "random_row_split_as_primary": false,
+    "exclude_2017_sensitivity": true,
+    "fit_imputation_and_scaling_on_training_partition_only": true,
+    "spatial_temporal_autocorrelation_must_be_accounted_for": true,
+    "split_definition_status": "to_be_frozen_before_M18_7_processing"
+  },
+  "execution_policy": {
+    "staged_not_full_factorial": true,
+    "resume_existing_run_status": true,
+    "invalidate_runs_when_config_or_feature_registry_hash_changes": true,
+    "atomic_manifest_and_registry_writes": true,
+    "raw_netcdf_modified": false,
+    "large_matrices_created": false,
+    "run_status_values": [
+      "PENDING",
+      "RUNNING",
+      "COMPLETED",
+      "FAILED",
+      "SKIPPED"
+    ]
+  },
+  "created_utc": "2026-11-15T11:10:49+00:00"
+}

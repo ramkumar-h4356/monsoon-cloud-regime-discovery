@@ -73,20 +73,30 @@ def load_eligible_variables():
 
 
 def matching_area_variable(variable, available_variables):
-    if variable.startswith(AREA_PREFIX):
-        return None
-
     if not variable.endswith(VARIABLE_SUFFIX):
         return None
 
-    stem = variable[:-len(VARIABLE_SUFFIX)]
+    prefixes = (
+        "cldpress_top_",
+        "cldpress_",
+        "cldhght_",
+        "cldtemp_",
+        "cldtau_",
+        "lwp_",
+        "iwp_",
+    )
 
-    if "_" not in stem:
+    layer = None
+
+    for prefix in prefixes:
+        if variable.startswith(prefix):
+            layer = variable[len(prefix):-len(VARIABLE_SUFFIX)]
+            break
+
+    if layer not in {"high", "mid_high", "mid_low", "low", "total"}:
         return None
 
-    layer = stem.split("_", 1)[1]
     candidate = f"cldarea_{layer}_1h"
-
     return candidate if candidate in available_variables else None
 
 
