@@ -1,0 +1,102 @@
+========================================================================
+ESTABLISHED MONSOON MODEL RECOVERY REPORT
+========================================================================
+Python: 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]
+NumPy: 2.4.1
+Pandas: 3.0.2
+Scikit-learn: 1.8.0
+Joblib: 1.5.3
+[PASS] Metadata rows: 290355
+[PASS] Assignment rows: 290355
+[PASS] Baseline dimensions: (290355, 14)
+[PASS] Log dimensions: (290355, 14)
+[PASS] Feature order: ['cldarea_total_1h', 'cldhght_total_1h', 'cldphase_total_1h', 'cldpress_total_1h', 'cldtemp_total_1h', 'cldtau_total_1h', 'iwp_total_1h', 'cldarea_high_1h', 'cldhght_high_1h', 'cldphase_high_1h', 'cldpress_high_1h', 'cldtemp_high_1h', 'cldtau_high_1h', 'iwp_high_1h']
+[PASS] Finite baseline matrix:
+[PASS] Finite log matrix:
+[PASS] Metadata-assignment row alignment:
+
+SERIALIZED MODEL SEARCH
+No recognized serialized estimator/scaler files found.
+
+ORIGINAL SOURCE CONFIGURATION
+[PASS] Preprocessing source: StandardScaler:
+[PASS] Preprocessing source: np.log1p:
+[PASS] Preprocessing source: baseline_scaler:
+[PASS] Preprocessing source: log_scaler:
+[PASS] Preprocessing source: baseline_matrix:
+[PASS] Preprocessing source: log_sensitivity_matrix:
+[PASS] Exporter source: MiniBatchKMeans:
+[PASS] Exporter source: random_state=SEED:
+[PASS] Exporter source: batch_size=4096:
+[PASS] Exporter source: n_init=10:
+[PASS] Exporter source: max_iter=200:
+[PASS] Exporter source: reassignment_ratio=0.01:
+
+MODEL RECONSTRUCTION
+
+Reconstructing baseline_k2
+[PASS] baseline_k2 partition reproduction: ARI=1.000000000000; exact numeric labels=True
+Candidate saved: C:\Users\grees\OneDrive\Desktop\Monsoon cluod study\monsoon-cloud-regime-discovery\recovery_output\RECONSTRUCTED_baseline_k2.joblib
+
+Reconstructing log_k2
+[PASS] log_k2 partition reproduction: ARI=1.000000000000; exact numeric labels=True
+Candidate saved: C:\Users\grees\OneDrive\Desktop\Monsoon cluod study\monsoon-cloud-regime-discovery\recovery_output\RECONSTRUCTED_log_k2.joblib
+
+Reconstructing log_k3
+[PASS] log_k3 partition reproduction: ARI=1.000000000000; exact numeric labels=True
+Candidate saved: C:\Users\grees\OneDrive\Desktop\Monsoon cluod study\monsoon-cloud-regime-discovery\recovery_output\RECONSTRUCTED_log_k3.joblib
+
+SCALER RECOVERY
+[PASS] baseline matrix standardized: Means approximately zero; standard deviations approximately one
+[PASS] log_sensitivity matrix standardized: Means approximately zero; standard deviations approximately one
+Original scaler parameters cannot be reconstructed from standardized matrices alone. Raw pre-scaling feature data is required.
+
+RAW DATA SEARCH
+Possible raw data: data\raw\NOAA_DMI\dmi.had.long.csv
+Possible raw data: data\processed\clustering\established_monsoon\m3_feature_preparation\established_monsoon_group_B_feature_registry.csv
+Possible raw data: data\processed\clustering\established_monsoon\m4_pca\baseline_explained_variance.csv
+Possible raw data: data\processed\clustering\established_monsoon\m4_pca\baseline_feature_contributions_percent.csv
+Possible raw data: data\processed\clustering\established_monsoon\m4_pca\baseline_loadings.csv
+Possible raw data: data\processed\clustering\established_monsoon\m4_pca\baseline_log_subspace_comparison.csv
+Possible raw data: data\processed\clustering\established_monsoon\m4_pca\log_sensitivity_explained_variance.csv
+Possible raw data: data\processed\clustering\established_monsoon\m4_pca\log_sensitivity_feature_contributions_percent.csv
+Possible raw data: data\processed\clustering\established_monsoon\m4_pca\log_sensitivity_loadings.csv
+Possible raw data: data\processed\clustering\established_monsoon\m4_pca\same_index_component_loading_similarity.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne\baseline_perplexity_30_coordinates.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne\baseline_perplexity_50_coordinates.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne\log_sensitivity_perplexity_30_coordinates.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne\log_sensitivity_perplexity_50_coordinates.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne\m5_tsne_model_summary.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne_refined\baseline_perplexity_30_coordinates.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne_refined\baseline_perplexity_50_coordinates.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne_refined\log_sensitivity_perplexity_30_coordinates.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne_refined\log_sensitivity_perplexity_50_coordinates.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_tsne_refined\m5_refined_model_summary.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_validation\m5_constrained_permutation_results.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_validation\m5_neighbourhood_validation.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_validation\m5_pca_year_classification.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_validation\m5_pca_year_classification_final.csv
+Possible raw data: data\processed\clustering\established_monsoon\m5_validation\m5_year_composition_by_embedding.csv
+Possible raw data: data\processed\climate_indices\DMI\dmi_monthly_2010_2021.csv
+Possible raw data: data\processed\climate_indices\RONI\roni_seasonal_2010_2021.csv
+Possible tabular files found: 27
+
+MODEL VERIFICATION SUMMARY
+[PASS] All three reconstructed partitions match:
+[PASS] All three numeric cluster labels match exactly:
+
+========================================================================
+FINAL RECOVERY STATUS
+========================================================================
+Checks passed: 27
+Checks failed: 0
+Reconstructed model partitions match: True
+Exact cluster labels match: True
+Original scalers recovered: NO — raw pre-scaling data required.
+Original fitted estimators verified: NO — candidates are reconstructions.
+Output folder: C:\Users\grees\OneDrive\Desktop\Monsoon cluod study\monsoon-cloud-regime-discovery\recovery_output
+
+IMPORTANT:
+Do not replace original assignments with reconstructed predictions.
+Do not describe reconstructed estimators as original fitted models.
+Review recovery_manifest.json before using any candidate model.
