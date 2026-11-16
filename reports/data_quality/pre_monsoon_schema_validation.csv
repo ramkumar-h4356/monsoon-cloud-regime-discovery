@@ -1,0 +1,13 @@
+year,filename,variable_count,status,reason
+2010,CERES_2010_pre_monsoon.nc,45,PASS,
+2011,CERES_2011_pre_monsoon.nc,45,PASS,
+2012,CERES_2012_pre_monsoon.nc,45,PASS,
+2013,CERES_2013_pre_monsoon.nc,45,PASS,
+2014,CERES_2014_pre_monsoon.nc,45,PASS,
+2015,CERES_2015_pre_monsoon.nc,45,PASS,
+2016,CERES_2016_pre_monsoon.nc,45,PASS,
+2017,CERES_2017_pre_monsoon.nc,45,PASS,
+2018,CERES_2018_pre_monsoon.nc,45,PASS,
+2019,CERES_2019_pre_monsoon.nc,45,PASS,
+2020,CERES_2020_pre_monsoon.nc,45,PASS,
+2021,CERES_2021_pre_monsoon.nc,45,PASS,

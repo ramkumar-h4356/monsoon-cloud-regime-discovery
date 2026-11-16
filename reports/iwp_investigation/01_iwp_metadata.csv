@@ -1,0 +1,241 @@
+year,variable,units,long_name,standard_name,valid_min,valid_max,fill_value,missing_value,dtype
+2010,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2010,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2010,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2010,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2010,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2010,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2010,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2010,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2010,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2010,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2010,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2010,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2010,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2010,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2010,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2010,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2010,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2010,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2010,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2010,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2011,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2011,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2011,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2011,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2011,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2011,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2011,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2011,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2011,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2011,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2011,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2011,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2011,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2011,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2011,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2011,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2011,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2011,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2011,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2011,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2012,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2012,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2012,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2012,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2012,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2012,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2012,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2012,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2012,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2012,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2012,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2012,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2012,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2012,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2012,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2012,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2012,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2012,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2012,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2012,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2013,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2013,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2013,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2013,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2013,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2013,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2013,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2013,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2013,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2013,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2013,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2013,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2013,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2013,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2013,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2013,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2013,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2013,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2013,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2013,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2014,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2014,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2014,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2014,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2014,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2014,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2014,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2014,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2014,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2014,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2014,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2014,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2014,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2014,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2014,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2014,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2014,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2014,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2014,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2014,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2015,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2015,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2015,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2015,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2015,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2015,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2015,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2015,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2015,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2015,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2015,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2015,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2015,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2015,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2015,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2015,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2015,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2015,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2015,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2015,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2016,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2016,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2016,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2016,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2016,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2016,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2016,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2016,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2016,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2016,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2016,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2016,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2016,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2016,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2016,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2016,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2016,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2016,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2016,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2016,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2017,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2017,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2017,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2017,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2017,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2017,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2017,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2017,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2017,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2017,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2017,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2017,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2017,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2017,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2017,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2017,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2017,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2017,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2017,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2017,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2018,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2018,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2018,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2018,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2018,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2018,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2018,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2018,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2018,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2018,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2018,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2018,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2018,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2018,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2018,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2018,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2018,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2018,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2018,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2018,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2019,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2019,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2019,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2019,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2019,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2019,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2019,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2019,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2019,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2019,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2019,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2019,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2019,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2019,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2019,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2019,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2019,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2019,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2019,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2019,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2020,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2020,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2020,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2020,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2020,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2020,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2020,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2020,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2020,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2020,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2020,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2020,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2020,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2020,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2020,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2020,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2020,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2020,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2020,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2020,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
+2021,iwp_high_1h,g m-2,"Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means",Ice Water Path - High clouds,       0,   10000,nan,,float32
+2021,iwp_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means",Ice Water Path - Low clouds,       0,   10000,nan,,float32
+2021,iwp_mid_high_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means",Ice Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2021,iwp_mid_low_1h,g m-2,"Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means",Ice Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2021,iwp_total_1h,g m-2,"Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means",Ice Water Path - Total clouds,       0,   10000,nan,,float32
+2021,lwp_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means",Liquid Water Path - High clouds,       0,   10000,nan,,float32
+2021,lwp_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means",Liquid Water Path - Low clouds,       0,   10000,nan,,float32
+2021,lwp_mid_high_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means",Liquid Water Path - Mid-High clouds,       0,   10000,nan,,float32
+2021,lwp_mid_low_1h,g m-2,"Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means",Liquid Water Path - Mid-Low clouds,       0,   10000,nan,,float32
+2021,lwp_total_1h,g m-2,"Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means",Liquid Water Path - Total clouds,       0,   10000,nan,,float32
+2021,cldarea_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means",Cloud Area Fraction - High clouds,       0,     100,nan,,float32
+2021,cldarea_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means",Cloud Area Fraction - Low clouds,       0,     100,nan,,float32
+2021,cldarea_mid_high_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means",Cloud Area Fraction - Mid-High clouds,       0,     100,nan,,float32
+2021,cldarea_mid_low_1h,percent,"Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means",Cloud Area Fraction - Mid-Low clouds,       0,     100,nan,,float32
+2021,cldarea_total_1h,percent,"Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means",Cloud Area Fraction - Total clouds,       0,     100,nan,,float32
+2021,cldphase_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means",Cloud Particle Phase - High clouds,       1,       2,nan,,float32
+2021,cldphase_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means",Cloud Particle Phase - Low clouds,       1,       2,nan,,float32
+2021,cldphase_mid_high_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means",Cloud Particle Phase - Mid-High clouds,       1,       2,nan,,float32
+2021,cldphase_mid_low_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means",Cloud Particle Phase - Mid-Low clouds,       1,       2,nan,,float32
+2021,cldphase_total_1h,dimensionless,"Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means",Cloud Particle Phase - Total clouds,       1,       2,nan,,float32
