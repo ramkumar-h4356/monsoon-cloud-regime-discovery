@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "historical_files_preserved": 251,
+  "unique_historical_files_verified": 277,
+  "tests": {
+    "passed": 43,
+    "seconds": 225.63,
+    "sha256": "24205e4bd537f1e4711d7c50c3480bfbfd179a9992a142683d2fcff53c5eb8ea"
+  },
+  "new_source_sha256": {
+    "README.md": "2e13e7def15aa6b24c20b2c7c123180c0ebfaf472a3df89b8664c892927d0b5b",
+    "environment/LOCKFILE.md": "a9162a5549e8f8bfcf7f3aad2486baeede3c06aa10549af0f9be4b28b658ee13",
+    "environment/requirements-windows-py313.lock": "2695c11b70c4998d53b691e0d7858cb14dc001271161d1fce74a5033a906b313",
+    "environment/environment-reference.json": "aa60884c5030cb725f710a23424392d1b82fc35498f42dd122fc7e162a9b7ed5",
+    "src/10_handoff/handoff.py": "708e6df5cdbe883180b16fb79d158042e4a999ebcc86d6dda1b7a0dd84a4d6a0",
+    "src/10_handoff/robust_diagnostics_v2.py": "a423c807fd42cfe0fab0aa0a65295d8eed330506f200ef99ee635d08a9822fde",
+    "tests/test_handoff_v2.py": "6b192ba9b837e7d67ce32d5e501924f6e00fb88754159e3f5960de035a0314d0"
+  },
+  "new_handoff_artifact_sha256": {
+    "reports\\handoff\\remediation_v1\\environment\\pip_check.txt": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+    "reports\\handoff\\remediation_v1\\environment\\receipt.json": "4156f2f3149a8269c5cd87707f079585fa56a35c63742dbcb2cdd2f172b5cbca",
+    "reports\\handoff\\remediation_v1\\historical_inventory.json": "0ac2afc89ec4b36a6cb84565e664766a16796253eacf32f574c361ce2376835d",
+    "reports\\handoff\\remediation_v1\\plot\\manifest.json": "4d2f3da25d56a7be08912b01c0a7be7de323ad337bfa9ade0f2d6942e241b228",
+    "reports\\handoff\\remediation_v1\\plot\\occurrence_uncertainty.png": "7bfdcf78f657d21d54801c5ab34fdf901b69c8fd3b60cdd2496f5a0140aba9b1",
+    "reports\\handoff\\remediation_v1\\report\\manifest.json": "ab15e129a6ad533ae205ad38b3960130219ff52912abeb3fa34bfdb524428ab9",
+    "reports\\handoff\\remediation_v1\\report\\SCIENTIFIC_HANDOFF.md": "df3ac68bd0c90177ba9d1cb4c7fc5e5a55db59b404b0de22fbe0c484356ec4ad",
+    "reports\\handoff\\remediation_v1\\tests\\all_tests.txt": "24205e4bd537f1e4711d7c50c3480bfbfd179a9992a142683d2fcff53c5eb8ea",
+    "reports\\handoff\\remediation_v1\\tests\\process.json": "bee0c1db189d95838aaed172a664cf1b8bf2f303ad4c3cfe5ace877c199890fd",
+    "reports\\handoff\\remediation_v1\\verify\\receipt.json": "05dc3a6c859dc2d6586f55a7f9cb97a728617420dee329a09464889aa62f740d"
+  },
+  "frozen_model_sha256": "4c26f58fcc842aa4c7da5d6547225a1d9ae25171f29f083014c31e4849233569",
+  "models_refitted": false,
+  "hyperparameters_reselected": false,
+  "holdout_evaluation_rerun": false,
+  "legacy_evaluator_modified": false,
+  "robustness_scope": "Versioned v2 diagnostics on synthetic data only; no retrofit to the immutable evaluator.",
+  "dependency_lock_distributions": 31,
+  "fresh_environment_install_tested": false
+}

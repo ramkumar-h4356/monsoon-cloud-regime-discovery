@@ -1,0 +1,10 @@
+{
+  "status": "matched",
+  "lock_sha256": "2695c11b70c4998d53b691e0d7858cb14dc001271161d1fce74a5033a906b313",
+  "locked_distributions": 31,
+  "active_dependency_closure_checked": true,
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "errors": [],
+  "limitation": "Version lock, not a wheel-hash lock or cross-platform bitwise reproducibility guarantee."
+}

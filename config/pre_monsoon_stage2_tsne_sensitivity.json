@@ -1,0 +1,13 @@
+{
+  "base_run_id": "stage2_v1",
+  "perplexities": [30, 100],
+  "seeds": [42, 73, 101],
+  "max_iter": 1500,
+  "early_exaggeration": 12,
+  "fixed_learning_rate": 62.5,
+  "controlled_exaggeration": 4,
+  "controlled_perplexity": 30,
+  "controlled_seed": 42,
+  "threads": 1,
+  "reason": "PCA-initialized seed repetitions were deterministic. Probe random starts and isolate exaggeration from automatic learning-rate coupling. No change to PCA/K-Means selection."
+}

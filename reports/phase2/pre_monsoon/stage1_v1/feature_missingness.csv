@@ -1,0 +1,415 @@
+year,split,variable,units,model_feature,total,missing,invalid,valid
+2010,train,cldarea_high_1h,percent,False,691200,0,0,691200
+2010,train,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2010,train,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2010,train,cldarea_low_1h,percent,False,691200,142230,0,548970
+2010,train,cldarea_total_1h,percent,True,691200,0,0,691200
+2010,train,cldtau_high_1h,dimensionless,False,691200,163708,0,527492
+2010,train,cldtau_mid_high_1h,dimensionless,False,691200,267677,0,423523
+2010,train,cldtau_mid_low_1h,dimensionless,False,691200,254330,0,436870
+2010,train,cldtau_low_1h,dimensionless,False,691200,264186,0,427014
+2010,train,cldtau_total_1h,dimensionless,True,691200,2885,0,688315
+2010,train,cldpress_top_high_1h,hPa,False,691200,163708,0,527492
+2010,train,cldpress_top_mid_high_1h,hPa,False,691200,267677,0,423523
+2010,train,cldpress_top_mid_low_1h,hPa,False,691200,254330,0,436870
+2010,train,cldpress_top_low_1h,hPa,False,691200,264186,0,427014
+2010,train,cldpress_top_total_1h,hPa,True,691200,2885,0,688315
+2010,train,cldpress_high_1h,hPa,False,691200,163708,0,527492
+2010,train,cldpress_mid_high_1h,hPa,False,691200,267677,0,423523
+2010,train,cldpress_mid_low_1h,hPa,False,691200,254330,0,436870
+2010,train,cldpress_low_1h,hPa,False,691200,264186,0,427014
+2010,train,cldpress_total_1h,hPa,False,691200,2885,0,688315
+2010,train,cldtemp_high_1h,K,False,691200,163708,0,527492
+2010,train,cldtemp_mid_high_1h,K,False,691200,267677,0,423523
+2010,train,cldtemp_mid_low_1h,K,False,691200,254330,0,436870
+2010,train,cldtemp_low_1h,K,False,691200,264186,0,427014
+2010,train,cldtemp_total_1h,K,False,691200,2885,0,688315
+2010,train,cldhght_high_1h,km,False,691200,163708,0,527492
+2010,train,cldhght_mid_high_1h,km,False,691200,267677,0,423523
+2010,train,cldhght_mid_low_1h,km,False,691200,254330,0,436870
+2010,train,cldhght_low_1h,km,False,691200,264186,0,427014
+2010,train,cldhght_total_1h,km,False,691200,2885,0,688315
+2010,train,cldphase_high_1h,dimensionless,False,691200,163708,0,527492
+2010,train,cldphase_mid_high_1h,dimensionless,False,691200,267677,0,423523
+2010,train,cldphase_mid_low_1h,dimensionless,False,691200,254330,0,436870
+2010,train,cldphase_low_1h,dimensionless,False,691200,264186,0,427014
+2010,train,cldphase_total_1h,dimensionless,False,691200,2885,0,688315
+2010,train,iwp_high_1h,g m-2,False,691200,164466,0,526734
+2010,train,iwp_mid_high_1h,g m-2,False,691200,312673,0,378527
+2010,train,iwp_mid_low_1h,g m-2,False,691200,578516,0,112684
+2010,train,iwp_low_1h,g m-2,False,691200,662338,0,28862
+2010,train,iwp_total_1h,g m-2,False,691200,114901,0,576299
+2010,train,lwp_high_1h,g m-2,False,691200,646562,0,44638
+2010,train,lwp_mid_high_1h,g m-2,False,691200,398367,0,292833
+2010,train,lwp_mid_low_1h,g m-2,False,691200,265617,0,425583
+2010,train,lwp_low_1h,g m-2,False,691200,264899,0,426301
+2010,train,lwp_total_1h,g m-2,False,691200,69286,0,621914
+2011,train,cldarea_high_1h,percent,False,691200,0,0,691200
+2011,train,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2011,train,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2011,train,cldarea_low_1h,percent,False,691200,142217,0,548983
+2011,train,cldarea_total_1h,percent,True,691200,0,0,691200
+2011,train,cldtau_high_1h,dimensionless,False,691200,173141,0,518059
+2011,train,cldtau_mid_high_1h,dimensionless,False,691200,249578,0,441622
+2011,train,cldtau_mid_low_1h,dimensionless,False,691200,242417,0,448783
+2011,train,cldtau_low_1h,dimensionless,False,691200,277507,0,413693
+2011,train,cldtau_total_1h,dimensionless,True,691200,2911,0,688289
+2011,train,cldpress_top_high_1h,hPa,False,691200,173141,0,518059
+2011,train,cldpress_top_mid_high_1h,hPa,False,691200,249578,0,441622
+2011,train,cldpress_top_mid_low_1h,hPa,False,691200,242417,0,448783
+2011,train,cldpress_top_low_1h,hPa,False,691200,277507,0,413693
+2011,train,cldpress_top_total_1h,hPa,True,691200,2911,0,688289
+2011,train,cldpress_high_1h,hPa,False,691200,173141,0,518059
+2011,train,cldpress_mid_high_1h,hPa,False,691200,249578,0,441622
+2011,train,cldpress_mid_low_1h,hPa,False,691200,242417,0,448783
+2011,train,cldpress_low_1h,hPa,False,691200,277507,0,413693
+2011,train,cldpress_total_1h,hPa,False,691200,2911,0,688289
+2011,train,cldtemp_high_1h,K,False,691200,173141,0,518059
+2011,train,cldtemp_mid_high_1h,K,False,691200,249578,0,441622
+2011,train,cldtemp_mid_low_1h,K,False,691200,242417,0,448783
+2011,train,cldtemp_low_1h,K,False,691200,277507,0,413693
+2011,train,cldtemp_total_1h,K,False,691200,2911,0,688289
+2011,train,cldhght_high_1h,km,False,691200,173141,0,518059
+2011,train,cldhght_mid_high_1h,km,False,691200,249578,0,441622
+2011,train,cldhght_mid_low_1h,km,False,691200,242417,0,448783
+2011,train,cldhght_low_1h,km,False,691200,277507,0,413693
+2011,train,cldhght_total_1h,km,False,691200,2911,0,688289
+2011,train,cldphase_high_1h,dimensionless,False,691200,173141,0,518059
+2011,train,cldphase_mid_high_1h,dimensionless,False,691200,249578,0,441622
+2011,train,cldphase_mid_low_1h,dimensionless,False,691200,242417,0,448783
+2011,train,cldphase_low_1h,dimensionless,False,691200,277507,0,413693
+2011,train,cldphase_total_1h,dimensionless,False,691200,2911,0,688289
+2011,train,iwp_high_1h,g m-2,False,691200,174283,0,516917
+2011,train,iwp_mid_high_1h,g m-2,False,691200,291052,0,400148
+2011,train,iwp_mid_low_1h,g m-2,False,691200,570493,0,120707
+2011,train,iwp_low_1h,g m-2,False,691200,661440,0,29760
+2011,train,iwp_total_1h,g m-2,False,691200,106570,0,584630
+2011,train,lwp_high_1h,g m-2,False,691200,650121,0,41079
+2011,train,lwp_mid_high_1h,g m-2,False,691200,379401,0,311799
+2011,train,lwp_mid_low_1h,g m-2,False,691200,253191,0,438009
+2011,train,lwp_low_1h,g m-2,False,691200,278055,0,413145
+2011,train,lwp_total_1h,g m-2,False,691200,64656,0,626544
+2012,train,cldarea_high_1h,percent,False,691200,0,0,691200
+2012,train,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2012,train,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2012,train,cldarea_low_1h,percent,False,691200,142594,0,548606
+2012,train,cldarea_total_1h,percent,True,691200,0,0,691200
+2012,train,cldtau_high_1h,dimensionless,False,691200,163490,0,527710
+2012,train,cldtau_mid_high_1h,dimensionless,False,691200,242291,0,448909
+2012,train,cldtau_mid_low_1h,dimensionless,False,691200,230728,0,460472
+2012,train,cldtau_low_1h,dimensionless,False,691200,274113,0,417087
+2012,train,cldtau_total_1h,dimensionless,True,691200,2182,0,689018
+2012,train,cldpress_top_high_1h,hPa,False,691200,163490,0,527710
+2012,train,cldpress_top_mid_high_1h,hPa,False,691200,242291,0,448909
+2012,train,cldpress_top_mid_low_1h,hPa,False,691200,230728,0,460472
+2012,train,cldpress_top_low_1h,hPa,False,691200,274113,0,417087
+2012,train,cldpress_top_total_1h,hPa,True,691200,2182,0,689018
+2012,train,cldpress_high_1h,hPa,False,691200,163490,0,527710
+2012,train,cldpress_mid_high_1h,hPa,False,691200,242291,0,448909
+2012,train,cldpress_mid_low_1h,hPa,False,691200,230728,0,460472
+2012,train,cldpress_low_1h,hPa,False,691200,274113,0,417087
+2012,train,cldpress_total_1h,hPa,False,691200,2182,0,689018
+2012,train,cldtemp_high_1h,K,False,691200,163490,0,527710
+2012,train,cldtemp_mid_high_1h,K,False,691200,242291,0,448909
+2012,train,cldtemp_mid_low_1h,K,False,691200,230728,0,460472
+2012,train,cldtemp_low_1h,K,False,691200,274113,0,417087
+2012,train,cldtemp_total_1h,K,False,691200,2182,0,689018
+2012,train,cldhght_high_1h,km,False,691200,163490,0,527710
+2012,train,cldhght_mid_high_1h,km,False,691200,242291,0,448909
+2012,train,cldhght_mid_low_1h,km,False,691200,230728,0,460472
+2012,train,cldhght_low_1h,km,False,691200,274113,0,417087
+2012,train,cldhght_total_1h,km,False,691200,2182,0,689018
+2012,train,cldphase_high_1h,dimensionless,False,691200,163490,0,527710
+2012,train,cldphase_mid_high_1h,dimensionless,False,691200,242291,0,448909
+2012,train,cldphase_mid_low_1h,dimensionless,False,691200,230728,0,460472
+2012,train,cldphase_low_1h,dimensionless,False,691200,274113,0,417087
+2012,train,cldphase_total_1h,dimensionless,False,691200,2182,0,689018
+2012,train,iwp_high_1h,g m-2,False,691200,164525,0,526675
+2012,train,iwp_mid_high_1h,g m-2,False,691200,288760,0,402440
+2012,train,iwp_mid_low_1h,g m-2,False,691200,564276,0,126924
+2012,train,iwp_low_1h,g m-2,False,691200,661308,0,29892
+2012,train,iwp_total_1h,g m-2,False,691200,103411,0,587789
+2012,train,lwp_high_1h,g m-2,False,691200,648670,0,42530
+2012,train,lwp_mid_high_1h,g m-2,False,691200,372013,0,319187
+2012,train,lwp_mid_low_1h,g m-2,False,691200,241686,0,449514
+2012,train,lwp_low_1h,g m-2,False,691200,274579,0,416621
+2012,train,lwp_total_1h,g m-2,False,691200,60852,0,630348
+2013,train,cldarea_high_1h,percent,False,691200,0,0,691200
+2013,train,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2013,train,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2013,train,cldarea_low_1h,percent,False,691200,142562,0,548638
+2013,train,cldarea_total_1h,percent,True,691200,0,0,691200
+2013,train,cldtau_high_1h,dimensionless,False,691200,162057,0,529143
+2013,train,cldtau_mid_high_1h,dimensionless,False,691200,252914,0,438286
+2013,train,cldtau_mid_low_1h,dimensionless,False,691200,258208,0,432992
+2013,train,cldtau_low_1h,dimensionless,False,691200,293192,0,398008
+2013,train,cldtau_total_1h,dimensionless,True,691200,3217,0,687983
+2013,train,cldpress_top_high_1h,hPa,False,691200,162057,0,529143
+2013,train,cldpress_top_mid_high_1h,hPa,False,691200,252914,0,438286
+2013,train,cldpress_top_mid_low_1h,hPa,False,691200,258208,0,432992
+2013,train,cldpress_top_low_1h,hPa,False,691200,293192,0,398008
+2013,train,cldpress_top_total_1h,hPa,True,691200,3217,0,687983
+2013,train,cldpress_high_1h,hPa,False,691200,162057,0,529143
+2013,train,cldpress_mid_high_1h,hPa,False,691200,252914,0,438286
+2013,train,cldpress_mid_low_1h,hPa,False,691200,258208,0,432992
+2013,train,cldpress_low_1h,hPa,False,691200,293192,0,398008
+2013,train,cldpress_total_1h,hPa,False,691200,3217,0,687983
+2013,train,cldtemp_high_1h,K,False,691200,162057,0,529143
+2013,train,cldtemp_mid_high_1h,K,False,691200,252914,0,438286
+2013,train,cldtemp_mid_low_1h,K,False,691200,258208,0,432992
+2013,train,cldtemp_low_1h,K,False,691200,293192,0,398008
+2013,train,cldtemp_total_1h,K,False,691200,3217,0,687983
+2013,train,cldhght_high_1h,km,False,691200,162057,0,529143
+2013,train,cldhght_mid_high_1h,km,False,691200,252914,0,438286
+2013,train,cldhght_mid_low_1h,km,False,691200,258208,0,432992
+2013,train,cldhght_low_1h,km,False,691200,293192,0,398008
+2013,train,cldhght_total_1h,km,False,691200,3217,0,687983
+2013,train,cldphase_high_1h,dimensionless,False,691200,162057,0,529143
+2013,train,cldphase_mid_high_1h,dimensionless,False,691200,252914,0,438286
+2013,train,cldphase_mid_low_1h,dimensionless,False,691200,258208,0,432992
+2013,train,cldphase_low_1h,dimensionless,False,691200,293192,0,398008
+2013,train,cldphase_total_1h,dimensionless,False,691200,3217,0,687983
+2013,train,iwp_high_1h,g m-2,False,691200,162843,0,528357
+2013,train,iwp_mid_high_1h,g m-2,False,691200,294143,0,397057
+2013,train,iwp_mid_low_1h,g m-2,False,691200,569726,0,121474
+2013,train,iwp_low_1h,g m-2,False,691200,663213,0,27987
+2013,train,iwp_total_1h,g m-2,False,691200,101887,0,589313
+2013,train,lwp_high_1h,g m-2,False,691200,646176,0,45024
+2013,train,lwp_mid_high_1h,g m-2,False,691200,388501,0,302699
+2013,train,lwp_mid_low_1h,g m-2,False,691200,270579,0,420621
+2013,train,lwp_low_1h,g m-2,False,691200,293946,0,397254
+2013,train,lwp_total_1h,g m-2,False,691200,78925,0,612275
+2014,train,cldarea_high_1h,percent,False,691200,0,0,691200
+2014,train,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2014,train,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2014,train,cldarea_low_1h,percent,False,691200,142246,0,548954
+2014,train,cldarea_total_1h,percent,True,691200,0,0,691200
+2014,train,cldtau_high_1h,dimensionless,False,691200,162708,0,528492
+2014,train,cldtau_mid_high_1h,dimensionless,False,691200,251202,0,439998
+2014,train,cldtau_mid_low_1h,dimensionless,False,691200,243938,0,447262
+2014,train,cldtau_low_1h,dimensionless,False,691200,272446,0,418754
+2014,train,cldtau_total_1h,dimensionless,True,691200,2539,0,688661
+2014,train,cldpress_top_high_1h,hPa,False,691200,162708,0,528492
+2014,train,cldpress_top_mid_high_1h,hPa,False,691200,251202,0,439998
+2014,train,cldpress_top_mid_low_1h,hPa,False,691200,243938,0,447262
+2014,train,cldpress_top_low_1h,hPa,False,691200,272446,0,418754
+2014,train,cldpress_top_total_1h,hPa,True,691200,2539,0,688661
+2014,train,cldpress_high_1h,hPa,False,691200,162708,0,528492
+2014,train,cldpress_mid_high_1h,hPa,False,691200,251202,0,439998
+2014,train,cldpress_mid_low_1h,hPa,False,691200,243938,0,447262
+2014,train,cldpress_low_1h,hPa,False,691200,272446,0,418754
+2014,train,cldpress_total_1h,hPa,False,691200,2539,0,688661
+2014,train,cldtemp_high_1h,K,False,691200,162708,0,528492
+2014,train,cldtemp_mid_high_1h,K,False,691200,251202,0,439998
+2014,train,cldtemp_mid_low_1h,K,False,691200,243938,0,447262
+2014,train,cldtemp_low_1h,K,False,691200,272446,0,418754
+2014,train,cldtemp_total_1h,K,False,691200,2539,0,688661
+2014,train,cldhght_high_1h,km,False,691200,162708,0,528492
+2014,train,cldhght_mid_high_1h,km,False,691200,251202,0,439998
+2014,train,cldhght_mid_low_1h,km,False,691200,243938,0,447262
+2014,train,cldhght_low_1h,km,False,691200,272446,0,418754
+2014,train,cldhght_total_1h,km,False,691200,2539,0,688661
+2014,train,cldphase_high_1h,dimensionless,False,691200,162708,0,528492
+2014,train,cldphase_mid_high_1h,dimensionless,False,691200,251202,0,439998
+2014,train,cldphase_mid_low_1h,dimensionless,False,691200,243938,0,447262
+2014,train,cldphase_low_1h,dimensionless,False,691200,272446,0,418754
+2014,train,cldphase_total_1h,dimensionless,False,691200,2539,0,688661
+2014,train,iwp_high_1h,g m-2,False,691200,163485,0,527715
+2014,train,iwp_mid_high_1h,g m-2,False,691200,293776,0,397424
+2014,train,iwp_mid_low_1h,g m-2,False,691200,566506,0,124694
+2014,train,iwp_low_1h,g m-2,False,691200,662638,0,28562
+2014,train,iwp_total_1h,g m-2,False,691200,104772,0,586428
+2014,train,lwp_high_1h,g m-2,False,691200,647211,0,43989
+2014,train,lwp_mid_high_1h,g m-2,False,691200,386234,0,304966
+2014,train,lwp_mid_low_1h,g m-2,False,691200,255905,0,435295
+2014,train,lwp_low_1h,g m-2,False,691200,273122,0,418078
+2014,train,lwp_total_1h,g m-2,False,691200,70079,0,621121
+2015,train,cldarea_high_1h,percent,False,691200,0,0,691200
+2015,train,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2015,train,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2015,train,cldarea_low_1h,percent,False,691200,141912,0,549288
+2015,train,cldarea_total_1h,percent,True,691200,0,0,691200
+2015,train,cldtau_high_1h,dimensionless,False,691200,169725,0,521475
+2015,train,cldtau_mid_high_1h,dimensionless,False,691200,257402,0,433798
+2015,train,cldtau_mid_low_1h,dimensionless,False,691200,241981,0,449219
+2015,train,cldtau_low_1h,dimensionless,False,691200,272928,0,418272
+2015,train,cldtau_total_1h,dimensionless,True,691200,3340,0,687860
+2015,train,cldpress_top_high_1h,hPa,False,691200,169725,0,521475
+2015,train,cldpress_top_mid_high_1h,hPa,False,691200,257402,0,433798
+2015,train,cldpress_top_mid_low_1h,hPa,False,691200,241981,0,449219
+2015,train,cldpress_top_low_1h,hPa,False,691200,272928,0,418272
+2015,train,cldpress_top_total_1h,hPa,True,691200,3340,0,687860
+2015,train,cldpress_high_1h,hPa,False,691200,169725,0,521475
+2015,train,cldpress_mid_high_1h,hPa,False,691200,257402,0,433798
+2015,train,cldpress_mid_low_1h,hPa,False,691200,241981,0,449219
+2015,train,cldpress_low_1h,hPa,False,691200,272928,0,418272
+2015,train,cldpress_total_1h,hPa,False,691200,3340,0,687860
+2015,train,cldtemp_high_1h,K,False,691200,169725,0,521475
+2015,train,cldtemp_mid_high_1h,K,False,691200,257402,0,433798
+2015,train,cldtemp_mid_low_1h,K,False,691200,241981,0,449219
+2015,train,cldtemp_low_1h,K,False,691200,272928,0,418272
+2015,train,cldtemp_total_1h,K,False,691200,3340,0,687860
+2015,train,cldhght_high_1h,km,False,691200,169725,0,521475
+2015,train,cldhght_mid_high_1h,km,False,691200,257402,0,433798
+2015,train,cldhght_mid_low_1h,km,False,691200,241981,0,449219
+2015,train,cldhght_low_1h,km,False,691200,272928,0,418272
+2015,train,cldhght_total_1h,km,False,691200,3340,0,687860
+2015,train,cldphase_high_1h,dimensionless,False,691200,169725,0,521475
+2015,train,cldphase_mid_high_1h,dimensionless,False,691200,257402,0,433798
+2015,train,cldphase_mid_low_1h,dimensionless,False,691200,241981,0,449219
+2015,train,cldphase_low_1h,dimensionless,False,691200,272928,0,418272
+2015,train,cldphase_total_1h,dimensionless,False,691200,3340,0,687860
+2015,train,iwp_high_1h,g m-2,False,691200,170790,0,520410
+2015,train,iwp_mid_high_1h,g m-2,False,691200,302927,0,388273
+2015,train,iwp_mid_low_1h,g m-2,False,691200,571449,0,119751
+2015,train,iwp_low_1h,g m-2,False,691200,661892,0,29308
+2015,train,iwp_total_1h,g m-2,False,691200,110533,0,580667
+2015,train,lwp_high_1h,g m-2,False,691200,644573,0,46627
+2015,train,lwp_mid_high_1h,g m-2,False,691200,386280,0,304920
+2015,train,lwp_mid_low_1h,g m-2,False,691200,253604,0,437596
+2015,train,lwp_low_1h,g m-2,False,691200,273607,0,417593
+2015,train,lwp_total_1h,g m-2,False,691200,67703,0,623497
+2016,train,cldarea_high_1h,percent,False,691200,0,0,691200
+2016,train,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2016,train,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2016,train,cldarea_low_1h,percent,False,691200,142226,0,548974
+2016,train,cldarea_total_1h,percent,True,691200,0,0,691200
+2016,train,cldtau_high_1h,dimensionless,False,691200,182134,0,509066
+2016,train,cldtau_mid_high_1h,dimensionless,False,691200,268596,0,422604
+2016,train,cldtau_mid_low_1h,dimensionless,False,691200,243585,0,447615
+2016,train,cldtau_low_1h,dimensionless,False,691200,257753,0,433447
+2016,train,cldtau_total_1h,dimensionless,True,691200,2859,0,688341
+2016,train,cldpress_top_high_1h,hPa,False,691200,182134,0,509066
+2016,train,cldpress_top_mid_high_1h,hPa,False,691200,268596,0,422604
+2016,train,cldpress_top_mid_low_1h,hPa,False,691200,243585,0,447615
+2016,train,cldpress_top_low_1h,hPa,False,691200,257753,0,433447
+2016,train,cldpress_top_total_1h,hPa,True,691200,2859,0,688341
+2016,train,cldpress_high_1h,hPa,False,691200,182134,0,509066
+2016,train,cldpress_mid_high_1h,hPa,False,691200,268596,0,422604
+2016,train,cldpress_mid_low_1h,hPa,False,691200,243585,0,447615
+2016,train,cldpress_low_1h,hPa,False,691200,257753,0,433447
+2016,train,cldpress_total_1h,hPa,False,691200,2859,0,688341
+2016,train,cldtemp_high_1h,K,False,691200,182134,0,509066
+2016,train,cldtemp_mid_high_1h,K,False,691200,268596,0,422604
+2016,train,cldtemp_mid_low_1h,K,False,691200,243585,0,447615
+2016,train,cldtemp_low_1h,K,False,691200,257753,0,433447
+2016,train,cldtemp_total_1h,K,False,691200,2859,0,688341
+2016,train,cldhght_high_1h,km,False,691200,182134,0,509066
+2016,train,cldhght_mid_high_1h,km,False,691200,268596,0,422604
+2016,train,cldhght_mid_low_1h,km,False,691200,243585,0,447615
+2016,train,cldhght_low_1h,km,False,691200,257753,0,433447
+2016,train,cldhght_total_1h,km,False,691200,2859,0,688341
+2016,train,cldphase_high_1h,dimensionless,False,691200,182134,0,509066
+2016,train,cldphase_mid_high_1h,dimensionless,False,691200,268596,0,422604
+2016,train,cldphase_mid_low_1h,dimensionless,False,691200,243585,0,447615
+2016,train,cldphase_low_1h,dimensionless,False,691200,257753,0,433447
+2016,train,cldphase_total_1h,dimensionless,False,691200,2859,0,688341
+2016,train,iwp_high_1h,g m-2,False,691200,182962,0,508238
+2016,train,iwp_mid_high_1h,g m-2,False,691200,314046,0,377154
+2016,train,iwp_mid_low_1h,g m-2,False,691200,523619,0,167581
+2016,train,iwp_low_1h,g m-2,False,691200,660550,0,30650
+2016,train,iwp_total_1h,g m-2,False,691200,125329,0,565871
+2016,train,lwp_high_1h,g m-2,False,691200,639244,0,51956
+2016,train,lwp_mid_high_1h,g m-2,False,691200,408308,0,282892
+2016,train,lwp_mid_low_1h,g m-2,False,691200,258042,0,433158
+2016,train,lwp_low_1h,g m-2,False,691200,258570,0,432630
+2016,train,lwp_total_1h,g m-2,False,691200,60900,0,630300
+2017,development,cldarea_high_1h,percent,False,691200,0,0,691200
+2017,development,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2017,development,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2017,development,cldarea_low_1h,percent,False,691200,142000,0,549200
+2017,development,cldarea_total_1h,percent,True,691200,0,0,691200
+2017,development,cldtau_high_1h,dimensionless,False,691200,299784,0,391416
+2017,development,cldtau_mid_high_1h,dimensionless,False,691200,243678,0,447522
+2017,development,cldtau_mid_low_1h,dimensionless,False,691200,218299,0,472901
+2017,development,cldtau_low_1h,dimensionless,False,691200,252301,0,438899
+2017,development,cldtau_total_1h,dimensionless,True,691200,5010,0,686190
+2017,development,cldpress_top_high_1h,hPa,False,691200,299784,0,391416
+2017,development,cldpress_top_mid_high_1h,hPa,False,691200,243678,0,447522
+2017,development,cldpress_top_mid_low_1h,hPa,False,691200,218299,0,472901
+2017,development,cldpress_top_low_1h,hPa,False,691200,252301,0,438899
+2017,development,cldpress_top_total_1h,hPa,True,691200,5010,0,686190
+2017,development,cldpress_high_1h,hPa,False,691200,299784,0,391416
+2017,development,cldpress_mid_high_1h,hPa,False,691200,243678,0,447522
+2017,development,cldpress_mid_low_1h,hPa,False,691200,218299,0,472901
+2017,development,cldpress_low_1h,hPa,False,691200,252301,0,438899
+2017,development,cldpress_total_1h,hPa,False,691200,5010,0,686190
+2017,development,cldtemp_high_1h,K,False,691200,299784,0,391416
+2017,development,cldtemp_mid_high_1h,K,False,691200,243678,0,447522
+2017,development,cldtemp_mid_low_1h,K,False,691200,218299,0,472901
+2017,development,cldtemp_low_1h,K,False,691200,252301,0,438899
+2017,development,cldtemp_total_1h,K,False,691200,5010,0,686190
+2017,development,cldhght_high_1h,km,False,691200,299784,0,391416
+2017,development,cldhght_mid_high_1h,km,False,691200,243678,0,447522
+2017,development,cldhght_mid_low_1h,km,False,691200,218299,0,472901
+2017,development,cldhght_low_1h,km,False,691200,252301,0,438899
+2017,development,cldhght_total_1h,km,False,691200,5010,0,686190
+2017,development,cldphase_high_1h,dimensionless,False,691200,299784,0,391416
+2017,development,cldphase_mid_high_1h,dimensionless,False,691200,243678,0,447522
+2017,development,cldphase_mid_low_1h,dimensionless,False,691200,218299,0,472901
+2017,development,cldphase_low_1h,dimensionless,False,691200,252301,0,438899
+2017,development,cldphase_total_1h,dimensionless,False,691200,5010,0,686190
+2017,development,iwp_high_1h,g m-2,False,691200,306865,0,384335
+2017,development,iwp_mid_high_1h,g m-2,False,691200,308447,0,382753
+2017,development,iwp_mid_low_1h,g m-2,False,691200,490478,0,200722
+2017,development,iwp_low_1h,g m-2,False,691200,655423,0,35777
+2017,development,iwp_total_1h,g m-2,False,691200,207489,0,483711
+2017,development,lwp_high_1h,g m-2,False,691200,618496,0,72704
+2017,development,lwp_mid_high_1h,g m-2,False,691200,326383,0,364817
+2017,development,lwp_mid_low_1h,g m-2,False,691200,228100,0,463100
+2017,development,lwp_low_1h,g m-2,False,691200,252718,0,438482
+2017,development,lwp_total_1h,g m-2,False,691200,38205,0,652995
+2018,development,cldarea_high_1h,percent,False,691200,0,0,691200
+2018,development,cldarea_mid_high_1h,percent,False,691200,0,0,691200
+2018,development,cldarea_mid_low_1h,percent,False,691200,0,0,691200
+2018,development,cldarea_low_1h,percent,False,691200,142517,0,548683
+2018,development,cldarea_total_1h,percent,True,691200,0,0,691200
+2018,development,cldtau_high_1h,dimensionless,False,691200,256122,0,435078
+2018,development,cldtau_mid_high_1h,dimensionless,False,691200,196076,0,495124
+2018,development,cldtau_mid_low_1h,dimensionless,False,691200,180094,0,511106
+2018,development,cldtau_low_1h,dimensionless,False,691200,277313,0,413887
+2018,development,cldtau_total_1h,dimensionless,True,691200,4711,0,686489
+2018,development,cldpress_top_high_1h,hPa,False,691200,256122,0,435078
+2018,development,cldpress_top_mid_high_1h,hPa,False,691200,196076,0,495124
+2018,development,cldpress_top_mid_low_1h,hPa,False,691200,180094,0,511106
+2018,development,cldpress_top_low_1h,hPa,False,691200,277313,0,413887
+2018,development,cldpress_top_total_1h,hPa,True,691200,4711,0,686489
+2018,development,cldpress_high_1h,hPa,False,691200,256122,0,435078
+2018,development,cldpress_mid_high_1h,hPa,False,691200,196076,0,495124
+2018,development,cldpress_mid_low_1h,hPa,False,691200,180094,0,511106
+2018,development,cldpress_low_1h,hPa,False,691200,277313,0,413887
+2018,development,cldpress_total_1h,hPa,False,691200,4711,0,686489
+2018,development,cldtemp_high_1h,K,False,691200,256122,0,435078
+2018,development,cldtemp_mid_high_1h,K,False,691200,196076,0,495124
+2018,development,cldtemp_mid_low_1h,K,False,691200,180094,0,511106
+2018,development,cldtemp_low_1h,K,False,691200,277313,0,413887
+2018,development,cldtemp_total_1h,K,False,691200,4711,0,686489
+2018,development,cldhght_high_1h,km,False,691200,256122,0,435078
+2018,development,cldhght_mid_high_1h,km,False,691200,196076,0,495124
+2018,development,cldhght_mid_low_1h,km,False,691200,180094,0,511106
+2018,development,cldhght_low_1h,km,False,691200,277313,0,413887
+2018,development,cldhght_total_1h,km,False,691200,4711,0,686489
+2018,development,cldphase_high_1h,dimensionless,False,691200,256122,0,435078
+2018,development,cldphase_mid_high_1h,dimensionless,False,691200,196076,0,495124
+2018,development,cldphase_mid_low_1h,dimensionless,False,691200,180094,0,511106
+2018,development,cldphase_low_1h,dimensionless,False,691200,277313,0,413887
+2018,development,cldphase_total_1h,dimensionless,False,691200,4711,0,686489
+2018,development,iwp_high_1h,g m-2,False,691200,264323,0,426877
+2018,development,iwp_mid_high_1h,g m-2,False,691200,266890,0,424310
+2018,development,iwp_mid_low_1h,g m-2,False,691200,481513,0,209687
+2018,development,iwp_low_1h,g m-2,False,691200,659772,0,31428
+2018,development,iwp_total_1h,g m-2,False,691200,163166,0,528034
+2018,development,lwp_high_1h,g m-2,False,691200,609744,0,81456
+2018,development,lwp_mid_high_1h,g m-2,False,691200,296338,0,394862
+2018,development,lwp_mid_low_1h,g m-2,False,691200,189888,0,501312
+2018,development,lwp_low_1h,g m-2,False,691200,277602,0,413598
+2018,development,lwp_total_1h,g m-2,False,691200,44993,0,646207
+2019,holdout,cldarea_total_1h,percent,True,691200,0,0,691200
+2019,holdout,cldtau_total_1h,dimensionless,True,691200,6084,0,685116
+2019,holdout,cldpress_top_total_1h,hPa,True,691200,6084,0,685116
+2020,holdout,cldarea_total_1h,percent,True,691200,0,0,691200
+2020,holdout,cldtau_total_1h,dimensionless,True,691200,3923,0,687277
+2020,holdout,cldpress_top_total_1h,hPa,True,691200,3923,0,687277
+2021,holdout,cldarea_total_1h,percent,True,691200,0,0,691200
+2021,holdout,cldtau_total_1h,dimensionless,True,691200,2623,0,688577
+2021,holdout,cldpress_top_total_1h,hPa,True,691200,2623,0,688577

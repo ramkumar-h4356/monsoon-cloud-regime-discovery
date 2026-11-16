@@ -1,0 +1,19 @@
+{
+  "status": "sealed",
+  "created_utc": "2026-11-16T13:14:38.514266+00:00",
+  "holdout_accessed": false,
+  "files": {
+    "cluster_selection.csv": "05864e4a5719626f447f1e52ea93202c671f49291b4e91230cf6c6df20365f82",
+    "configuration.json": "df542bcbc217fce21559fd3422d0e1e472bb9516b73deac979f7b7a728f49796",
+    "feature_definitions.json": "5fb464072058033d4ce6d5dbaac03f465f66b50eef7d582986d9060094faff05",
+    "frozen.json": "d96ea5ccdb46cda546438f2a433ed08c51abf04a307849672afb5b0a08806f4d",
+    "initialization_stability.csv": "c50a1bd9c31cac3e8c81274edd7bc5b6f8c908651e813587663ec7b9139c6c5c",
+    "pca_loadings.csv": "1787e50d6b02fa6c14108b2a2b0e70546ed5657fb48c04868be8efd7504cfeb3",
+    "pca_reconstruction.csv": "eb350fd9dae2834c00ff927d6e9b5f02a27b642dd79942c713d6c73c2471e2fe",
+    "pca_variance.csv": "c36bf689398ffa09290f8a06bd0a613f72079cf9f4aa5305e07a18a8d5845211",
+    "protocol.md": "3946a23b90df372494b754b8da957d45a0c2a5ba47301cf3d410a2f249e997a4",
+    "sampling_stability.csv": "c6942613e7d99ca81289cc7c6143ae461e9cb7f9c615ca2ec74fe0843b6f3c37",
+    "stage2_configuration.json": "60c724c6dffb25c8c5082623a7834163d8f16f546d8e0c853e26431eb7ca10fa",
+    "training_reference.npz": "5efc527b4655a9b66c4c16cf1d769b2258f087e8442f4f02115eea39225721cf"
+  }
+}

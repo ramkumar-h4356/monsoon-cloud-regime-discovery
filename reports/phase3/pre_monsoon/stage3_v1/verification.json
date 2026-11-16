@@ -1,0 +1,13 @@
+{
+  "status": "verified",
+  "output_hashes": 36,
+  "sample_predictions": 30000,
+  "population_rows": 2073600,
+  "annual_files": 3,
+  "model_unchanged": true,
+  "existing_artifacts_preserved": true,
+  "thresholds_reproduced_from_training_only": true,
+  "nested_sampling_reproduced": true,
+  "frozen_seal_sha256": "ed513aff2e5f984674415b7f93b260afbad78b0cd66327bb8e1414a6a172a5cf",
+  "verifier_sha256": "061b13a67bea6dc0952b98ea1dc058a3bb0106dd53032ab7a4c66c123fc3c7f2"
+}

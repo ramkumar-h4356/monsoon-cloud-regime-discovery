@@ -1,0 +1,21 @@
+{
+  "status": "verified",
+  "run_id": "stage3_v1",
+  "unique_files_hashed": 277,
+  "manifest_result_counts": {
+    "stage1_v1": 20,
+    "stage2_v1": 84,
+    "stage2_supplementary": 16,
+    "stage3": 36
+  },
+  "sealed_files": 12,
+  "frozen_protected_files": 198,
+  "remediation_baseline_files": 251,
+  "model_sha256": "4c26f58fcc842aa4c7da5d6547225a1d9ae25171f29f083014c31e4849233569",
+  "historical_results_unchanged": true,
+  "netcdf_arrays_opened": false,
+  "model_loaded": false,
+  "estimators_fitted": false,
+  "evaluation_rerun": false,
+  "qualification": "Pre-access freeze covers evaluation/model-analysis code. Later presentation and completion helpers have separate post-evaluation hashes."
+}

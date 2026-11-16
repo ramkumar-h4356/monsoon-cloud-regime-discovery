@@ -1,0 +1,7 @@
+year,split,cluster,runs,median_hours,p90_hours,boundary_censored
+2019,holdout,0,31530,5.0,26.0,1070
+2019,holdout,1,28899,4.0,23.0,842
+2020,holdout,0,33406,5.0,22.0,959
+2020,holdout,1,31442,5.0,27.0,961
+2021,holdout,0,35745,4.0,20.0,618
+2021,holdout,1,34842,4.0,24.0,1295

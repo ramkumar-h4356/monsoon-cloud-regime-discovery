@@ -1,0 +1,10 @@
+perplexity,tag_a,tag_b,neighbor_overlap_mean
+10,baseline_p10_s42,baseline_p10_s73,1.0
+10,baseline_p10_s42,baseline_p10_s101,1.0
+10,baseline_p10_s73,baseline_p10_s101,1.0
+30,baseline_p30_s42,baseline_p30_s73,1.0
+30,baseline_p30_s42,baseline_p30_s101,1.0
+30,baseline_p30_s73,baseline_p30_s101,1.0
+100,baseline_p100_s42,baseline_p100_s73,1.0
+100,baseline_p100_s42,baseline_p100_s101,1.0
+100,baseline_p100_s73,baseline_p100_s101,1.0

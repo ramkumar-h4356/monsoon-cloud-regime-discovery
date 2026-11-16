@@ -1,0 +1,7 @@
+perplexity,tag_a,tag_b,neighbor_overlap_mean
+30,random_init_p30_s42,random_init_p30_s73,0.9396666666666668
+30,random_init_p30_s42,random_init_p30_s101,0.7707999999999999
+30,random_init_p30_s73,random_init_p30_s101,0.7757333333333334
+100,random_init_p100_s42,random_init_p100_s73,0.9432
+100,random_init_p100_s42,random_init_p100_s101,0.9899333333333334
+100,random_init_p100_s73,random_init_p100_s101,0.9429333333333334

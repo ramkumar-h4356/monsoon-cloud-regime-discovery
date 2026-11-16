@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "tests_passed": 25,
+  "model_refitted": false,
+  "tuned": false,
+  "code_frozen_before_holdout": true,
+  "freeze_seal_sha256": "ed513aff2e5f984674415b7f93b260afbad78b0cd66327bb8e1414a6a172a5cf",
+  "evaluation_manifest_sha256": "78a193240321fc242eb7c74110069ae9b0e37dc4ad53af62605824a617d2e6a7",
+  "verification_sha256": "e1654fdf1c51a976130a8f04d524881b96edbbaf2b85e3ecc5c23e87f53d0241",
+  "test_log_sha256": "22c96835b476bf482f85cc023571d97efa0a2bd9689ab1c6116f5d0f2dc1604f",
+  "report_sha256": "9dfbfb66306a9e7be1ba569a2af54e95c2e1858c3ca282bd6d2e0cb37b6f8bd0",
+  "presentation_manifest_sha256": "f22681c955150fe51e176732ab50f709c57cf041198a108ba88d6ffb126e2194",
+  "builder_sha256": "facd662cf0eebb85930bbca852ea99da3ad34155240d54799fad82e52aa575be",
+  "earlier_artifacts_preserved": true
+}

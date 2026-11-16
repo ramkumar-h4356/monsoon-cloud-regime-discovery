@@ -1,0 +1,4 @@
+year,total,eligible,clear,invalid_or_missing_area,incomplete_cloudy,profile_sample,metric_sample,pooled_sample,sample_budget_met
+2019,691200,685116,6084,0,0,10000,3000,1000,True
+2020,691200,687277,3923,0,0,10000,3000,1000,True
+2021,691200,688577,2623,0,0,10000,3000,1000,True

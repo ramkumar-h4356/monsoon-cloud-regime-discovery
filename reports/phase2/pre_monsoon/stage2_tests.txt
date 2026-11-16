@@ -1,0 +1,87 @@
+test_dimension_order_and_ids (test_stage1.FeatureTests.test_dimension_order_and_ids) ... ok
+test_fill_and_invalid_values_are_not_zero (test_stage1.FeatureTests.test_fill_and_invalid_values_are_not_zero) ... ok
+test_masks_and_stateless_transforms (test_stage1.FeatureTests.test_masks_and_stateless_transforms) ... ok
+test_registry_and_season_compatibility (test_stage1.FeatureTests.test_registry_and_season_compatibility) ... ok
+test_sampling_reproducibility_and_empty_population (test_stage1.FeatureTests.test_sampling_reproducibility_and_empty_population) ... ok
+test_schema_rejects_units_and_hour_duplicates (test_stage1.FeatureTests.test_schema_rejects_units_and_hour_duplicates) ... ok
+test_temporal_disjointness (test_stage1.FeatureTests.test_temporal_disjointness) ... ok
+test_full_run_preservation_holdout_isolation_and_no_overwrite (test_stage1.IntegrationTests.test_full_run_preservation_holdout_isolation_and_no_overwrite) ... Preparing 2010 (train)
+Preparing 2011 (train)
+Preparing 2012 (train)
+Preparing 2013 (train)
+Preparing 2014 (train)
+Preparing 2015 (train)
+Preparing 2016 (train)
+Preparing 2017 (development)
+Preparing 2018 (development)
+Preparing 2019 (holdout)
+Preparing 2020 (holdout)
+Preparing 2021 (holdout)
+             total  eligible_cloudy  clear  invalid_or_missing_area  incomplete_cloudy  sampled
+split                                                                                          
+train        20160            20132      7                        7                 14      140
+development   5760             5752      2                        2                  4       40
+holdout       8640             8628      3                        3                  6        0
+Preparing 2010 (train)
+Preparing 2011 (train)
+Preparing 2012 (train)
+Preparing 2013 (train)
+Preparing 2014 (train)
+Preparing 2015 (train)
+Preparing 2016 (train)
+Preparing 2017 (development)
+Preparing 2018 (development)
+Preparing 2019 (holdout)
+Preparing 2020 (holdout)
+Preparing 2021 (holdout)
+             total  eligible_cloudy  clear  invalid_or_missing_area  incomplete_cloudy  sampled
+split                                                                                          
+train        20160            20132      7                        7                 14      140
+development   5760             5752      2                        2                  4       40
+holdout       8640             8637      0                        0                  3        0
+ok
+test_synthetic_end_to_end_without_any_holdout_files (test_stage2.Stage2IntegrationTests.test_synthetic_end_to_end_without_any_holdout_files) ... K-Means k=2: main fit, metrics and initialization stability
+K-Means k=3: main fit, metrics and initialization stability
+Year-bootstrap seed=307, k=2
+Year-bootstrap seed=307, k=3
+Year-bootstrap seed=401, k=2
+Year-bootstrap seed=401, k=3
+t-SNE baseline_p5_s42
+t-SNE baseline_p5_s73
+t-SNE baseline_p10_s42
+t-SNE baseline_p10_s73
+Population diagnostics 2010 (train)
+Population diagnostics 2011 (train)
+Population diagnostics 2012 (train)
+Population diagnostics 2013 (train)
+Population diagnostics 2014 (train)
+Population diagnostics 2015 (train)
+Population diagnostics 2016 (train)
+Population diagnostics 2017 (development)
+Population diagnostics 2018 (development)
+{
+  "status": "complete",
+  "selected_n_components": 1,
+  "selected_k": 3,
+  "tsne": {
+    "display_perplexity": 10.0,
+    "mean_original_trust": 0.97934375,
+    "sample_size": 120,
+    "pca_dimensions": 2,
+    "experiments": 4
+  }
+}
+ok
+test_holdout_paths_are_forbidden (test_stage2.Stage2UnitTests.test_holdout_paths_are_forbidden) ... ok
+test_metrics_and_permutation_stability (test_stage2.Stage2UnitTests.test_metrics_and_permutation_stability) ... ok
+test_pca_criteria_and_full_dimension_distances (test_stage2.Stage2UnitTests.test_pca_criteria_and_full_dimension_distances) ... ok
+test_persistence_breaks_on_clear_and_never_crosses_years (test_stage2.Stage2UnitTests.test_persistence_breaks_on_clear_and_never_crosses_years) ... ok
+test_physical_profiles_keep_retrieval_denominators (test_stage2.Stage2UnitTests.test_physical_profiles_keep_retrieval_denominators) ... ok
+test_selection_does_not_silently_relax (test_stage2.Stage2UnitTests.test_selection_does_not_silently_relax) ... ok
+test_training_only_fit_and_imputation (test_stage2.Stage2UnitTests.test_training_only_fit_and_imputation) ... ok
+test_year_blocks_and_year_balanced_sampling (test_stage2.Stage2UnitTests.test_year_blocks_and_year_balanced_sampling) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 204.449s
+
+OK

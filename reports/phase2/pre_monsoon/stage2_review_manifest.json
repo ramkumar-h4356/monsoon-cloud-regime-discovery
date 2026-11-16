@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "main_run_manifest_sha256": "d4ef5a845ef0f39ee2796f0b12524ba8e03b3fdf64d17384f6eeadb1cb24ce23",
+  "supplementary_manifest_sha256": "34d5332651f0b77d7ac5d8bbd0b4bb64b026b15920b31f36c3b1c857f232a25e",
+  "review_sha256": "8cf81200efb05ef22206108878c14921d14e43df588d1c707cf87682a2a4b81a",
+  "review_builder_sha256": "cf6b952ac907911d36766325e7a31bd03ad8b6ed5f2bbc2e6412a55c1cab22db",
+  "tests": {
+    "reports\\phase2\\pre_monsoon\\stage2_tests.txt": "e7b1916dd055916bd249667a5572c05f24f88ba59ed1376f5163c96781b08220",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_tests.txt": "788ccf1bf7d91d0d43e9ebc027643fcb12fd5b6ede094f7b5a78fe23017d0bd3"
+  },
+  "passed_tests": 19,
+  "holdout_accessed": false
+}

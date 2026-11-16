@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "config": {
+    "base_run_id": "stage2_v1",
+    "perplexities": [
+      30,
+      100
+    ],
+    "seeds": [
+      42,
+      73,
+      101
+    ],
+    "max_iter": 1500,
+    "early_exaggeration": 12,
+    "fixed_learning_rate": 62.5,
+    "controlled_exaggeration": 4,
+    "controlled_perplexity": 30,
+    "controlled_seed": 42,
+    "threads": 1,
+    "reason": "PCA-initialized seed repetitions were deterministic. Probe random starts and isolate exaggeration from automatic learning-rate coupling. No change to PCA/K-Means selection."
+  },
+  "code_sha256": "501917a5f8210bab228b13389e16137f5682ce1bcb09e42a0e7cc6c6a26abae8",
+  "config_sha256": "c90b42c7713d58acc6fb6a7846366a6484f4261d6d841b41af3fccebcfaf992f",
+  "base_manifest_sha256": "d4ef5a845ef0f39ee2796f0b12524ba8e03b3fdf64d17384f6eeadb1cb24ce23",
+  "inputs": [
+    {
+      "year": 2010,
+      "split": "train",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2010_pre_monsoon_prepared.nc",
+      "sha256": "1241217ef848bb3e753cfa83b56b19ba93be932446533250aabe00b822bcf4e1"
+    },
+    {
+      "year": 2011,
+      "split": "train",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2011_pre_monsoon_prepared.nc",
+      "sha256": "a568e22b0627eef734f468edf58dd308856b85cd9b07adf6a151593111340df4"
+    },
+    {
+      "year": 2012,
+      "split": "train",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2012_pre_monsoon_prepared.nc",
+      "sha256": "ae10a1c1014e71b203dfeab39094d0d914eee996c97ff4dc6f1ded8868bb9e8f"
+    },
+    {
+      "year": 2013,
+      "split": "train",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2013_pre_monsoon_prepared.nc",
+      "sha256": "8a8362c1fc55d3f5d700f31a71f9091a7508ecfebe01c2e240df6b96e91c406e"
+    },
+    {
+      "year": 2014,
+      "split": "train",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2014_pre_monsoon_prepared.nc",
+      "sha256": "37eba8d669c22ccd8ad9ad30b44b697dc8b87738c12729ed6869b171b31c1279"
+    },
+    {
+      "year": 2015,
+      "split": "train",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2015_pre_monsoon_prepared.nc",
+      "sha256": "41c7050deb6e04a164d682fdb77df51c9dc97fe16c10d47ccdedb5dc7fd7a916"
+    },
+    {
+      "year": 2016,
+      "split": "train",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2016_pre_monsoon_prepared.nc",
+      "sha256": "54bd47c460d8affb7a9d6ee4b47fc35af0b6576e3adf7004609d02a22f1ce1d2"
+    },
+    {
+      "year": 2017,
+      "split": "development",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2017_pre_monsoon_prepared.nc",
+      "sha256": "3f06808f00ff7d7880e9b7a75096388e7669f652a961e1241a7577f3adfaa42f"
+    },
+    {
+      "year": 2018,
+      "split": "development",
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2018_pre_monsoon_prepared.nc",
+      "sha256": "d7a7827f6582cd64546355e568367eb295d5afd3a11fc30c3f35b924179107a7"
+    }
+  ],
+  "fitted_preprocessing": false,
+  "changed_cluster_selection": false,
+  "holdout_accessed": false,
+  "sample_size": 3000,
+  "experiments": 7,
+  "output_sha256": {
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\controlled_exaggeration_p30_s42.csv": "b35d0e83be35a9dbca1567147c297e7ee9f4202abd5fbb2086795f9f38bae484",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p100_s101.csv": "9e227680b8b4f27535f5071925f55b0f7649408e8a63f362d955c973c06618e9",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p100_s42.csv": "616693b8a439dbff0b8888390610a99b48942fdb369ae7ba5b06edef4ef0a88f",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p100_s73.csv": "09bfecc3527fb194176892950b843dccbe4a4d585abcec9ff84914032f9d6e16",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p30_s101.csv": "4f5f469100c1292666c1512f9f87f5b16014109848bcd25a1339ee9b562a3e58",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p30_s42.csv": "97f1d6cd86e065f16ef68d7145d2cce5e0462d4b39a73c3d8618693a87cc57c7",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p30_s73.csv": "6cf86c72c13a7622726675cfe95f51ab01b6640c2047604948de2d04e41c1985",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\seed_stability.csv": "a6b4d5b43aee7cec9ec6ad0d3ded13d752342b29a1a7ec4ee9e4257d18b5d7a1",
+    "reports\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\tsne_metrics.csv": "76f64a25edbb2b219b37548080de8340d96cc2206d8c2c394281ae916c7cb9ac",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\controlled_exaggeration_p30_s42.png": "5a87bdecb68bd77c74a2017b0155aa5bb74f8ad11d8fa174332cefe5ae0898c5",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p100_s101.png": "1d1ce4f8ce4dd0b11590ce55e06b76e88414754444398864616633358d147a06",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p100_s42.png": "5c81cdc6a9c29f2bc13a77ffeb4ab05da61aa4f43b25befdc8f0f4d1af8b9ca6",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p100_s73.png": "880967ab3df3a9a81d388e34234dcb5bf617e4930678c4e8c163eef9df9dbfc3",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p30_s101.png": "db5bb1e15de73503985a5b6b0be68b90c03c4392c65968f47ba077484324ad1c",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p30_s42.png": "7dc5a4ee632ea4e92ecc66ef197d57d1b77c85f13dd742aedc8467965a3427b2",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_tsne_sensitivity_v1\\random_init_p30_s73.png": "ee2fe4899cfa8916320c8df6dd84e46ce39803abbb1afced16bdd6bc9b6a6040"
+  }
+}

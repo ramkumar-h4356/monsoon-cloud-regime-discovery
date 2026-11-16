@@ -1,0 +1,12 @@
+{
+  "status": "authorized_after_seal",
+  "created_utc": "2026-11-16T13:15:35.642362+00:00",
+  "seal_sha256": "ed513aff2e5f984674415b7f93b260afbad78b0cd66327bb8e1414a6a172a5cf",
+  "years": [
+    2019,
+    2020,
+    2021
+  ],
+  "model_sha256": "4c26f58fcc842aa4c7da5d6547225a1d9ae25171f29f083014c31e4849233569",
+  "fitting_policy": "Use the existing Stage 2 training-only bundle unchanged; no 2010-2018 refit or holdout adaptation."
+}

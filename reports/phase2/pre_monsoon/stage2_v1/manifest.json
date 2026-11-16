@@ -1,0 +1,401 @@
+{
+  "status": "complete",
+  "stage": 2,
+  "season": "pre_monsoon",
+  "run_id": "stage2_v1",
+  "created_utc": "2026-11-16T12:34:27.945368+00:00",
+  "config": {
+    "season": "pre_monsoon",
+    "stage1_run_id": "stage1_v1",
+    "seed": 42,
+    "threads": 1,
+    "pca_variance_target": 0.95,
+    "pca_max_development_feature_rmse": 0.25,
+    "k_values": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "kmeans_n_init": 30,
+    "kmeans_max_iter": 500,
+    "kmeans_tolerance": 0.0001,
+    "initialization_seeds": [
+      42,
+      73,
+      101,
+      137,
+      211
+    ],
+    "bootstrap_seeds": [
+      307,
+      401,
+      503,
+      601,
+      701
+    ],
+    "bootstrap_n_init": 10,
+    "metric_sample_size": 3000,
+    "minimum_cluster_fraction": 0.01,
+    "minimum_stability_ari": 0.8,
+    "silhouette_tolerance": 0.02,
+    "tsne_sample_size": 3000,
+    "tsne_seeds": [
+      42,
+      73,
+      101
+    ],
+    "tsne_perplexities": [
+      10,
+      30,
+      100
+    ],
+    "tsne_max_iter": 1500,
+    "tsne_trust_sample_size": 1000,
+    "trust_neighbors": [
+      5,
+      15,
+      30
+    ],
+    "tsne_sensitivities": [
+      {
+        "name": "learning_rate_200",
+        "learning_rate": 200,
+        "early_exaggeration": 12,
+        "init": "pca"
+      },
+      {
+        "name": "exaggeration_4",
+        "learning_rate": "auto",
+        "early_exaggeration": 4,
+        "init": "pca"
+      },
+      {
+        "name": "random_init",
+        "learning_rate": "auto",
+        "early_exaggeration": 12,
+        "init": "random"
+      }
+    ],
+    "prediction_batch_size": 100000,
+    "profile_variables": [
+      "cldarea_total_1h",
+      "cldtau_total_1h",
+      "cldpress_top_total_1h",
+      "cldpress_total_1h",
+      "cldtemp_total_1h",
+      "cldhght_total_1h",
+      "cldphase_total_1h",
+      "iwp_total_1h",
+      "lwp_total_1h",
+      "cldarea_high_1h",
+      "cldarea_mid_high_1h",
+      "cldarea_mid_low_1h",
+      "cldarea_low_1h"
+    ]
+  },
+  "contract_sha256": "c4abca858f79f1ba2e3dc1018ba6ee20c64166cd99c1fafa55ae7f5a3e0883ff",
+  "stage1_verified_artifacts": [
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2010_pre_monsoon_prepared.nc",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2011_pre_monsoon_prepared.nc",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2012_pre_monsoon_prepared.nc",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2013_pre_monsoon_prepared.nc",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2014_pre_monsoon_prepared.nc",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2015_pre_monsoon_prepared.nc",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2016_pre_monsoon_prepared.nc",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2017_pre_monsoon_prepared.nc",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2018_pre_monsoon_prepared.nc",
+    "reports\\phase2\\pre_monsoon\\stage1_v1\\feature_decisions.csv",
+    "reports\\phase2\\pre_monsoon\\stage1_v1\\feature_missingness.csv",
+    "reports\\phase2\\pre_monsoon\\stage1_v1\\phase_iwp_audit.csv",
+    "reports\\phase2\\pre_monsoon\\stage1_v1\\retention_spatial.csv",
+    "reports\\phase2\\pre_monsoon\\stage1_v1\\retention_strata.csv",
+    "reports\\phase2\\pre_monsoon\\stage1_v1\\sample_manifest.csv",
+    "reports\\phase2\\pre_monsoon\\stage1_v1\\year_split_counts.csv",
+    "reports\\phase2\\pre_monsoon\\stage1_v1\\report.md"
+  ],
+  "stage1_manifest_sha256": "bb134ee6940f3eaf7b0465df445c81dfeb67cc31f594d0271d36ec8390662191",
+  "fit_years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016
+  ],
+  "development_years": [
+    2017,
+    2018
+  ],
+  "holdout_accessed": false,
+  "holdout_evaluated": false,
+  "accessed_inputs": [
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2010_pre_monsoon_prepared.nc",
+      "sha256": "1241217ef848bb3e753cfa83b56b19ba93be932446533250aabe00b822bcf4e1",
+      "year": 2010,
+      "split": "train"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2010_pre_monsoon.nc",
+      "sha256": "936bcde0138d250376967d8d98779b351fb3315b6415358337071cebd494869d",
+      "year": 2010,
+      "split": "train"
+    },
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2011_pre_monsoon_prepared.nc",
+      "sha256": "a568e22b0627eef734f468edf58dd308856b85cd9b07adf6a151593111340df4",
+      "year": 2011,
+      "split": "train"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2011_pre_monsoon.nc",
+      "sha256": "bc2393f24c4a021d20ec3462cb0718e109c009fe39f5db22b78a5c678d7428c0",
+      "year": 2011,
+      "split": "train"
+    },
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2012_pre_monsoon_prepared.nc",
+      "sha256": "ae10a1c1014e71b203dfeab39094d0d914eee996c97ff4dc6f1ded8868bb9e8f",
+      "year": 2012,
+      "split": "train"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2012_pre_monsoon.nc",
+      "sha256": "787035da51339f18740c88c995aa6b8630e7fd4b87a2dca11109cec236d12dd8",
+      "year": 2012,
+      "split": "train"
+    },
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2013_pre_monsoon_prepared.nc",
+      "sha256": "8a8362c1fc55d3f5d700f31a71f9091a7508ecfebe01c2e240df6b96e91c406e",
+      "year": 2013,
+      "split": "train"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2013_pre_monsoon.nc",
+      "sha256": "55b31d938fb5d2f13aa92e6caddc94de42e2526601d8ccd2629b06fd14d2247d",
+      "year": 2013,
+      "split": "train"
+    },
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2014_pre_monsoon_prepared.nc",
+      "sha256": "37eba8d669c22ccd8ad9ad30b44b697dc8b87738c12729ed6869b171b31c1279",
+      "year": 2014,
+      "split": "train"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2014_pre_monsoon.nc",
+      "sha256": "1b12faf36159d23486e9eb7e121c832d93eb365b133f93b62aa2c982b5d0c7d4",
+      "year": 2014,
+      "split": "train"
+    },
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2015_pre_monsoon_prepared.nc",
+      "sha256": "41c7050deb6e04a164d682fdb77df51c9dc97fe16c10d47ccdedb5dc7fd7a916",
+      "year": 2015,
+      "split": "train"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2015_pre_monsoon.nc",
+      "sha256": "99c1d12951714c86cc3eb7b3e9eb4e2a358e7bc6c1e4246aac76cee23fb3789d",
+      "year": 2015,
+      "split": "train"
+    },
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2016_pre_monsoon_prepared.nc",
+      "sha256": "54bd47c460d8affb7a9d6ee4b47fc35af0b6576e3adf7004609d02a22f1ce1d2",
+      "year": 2016,
+      "split": "train"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2016_pre_monsoon.nc",
+      "sha256": "5df2febd668f32d756e8c5a8ef99f378ed2f9299d9c33ded68f656af377c09ac",
+      "year": 2016,
+      "split": "train"
+    },
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2017_pre_monsoon_prepared.nc",
+      "sha256": "3f06808f00ff7d7880e9b7a75096388e7669f652a961e1241a7577f3adfaa42f",
+      "year": 2017,
+      "split": "development"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2017_pre_monsoon.nc",
+      "sha256": "710d90625fa7d774f5007478ea946c61e2cdd573c0d6d30ec20768c769d31d74",
+      "year": 2017,
+      "split": "development"
+    },
+    {
+      "path": "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage1_v1\\CERES_2018_pre_monsoon_prepared.nc",
+      "sha256": "d7a7827f6582cd64546355e568367eb295d5afd3a11fc30c3f35b924179107a7",
+      "year": 2018,
+      "split": "development"
+    },
+    {
+      "path": "data\\interim\\ceres_seasonal\\pre_monsoon\\CERES_2018_pre_monsoon.nc",
+      "sha256": "3035fb5153182c20a7d8d720459597293b97678f67cee61e889274aea33657a7",
+      "year": 2018,
+      "split": "development"
+    }
+  ],
+  "git": {
+    "commit": "7898cfffbe6886652ec894a894a3955ba57a5977",
+    "status": "## feature/pre-monsoon-analysis...origin/feature/pre-monsoon-analysis\n?? config/\n?? docs/\n?? reports/data_quality/inspection_report_backup.txt\n?? reports/phase2/\n?? requirements-stage1.txt\n?? requirements-stage2.txt\n?? src/03_extraction/create_seasonal_datasets_backup.py\n?? src/06_feature_engineering/\n?? src/07_clustering/\n?? src/08_evaluation/\n?? src/09_visualization/pre_monsoon.py\n?? tests/"
+  },
+  "environment": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "xarray": "2026.9.0",
+    "netCDF4": "1.7.5.1.post1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.8.0"
+  },
+  "code_sha256": {
+    "src\\01_inventory\\show_folder.py": "f66eea36921731b683964645869952c5115641dd6b6f7f38529064685ece1e42",
+    "src\\02_validation\\inspect_cloud_phase_codes.py": "b26593588b4b48fba45560e3ee362eead72af550878294d50b7985678697e5f3",
+    "src\\02_validation\\inspect_datasets.py": "9ad27f3e4dab05107f4ca2c75a4a848d9f7ce3ed44a36c1cb699cc57d3cfb9d8",
+    "src\\02_validation\\pre_monsoon_correlation_analysis.py": "be70f821c11386d55bf02b4376605ab8cbefe9f3847c6967c604c20b568425a5",
+    "src\\02_validation\\pre_monsoon_final_integrity.py": "9a694e94bca71fe3b5d02061558758159c83bed88f45be22d0c9964cd4dc9c6e",
+    "src\\02_validation\\pre_monsoon_iwp_investigation.py": "e12431152ca9d7061bab7a5b0190813e04cb16fc6ac0f4e8b104e47b6400152e",
+    "src\\02_validation\\pre_monsoon_phase_consistency.py": "0ce4c3371ef785dfcf87291f9907b1c5ee6dadf9bd741e6ddeff8fe4c72137fb",
+    "src\\02_validation\\pre_monsoon_phase_endpoint_check.py": "2dedb2685146d72664357eb17973900bc3fc1ad4b50079e2a3a59c7b4f197eac",
+    "src\\02_validation\\pre_monsoon_phase_metadata.py": "90e10099a93868737074bac581f9ccb5790fb60d4d3e90982d1b41acb8e44ba0",
+    "src\\02_validation\\pre_monsoon_quality.py": "c75755a3843fc54d97921395e52e3bd3758f84bd5404474ed48bb34eb7120d44",
+    "src\\02_validation\\pre_monsoon_schema_validation.py": "3b53297cd20cde3502f2b7ebbde6563e58daabc2e346f62dd550af78002cae78",
+    "src\\02_validation\\pre_monsoon_scientific_checks.py": "4c4b6ce547d8bb7eea382384cb1c1ab06f06bbf6ca50195d2baa429307b2059b",
+    "src\\02_validation\\validate_seasonal_datasets.py": "4bdff686867c5aeae2dadf2a1bde0f0f7d1fa889b40e78061b007bebcb8a7295",
+    "src\\02_validation\\verify_datasets.py": "3b9358111cd3291c9289f21d5936325bad81cc20fe2bee062d4a713d72d40b87",
+    "src\\03_extraction\\create_seasonal_datasets.py": "04a524e22ec32918a367ff384490220f16625f2800745e7b2db32bd095694af2",
+    "src\\03_extraction\\create_seasonal_datasets_backup.py": "04a524e22ec32918a367ff384490220f16625f2800745e7b2db32bd095694af2",
+    "src\\03_extraction\\extract_ceres_windows.py": "e7d697cdbfaffc250b43ed895770348456a51bb4f76766553c24fe2fa825d61f",
+    "src\\06_feature_engineering\\ceres_features.py": "9156370023760e1685c001b0efaae4859ddb21e17f5dfcf16c8d29668a542945",
+    "src\\06_feature_engineering\\prepare_pre_monsoon.py": "c18dc8817b9693899cc6563ffd2380c614c2b8f8cd252826fe4e23964360ae7b",
+    "src\\07_clustering\\pre_monsoon_stage2_model.py": "ad81d269d99b7a407df554f56c6910ae2e123a53b3f6020a143739c99b4d85d0",
+    "src\\07_clustering\\run_pre_monsoon_stage2.py": "e2ce68564c267ec58c8703e89d02beef4f79638d1bc478ca8aa98c751af2aede",
+    "src\\08_evaluation\\pre_monsoon_stage2_diagnostics.py": "3d3eff5e3ab1ea8c68906577721a2370fbde48cc6eabd9975d74abd4da9de6e7",
+    "src\\09_visualization\\pre_monsoon.py": "1100d717c5abf3463fb17dd2ea2408ac23bfd7a379090370faaf7469d6a92fe4",
+    "src\\09_visualization\\pre_monsoon_eda.py": "9d13477d936e25b6c617e4aaf7343f986cb4da2437ff10d65acc7534c7083f78",
+    "config\\ceres_feature_definitions.json": "c4abca858f79f1ba2e3dc1018ba6ee20c64166cd99c1fafa55ae7f5a3e0883ff",
+    "config\\pre_monsoon_stage1.json": "ddd62d69a4a162ac7836640c2342a4488a1272d3e79a314629adc8eaf290d8f6",
+    "config\\pre_monsoon_stage2.json": "1088dd7c52be4d969d7ead45fb28cb64e054c5d97b686afbea8de80231df24af",
+    "tests\\test_stage1.py": "f346b1b160a0a7e52f20f88c63f6cdb9c3ceca9e5045328a58f0bded297af21c",
+    "tests\\test_stage2.py": "5e20ba91b4f401d9d8c398e61f2afe5df50caf3d1a3c15f0720f723dc38fe5bd",
+    "docs\\methodology\\pre_monsoon_stage1_protocol.md": "a4f5a22cc4bd62db2d7a1b1300dc35078963f9d592e82c7ede0af4ff17093717",
+    "docs\\methodology\\pre_monsoon_stage2_protocol.md": "819864713d9348dbd37d543857639a0aff6335777c2fc815ae021ffc774cbd42"
+  },
+  "config_sha256": "1088dd7c52be4d969d7ead45fb28cb64e054c5d97b686afbea8de80231df24af",
+  "selected_n_components": 3,
+  "selected_k": 2,
+  "training_sample_count": 70000,
+  "development_sample_count": 20000,
+  "tsne": {
+    "display_perplexity": 100.0,
+    "mean_original_trust": 0.9926943643043868,
+    "sample_size": 3000,
+    "pca_dimensions": 3,
+    "experiments": 12
+  },
+  "phase1_stage1_preserved": true,
+  "pca_variance_threshold_dimensions": {
+    "0.8": 2,
+    "0.9": 3,
+    "0.95": 3
+  },
+  "output_sha256": {
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\annual_occurrence.csv": "8fee5ec71590db52cb4d0455b6ea809eff0b07fce38862bde14d68b4fd82df49",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\area_weighted_occurrence.csv": "ef24466260cdb15204d239e27684a042023737bdfbf197b7a934a0ffad876233",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\cautious_interpretations.csv": "b931d2c7565ae2c92258b705b81b4603374a4b7c88ce010d9105b905b5447850",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\cluster_selection.csv": "05864e4a5719626f447f1e52ea93202c671f49291b4e91230cf6c6df20365f82",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\daily_occurrence.csv": "c393c30d4a303c48d29713403d4aa8d6252e73dcdf6d120abe75d8a56a136b5a",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\diurnal_occurrence.csv": "6d42605dce79e80e1872f4113dce4cb1f1b12f9bcf9de267e8a525d704fae1f8",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\initialization_stability.csv": "c50a1bd9c31cac3e8c81274edd7bc5b6f8c908651e813587663ec7b9139c6c5c",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\kmeans_fits.csv": "d9df27bb38f533cee0090567f98d9fabc67c26e1f3f6254627062280211cac52",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\kmeans_metrics.csv": "51375a8d4ec50ff60e6355ce5f447cda2602459761dd474b15125ff83cbfac4d",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\metric_sample_ids.csv": "dcd189da523c80dcdc8dc273f00966d38168f2bc9692933378f645c47c6777ab",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\pca_clustering_sensitivity.csv": "2beb6b6996a1ae58bf9eb7c282ee2ca517f83d1fdbceb8d80227519514abfab5",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\pca_loadings.csv": "1787e50d6b02fa6c14108b2a2b0e70546ed5657fb48c04868be8efd7504cfeb3",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\pca_reconstruction.csv": "eb350fd9dae2834c00ff927d6e9b5f02a27b642dd79942c713d6c73c2471e2fe",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\pca_variance.csv": "c36bf689398ffa09290f8a06bd0a613f72079cf9f4aa5305e07a18a8d5845211",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\per_cluster_silhouettes.csv": "4ec53910e1d796416547bd635d6a8cb37abae33077cf0649beaaa6c897896584",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\persistence.csv": "5a2f3a007849673117eec08b6ef6ce7178c87ec28e5396a125a2dd35d44fa151",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\physical_profiles.csv": "61223c2def2c316dc5f4e49f43ceebf83e681602bbf342b01ed5f6a6d1793de4",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\preprocessing_statistics.csv": "918d2bfd66e67d5ca953e70c25f144945a3216523cccdc3f7beb8a8751aea080",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\report.md": "98842dccd9cdcb5dac4764827ca33073bfb4291a2624584c0755e80fec3cfa58",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\sample_physical_values_and_labels.csv": "fae4b6740ceab1671102e2caac90e61a8e5a7fa62e8169288e04b9e9c77a9bce",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\sampling_stability.csv": "c6942613e7d99ca81289cc7c6143ae461e9cb7f9c615ca2ec74fe0843b6f3c37",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\spatial_occurrence.csv": "27d776779b90a38d44b8cad80506abe3b4d704f93a9f8ec490d82698001cdb51",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\transitions.csv": "e3f6df3b2293319fca80784d6e5a6614f9cca93fd2545ddddb2c369a780a58b8",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p100_s101.csv": "62e8fbd392ee77bfab9314bcf69a2f7f246c89f5fe31dd215189f85212ee4d9b",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p100_s42.csv": "62e8fbd392ee77bfab9314bcf69a2f7f246c89f5fe31dd215189f85212ee4d9b",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p100_s73.csv": "62e8fbd392ee77bfab9314bcf69a2f7f246c89f5fe31dd215189f85212ee4d9b",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p10_s101.csv": "14dbdd56e45ba4281b990a0246478dd1a9877537ad6255b0d204ba6c0cbe4c08",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p10_s42.csv": "14dbdd56e45ba4281b990a0246478dd1a9877537ad6255b0d204ba6c0cbe4c08",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p10_s73.csv": "14dbdd56e45ba4281b990a0246478dd1a9877537ad6255b0d204ba6c0cbe4c08",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p30_s101.csv": "17fe92742e4b8408f8accf389f459e027799678b175400f19bf76f58ee0236ec",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p30_s42.csv": "17fe92742e4b8408f8accf389f459e027799678b175400f19bf76f58ee0236ec",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p30_s73.csv": "17fe92742e4b8408f8accf389f459e027799678b175400f19bf76f58ee0236ec",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_exaggeration_4_p30_s42.csv": "5bb23cc8d548642600acd5e59c5a0212e70090c963c55564ef372e1c03d7ebdd",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_learning_rate_200_p30_s42.csv": "d0f72109b8c9bd12386a3fae35e432f85fe808ff880dbcf28120f5d6a261eaf5",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_metrics.csv": "26b0cbc24f825ef3542d386ed27a549e2cde0fe764dbd5c368cb98f2533a0c77",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_random_init_p30_s42.csv": "0d8d179fab3e55770279217b95f981e3566f144172420c83502b434632b3be54",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_sample_ids.csv": "2f65e1aeff3b6ad7d0ecefcda4496848361bb26e6a6aa19b153fddbf1e7af8e6",
+    "reports\\phase2\\pre_monsoon\\stage2_v1\\tsne_seed_stability.csv": "cfa00a24cc13d02c9f1e70b3dc5786eed158dc6444d9400af3acb5d6ff163a3f",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\annual_occurrence.png": "5ac8d1b40d6a188f75be15341871266d4c40b3b19b625cf0d974a760e2ce51c7",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\cluster_ch_db.png": "175f141cec95e449c8b0759e8323bdc21d9b2d9b5e7554cb0b02a09a105b374e",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\cluster_elbow.png": "6ebabd92ccbe77286e97a22b32003935836d406e0cf51e7d37637878fbf50d2f",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\cluster_silhouettes.png": "032f4a75701af26f3fe55c07f7a7900c2c00a72d89a552ac7c06bea0ce0e59d7",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\diurnal_occurrence.png": "f230b823d4be8e6c49cfd9d38526093b01ffb8fe02dabf02ed7b32e3cb1392b8",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\pca_coefficients.png": "39aa5aaf71ed90d023a280b0b78951a51dea7efb67596d78fe0f3803cb2270ea",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\pca_correlation_loadings.png": "7fe2088df5abe421057d37235ef6c3f845f1e30efd20f0e5660add6391f4f9f6",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\pca_labeled.png": "8e0b91a9a2956e57b834e6836d1cca7bd9ef63e7c7cd05683eba119a4c247265",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\pca_reconstruction.png": "026c27d834adc5b9935f4c509e63658a43394a3cdc99bc210cadd87ddf81ae9d",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\pca_scree.png": "9b1492b52537d82cf7e01127b34b42f2a32afb1505e0a81a845cdf101829210a",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\physical_profile_cldarea_total_1h.png": "73fb11211da778365bc8019d9619854212fdfc68089cb10a478330e59b57781e",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\physical_profile_cldpress_top_total_1h.png": "a22797f8078dad9dca749b969014f190f46747180881fb8c116ab145acd50dc4",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\physical_profile_cldtau_total_1h.png": "d70a112106dce55fd1b2def926b8c76be883d7916157541a19c59c1a70b0ad21",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\spatial_occurrence.png": "efc71fd6044579fe617fa5c1ff945a9c78f58d5b8b975fa473f7e18081e59318",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p100_s101.png": "a9212c9f59e2007abcfaefb9567e0e10e10aff799933941f9b4bb3c7a03a82fe",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p100_s42.png": "6602b3c5281c7396fa606ce0b35981ef12992f03f30298338d5270c511466621",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p100_s73.png": "9a84481f7893d568a5d3bb4b8f4094220469277b0bd60707286e863d6634b685",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p10_s101.png": "57356dc136dfce18ba2a63ff6472f6d9769d5c90ed1e621ba38c7f9b36a48faa",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p10_s42.png": "a44a16535023ffb6ab004d3ee5a73a24b5cda8742c7d1996ac9b95fc9301f6e9",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p10_s73.png": "b9858f6679da63ab4ec16e2a6e2bac7441f467f7db58a6c4a62836093e1e5316",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p30_s101.png": "5e45e27873974f410bc1a27a55a527ade01c85e728f89c237611511dc2a78f82",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p30_s42.png": "72e9c864b19147439bc0fae4abf9c4d4d92402bb91514d7e08fb5a38c2917c81",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_baseline_p30_s73.png": "2a128c7ab40a7b406a9a540b076e4ecb59b03788602123a3683e466967fb1979",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_exaggeration_4_p30_s42.png": "dd0469e0430c6e8bae7089a167741aafbdaef431aab8167c2a13349dde6b552c",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_learning_rate_200_p30_s42.png": "28a35bae0ef68b4212f3580ad689cc04bfaddc2c2f6bb8ad4ec3fdf953b80a70",
+    "results\\figures\\phase2\\pre_monsoon\\stage2_v1\\tsne_random_init_p30_s42.png": "9b32b623c575e82b0fc24552a32e20aea0d2fe3b3ecceb85045532bae9d8533c",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k10.joblib": "ab7804b0f0040195ccd4e4153dcdccc8552958ce5ad9c79cbdcfd585da7f790c",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k2.joblib": "7e0948ce5266f993462d10e6c89712e39efc43e18764570c9a99b5410d133db9",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k3.joblib": "554de1a0e3c91f4983bfa699dc03a388a9580c78f49fdc435d93c637b61d4222",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k4.joblib": "8caf6e63ed17d078e78a4fd270146e78612939ab909c92986793d48ad783d03b",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k5.joblib": "4ef0e9c39d076a41810342712e669b4ef39282f04e2ece5b18935c06c84ce22f",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k6.joblib": "873948feb9d52d5e5a8f02e8dbbae01a2ef7efb8264025e3322d7037b75e821c",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k7.joblib": "8c7cab18c152c7a4ebaf95f264130b2c29275be35456b5d5cfb3e6a190f1db47",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k8.joblib": "a083a190acf4b3466f8dc4a4a32d2b12fc1a4d980eef0397bc83eec235b32b8b",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\kmeans_k9.joblib": "d20d8c479ba503965ebac54df6d203ef76fea6d953ac1afbe29a4f87509c3c39",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\preprocessing_pca.joblib": "35cbe7bb2b45a0afdb627e1a26354c698aff955533591c6523f85d739582b647",
+    "results\\models\\phase2\\pre_monsoon\\stage2_v1\\selected_pre_monsoon_bundle.joblib": "4c26f58fcc842aa4c7da5d6547225a1d9ae25171f29f083014c31e4849233569",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2010_pre_monsoon_labels.nc": "cfd7b50673fdc019a356c29f079390eafc74f7a670a97f7cfad6dbd2b2027423",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2011_pre_monsoon_labels.nc": "82ccb43457980062b86535e01af07819bcb113bc7c497b10d69c7e2c15625a07",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2012_pre_monsoon_labels.nc": "421697d7abbf6d2a58b86374033aaba5f6b6ba0ad7c0ae8a30c573d38024ab0e",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2013_pre_monsoon_labels.nc": "468ecd09aa02c73eda24808dc6c6935ce961d9d5db508abf73b3746afc56afed",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2014_pre_monsoon_labels.nc": "5080896ba6c78ed6a7bcdd9469beaf3c4abba5b06941b4c2d269b987778e3b77",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2015_pre_monsoon_labels.nc": "ee7a5fed4b0849b23f4babe5252dbe80fe5168fe7e760d0ee252f9c65f4d2c98",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2016_pre_monsoon_labels.nc": "28d4b7250d3f50c139e517cb18a51724b2386055dccc818cb8b3a8fec6f5e7e6",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2017_pre_monsoon_labels.nc": "00b1fe288b2e73f912483d328af570a5b1b7087d6fe799289b11e14ccde1f2ea",
+    "data\\processed\\model_ready\\phase2\\pre_monsoon\\stage2_v1\\CERES_2018_pre_monsoon_labels.nc": "8ac4a57f6621d56659d4377ab7bcc27b292076fc91ccd90e87c0a4749ad8ce63"
+  }
+}
