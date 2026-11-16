@@ -1,0 +1,56 @@
+{
+  "project_component": "Established Monsoon",
+  "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "seasonal_window": [
+    "07-15",
+    "08-13"
+  ],
+  "expected_rows_per_year": 28800,
+  "expected_raw_rows": 345600,
+  "observed_raw_rows": 345600,
+  "complete_case_rows": 290355,
+  "excluded_incomplete_rows": 55245,
+  "feature_count": 14,
+  "features_in_order": [
+    "cldarea_total_1h",
+    "cldhght_total_1h",
+    "cldphase_total_1h",
+    "cldpress_total_1h",
+    "cldtemp_total_1h",
+    "cldtau_total_1h",
+    "iwp_total_1h",
+    "cldarea_high_1h",
+    "cldhght_high_1h",
+    "cldphase_high_1h",
+    "cldpress_high_1h",
+    "cldtemp_high_1h",
+    "cldtau_high_1h",
+    "iwp_high_1h"
+  ],
+  "log1p_features": [
+    "cldtau_total_1h",
+    "iwp_total_1h",
+    "cldtau_high_1h",
+    "iwp_high_1h"
+  ],
+  "imputation": "None; incomplete rows excluded for complete-case matrices",
+  "scaling_fit_scope": "Full 2010-2021 complete-case period for descriptive unsupervised baseline; not a held-out predictive evaluation",
+  "leakage_note": "For any future train/test or predictive evaluation, fit transformations and scalers on training/reference data only, then transform held-out data.",
+  "baseline_matrix": "established_monsoon_group_B_baseline.npz",
+  "log_sensitivity_matrix": "established_monsoon_group_B_log_sensitivity.npz",
+  "metadata": "established_monsoon_group_B_metadata.csv",
+  "feature_registry": "established_monsoon_group_B_feature_registry.csv"
+}
