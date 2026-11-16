@@ -1,0 +1,29 @@
+M6.5 DOCUMENTATION PACKAGE
+==========================
+
+PURPOSE
+This package contains integrated documentation for the established-monsoon
+cloud-regime discovery project.
+
+FILES
+README.md
+reports/established_monsoon_cloud_regime_study.md
+docs/milestones/M6.5_integrated_scientific_interpretation.md
+reports/final_project_verification_checklist.md
+M6.5_PACKAGE_INSTRUCTIONS.txt
+
+INSTALLATION
+These files belong in the root of the existing repository.
+
+Do not replace raw datasets, source scripts, or existing analysis outputs.
+
+VERIFICATION
+Run the following commands from the project root:
+
+Test-Path "README.md"
+Test-Path "reports/established_monsoon_cloud_regime_study.md"
+Test-Path "docs/milestones/M6.5_integrated_scientific_interpretation.md"
+Test-Path "reports/final_project_verification_checklist.md"
+Test-Path "M6.5_PACKAGE_INSTRUCTIONS.txt"
+
+No Git commit or push is performed by this package.
