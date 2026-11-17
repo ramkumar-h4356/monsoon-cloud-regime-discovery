@@ -46,3 +46,12 @@ Thumbs.db
 *.keras
 *.pt
 *.pth
+
+
+# Temporary review packages and local audit zips
+*.zip
+M19_implementation/
+post_monsoon_review_package/
+reports/m20_inspection/
+M20_source_inspection.txt
+scripts/
