@@ -1,0 +1,33 @@
+{
+  "milestone": "M20",
+  "title": "Post-Monsoon Missingness and Feature Engineering Audit",
+  "season": "post_monsoon",
+  "season_window": "October 15 - November 13",
+  "study_years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "total_seasonal_files": 12,
+  "total_observations_per_variable": 8294400,
+  "registered_variables_audited": 36,
+  "feature_set_validation": {
+    "FS-A": "VALID",
+    "FS-B": "VALID",
+    "FS-C": "VALID",
+    "FS-D": "VALID",
+    "FS-E": "VALID",
+    "FS-F": "VALID"
+  },
+  "cloud_area_missingness_policy": "Zero-fill forbidden. Missing cloud area classified as CLOUD_AREA_MISSING.",
+  "status": "COMPLETED_VALIDATED"
+}

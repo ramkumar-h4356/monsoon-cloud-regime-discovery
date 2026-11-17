@@ -1,0 +1,36 @@
+{
+  "project": "M19 post-monsoon data integrity audit",
+  "years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "season_window": "October 15-November 13",
+  "generated_at_utc": "2026-11-16T08:07:17.008511Z",
+  "input_paths": {
+    "ceres": "D:\\Project Simulator\\monsoon_cloud_research\\data\\interim\\ceres_seasonal\\post_monsoon",
+    "imd": "D:\\Project Simulator\\monsoon_cloud_research\\raw_data\\IMD_Rainfall"
+  },
+  "counts": {
+    "checks_evaluated": 112,
+    "pass": 112,
+    "fail": 0,
+    "not_evaluated": 0
+  },
+  "source_family_readiness": {
+    "CERES": true,
+    "IMD": true,
+    "Climate indices": true
+  },
+  "overall_readiness": "READY FOR DOWNSTREAM ANALYSIS",
+  "raw_data_modified": false
+}

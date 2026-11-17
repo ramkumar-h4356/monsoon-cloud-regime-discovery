@@ -1,0 +1,30 @@
+{
+  "milestone": "M23",
+  "title": "Post-Monsoon t-SNE Nonlinear Dimensionality Reduction & Linear Comparison",
+  "created_utc": "2026-11-16T10:49:19.444870+00:00",
+  "elapsed_seconds": 111.36,
+  "sample_size": 9996,
+  "perplexities_evaluated": [
+    15,
+    30,
+    50
+  ],
+  "trustworthiness_scores": {
+    "PCA_2D": 0.8047,
+    "tSNE_perp_15": 0.9805,
+    "tSNE_perp_30": 0.9806,
+    "tSNE_perp_50": 0.9803
+  },
+  "linear_vs_nonlinear_insights": {
+    "pca_trustworthiness": 0.8047,
+    "best_tsne_perplexity": 30,
+    "best_tsne_trustworthiness": 0.9806,
+    "trustworthiness_gain": 0.1759,
+    "interpretation": "t-SNE achieves higher local neighborhood preservation (trustworthiness) by unrolling nonlinear manifold curvature in mixed-phase and convective transition boundaries, while linear PCA (PC1 vs PC2) preserves global variance and orthogonal physical cloud regimes."
+  },
+  "output_artifacts": {
+    "embedding_csv": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\post_monsoon\\tsne\\post_monsoon_tsne_sampled_embeddings.csv",
+    "comparison_csv": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\seasons\\post_monsoon\\m23_tsne\\post_monsoon_linear_vs_nonlinear_comparison.csv"
+  },
+  "status": "COMPLETED_READY_FOR_CLUSTERING"
+}

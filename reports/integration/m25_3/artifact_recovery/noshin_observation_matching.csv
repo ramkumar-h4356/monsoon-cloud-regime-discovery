@@ -1,0 +1,13 @@
+year,split,m25_total_obs,noshin_total_obs,grid_shape_match,coordinate_match,noshin_valid_cloudy,noshin_clear_sky,matching_gate_status
+2010,Development (Stage 2),691200,691200,True,True,688315,2885,PASSED_VERIFIED
+2011,Development (Stage 2),691200,691200,True,True,688289,2911,PASSED_VERIFIED
+2012,Development (Stage 2),691200,691200,True,True,689018,2182,PASSED_VERIFIED
+2013,Development (Stage 2),691200,691200,True,True,687983,3217,PASSED_VERIFIED
+2014,Development (Stage 2),691200,691200,True,True,688661,2539,PASSED_VERIFIED
+2015,Development (Stage 2),691200,691200,True,True,687860,3340,PASSED_VERIFIED
+2016,Development (Stage 2),691200,691200,True,True,688341,2859,PASSED_VERIFIED
+2017,Development (Stage 2),691200,691200,True,True,686190,5010,PASSED_VERIFIED
+2018,Development (Stage 2),691200,691200,True,True,686489,4711,PASSED_VERIFIED
+2019,Holdout (Stage 3),691200,691200,True,True,685116,6084,PASSED_VERIFIED
+2020,Holdout (Stage 3),691200,691200,True,True,687277,3923,PASSED_VERIFIED
+2021,Holdout (Stage 3),691200,691200,True,True,688577,2623,PASSED_VERIFIED

@@ -1,0 +1,254 @@
+{
+  "milestone": "M27.7.2",
+  "title": "Final Statistical Corrections, Independent Reconciliation and Scientific Acceptance",
+  "project": "Satellite-Based Cloud-Regime Discovery over the Indian Monsoon Domain",
+  "acceptance_verdict": "ACCEPTED WITH DOCUMENTED LIMITATIONS",
+  "execution_timestamp_utc": "2026-11-17T00:56:20.655033+00:00",
+  "pipeline_duration_seconds": 507.43,
+  "environment": {
+    "python_version": "3.13.15",
+    "platform": "win32",
+    "numpy_version": "2.4.2",
+    "pandas_version": "3.0.2",
+    "scipy_version": "1.17.1"
+  },
+  "random_seeds": {
+    "freedman_lane_seed": 42,
+    "spatial_field_permutation_seed": 42,
+    "year_block_permutation_seed": 42,
+    "synthetic_benchmark_seed": 2026
+  },
+  "deliverables": {
+    "reports": [
+      {
+        "filename": "m27_7_2_clr_compositional_correction.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_clr_compositional_correction.md",
+        "size_bytes": 4197,
+        "sha256": "8205ca374b1711545d08450f886e4cc860f08c477acdc885a4642e9b8d64fdba"
+      },
+      {
+        "filename": "m27_7_2_discrepancy_and_errata_register.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_discrepancy_and_errata_register.md",
+        "size_bytes": 2574,
+        "sha256": "6157ed93b66bf86f77eb94838c41535d1722c64a08790998f48e4bef6b11db8d"
+      },
+      {
+        "filename": "m27_7_2_fdr_reconciliation.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_fdr_reconciliation.md",
+        "size_bytes": 3359,
+        "sha256": "f3e7b196b0a97815b09f450492e5cd3ad960724fba6b060f3667ec403a515aef"
+      },
+      {
+        "filename": "m27_7_2_final_scientific_acceptance.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_final_scientific_acceptance.md",
+        "size_bytes": 1733,
+        "sha256": "ecebec952d1e00b32b7dfe21d49c91d5f8af8602ee6fb317addb23dcb60082de"
+      },
+      {
+        "filename": "m27_7_2_freedman_lane_methodology.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_freedman_lane_methodology.md",
+        "size_bytes": 2968,
+        "sha256": "31c6b26bd321e3eaf432a62f2c10c9997d94eb1a29074fc2b61c49159916c67d"
+      },
+      {
+        "filename": "m27_7_2_scientific_language_audit.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_scientific_language_audit.md",
+        "size_bytes": 1899,
+        "sha256": "1abfd0c04203913b4f6857e434916fbf0b67639c922910da2b5528ea82f78c55"
+      },
+      {
+        "filename": "m27_7_2_spatial_field_methodology.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_spatial_field_methodology.md",
+        "size_bytes": 2137,
+        "sha256": "87e9bbf5645de3f9bb4f1960092cffea37c54018fc14197d0b337e7201f9c879"
+      },
+      {
+        "filename": "m27_7_2_test_and_reproducibility_report.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_test_and_reproducibility_report.md",
+        "size_bytes": 1587,
+        "sha256": "b48144b98f519fc6b23febf49eb28cc0741356f21e75894d2235eb721591ad08"
+      },
+      {
+        "filename": "m27_7_2_verification_scope.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_verification_scope.md",
+        "size_bytes": 1872,
+        "sha256": "b08fd2a0e8fef2f8d025299ff28fcc04351c81d8ed00bac06a48bff016938ef4"
+      },
+      {
+        "filename": "m27_7_2_year_dependence_correction.md",
+        "relative_path": "reports/integration/m27_7_2/m27_7_2_year_dependence_correction.md",
+        "size_bytes": 2237,
+        "sha256": "156c1102326e190b2380f4e6e9a05b0d96b537f2c7095d1b885f10b0607d18da"
+      }
+    ],
+    "tables": [
+      {
+        "filename": "m27_7_2_clr_correlation_verification.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_clr_correlation_verification.csv",
+        "size_bytes": 2751,
+        "sha256": "54f614d0fc02352b9fb469beb2a500a17f3fd4fb2be4ce49da73d0acdbae5631",
+        "row_count": 24,
+        "column_count": 14
+      },
+      {
+        "filename": "m27_7_2_complete_fdr_family_reconstruction.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_complete_fdr_family_reconstruction.csv",
+        "size_bytes": 5731,
+        "sha256": "359245f5d97d3c3c6042d8ef5908702bb4b26cfd70505f5094356082261336a6",
+        "row_count": 24,
+        "column_count": 20
+      },
+      {
+        "filename": "m27_7_2_effective_sample_size_assessment.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_effective_sample_size_assessment.csv",
+        "size_bytes": 1312,
+        "sha256": "c4d37484cc5f50e75b221485d54e3cb30e9fc38064d68e023f45aa74c7e56977",
+        "row_count": 10,
+        "column_count": 5
+      },
+      {
+        "filename": "m27_7_2_figure_annotation_verification.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_figure_annotation_verification.csv",
+        "size_bytes": 2336,
+        "sha256": "2ef34e13fe93e6219b70935b121a98ead11bc118d5b44f073e60fabf5c0f122e",
+        "row_count": 10,
+        "column_count": 7
+      },
+      {
+        "filename": "m27_7_2_final_acceptance_matrix.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_final_acceptance_matrix.csv",
+        "size_bytes": 3914,
+        "sha256": "13a08d84ac9047119caea4a7c3eb3af59719b9ed63f51df7702f3b1026d98cab",
+        "row_count": 18,
+        "column_count": 5
+      },
+      {
+        "filename": "m27_7_2_freedman_lane_method_comparison.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_freedman_lane_method_comparison.csv",
+        "size_bytes": 2122,
+        "sha256": "14fc04bdb1d9a210a5d481b59f01a472242fa28ba59906b466d3a9fcfada7e36",
+        "row_count": 12,
+        "column_count": 11
+      },
+      {
+        "filename": "m27_7_2_interaction_multiplicity_results.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_interaction_multiplicity_results.csv",
+        "size_bytes": 2428,
+        "sha256": "887d488a63b4d8a8a2c39393f097286c4c0e13865bca759f3633b3bb1af82c2b",
+        "row_count": 21,
+        "column_count": 10
+      },
+      {
+        "filename": "m27_7_2_partial_spearman_p_to_q_reconciliation.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_partial_spearman_p_to_q_reconciliation.csv",
+        "size_bytes": 1108,
+        "sha256": "83bee8bec98d914f2a0ec39509c471f7be9b7fa4ecf4252e27d2885ec6acce2f",
+        "row_count": 8,
+        "column_count": 13
+      },
+      {
+        "filename": "m27_7_2_rainfall_multiplicity_results.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_rainfall_multiplicity_results.csv",
+        "size_bytes": 6597,
+        "sha256": "dc0ab9a3b67c5abcc2baaf03a3d8a994d0e946eb39ce228786a05eac18b625b5",
+        "row_count": 54,
+        "column_count": 12
+      },
+      {
+        "filename": "m27_7_2_scientific_statement_to_evidence_audit.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_scientific_statement_to_evidence_audit.csv",
+        "size_bytes": 2806,
+        "sha256": "8c8d67b1f73d4773cbb11c4a74bda859341068ebf96dd28dd94352322d163325",
+        "row_count": 8,
+        "column_count": 5
+      },
+      {
+        "filename": "m27_7_2_spatial_field_permutation_verification.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_spatial_field_permutation_verification.csv",
+        "size_bytes": 3181,
+        "sha256": "9536d024306ea4831cc4b23f939767370903d3fcf34c34ccaf3bd1950e59db73",
+        "row_count": 12,
+        "column_count": 16
+      },
+      {
+        "filename": "m27_7_2_year_block_permutation_verification.csv",
+        "relative_path": "reports/integration/m27_7_2/tables/m27_7_2_year_block_permutation_verification.csv",
+        "size_bytes": 3475,
+        "sha256": "25b8a85501dc357290864cb76cfa0c0dfb30a497028c7fa0371d1d4136b52a7a",
+        "row_count": 20,
+        "column_count": 12
+      }
+    ],
+    "code": [
+      {
+        "filename": "__init__.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/__init__.py",
+        "size_bytes": 110,
+        "sha256": "29167bff1e82950c6c082e8339532c26e64dda9548ff3750af3fa2d3f2a6eabd"
+      },
+      {
+        "filename": "m27_7_2_fdr_reconciler.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/m27_7_2_fdr_reconciler.py",
+        "size_bytes": 22938,
+        "sha256": "afd25656fbed34cf0f4b89a47174c2332e728dd4705977085164d762651581e0"
+      },
+      {
+        "filename": "m27_7_2_figure_and_text_auditor.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/m27_7_2_figure_and_text_auditor.py",
+        "size_bytes": 21088,
+        "sha256": "f79f7c89749a04731bd4fdf2e7ce3575bcdb6759e2e004bb44dffb515c4d4988"
+      },
+      {
+        "filename": "m27_7_2_freedman_lane_auditor.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/m27_7_2_freedman_lane_auditor.py",
+        "size_bytes": 13535,
+        "sha256": "f8c92e1e802954eed1dd62eee6a54fa7af39a9f33a421104e220f404949444c4"
+      },
+      {
+        "filename": "m27_7_2_orchestrator.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/m27_7_2_orchestrator.py",
+        "size_bytes": 10602,
+        "sha256": "d531ad99aaa05f7307b1d5848799154ed9f455f09e8ea8ae8d1524d87ccc67af"
+      },
+      {
+        "filename": "m27_7_2_report_generator.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/m27_7_2_report_generator.py",
+        "size_bytes": 28042,
+        "sha256": "a16a565ebab6877700bb2647f01f7b2198a5efe2828a25cd59cb5ad40dc0fd00"
+      },
+      {
+        "filename": "m27_7_2_spatial_field_auditor.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/m27_7_2_spatial_field_auditor.py",
+        "size_bytes": 4633,
+        "sha256": "cbe2594719cf2a2ef7527ec20b22bf0e635763eb2b16f9cb171d07095cf692cd"
+      },
+      {
+        "filename": "m27_7_2_year_dependence_auditor.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/m27_7_2_year_dependence_auditor.py",
+        "size_bytes": 9230,
+        "sha256": "963c911ef9f2e8ceaa92a7b5ec0bd9c93e9e8a7e6f6ffd79f0a80519c566ecb7"
+      },
+      {
+        "filename": "mirror_m27_7_2_to_post_monsoon.py",
+        "relative_path": "src/integration/climate_association/m27_7_2/mirror_m27_7_2_to_post_monsoon.py",
+        "size_bytes": 3511,
+        "sha256": "28cd9b7a394c36420596c3e653af2c34e7a6a4efb828f2fdd00447ce40ca7a91"
+      }
+    ],
+    "tests": [
+      {
+        "filename": "test_m27_7_2_final_corrections.py",
+        "relative_path": "tests/integration/test_m27_7_2_final_corrections.py",
+        "size_bytes": 18817,
+        "sha256": "d310690ad51fc72d30c5b8664d9a5277d7faeecb6cdeaa4ecfbd97f65ad00d4b"
+      }
+    ]
+  },
+  "summary_counts": {
+    "num_reports": 10,
+    "num_tables": 12,
+    "num_code_modules": 9,
+    "num_test_files": 1,
+    "total_deliverables": 32
+  }
+}

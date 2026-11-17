@@ -1,0 +1,22 @@
+season,season_id,variable,variable_description,beta_interaction_ols,p_interaction_perm,is_significant_p05,m_family_size,bh_fdr_q_value,bonferroni_critical_p05,is_fdr_q010,is_bonferroni_sig,audit_verdict
+pre_monsoon,0,mean_rainfall_mm,Terrestrial Mean Rainfall,0.00667,0.99336,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+pre_monsoon,0,wet_day_freq_25mm,Wet-Day Frequency (>=2.5mm),-0.04101,0.364,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+pre_monsoon,0,p_R0_domain,R0 Mixed Convective Fraction,-0.06117,0.53131,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+pre_monsoon,0,p_R1_domain,R1 Shallow Cumulus Fraction,0.02268,0.80502,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+pre_monsoon,0,p_R2_domain,R2 Deep Convective Fraction,-0.00421,0.58257,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+pre_monsoon,0,p_R3_domain,R3 Thin Cirrus/Anvil Fraction,0.0427,0.7193,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+pre_monsoon,0,cond_mean_R2,R2 Conditional Mean Intensity,1.80761,0.82783,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+established_monsoon,1,mean_rainfall_mm,Terrestrial Mean Rainfall,0.30807,0.9022,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+established_monsoon,1,wet_day_freq_25mm,Wet-Day Frequency (>=2.5mm),-0.00698,0.93232,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+established_monsoon,1,p_R0_domain,R0 Mixed Convective Fraction,0.02947,0.40334,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+established_monsoon,1,p_R1_domain,R1 Shallow Cumulus Fraction,-0.00651,0.66142,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+established_monsoon,1,p_R2_domain,R2 Deep Convective Fraction,-0.02349,0.03685,True,21,0.25795,0.00238,False,False,NOMINALLY SIGNIFICANT ONLY (FDR q>0.10) — EXPLORATORY
+established_monsoon,1,p_R3_domain,R3 Thin Cirrus/Anvil Fraction,0.00053,0.98245,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+established_monsoon,1,cond_mean_R2,R2 Conditional Mean Intensity,-15.12767,0.27762,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+post_monsoon,2,mean_rainfall_mm,Terrestrial Mean Rainfall,2.45469,0.0322,True,21,0.25795,0.00238,False,False,NOMINALLY SIGNIFICANT ONLY (FDR q>0.10) — EXPLORATORY
+post_monsoon,2,wet_day_freq_25mm,Wet-Day Frequency (>=2.5mm),0.1848,0.01195,True,21,0.25095,0.00238,False,False,NOMINALLY SIGNIFICANT ONLY (FDR q>0.10) — EXPLORATORY
+post_monsoon,2,p_R0_domain,R0 Mixed Convective Fraction,0.00323,0.86538,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+post_monsoon,2,p_R1_domain,R1 Shallow Cumulus Fraction,-0.0225,0.3694,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+post_monsoon,2,p_R2_domain,R2 Deep Convective Fraction,-0.00025,0.93809,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+post_monsoon,2,p_R3_domain,R3 Thin Cirrus/Anvil Fraction,0.01951,0.39655,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION
+post_monsoon,2,cond_mean_R2,R2 Conditional Mean Intensity,1.74566,0.76269,False,21,0.99336,0.00238,False,False,NON-SIGNIFICANT INTERACTION

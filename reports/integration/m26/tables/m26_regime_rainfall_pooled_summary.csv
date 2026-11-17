@@ -1,0 +1,5 @@
+dominant_regime,regime_name,observations,prevalence_pct,mean_rainfall_mm,std_rainfall_mm,median_rainfall_mm,iqr_rainfall_mm,q25_rainfall_mm,q75_rainfall_mm,q90_rainfall_mm,q95_rainfall_mm,q99_rainfall_mm,max_rainfall_mm,dry_day_pct,positive_rain_pct,wet_day_25_pct,wet_day_conditional_mean_mm,volume_contribution_pct
+0,R0: Mixed Convective & Congestus,56445,16.48,3.023,9.701,0.0,1.08,0.0,1.08,8.693,17.516,45.84,343.258,65.99,34.01,19.51,8.887,12.71
+1,R1: Boundary-Layer Shallow Cumulus,46723,13.64,0.461,3.398,0.0,0.0,0.0,0.0,0.0,0.587,14.199,126.804,93.56,6.44,3.3,7.167,1.61
+2,R2: Deep Convective Storm Cores,2454,0.72,11.988,23.475,1.979,13.174,0.0,13.174,36.141,56.705,111.258,297.51,37.04,62.96,47.35,19.041,2.19
+3,R3: Thin Cirrus & Anvil Outflow,236810,69.16,4.733,13.843,0.0,2.4,0.0,2.4,14.148,26.833,65.88,495.084,61.15,38.85,24.73,12.184,83.49

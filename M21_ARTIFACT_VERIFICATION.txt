@@ -1,0 +1,257 @@
+﻿ M21 ARTIFACT VERIFICATION REPORT 
+Generated: 2026-11-16 15:53:19
+Project: D:\Project Simulator\monsoon_cloud_research
+
+========== PYTHON ARTIFACT INSPECTION ==========
+
+===========================================================================
+MANIFEST AND ARTIFACT SIZE CONSISTENCY
+===========================================================================
+Milestone: M21
+Status: READY_FOR_PCA
+Feature count: 36
+Expected samples: 8294400
+
+ NPY
+Path: D:\Project Simulator\monsoon_cloud_research\data\processed\post_monsoon\model_ready\post_monsoon_FS-A_scaled.npy
+Actual bytes: 1194393728
+Manifest bytes: 1194393728
+Size matches manifest: True
+
+ NPZ
+Path: D:\Project Simulator\monsoon_cloud_research\data\processed\post_monsoon\model_ready\post_monsoon_FS-A_scaled.npz
+Actual bytes: 812285681
+Manifest bytes: 812285681
+Size matches manifest: True
+
+ NETCDF
+Path: D:\Project Simulator\monsoon_cloud_research\data\processed\post_monsoon\model_ready\post_monsoon_model_ready_FS-A.nc
+Actual bytes: 792465087
+Manifest bytes: not recorded
+Size matches manifest: not verifiable
+
+===========================================================================
+NPY MEMORY-MAPPED ARRAY INSPECTION
+===========================================================================
+Shape: (8294400, 36)
+Dtype: float32
+Dimensions: 2
+C contiguous: True
+Memory mapped: True
+Expected shape: (8294400, 36)
+Shape matches: True
+
+Bounded sample inspection:
+Sample shape: (10000, 36)
+Sample NaNs: 0
+Sample infinities: 0
+Sample all finite: True
+Sample min: -9.878046989440918
+Sample max: 398.83038330078125
+Sample mean: 0.48447877168655396
+Sample std: 4.566657066345215
+
+First five rows, first five features:
+[[ 0.17505735  0.3791271   0.3639694  -0.04209848 -0.26559475]
+ [-0.14124057  0.16914356  0.2136423  -0.16704234 -0.6539794 ]
+ [ 0.06849752 -0.00676749  0.32928026 -0.07570885 -0.4965058 ]
+ [-0.1700118  -0.11856873 -0.17796607 -0.6011786  -0.8152072 ]
+ [-0.1700118  -0.11856873 -0.17796607 -0.11239617 -0.9191242 ]]
+
+===========================================================================
+NPZ CONTENTS AND METADATA
+===========================================================================
+Keys: ['X_all', 'train_mask', 'sample_years', 'feature_names', 'feature_families', 'lat', 'lon', 'scaler_center', 'scaler_scale', 'scaler_weights']
+
+Key: X_all
+Shape: (8294400, 36)
+Dtype: float32
+Large array: bounded inspection only
+
+Key: train_mask
+Shape: (8294400,)
+Dtype: bool
+Large array: bounded inspection only
+
+Key: sample_years
+Shape: (8294400,)
+Dtype: int16
+Large array: bounded inspection only
+
+Key: feature_names
+Shape: (36,)
+Dtype: <U24
+Values: ['cldarea_high_1h', 'cldarea_mid_high_1h', 'cldarea_mid_low_1h', 'cldarea_total_1h', 'cldhght_total_1h', 'cldpress_top_total_1h', 'cldpress_total_1h', 'cldtemp_total_1h', 'cldtau_total_1h', 'lwp_total_1h', 'cldarea_low_1h', 'iwp_total_1h', 'cldhght_mid_low_1h', 'cldpress_mid_low_1h', 'cldpress_top_mid_low_1h', 'cldtemp_mid_low_1h', 'cldtau_mid_low_1h', 'cldhght_high_1h', 'cldpress_high_1h', 'cldpress_top_high_1h', 'cldtemp_high_1h', 'cldtau_high_1h', 'iwp_high_1h', 'lwp_mid_low_1h', 'cldhght_mid_high_1h', 'cldpress_mid_high_1h', 'cldpress_top_mid_high_1h', 'cldtemp_mid_high_1h', 'cldtau_mid_high_1h', 'cldhght_low_1h', 'cldpress_low_1h', 'cldpress_top_low_1h', 'cldtemp_low_1h', 'cldtau_low_1h', 'lwp_low_1h', 'iwp_mid_high_1h']
+
+Key: feature_families
+Shape: (36,)
+Dtype: <U21
+Values: ['cloud_area', 'cloud_area', 'cloud_area', 'cloud_area', 'effective_height', 'cloud_top_pressure', 'effective_pressure', 'effective_temperature', 'optical_depth', 'liquid_water_path', 'cloud_area', 'ice_water_path', 'effective_height', 'effective_pressure', 'cloud_top_pressure', 'effective_temperature', 'optical_depth', 'effective_height', 'effective_pressure', 'cloud_top_pressure', 'effective_temperature', 'optical_depth', 'ice_water_path', 'liquid_water_path', 'effective_height', 'effective_pressure', 'cloud_top_pressure', 'effective_temperature', 'optical_depth', 'effective_height', 'effective_pressure', 'cloud_top_pressure', 'effective_temperature', 'optical_depth', 'liquid_water_path', 'ice_water_path']
+
+Key: lat
+Shape: (32,)
+Dtype: float32
+Values: [6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5, 16.5, 17.5, 18.5, 19.5, 20.5, 21.5, 22.5, 23.5, 24.5, 25.5, 26.5, 27.5, 28.5, 29.5, 30.5, 31.5, 32.5, 33.5, 34.5, 35.5, 36.5, 37.5]
+
+Key: lon
+Shape: (30,)
+Dtype: float32
+Values: [68.5, 69.5, 70.5, 71.5, 72.5, 73.5, 74.5, 75.5, 76.5, 77.5, 78.5, 79.5, 80.5, 81.5, 82.5, 83.5, 84.5, 85.5, 86.5, 87.5, 88.5, 89.5, 90.5, 91.5, 92.5, 93.5, 94.5, 95.5, 96.5, 97.5]
+
+Key: scaler_center
+Shape: (36,)
+Dtype: float64
+Values: [4.13223123550415, 2.305503010749817, 2.542372703552246, 52.35832405090332, 6.592251777648926, 476.0203857421875, 490.9527587890625, 257.9962463378906, 1.497795581817627, 20.985591888427734, 4.513329029083252, 17.416606903076172, 4.644986629486084, 587.5518188476562, 582.287841796875, 272.9706115722656, 2.2848620414733887, 13.139826774597168, 185.37863159179688, 171.8709716796875, 215.14646911621094, 0.2528795003890991, 5.167078018188477, 23.489408493041992, 7.647120475769043, 401.85638427734375, 376.4073486328125, 253.14389038085938, 1.7237751483917236, 1.8420941829681396, 819.0062866210938, 813.7684936523438, 287.7197570800781, 1.5377057790756226, 14.759021759033203, 32.652366638183594]
+
+Key: scaler_scale
+Shape: (36,)
+Dtype: float64
+Values: [24.30555534362793, 19.44444465637207, 14.285715103149414, 79.0068244934082, 5.863079786300659, 385.76358795166016, 365.34669494628906, 38.183616638183594, 2.631389692425728, 27.576412677764893, 11.72454833984375, 40.67573833465576, 0.4760524034500122, 33.188751220703125, 35.15370178222656, 2.954742431640625, 1.621265709400177, 1.944408893585205, 54.6912956237793, 40.59477233886719, 10.513595581054688, 0.44785596430301666, 10.685038566589355, 12.746589660644531, 0.5175464153289795, 27.876602172851562, 32.54258728027344, 3.435821533203125, 1.321872502565384, 0.3231133222579956, 30.646026611328125, 31.063491821289062, 2.107025146484375, 0.6275200545787811, 6.01726508140564, 11.899676322937012]
+
+Key: scaler_weights
+Shape: (36,)
+Dtype: float64
+Values: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+===========================================================================
+NETCDF STRUCTURAL INSPECTION
+===========================================================================
+Dimensions: {'time': 8640, 'lat': 32, 'lon': 30}
+Coordinates: ['lat', 'lon', 'time']
+Data variables: ['year', 'season_code', 'train_mask', 'feature__cldarea_high_1h', 'feature__cldarea_mid_high_1h', 'feature__cldarea_mid_low_1h', 'feature__cldarea_total_1h', 'feature__cldhght_total_1h', 'feature__cldpress_top_total_1h', 'feature__cldpress_total_1h', 'feature__cldtemp_total_1h', 'feature__cldtau_total_1h', 'feature__lwp_total_1h', 'feature__cldarea_low_1h', 'feature__iwp_total_1h', 'feature__cldhght_mid_low_1h', 'feature__cldpress_mid_low_1h', 'feature__cldpress_top_mid_low_1h', 'feature__cldtemp_mid_low_1h', 'feature__cldtau_mid_low_1h', 'feature__cldhght_high_1h', 'feature__cldpress_high_1h', 'feature__cldpress_top_high_1h', 'feature__cldtemp_high_1h', 'feature__cldtau_high_1h', 'feature__iwp_high_1h', 'feature__lwp_mid_low_1h', 'feature__cldhght_mid_high_1h', 'feature__cldpress_mid_high_1h', 'feature__cldpress_top_mid_high_1h', 'feature__cldtemp_mid_high_1h', 'feature__cldtau_mid_high_1h', 'feature__cldhght_low_1h', 'feature__cldpress_low_1h', 'feature__cldpress_top_low_1h', 'feature__cldtemp_low_1h', 'feature__cldtau_low_1h', 'feature__lwp_low_1h', 'feature__iwp_mid_high_1h']
+Global attributes: {'title': 'Post-Monsoon Model-Ready Cloud Features (FS-A)', 'season': 'post_monsoon', 'seasonal_window': 'October 15 - November 13', 'feature_set': 'FS-A', 'feature_count': np.int64(36), 'temporal_coverage': '2010-2021', 'training_partition': '2010-2016', 'holdout_partition': '2017-2021', 'cloud_area_treatment': 'CA-A', 'property_treatment': 'SA-A', 'scaling_method': 'robust', 'weighting': 'equal', 'created_utc': '2026-11-16T10:06:56.811525+00:00', 'status': 'VERIFIED_MODEL_READY'}
+year | dimensions: ('time',) | shape: (8640,) | dtype: int16
+season_code | dimensions: ('time',) | shape: (8640,) | dtype: int8
+train_mask | dimensions: ('time',) | shape: (8640,) | dtype: uint8
+feature__cldarea_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldarea_mid_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldarea_mid_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldarea_total_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldhght_total_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_top_total_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_total_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtemp_total_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtau_total_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__lwp_total_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldarea_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__iwp_total_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldhght_mid_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_mid_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_top_mid_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtemp_mid_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtau_mid_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldhght_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_top_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtemp_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtau_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__iwp_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__lwp_mid_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldhght_mid_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_mid_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_top_mid_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtemp_mid_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtau_mid_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldhght_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldpress_top_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtemp_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__cldtau_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__lwp_low_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+feature__iwp_mid_high_1h | dimensions: ('time', 'lat', 'lon') | shape: (8640, 32, 30) | dtype: float32
+
+===========================================================================
+FEATURE ORDER CONSISTENCY
+===========================================================================
+Manifest feature count: 36
+Manifest feature names:
+0 cldarea_high_1h
+1 cldarea_mid_high_1h
+2 cldarea_mid_low_1h
+3 cldarea_total_1h
+4 cldhght_total_1h
+5 cldpress_top_total_1h
+6 cldpress_total_1h
+7 cldtemp_total_1h
+8 cldtau_total_1h
+9 lwp_total_1h
+10 cldarea_low_1h
+11 iwp_total_1h
+12 cldhght_mid_low_1h
+13 cldpress_mid_low_1h
+14 cldpress_top_mid_low_1h
+15 cldtemp_mid_low_1h
+16 cldtau_mid_low_1h
+17 cldhght_high_1h
+18 cldpress_high_1h
+19 cldpress_top_high_1h
+20 cldtemp_high_1h
+21 cldtau_high_1h
+22 iwp_high_1h
+23 lwp_mid_low_1h
+24 cldhght_mid_high_1h
+25 cldpress_mid_high_1h
+26 cldpress_top_mid_high_1h
+27 cldtemp_mid_high_1h
+28 cldtau_mid_high_1h
+29 cldhght_low_1h
+30 cldpress_low_1h
+31 cldpress_top_low_1h
+32 cldtemp_low_1h
+33 cldtau_low_1h
+34 lwp_low_1h
+35 iwp_mid_high_1h
+
+===========================================================================
+INPUT FILE HASH RECORD
+===========================================================================
+Number of input files recorded: 12
+CERES_2010_post_monsoon.nc 788b2c93d787c108e6868a916f8fb2bddcb02e216f42c8e3132f56960cdc6e57
+CERES_2011_post_monsoon.nc 5bffa8b9f8bfc12ce69a435d38551d534bb1804184540aa41a5bc7cfbb2f00f5
+CERES_2012_post_monsoon.nc 24e04bba8860f19f6a078e61d3faa120318b49efdbcc0c3c9706a76df98566c7
+CERES_2013_post_monsoon.nc f517e075ad9f5423130ad19864d03aa3284db4814289c81070ba4de3c07fb5da
+CERES_2014_post_monsoon.nc fe6c3415069250521e1186308191c8f12c72b74ef0574f684d00da7e68ff0e45
+CERES_2015_post_monsoon.nc 2b57d4120fb0f5b24d3d70150b4ea5d07426e09e7f3aa2cb768cbf326317c869
+CERES_2016_post_monsoon.nc 2e24d4a79830916bdc97314d1e6d136e248d23d7cebbe03ed7301382236a3907
+CERES_2017_post_monsoon.nc b2810b478ee69a5eb828c0f01419a6005bcd5bc9dfcf85548631e931a8ae276e
+CERES_2018_post_monsoon.nc 36d69db482c432ea2f3617fb015dd164fe094fdc8ff20079557ff0eea988f41c
+CERES_2019_post_monsoon.nc c917ae6b4d4747535b4d7bf5df9c6fc24897ef8886f886ccbc4bc64ff55623b4
+CERES_2020_post_monsoon.nc 36b9c8d66723831f35c378d1ac80dd59b8eda903f0ebe7ae2b730bf0bb5e154b
+CERES_2021_post_monsoon.nc f1adec4ca56d92a55a4d5b2cf15800d09dfcfeb463edee565797f8e632ef7cd6
+
+===========================================================================
+INSPECTION COMPLETE
+===========================================================================
+
+Python inspection exit code: 0
+
+========== M20/M21 PYTEST VALIDATION ==========
+============================= test session starts =============================
+platform win32 -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- D:\Project Simulator\monsoon_cloud_research\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Project Simulator\monsoon_cloud_research
+collecting ... collected 6 items
+
+tests/seasons/post_monsoon/test_m20_m21.py::TestM20FeatureRegistryAndMissingness::test_feature_registry_post_monsoon_counts PASSED [ 16%]
+tests/seasons/post_monsoon/test_m20_m21.py::TestM20FeatureRegistryAndMissingness::test_layer_mapping_consistency PASSED [ 33%]
+tests/seasons/post_monsoon/test_m20_m21.py::TestM20FeatureRegistryAndMissingness::test_missingness_classification_rules PASSED [ 50%]
+tests/seasons/post_monsoon/test_m20_m21.py::TestM21ModelReadyArtifacts::test_manifest_completeness_and_status PASSED [ 66%]
+tests/seasons/post_monsoon/test_m20_m21.py::TestM21ModelReadyArtifacts::test_numpy_model_ready_finiteness_and_shape PASSED [ 83%]
+tests/seasons/post_monsoon/test_m20_m21.py::TestM21ModelReadyArtifacts::test_netcdf4_model_ready_structure PASSED [100%]
+
+============================== 6 passed in 1.63s ==============================
+
+Pytest exit code: 0
+
+========== FULL REPORT SUMMARY ==========
+Python inspection exit code: 0
+Pytest exit code: 0
+
+========== DISK SPACE ==========
+
+Name FreeGB
+---- ------
+D    104.04
+
+
+

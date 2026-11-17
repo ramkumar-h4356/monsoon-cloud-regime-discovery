@@ -1,0 +1,5 @@
+m25_regime_id,m25_regime_label,p_m24_c0_given_m25,p_m24_c1_given_m25,p_m24_c2_given_m25,p_m24_c3_given_m25,dominant_m24_cluster,dominant_m24_conditional_prob
+0,Multi-Layer Mixed Cloud Systems,0.148,0.0042,0.029,0.8189,3,0.8189
+1,Boundary-Layer Shallow Cumulus / Fair-Weather,0.0111,0.0004,0.0028,0.9857,3,0.9857
+2,Deep Convective Storm Cores,0.3048,0.0145,0.0537,0.627,3,0.627
+3,Upper-Tropospheric Thin Cirrus & Anvil Outflow Debris,0.1506,0.0102,0.0477,0.7915,3,0.7915

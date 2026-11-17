@@ -1,0 +1,76 @@
+{
+  "milestone": "M18.6",
+  "title": "Feature-Set Experiment Orchestration",
+  "expected_feature_counts": {
+    "FS-A": 36,
+    "FS-B": 21,
+    "FS-C": 21,
+    "FS-D": 21,
+    "FS-E": 16,
+    "FS-F": 21
+  },
+  "stage_a": {
+    "feature_sets": ["FS-A", "FS-B", "FS-C", "FS-D", "FS-E", "FS-F"],
+    "property_treatment": "SA-A",
+    "cloud_area_treatment": "CA-A",
+    "scaler": "robust",
+    "weighting": "equal",
+    "purpose": "baseline"
+  },
+  "stage_b": {
+    "feature_sets": ["FS-A", "FS-B", "FS-C", "FS-D", "FS-E", "FS-F"],
+    "variants": [
+      {
+        "property_treatment": "MD-B",
+        "cloud_area_treatment": "CA-A",
+        "purpose": "residual_missingness_indicator_sensitivity"
+      },
+      {
+        "property_treatment": "SA-B",
+        "cloud_area_treatment": "CA-A",
+        "purpose": "structural_absence_indicator_sensitivity"
+      },
+      {
+        "property_treatment": "SA-A",
+        "cloud_area_treatment": "CA-B",
+        "purpose": "cloud_area_feature_screening_sensitivity"
+      }
+    ]
+  },
+  "stage_c": {
+    "shortlisted_feature_sets": [],
+    "variants": [
+      {
+        "property_treatment": "SA-A",
+        "cloud_area_treatment": "CA-A",
+        "scaler": "standard",
+        "weighting": "equal",
+        "purpose": "standard_scaler_sensitivity"
+      },
+      {
+        "property_treatment": "SA-A",
+        "cloud_area_treatment": "CA-A",
+        "scaler": "robust",
+        "weighting": "family_balanced",
+        "purpose": "family_balanced_weighting_sensitivity"
+      }
+    ]
+  },
+  "validation_policy": {
+    "year_blocked": true,
+    "random_row_split_as_primary": false,
+    "exclude_2017_sensitivity": true,
+    "fit_imputation_and_scaling_on_training_partition_only": true,
+    "spatial_temporal_autocorrelation_must_be_accounted_for": true,
+    "split_definition_status": "to_be_frozen_before_M18_7_processing"
+  },
+  "execution_policy": {
+    "staged_not_full_factorial": true,
+    "resume_existing_run_status": true,
+    "invalidate_runs_when_config_or_feature_registry_hash_changes": true,
+    "atomic_manifest_and_registry_writes": true,
+    "raw_netcdf_modified": false,
+    "large_matrices_created": false,
+    "run_status_values": ["PENDING", "RUNNING", "COMPLETED", "FAILED", "SKIPPED"]
+  }
+}

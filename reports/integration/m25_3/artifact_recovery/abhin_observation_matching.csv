@@ -1,0 +1,8 @@
+comparison_dimension,m25_combined_pipeline,abhin_established_monsoon,compatibility_status,impact_on_correspondence
+Temporal Granularity,"Hourly (720h/yr; 8,294,400 est. monsoon obs)","Daily Aggregation (30d/yr; 345,600 raw obs)",INCOMPATIBLE_SCALE,Direct row-to-row matching mathematically invalid without daily pooling
+Missingness Handling,"CA-A / SA-A Imputation (100% complete: 8,294,400)","Complete-Case Filtering (290,355 complete cases)",FILTER_MISMATCH,"55,245 daily observations dropped in Abhin; zero dropped in M25"
+Feature Space,FS-A: 36 variables across all 4 cloud layers + LWP,Group B: 14 variables (total and high clouds only),SUBSPACE_PROJECTION,PCA and clustering span fundamentally different metric spaces
+Scaling Strategy,RobustScaler fitted across 3 seasons (2010-2016),StandardScaler / log1p sensitivity,TRANSFORM_MISMATCH,Distance metrics not invariant to scaling differences
+Cluster Count,K = 4 regimes,K = 2 (leading) and K = 3 (candidate),CARDINALITY_MISMATCH,Requires non-bijective contingency comparison
+Observation Assignment Array,"combined_3season_cluster_labels.npy (24,883,200 rows)",MISSING: established_monsoon_fixed_cluster_assignments.csv not committed,MISSING_ARTIFACT,CORRESPONDENCE IMPOSSIBLE WITHOUT DATA FABRICATION
+Overall Workstream Status,COMPLETED & AUDITED,BLOCKED_MISSING_ASSIGNMENT_ARTIFACTS,GATE_BLOCKED,Formal gate failure: correspondence execution suspended

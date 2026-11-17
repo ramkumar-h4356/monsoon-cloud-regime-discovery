@@ -1,0 +1,19 @@
+component_id,component_name,evaluated_scope,independent_verdict,scientific_rationale
+C01,FDR p-to-q Reconciliation,Recalculation of BH q-values from independently reproduced p-values,VERIFIED,"q-values reconciled: Established Monsoon top 4 tests achieve q = 0.0374 (perm) and q = 0.0304-0.0317 (Student t), strictly <= 0.05."
+C02,Rainfall Multiplicity Audit,54 rainfall modulation tests (9 metrics x 2 indices x 3 seasons),VERIFIED,Confirmed: 0 of 54 tests survive global FDR q <= 0.10. Pre-monsoon R1 conditional mean is candidate exploratory under seasonal m=18 (q=0.0905).
+C03,Interaction Multiplicity Audit,21 linear interaction hypotheses (RONI x DMI),VERIFIED,Confirmed: 0 of 21 tests survive FDR q <= 0.10 (lowest q = 0.244). No non-linear interference established.
+C04,Freedman-Lane Mathematical Correctness,Conventional FL vs predictor-residual variant across 8 synthetic cases,VERIFIED,Symmetric projection duality confirmed: Both variants produce identical statistical decisions and control Type I error.
+C05,Freedman-Lane Inferential Assumptions,Exchangeability under N=12 and temporal autocorrelation,VERIFIED WITH LIMITATIONS,"Computationally exact (B=100,000); inferential validity constrained by small N=12 interannual sample lattice."
+C06,Year-Block Permutation Verification,Preservation of 3-season annual triplets in pooled regressions,VERIFIED,"Confirmed: Naive pooled significance (p=0.0035, q=0.014) collapses under block permutation (p=0.0125, q=0.2496 > 0.10)."
+C07,Effective Sample Size Interpretation,"Kish design effect VIF = 2.673, N_eff = 13.47",VERIFIED WITH LIMITATIONS,"Corrected interpretation: 13.47 is an approximate effective observation count under repeated measures, NOT independent years."
+C08,Spatial Field Permutation Verification,"12 field tests across 328 terrestrial cells (B=5,000)",VERIFIED,Confirmed: Established Monsoon Rain vs RONI (p=0.07219 > 0.05) is non-significant; Pre-Monsoon R2 vs DMI (p=0.02020 <= 0.05) is candidate.
+C09,Spatial Field Method Naming,Algorithmic designation and correspondence to Livezey-Chen,VERIFIED,Designated formally as 'Year-block spatial field permutation test (Livezey-Chen field counting formulation)'.
+C10,CLR Calculations & ERR-01 Resolution,Aitchison simplex geometry and resolution of narrative transcription error,VERIFIED,ERR-M27.7.1-01 resolved: Simple CLR correlations are non-significant; partial CLR correlations preserve convective dipole.
+C11,CLR Methodological Interpretation,Framing as sensitivity analysis vs physical confirmation,VERIFIED,Designated as 'Compositional sensitivity analysis'; all causal claims avoided.
+C12,Scientific Language & Boundaries,Purging causal claims across reports and figures,VERIFIED,All 8 language overstatements replaced with defensible observational and statistical phrasing.
+C13,Figure Consistency & Traceability,"All annotations in Figures 04, 06, 07, 08",VERIFIED,100% of figure annotations trace exactly to verified CSV tables.
+C14,Report Consistency & Traceability,All M27.7.2 markdown deliverables,VERIFIED,"Reports strictly reflect reconciled q-values, block permutation, and field test limits."
+C15,Synthetic Validation & Failure Injection,Deliberate failure fixtures in test suite,VERIFIED,"8 failure fixtures confirm detection of improper sorting, invalid pooling, spatial cell shuffling, and uncorrected MC p-values."
+C16,Full Regression Testing,"All project integration test suites across M25, M26, and M27",VERIFIED,Executed across both canonical repository and secondary worktree with 100% passing results.
+C17,Frozen Artifact Immutability,"M25 (24.88M), M26 (342.4K), NOAA raw, M27, M27.7, M27.7.1",VERIFIED,Zero modifications to baseline files; SHA-256 hashes match historical records exactly.
+C18,Dual Repository Parity,Canonical vs secondary worktree file comparison,VERIFIED,100.0% byte-for-byte SHA-256 parity achieved across all deliverables.

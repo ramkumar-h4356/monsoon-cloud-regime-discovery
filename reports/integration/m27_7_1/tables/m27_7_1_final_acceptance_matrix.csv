@@ -1,0 +1,18 @@
+component_id,component_description,verification_verdict,scientific_evaluation_notes
+01_data_integrity,"Frozen M25, M26, and raw NOAA climate inputs",VERIFIED,Cryptographic SHA256 hashes and array lengths 100% matched.
+02_partial_spearman_formula,Analytical formula vs residualized rank regression,VERIFIED,Machine precision agreement (|Delta rho| < 1e-15) across all tests.
+03_freedman_lane_implementation,Permutation of reduced model residuals (B=100k),VERIFIED_WITH_LIMITATIONS,"Computationally exact, but exchangeability under N=12 has limited power."
+04_partial_spearman_pvalues,Permutation vs Student's t distribution with df=9,VERIFIED,Permutation p-values closely match analytical t-distribution.
+05_fdr_family_construction,Seasonal 8-hypothesis families for partial Spearman,VERIFIED,Well-defined families; 4 established monsoon tests confirmed (q <= 0.05).
+06_rainfall_multiplicity,54 rainfall modulation tests under BH-FDR control,VERIFIED,Only 1 test achieves q <= 0.10 under m=18; 0 tests under m=54.
+07_interaction_multiplicity,21 interaction regression tests (RONI x DMI),VERIFIED,Zero tests achieve q <= 0.10; non-linear interference claims refuted.
+08_clr_calculations,Centered Log-Ratio compositional transformation,VERIFIED_WITH_LIMITATIONS,"CLR table verified, but narrative report text had transcription error."
+09_pooled_year_dependence,Cross-seasonal pooling across 36 observations,VERIFIED,Intra-year correlation r=0.836 causes 66% degrees-of-freedom deficit.
+10_year_block_permutation,Coherent 12 calendar-year block permutation (B=100k),VERIFIED,Proves pooled R0 vs DMI is an artifact of seasonal pseudo-replication.
+11_spatial_field_permutation,Livezey-Chen year-level spatial permutation (B=5k),VERIFIED,Correctly accounts for spatial autocorrelation across 328 cells.
+12_phase_contrasts,Post-monsoon El Niño (N=2) vs La Niña (N=6),VERIFIED,Confirmed non-significant (p=0.214); convective collapse claims refuted.
+13_joint_phase_matrix,3x3 joint ENSO x IOD phase matrix occupancy,VERIFIED,Correctly designated HIGHLY_SPARSE_DESCRIPTIVE_ONLY (67-78% sparse).
+14_figure_consistency,Traceability of annotations in 4 corrected figures,VERIFIED,"All numeric annotations, sample sizes, and p/q values 100% traceable."
+15_report_consistency,"Scientific tone, removal of causal overstatements",VERIFIED_WITH_LIMITATIONS,"Reports are transparent, with 1 minor CLR text erratum identified."
+16_repository_parity,Dual-repository byte-for-byte SHA256 parity,VERIFIED,100% parity across canonical and secondary repositories.
+17_frozen_preservation,"Zero modification to M25, M26, M27, and 0 git mutations",VERIFIED,All frozen baselines strictly preserved; 0 git commits/mutations.

@@ -1,0 +1,10 @@
+metric_item,source_artifact_value,earlier_correspondence_report,integrated_synthesis_text,reconciliation_finding,true_empirical_count,true_prevalence_pct,correction_status
+Total Established-Monsoon Complete Cases,"290,355","290,355","290,355","EXACT_MATCH across all assignment CSVs, NPZ metadata, and aggregation tables.",290355,100.0,VERIFIED
+Excluded Incomplete Grid-Days,"55,245","55,245","55,245","EXACT_MATCH (15.99% of 345,600 total grid-days). Zero spatial indexing errors.",55245,15.99,VERIFIED
+Baseline K=2 Cluster 0,"155,834 (53.67%)","155,834 (53.67%)","82,045 (28.3%)","DISCREPANCY DETECTED. 82,045 in integrated text was an erroneous manual calculation applying 28.26% to 290,355.",155834,53.67,CORRECTION_REQUIRED
+Baseline K=2 Cluster 1,"134,521 (46.33%)","134,521 (46.33%)","208,310 (71.7%)","DISCREPANCY DETECTED. 208,310 in integrated text was an erroneous manual calculation applying 71.74% to 290,355.",134521,46.33,CORRECTION_REQUIRED
+Log K=2 Cluster 0,"145,290 (50.04%)","145,290 (50.04%)","145,290 (50.04%)",EXACT_MATCH. Represents anvil-dominated cluster in log-transformed space.,145290,50.04,VERIFIED
+Log K=2 Cluster 1,"145,065 (49.96%)","145,065 (49.96%)","145,065 (49.96%)",EXACT_MATCH. Represents convectively mixed / suppressed cluster in log-transformed space.,145065,49.96,VERIFIED
+Log K=3 Cluster 0,"93,646 (32.25%)","93,646 (32.25%)","93,646 (32.25%)",EXACT_MATCH. Intermediate mixed convective state.,93646,32.25,VERIFIED
+Log K=3 Cluster 1,"80,702 (27.79%)","80,702 (27.79%)","80,702 (27.79%)",EXACT_MATCH. Suppressed low-cloud state.,80702,27.79,VERIFIED
+Log K=3 Cluster 2,"116,007 (39.95%)","116,007 (39.95%)","116,007 (39.95%)",EXACT_MATCH. Deep convective anvil state.,116007,39.95,VERIFIED

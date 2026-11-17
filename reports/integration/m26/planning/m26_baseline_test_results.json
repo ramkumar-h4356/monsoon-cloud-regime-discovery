@@ -1,0 +1,658 @@
+{
+  "milestone": "M26",
+  "phase": "Pre-Implementation Baseline Test Suite Audit",
+  "timestamp": "2026-11-17T00:44:00+05:30",
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "python_version": "3.13.15",
+    "pytest_version": "9.2.0"
+  },
+  "summary": {
+    "total_collected": 78,
+    "passed": 78,
+    "failed": 0,
+    "skipped": 0,
+    "exit_code": 0,
+    "total_duration_seconds": 5.5,
+    "status": "ALL_PASSED_ZERO_REGRESSIONS"
+  },
+  "modules_tested": {
+    "test_cross_season_integration.py": 3,
+    "test_m25_1_validation.py": 7,
+    "test_m25_2_audit.py": 5,
+    "test_m25_3_1_acceptance_audit.py": 8,
+    "test_m25_3_artifact_recovery.py": 9,
+    "test_m25_3_established_monsoon_correspondence.py": 10,
+    "test_m25_3_post_monsoon_correspondence.py": 10,
+    "test_m25_3_preflight.py": 7,
+    "test_m25_3_tri_seasonal_synthesis.py": 9,
+    "test_m25_4_imd_readiness.py": 10
+  },
+  "test_cases": [
+    {
+      "nodeid": "tests/integration/test_cross_season_integration.py::test_seasonal_dataset_coverage",
+      "outcome": "passed",
+      "duration_seconds": 0.0007,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_cross_season_integration.py::test_climate_index_reconciliation_sources",
+      "outcome": "passed",
+      "duration_seconds": 0.0115,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_cross_season_integration.py::test_cross_season_synthesis_summary",
+      "outcome": "passed",
+      "duration_seconds": 0.0033,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_1_validation.py::test_validation_manifest_exists_and_complete",
+      "outcome": "passed",
+      "duration_seconds": 0.0007,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_1_validation.py::test_raw_vs_imputed_profiles",
+      "outcome": "passed",
+      "duration_seconds": 0.011,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_1_validation.py::test_iwp_lwp_missingness_deep_dive",
+      "outcome": "passed",
+      "duration_seconds": 0.0026,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_1_validation.py::test_cluster_stability_ari",
+      "outcome": "passed",
+      "duration_seconds": 0.0021,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_1_validation.py::test_pca_representation_sensitivity",
+      "outcome": "passed",
+      "duration_seconds": 0.0024,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_1_validation.py::test_temporal_generalization",
+      "outcome": "passed",
+      "duration_seconds": 0.0024,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_1_validation.py::test_revised_regime_taxonomy",
+      "outcome": "passed",
+      "duration_seconds": 0.0029,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_2_audit.py::test_audit_manifest_exists_and_valid",
+      "outcome": "passed",
+      "duration_seconds": 0.0007,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_2_audit.py::test_methodology_comparison_schema",
+      "outcome": "passed",
+      "duration_seconds": 0.0039,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_2_audit.py::test_artifact_inventory_coverage",
+      "outcome": "passed",
+      "duration_seconds": 0.0017,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_2_audit.py::test_research_gap_register_completeness",
+      "outcome": "passed",
+      "duration_seconds": 0.002,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_2_audit.py::test_reconciliation_report_exists_and_complete",
+      "outcome": "passed",
+      "duration_seconds": 0.0006,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_1_acceptance_audit.py::test_acceptance_deliverables_existence",
+      "outcome": "passed",
+      "duration_seconds": 0.0009,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_1_acceptance_audit.py::test_seasonal_window_verification",
+      "outcome": "passed",
+      "duration_seconds": 0.002,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_1_acceptance_audit.py::test_spatial_grid_verification",
+      "outcome": "passed",
+      "duration_seconds": 0.002,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_1_acceptance_audit.py::test_established_population_reconciliation",
+      "outcome": "passed",
+      "duration_seconds": 0.002,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_1_acceptance_audit.py::test_evidence_matrix_schema_and_classifications",
+      "outcome": "passed",
+      "duration_seconds": 0.0014,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_1_acceptance_audit.py::test_acceptance_manifest_schema_and_decision",
+      "outcome": "passed",
+      "duration_seconds": 0.0005,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_1_acceptance_audit.py::test_zip_archive_integrity",
+      "outcome": "passed",
+      "duration_seconds": 0.0027,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_1_acceptance_audit.py::test_mirroring_to_post_monsoon",
+      "outcome": "passed",
+      "duration_seconds": 0.0007,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_noshin_artifact_inventory_and_checksums",
+      "outcome": "passed",
+      "duration_seconds": 0.0037,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_noshin_coordinate_and_label_integrity",
+      "outcome": "passed",
+      "duration_seconds": 0.0015,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_noshin_matching_gate",
+      "outcome": "passed",
+      "duration_seconds": 0.0017,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_abhin_provenance_and_git_ref",
+      "outcome": "passed",
+      "duration_seconds": 0.0016,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_abhin_missing_assignment_artifacts",
+      "outcome": "passed",
+      "duration_seconds": 0.0033,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_abhin_complete_case_metrics",
+      "outcome": "passed",
+      "duration_seconds": 0.0018,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_recovery_manifest_structure",
+      "outcome": "passed",
+      "duration_seconds": 0.0006,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_recovery_report_contents",
+      "outcome": "passed",
+      "duration_seconds": 0.0006,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_artifact_recovery.py::test_handoff_zip_archives",
+      "outcome": "passed",
+      "duration_seconds": 0.0141,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_recovered_artifacts_inventory_and_integrity",
+      "outcome": "passed",
+      "duration_seconds": 0.0025,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_schema_and_provenance_audit",
+      "outcome": "passed",
+      "duration_seconds": 0.0014,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_metadata_feature_ordering",
+      "outcome": "passed",
+      "duration_seconds": 0.0015,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_m25_daily_aggregation_completeness",
+      "outcome": "passed",
+      "duration_seconds": 0.2415,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_exact_observation_matching",
+      "outcome": "passed",
+      "duration_seconds": 0.0024,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_contingency_matrices_and_normalization",
+      "outcome": "passed",
+      "duration_seconds": 0.0055,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_soft_assignment_profiles",
+      "outcome": "passed",
+      "duration_seconds": 0.0026,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_splitwise_metrics",
+      "outcome": "passed",
+      "duration_seconds": 0.0015,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_manifest_report_and_figures",
+      "outcome": "passed",
+      "duration_seconds": 0.001,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_established_monsoon_correspondence.py::test_handoff_zip_validity",
+      "outcome": "passed",
+      "duration_seconds": 0.1606,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_exact_label_array_sizes",
+      "outcome": "passed",
+      "duration_seconds": 0.049,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_valid_cluster_label_ranges",
+      "outcome": "passed",
+      "duration_seconds": 0.0943,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_unique_observation_keys_and_onetoone_matching",
+      "outcome": "passed",
+      "duration_seconds": 0.2329,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_seasonal_window_boundaries",
+      "outcome": "passed",
+      "duration_seconds": 0.0012,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_grid_cell_coverage",
+      "outcome": "passed",
+      "duration_seconds": 0.0029,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_contingency_matrix_totals",
+      "outcome": "passed",
+      "duration_seconds": 0.1087,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_row_and_column_normalization",
+      "outcome": "passed",
+      "duration_seconds": 0.0042,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_ari_nmi_reproducibility",
+      "outcome": "passed",
+      "duration_seconds": 2.6013,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_no_mutation_of_input_files",
+      "outcome": "passed",
+      "duration_seconds": 0.0434,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_post_monsoon_correspondence.py::test_manifest_and_report_completeness",
+      "outcome": "passed",
+      "duration_seconds": 0.0011,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_preflight.py::test_m25_2_corrections_file_exists",
+      "outcome": "passed",
+      "duration_seconds": 0.0006,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_preflight.py::test_m25_2_corrections_content_coverage",
+      "outcome": "passed",
+      "duration_seconds": 0.0018,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_preflight.py::test_m25_2_reconciliation_document_amended",
+      "outcome": "passed",
+      "duration_seconds": 0.0006,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_preflight.py::test_assignment_artifact_inventory_schema",
+      "outcome": "passed",
+      "duration_seconds": 0.0518,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_preflight.py::test_seasonal_matching_readiness_schema",
+      "outcome": "passed",
+      "duration_seconds": 0.0082,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_preflight.py::test_m25_3_preflight_manifest_validity",
+      "outcome": "passed",
+      "duration_seconds": 0.0013,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_preflight.py::test_physical_label_arrays_on_disk",
+      "outcome": "passed",
+      "duration_seconds": 0.0024,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_tri_seasonal_deliverables_existence",
+      "outcome": "passed",
+      "duration_seconds": 0.0022,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_artifact_inventory_integrity",
+      "outcome": "passed",
+      "duration_seconds": 0.0112,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_methodology_comparison_schema",
+      "outcome": "passed",
+      "duration_seconds": 0.0028,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_correspondence_summary_metrics",
+      "outcome": "passed",
+      "duration_seconds": 0.0102,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_cluster_profiles_taxonomy",
+      "outcome": "passed",
+      "duration_seconds": 0.0035,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_temporal_stability_metrics",
+      "outcome": "passed",
+      "duration_seconds": 0.0072,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_manifest_schema_and_integrity",
+      "outcome": "passed",
+      "duration_seconds": 0.0012,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_handoff_zip_archive_validity",
+      "outcome": "passed",
+      "duration_seconds": 0.005,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_3_tri_seasonal_synthesis.py::test_mirroring_to_post_monsoon",
+      "outcome": "passed",
+      "duration_seconds": 0.0023,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_m25_3_closeout_and_revised_matrix",
+      "outcome": "passed",
+      "duration_seconds": 0.0071,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_imd_readiness_deliverables_existence",
+      "outcome": "passed",
+      "duration_seconds": 0.0012,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_imd_rainfall_artifact_inventory",
+      "outcome": "passed",
+      "duration_seconds": 0.0081,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_imd_temporal_coverage",
+      "outcome": "passed",
+      "duration_seconds": 0.0061,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_imd_spatial_grid_and_mask",
+      "outcome": "passed",
+      "duration_seconds": 0.0017,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_imd_missingness_and_quality",
+      "outcome": "passed",
+      "duration_seconds": 0.0052,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_imd_integration_schema",
+      "outcome": "passed",
+      "duration_seconds": 0.0011,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_readiness_decisions_and_manifest",
+      "outcome": "passed",
+      "duration_seconds": 0.001,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_handoff_zip_validity",
+      "outcome": "passed",
+      "duration_seconds": 0.0027,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    },
+    {
+      "nodeid": "tests/integration/test_m25_4_imd_readiness.py::test_mirroring_to_post_monsoon",
+      "outcome": "passed",
+      "duration_seconds": 0.0026,
+      "failed": false,
+      "passed": true,
+      "skipped": false
+    }
+  ]
+}

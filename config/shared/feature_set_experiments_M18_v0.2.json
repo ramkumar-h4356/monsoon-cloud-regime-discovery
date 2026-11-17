@@ -1,0 +1,278 @@
+{
+  "specification": "M18 Missingness-Aware Feature Engineering",
+  "version": "0.2",
+  "status": "proposed_not_executed",
+  "study": {
+    "years": [
+      2010,
+      2021
+    ],
+    "seasons": {
+      "pre_monsoon": [
+        "04-15",
+        "05-14"
+      ],
+      "established_monsoon": [
+        "07-15",
+        "08-13"
+      ],
+      "post_monsoon": [
+        "10-15",
+        "11-13"
+      ]
+    },
+    "spatial_domain": {
+      "latitude": [
+        6,
+        38
+      ],
+      "longitude": [
+        68,
+        98
+      ]
+    },
+    "grid_shape": [
+      32,
+      30
+    ],
+    "timestamps_per_seasonal_file": 720,
+    "grid_cell_hour_observations_expected": 24883200
+  },
+  "candidate_pool": {
+    "source": "reports/data_quality/ceres_feature_screening_summary.csv",
+    "status_column": "status",
+    "variable_column": "variable",
+    "layer_column": "vertical_layer",
+    "eligible_status": "ELIGIBLE_CANDIDATE",
+    "expected_count": 36,
+    "excluded_high_missingness": [
+      "lwp_mid_high_1h",
+      "iwp_mid_low_1h",
+      "lwp_high_1h",
+      "iwp_low_1h"
+    ],
+    "categorical_separate": "cloud_phase"
+  },
+  "feature_sets": {
+    "FS-A": {
+      "name": "full_eligible_candidate_pool",
+      "include_patterns": [
+        ".*"
+      ],
+      "exclude_patterns": [],
+      "purpose": "Broad baseline; candidate pool only.",
+      "expected_count": 36
+    },
+    "FS-B": {
+      "name": "effective_height_representation",
+      "include_prefixes": [
+        "cldarea_",
+        "cldtau_",
+        "lwp_",
+        "iwp_",
+        "cldhght_"
+      ],
+      "exclude_prefixes": [
+        "cldpress_",
+        "cldtemp_"
+      ],
+      "purpose": "One vertical-structure family represented by effective height.",
+      "expected_count": 21
+    },
+    "FS-C": {
+      "name": "effective_pressure_representation",
+      "include_prefixes": [
+        "cldarea_",
+        "cldtau_",
+        "lwp_",
+        "iwp_",
+        "cldpress_"
+      ],
+      "exclude_prefixes": [
+        "cldpress_top_",
+        "cldhght_",
+        "cldtemp_"
+      ],
+      "purpose": "One vertical-structure family represented by effective pressure.",
+      "expected_count": 21
+    },
+    "FS-D": {
+      "name": "effective_temperature_representation",
+      "include_prefixes": [
+        "cldarea_",
+        "cldtau_",
+        "lwp_",
+        "iwp_",
+        "cldtemp_"
+      ],
+      "exclude_prefixes": [
+        "cldpress_",
+        "cldhght_"
+      ],
+      "purpose": "One vertical-structure family represented by effective temperature.",
+      "expected_count": 21
+    },
+    "FS-E": {
+      "name": "physical_properties_without_vertical_descriptor",
+      "include_prefixes": [
+        "cldarea_",
+        "cldtau_",
+        "lwp_",
+        "iwp_"
+      ],
+      "exclude_prefixes": [
+        "cldpress_",
+        "cldpress_top_",
+        "cldhght_",
+        "cldtemp_"
+      ],
+      "purpose": "Cloud amount, optical and water properties only.",
+      "expected_count": 16
+    },
+    "FS-F": {
+      "name": "cloud_top_pressure_sensitivity",
+      "include_prefixes": [
+        "cldarea_",
+        "cldtau_",
+        "lwp_",
+        "iwp_",
+        "cldpress_top_"
+      ],
+      "exclude_prefixes": [
+        "cldhght_",
+        "cldtemp_"
+      ],
+      "purpose": "Alternative vertical descriptor using cloud-top pressure; excludes effective pressure without excluding cldpress_top_.",
+      "expected_count": 21,
+      "exclude_patterns": [
+        "^cldpress_(?!top_).*$"
+      ]
+    }
+  },
+  "missingness_classes": {
+    "observed": "property_is_finite",
+    "structural_absence_associated": "matching_area_is_finite_and_zero_and_property_is_missing",
+    "residual_missing": "matching_area_is_finite_and_positive_and_property_is_missing",
+    "unknown_cloud_availability": "matching_area_is_missing"
+  },
+  "missing_data_experiments": {
+    "MD-A": {
+      "name": "conditional_median_baseline",
+      "structural_absence_fill": "median_of_property_when_matching_area_positive",
+      "residual_missing_fill": "same_conditional_median",
+      "unknown_cloud_availability": "feature_median_plus_separate_quality_mask",
+      "missingness_indicators": false
+    },
+    "MD-B": {
+      "name": "conditional_median_plus_residual_missingness_indicators",
+      "inherits": "MD-A",
+      "missingness_indicators": "residual_missing_only"
+    },
+    "MD-C": {
+      "name": "conservative_feature_exclusion",
+      "inherits": "MD-A",
+      "residual_missingness_bands": {
+        "low_concern_max": 0.05,
+        "sensitivity_review_max": 0.2,
+        "above_review_threshold": "exclude_from_primary_variant_unless_justified"
+      }
+    },
+    "SA-A": {
+      "name": "structural_absence_indicator_sensitivity",
+      "inherits": "MD-A",
+      "missingness_indicators": "structural_absence_only",
+      "purpose": "Test whether explicitly marking cloud-absence-associated undefined properties changes the clustering result."
+    },
+    "SA-B": {
+      "name": "structural_and_residual_missingness_indicator_sensitivity",
+      "inherits": "MD-A",
+      "missingness_indicators": [
+        "structural_absence",
+        "residual_missing"
+      ],
+      "purpose": "Joint indicator sensitivity; compare against MD-A, MD-B and SA-A."
+    },
+    "MD-D": {
+      "name": "indicator_comparison_protocol",
+      "compare": [
+        "MD-A",
+        "MD-B",
+        "SA-A",
+        "SA-B"
+      ],
+      "hold_constant": [
+        "feature_set",
+        "rows",
+        "imputation_values",
+        "scaler",
+        "clustering_algorithm",
+        "clustering_parameters",
+        "random_seed"
+      ],
+      "purpose": "Attribute differences to indicator design rather than unrelated pipeline changes."
+    }
+  },
+  "scaling_experiments": [
+    "RobustScaler",
+    "StandardScaler"
+  ],
+  "family_weighting_experiments": [
+    "equal_weight_per_standardized_feature",
+    "family_balanced_total_contribution"
+  ],
+  "validation": {
+    "year_blocked": true,
+    "exclude_2017_sensitivity": true,
+    "spatial_temporal_autocorrelation": "must_be_accounted_for",
+    "fit_imputer_scaler_on_training_partition_only": true,
+    "year_blocked_strategy": "Use predefined contiguous year-block holdouts or block resampling; do not randomly split grid-cell-hour rows.",
+    "indicator_leakage_check": "Inspect whether cluster assignments or profiles are strongly associated with missingness indicators and retrieval availability.",
+    "report_2017_sensitivity": true,
+    "report_feature_and_cluster_stability": true
+  },
+  "execution_gates": [
+    "resolve_exact_36_feature_membership_from_screening_report",
+    "validate_layer_mapping_for_every_included_layer_specific_property",
+    "verify_variable_units_and_definitions",
+    "verify_FS_A_to_FS_F_membership_counts",
+    "compare_MD_A_with_MD_B_and_structural_absence_sensitivities_SA_A_and_SA_B",
+    "include_2017_sensitivity_experiment",
+    "define_year_blocked_validation_partitions_before_fitting",
+    "test_chunked_memory_footprint",
+    "verify_no_raw_or_large_intermediate_data_are_added_to_git"
+  ],
+  "feature_set_selection": {
+    "selection_order": "union_of_include_rules_then_apply_all_exclusions",
+    "prefix_matching": "literal_startswith",
+    "regex_matching": "Python regular-expression full variable-name matching",
+    "note": "For FS-F, the effective-pressure exclusion uses a negative lookahead so cldpress_top_ variables remain eligible."
+  },
+  "cloud_area_mapping": {
+    "matching_rule": "For a layer-specific property, extract the layer suffix and map it to cldarea_{layer}_1h.",
+    "valid_layers": [
+      "high",
+      "mid_high",
+      "mid_low",
+      "low",
+      "total"
+    ],
+    "property_prefixes_longest_first": [
+      "cldpress_top_",
+      "cldpress_",
+      "cldhght_",
+      "cldtemp_",
+      "cldtau_",
+      "lwp_",
+      "iwp_"
+    ],
+    "cloud_area_prefix": "cldarea_",
+    "cloud_area_suffix": "_1h",
+    "regression_validation": {
+      "property_family_layer_cases": 35,
+      "production_unit_tests": 4,
+      "status": "passed",
+      "additional_audit": "Five cldpress_top_* variables mapped to their corresponding cloud-area layers across 12 years and 3 seasons (180 aggregate records)."
+    },
+    "important": "Test cldpress_top_ before cldpress_; cloud-area variables do not map to themselves."
+  }
+}

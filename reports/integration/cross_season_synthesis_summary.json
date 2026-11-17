@@ -1,0 +1,22 @@
+{
+  "project": "Satellite Cloud Feature Grouping for Exploratory Weather Pattern Analysis",
+  "study_period": "2010-2021",
+  "domain": "India (6-38N, 68-98E, 32x30 grid)",
+  "datasets": {
+    "pre_monsoon_files": 12,
+    "established_monsoon_files": 12,
+    "post_monsoon_files": 12,
+    "total_seasonal_netcdf": 36,
+    "expected_seasonal_netcdf": 36
+  },
+  "feature_registry": {
+    "registered_variables": 36,
+    "expected_candidates": 36
+  },
+  "seasonal_milestones": {
+    "pre_monsoon": "EDA and IWP investigation complete",
+    "established_monsoon": "QC v3, daily aggregation, and rainfall association complete",
+    "post_monsoon": "M19 data integrity audit status: READY FOR DOWNSTREAM ANALYSIS"
+  },
+  "architecture_status": "CONSOLIDATED_UNIFIED"
+}

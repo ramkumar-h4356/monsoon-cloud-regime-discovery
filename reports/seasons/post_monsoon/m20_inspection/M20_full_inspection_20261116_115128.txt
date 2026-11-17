@@ -1,0 +1,656 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261116115128
+Username: BLUFFER\LENOVO
+RunAs User: BLUFFER\LENOVO
+Configuration Name: 
+Machine: BLUFFER (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\LENOVO\AppData\Local\Programs\Microsoft VS Code\69047191fc\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 10116
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+==========================================================================================
+ PROJECT IDENTITY
+==========================================================================================
+Project root: D:\Project Simulator\post_monsoon_research
+Inspection time: 2026-11-16 11:51:28
+Computer: BLUFFER
+PowerShell: 5.1.26100.9818
+
+==========================================================================================
+ GIT STATUS
+==========================================================================================
+
+
+
+
+
+
+
+==========================================================================================
+ GIT TRACKED M18 FILES
+==========================================================================================
+
+config/m18_execution_plan.json
+docs/methodology/M18_4_missingness_treatment_experiments.md
+docs/methodology/M18_5_leakage_safe_imputation_and_scaling.md
+docs/methodology/M18_missingness_aware_feature_engineering.md
+reports/data_quality/ceres_2015_2018_cloud_area_conditioned_missingness
+.csv
+reports/data_quality/ceres_2015_2018_missingness_by_dataset.csv
+reports/data_quality/ceres_2015_2018_missingness_by_utc_hour.csv
+reports/data_quality/ceres_2015_2018_missingness_year_contrasts.csv
+reports/data_quality/ceres_2015_2018_spatial_missingness_by_cell.csv
+reports/data_quality/ceres_2015_2018_spatial_missingness_by_region.csv
+reports/data_quality/ceres_actual_utc_hour_missingness_by_dataset.csv
+reports/data_quality/ceres_actual_utc_hour_missingness_by_season.csv
+reports/data_quality/ceres_missingness_area_association.csv
+reports/data_quality/ceres_missingness_by_dataset.csv
+reports/data_quality/ceres_missingness_hourly_by_season.csv
+reports/data_quality/ceres_missingness_spatial_by_season.csv
+reports/data_quality/ceres_missingness_summary.json
+reports/data_quality/ceres_missingness_variable_summary.csv
+reports/feature_engineering/feature_set_definitions.json
+reports/feature_engineering/feature_set_registry.csv
+reports/feature_engineering/feature_set_registry_validation.json
+src/06_feature_engineering/analyze_ceres_correlation_stability.py
+src/06_feature_engineering/analyze_ceres_cross_season_correlations.py
+src/06_feature_engineering/analyze_ceres_missingness.py
+src/06_feature_engineering/audit_cloud_area_availability.py
+src/06_feature_engineering/build_feature_set_registry.py
+src/06_feature_engineering/feature_scaling.py
+src/06_feature_engineering/missingness_classifier.py
+src/06_feature_engineering/missingness_treatments.py
+src/06_feature_engineering/recompute_ceres_paired_correlations.py
+src/06_feature_engineering/screen_ceres_features.py
+tests/test_missingness_classifier.py
+tests/test_missingness_treatments.py
+
+==========================================================================================
+ SOURCE CODE - FEATURE ENGINEERING
+==========================================================================================
+
+==========================================================================================
+ FEATURE ENGINEERING MODULES
+==========================================================================================
+
+
+
+FullName
+--------
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+
+
+
+==========================================================================================
+ ALL RELEVANT SOURCE MODULES
+==========================================================================================
+
+FullName
+--------
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+D:\Project Simulator\post_monsoon_research\src\06_feature_engineerin...
+
+
+
+==========================================================================================
+ CONFIGURATION FILES
+==========================================================================================
+
+==========================================================================================
+ CONFIG FILES
+==========================================================================================
+
+FullName
+--------
+D:\Project Simulator\post_monsoon_research\config\m18_execution_plan...
+
+
+
+==========================================================================================
+ FEATURE REGISTRY AND EXPERIMENT CONFIGURATION
+==========================================================================================
+NOT FOUND: .\config\feature_set_experiments.json
+
+--- .\config\m18_execution_plan.json ---
+{
+  "milestone": "M18",
+  "title": "Missingness-Aware Feature Engineering",
+  "status": "planned_not_executed",
+  "study": {
+    "years": [
+      2010,
+      2021
+    ],
+    "seasons": {
+      "pre_monsoon": [
+        "04-15",
+        "05-14"
+      ],
+      "established_monsoon": [
+        "07-15",
+        "08-13"
+      ],
+      "post_monsoon": [
+        "10-15",
+        "11-13"
+      ]
+    },
+    "spatial_domain": {
+      "latitude": [
+        6,
+        38
+      ],
+      "longitude": [
+        68,
+        98
+      ]
+    },
+    "grid_shape": [
+      32,
+      30
+    ],
+    "seasonal_files_expected": 36,
+    "timestamps_per_file": 720,
+    "grid_cell_hour_observations_expected": 24883200
+  },
+  "feature_sets": {
+    "registry_config": "config/feature_set_experiments.json",
+    "expected_counts": {
+      "FS-A": 36,
+      "FS-B": 21,
+      "FS-C": 21,
+      "FS-D": 21,
+      "FS-E": 16,
+      "FS-F": 21
+    },
+    "membership_validation_status": "passed"
+  },
+  "missingness_classes": {
+    "observed": "property_is_finite",
+    "structural_absence": "property_missing_and_matching_cloud_area_finite_and_equal_zero",
+    "residual_missing": "property_missing_and_matching_cloud_area_finite_and_positive",
+    "unknown_cloud_availability": "property_missing_and_matching_cloud_area_missing",
+    "cloud_area_missing": "matching_cloud_area_variable_itself_is_missing"
+  },
+  "cloud_area_treatments": {
+    "CA-A": {
+      "name": "training_median_plus_availability_indicator",
+      "fill": "training_partition_median",
+      "add_missingness_indicator": true,
+      "zero_fill_missing_cloud_area": false,
+      "role": "baseline"
+    },
+    "CA-B": {
+      "name": "conservative_cloud_area_feature_exclusion",
+      "missingness_bands": {
+        "low_concern_max": 0.05,
+        "sensitivity_review_max": 0.2,
+        "above_review_threshold": "exclude_from_primary_unless_justified"
+      },
+      "drop_rows_to_hide_missingness": false,
+      "role": "sensitivity"
+    }
+  },
+  "property_treatments": {
+    "MD-A": {
+      "name": "conditional_median_baseline",
+      "structural_absence_fill": "training_median_where_matching_cloud_area_positive",
+      "residual_missing_fill": "same_conditional_training_median",
+      "unknown_availability_fill": "training_feature_median_with_separate_mask",
+      "indicators": []
+    },
+    "MD-B": {
+      "name": "conditional_median_plus_residual_indicator",
+      "inherits": "MD-A",
+      "indicators": [
+        "residual_missing"
+      ]
+    },
+    "MD-C": {
+      "name": "conservative_feature_exclusion",
+      "inherits": "MD-A",
+      "residual_missingness_bands": {
+        "low_concern_max": 0.05,
+        "sensitivity_review_max": 0.2,
+        "above_review_threshold": "exclude_from_primary_unless_justified"
+      }
+    }
+  },
+  "structural_absence_sensitivities": {
+    "SA-A": {
+      "name": "structural_absence_fill_without_indicator",
+      "inherits": "MD-A",
+      "structural_absence_indicator": false
+    },
+    "SA-B": {
+      "name": "structural_absence_fill_with_indicator",
+      "inherits": "MD-A",
+      "structural_absence_indicator": true
+    }
+  },
+  "scaling": {
+    "baseline": "RobustScaler",
+    "sensitivity": [
+      "StandardScaler"
+    ],
+    "fit_training_partition_only": true
+  },
+  "family_weighting": {
+    "baseline": "equal_weight_per_standardized_feature",
+    "sensitivity": [
+      "family_balanced_total_contribution"
+    ]
+  },
+  "experiment_strategy": {
+    "avoid_full_factorial": true,
+    "stage_A": {
+      "feature_sets": [
+        "FS-A",
+        "FS-B",
+        "FS-C",
+        "FS-D",
+        "FS-E",
+        "FS-F"
+      ],
+      "property_treatment": "MD-A",
+      "structural_treatment": "SA-A",
+      "cloud_area_treatment": "CA-A",
+      "scaler": "RobustScaler",
+      "weighting": "equal_weight_per_standardized_feature"
+    },
+    "stage_B": [
+      "compare_MD-B_against_baseline",
+      "compare_SA-B_against_baseline",
+      "run_CA-B_cloud_area_sensitivity"
+    ],
+    "stage_C": [
+      "StandardScaler_on_shortlisted_feature_sets",
+      "family_balanced_weighting_on_shortlisted_feature_sets"
+    ],
+    "stage_D": [
+      "year_blocked_validation",
+      "exclude_2017_sensitivity"
+    ]
+  },
+  "milestones": [
+    {
+      "id": "M18.1",
+      "name": "Methodology and implementation freeze",
+      "status": "planned",
+      "outputs": [
+        "final_methodology",
+        "central_config",
+        "experiment_matrix"
+      ],
+      "acceptance": [
+        "feature_sets_match_registry",
+        "cloud_area_policy_defined",
+        "experiment_rules_unambiguous"
+      ]
+    },
+    {
+      "id": "M18.2",
+      "name": "Full cloud-area availability audit",
+      "status": "planned",
+      "outputs": [
+        "per_dataset_audit",
+        "aggregate_csv_json",
+        "spatial_temporal_summaries"
+      ],
+      "acceptance": [
+        "36_datasets_accounted_for",
+        "counts_reconcile",
+        "missing_area_never_zero_filled"
+      ]
+    },
+    {
+      "id": "M18.3",
+      "name": "Missingness classification engine",
+      "status": "planned",
+      "outputs": [
+        "classification_module",
+        "unit_tests",
+        "integration_tests"
+      ],
+      "acceptance": [
+        "masks_mutually_exclusive",
+        "unknown_not_structural",
+        "five_top_pressure_mappings_correct"
+      ]
+    },
+    {
+      "id": "M18.4",
+      "name": "Missingness treatment experiments",
+      "status": "planned",
+      "outputs": [
+        "treatment_module",
+        "comparison_report",
+        "tests"
+      ],
+      "acceptance": [
+        "valid_zeros_preserved",
+        "masks_not_conflated",
+        "deterministic_outputs"
+      ]
+    },
+    {
+      "id": "M18.5",
+      "name": "Imputation and scaling engine",
+      "status": "planned",
+      "outputs": [
+        "fit_transform_pipeline",
+        "transformation_manifests",
+        "leakage_tests"
+      ],
+      "acceptance": [
+        "training_only_fit",
+        "reproducible_transform",
+        "no_unintended_nan_inf"
+      ]
+    },
+    {
+      "id": "M18.6",
+      "name": "Feature-set experiment orchestration",
+      "status": "planned",
+      "outputs": [
+        "experiment_runner",
+        "experiment_registry",
+        "run_logs"
+      ],
+      "acceptance": [
+        "traceable_runs",
+        "resume_support",
+        "no_uncontrolled_full_factorial"
+      ]
+    },
+    {
+      "id": "M18.7",
+      "name": "Full dataset processing",
+      "status": "planned",
+      "outputs": [
+        "model_ready_matrices",
+        "row_indices",
+        "masks",
+        "processing_manifests"
+      ],
+      "acceptance": [
+        "all_36_inputs_accounted_for",
+        "source_unchanged",
+        "chunked_resumable_processing"
+      ]
+    },
+    {
+      "id": "M18.8",
+      "name": "Quality assurance and robustness",
+      "status": "planned",
+      "outputs": [
+        "qa_report",
+        "robustness_report",
+        "test_results"
+      ],
+      "acceptance": [
+        "mandatory_tests_pass",
+        "2017_sensitivity_included",
+        "autocorrelation_considered"
+      ]
+    },
+    {
+      "id": "M18.9",
+      "name": "Model-ready dataset release",
+      "status": "planned",
+      "outputs": [
+        "approved_matrices",
+        "feature_registry",
+        "masks",
+        "manifests",
+        "final_report"
+      ],
+      "acceptance": [
+        "provenance_complete",
+        "reproducible_handoff",
+        "feature_order_documented"
+      ]
+    }
+  ],
+  "performance": {
+    "chunked_processing": true,
+    "preferred_output_dtype": "float32_after_validation",
+    "bounded_concurrency": true,
+    "reuse_intermediates_only_if_source_and_config_hash_match": true,
+    "atomic_output_writes": true,
+    "resume_from_checkpoints": true,
+    "full_dataset_memory_load_without_estimate": false
+  },
+  "validation": {
+    "year_blocked": true,
+    "exclude_2017_sensitivity": true,
+    "fit_imputer_scaler_on_training_partition_only": true,
+    "spatial_temporal_autocorrelation": "must_be_accounted_for",
+    "random_row_split_as_primary": false
+  },
+  "git": {
+    "required": true,
+    "user_approval_required_for_commit_and_push": true,
+    "exclude_raw_datasets": true,
+    "exclude_large_generated_matrices": true,
+    "suggested_checkpoints": [
+      "research: finalize M18 feature engineering plan",
+      "research: add cloud area availability audit",
+      "feat: implement missingness classification",
+      "feat: add missingness treatment experiments",
+      "feat: add leakage-safe imputation and scaling",
+      "feat: add M18 experiment orchestration",
+      "feat: process model-ready seasonal datasets",
+      "test: validate M18 outputs and robustness",
+      "docs: release M18 model-ready dataset specification"
+    ]
+  },
+  "overall_exit_criteria": [
+    "36_seasonal_datasets_accounted_for",
+    "six_feature_sets_validated",
+    "cloud_area_and_property_missingness_handled_separately",
+    "structural_residual_unknown_classes_correctly_distinguished",
+    "approved_treatments_reproducible",
+    "imputation_and_scaling_leakage_safe",
+    "processing_chunked_resumable_and_memory_bounded",
+    "qa_and_robustness_pass",
+    "matrices_masks_indices_manifests_complete",
+    "documentation_and_git_checkpoints_complete"
+  ],
+  "current_status": "plan_finalized_implementation_not_started"
+}
+
+==========================================================================================
+ FEATURE ENGINEERING REPORTS
+==========================================================================================
+
+==========================================================================================
+ FEATURE ENGINEERING REPORTS
+==========================================================================================
+
+FullName
+--------
+D:\Project Simulator\post_monsoon_research\reports\feature_engineeri...
+D:\Project Simulator\post_monsoon_research\reports\feature_engineeri...
+D:\Project Simulator\post_monsoon_research\reports\feature_engineeri...
+
+
+
+==========================================================================================
+ DATA QUALITY REPORTS
+==========================================================================================
+
+FullName
+--------
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\cere...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\clou...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\clou...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\clou...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\clou...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\post...
+D:\Project Simulator\post_monsoon_research\reports\data_quality\post...
+
+
+
+==========================================================================================
+ ALL M18 / M19 / M20 REPORTS
+==========================================================================================
+
+FullName
+--------
+D:\Project Simulator\post_monsoon_research\reports\feature_engineeri...
+D:\Project Simulator\post_monsoon_research\reports\feature_engineeri...
+D:\Project Simulator\post_monsoon_research\reports\feature_engineeri...
+D:\Project Simulator\post_monsoon_research\reports\m20_inspection\M2...
+
+
+
+==========================================================================================
+ TEST FILES
+==========================================================================================
+
+FullName
+--------
+D:\Project Simulator\post_monsoon_research\tests\test_feature_scalin...
+D:\Project Simulator\post_monsoon_research\tests\test_missingness_cl...
+D:\Project Simulator\post_monsoon_research\tests\test_missingness_tr...
+
+
+
+==========================================================================================
+ GENERATED DATA / INTERMEDIATE OUTPUTS
+==========================================================================================
+
+--- .\data\interim ---
+
+FullName
+--------
+D:\Project Simulator\post_monsoon_research\data\interim\ceres_season...
+
+
+
+NOT FOUND: .\data\processed
+
+NOT FOUND: .\data\model_ready
+
+NOT FOUND: .\data\features
+
+NOT FOUND: .\data\external
+
+==========================================================================================
+ POST-MONSOON CERES INPUT FILES
+==========================================================================================
+CERES directory not found.
+
+==========================================================================================
+ RAINFALL AND CLIMATE INDEX INPUTS
+==========================================================================================
+
+--- .\raw_data\IMD_Rainfall ---
+
+Name     Length LastWriteTime
+----     ------ -------------
+.gitkeep      0 16-11-2026 09:57:49
+
+
+
+--- .\raw_data\NOAA_DMI ---
+
+Name     Length LastWriteTime
+----     ------ -------------
+.gitkeep      0 16-11-2026 09:57:49
+
+
+
+--- .\raw_data\NOAA_RONI ---
+
+Name     Length LastWriteTime
+----     ------ -------------
+.gitkeep      0 16-11-2026 09:57:49
+
+
+
+NOT FOUND: .\data\interim\climate_indices
+
+==========================================================================================
+ PYTHON ENVIRONMENT
+==========================================================================================
+
+
+
+==========================================================================================
+ PYTHON TEST COLLECTION
+==========================================================================================
+
+
+==========================================================================================
+ POSSIBLE LARGE GENERATED FILES
+==========================================================================================
+
+==========================================================================================
+ GIT IGNORE CHECK
+==========================================================================================
+
+
+
+
+==========================================================================================
+ INSPECTION COMPLETE
+==========================================================================================
+Report saved to:
+D:\Project Simulator\post_monsoon_research\reports\m20_inspection\M20_full_inspection_20261116_115128.txt
+**********************
+Windows PowerShell transcript end
+End time: 20261116115131
+**********************

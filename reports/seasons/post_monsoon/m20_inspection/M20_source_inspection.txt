@@ -1,0 +1,2510 @@
+
+========== src\06_feature_engineering\build_feature_set_registry.py ==========
+
+from pathlib import Path
+import json
+import re
+import sys
+
+import pandas as pd
+
+
+ROOT = Path(__file__).resolve().parents[2]
+SCREENING_REPORT = (
+    ROOT / "reports" / "data_quality" /
+    "ceres_feature_screening_summary.csv"
+)
+OUTPUT_DIR = ROOT / "reports" / "feature_engineering"
+
+EXPECTED_CANDIDATES = 36
+ELIGIBLE_STATUS = "ELIGIBLE_CANDIDATE"
+
+BASE_FAMILIES = ("cldarea_", "cldtau_", "lwp_", "iwp_")
+
+
+def family_of(variable):
+    """Classify variable names, checking cloud-top pressure before pressure."""
+    ordered = (
+        ("cldpress_top_", "cloud_top_pressure"),
+        ("cldarea_", "cloud_area"),
+        ("cldtau_", "optical_depth"),
+        ("cldhght_", "effective_height"),
+        ("cldpress_", "effective_pressure"),
+        ("cldtemp_", "effective_temperature"),
+        ("lwp_", "liquid_water_path"),
+        ("iwp_", "ice_water_path"),
+    )
+    for prefix, family in ordered:
+        if variable.startswith(prefix):
+            return family
+    return "unclassified"
+
+
+def layer_from_name(variable):
+    """Extract layer token from supported CERES variable naming patterns."""
+    match = re.search(
+        r"_(total|high|mid_high|mid_low|low)_1h$",
+        variable
+    )
+    return match.group(1) if match else None
+
+
+def feature_set_membership(variable):
+    """Return deterministic membership for FS-A through FS-F."""
+    family = family_of(variable)
+    base = family in {
+        "cloud_area",
+        "optical_depth",
+        "liquid_water_path",
+        "ice_water_path",
+    }
+
+    membership = {
+        "FS-A": True,
+        "FS-B": base or family == "effective_height",
+        "FS-C": base or family == "effective_pressure",
+        "FS-D": base or family == "effective_temperature",
+        "FS-E": base,
+        "FS-F": base or family == "cloud_top_pressure",
+    }
+    return membership
+
+
+def validate_columns(df):
+    required = {"variable", "status", "vertical_layer"}
+    missing = required - set(df.columns)
+    if missing:
+        raise ValueError(
+            "Screening report is missing required columns: "
+            + ", ".join(sorted(missing))
+        )
+
+
+def main():
+    if not SCREENING_REPORT.exists():
+        raise FileNotFoundError(
+            f"Required screening report not found: {SCREENING_REPORT}"
+        )
+
+    df = pd.read_csv(SCREENING_REPORT)
+    validate_columns(df)
+
+    eligible = df.loc[
+        df["status"].astype(str).str.strip().eq(ELIGIBLE_STATUS)
+    ].copy()
+
+    if eligible["variable"].isna().any():
+        raise ValueError("Eligible candidate list contains blank variable names.")
+
+    eligible["variable"] = eligible["variable"].astype(str).str.strip()
+
+    duplicates = eligible["variable"].duplicated(keep=False)
+    if duplicates.any():
+        names = sorted(eligible.loc[duplicates, "variable"].unique())
+        raise ValueError(f"Duplicate eligible variable names: {names}")
+
+    if len(eligible) != EXPECTED_CANDIDATES:
+        raise ValueError(
+            f"Expected {EXPECTED_CANDIDATES} eligible candidates, "
+            f"found {len(eligible)}. Review the screening report before proceeding."
+        )
+
+    rows = []
+    issues = []
+
+    for _, record in eligible.iterrows():
+        variable = record["variable"]
+        family = family_of(variable)
+        name_layer = layer_from_name(variable)
+        report_layer = (
+            str(record["vertical_layer"]).strip()
+            if pd.notna(record["vertical_layer"])
+            else ""
+        )
+
+        if family == "unclassified":
+            issues.append(f"Unclassified variable family: {variable}")
+
+        if name_layer is None:
+            issues.append(f"Could not infer layer from variable name: {variable}")
+
+        if report_layer and name_layer and report_layer != name_layer:
+            issues.append(
+                f"Layer mismatch for {variable}: "
+                f"report={report_layer}, name={name_layer}"
+            )
+
+        membership = feature_set_membership(variable)
+
+        matching_area = (
+            f"cldarea_{name_layer}_1h"
+            if name_layer and family not in {"cloud_area"}
+            else ""
+        )
+
+        rows.append({
+            "variable": variable,
+            "family": family,
+            "layer_from_name": name_layer or "",
+            "screening_vertical_layer": report_layer,
+            "matching_cloud_area_variable": matching_area,
+            **membership,
+        })
+
+    registry = pd.DataFrame(rows)
+
+    candidate_names = set(registry["variable"])
+    area_names = set(
+        registry.loc[
+            registry["family"].eq("cloud_area"), "variable"
+        ]
+    )
+
+    # Validate matching cloud-area names against the eligible pool.
+    for row in registry.itertuples(index=False):
+        area_var = row.matching_cloud_area_variable
+        if area_var and area_var not in area_names:
+            issues.append(
+                f"{row.variable} maps to {area_var}, "
+                "which is not in the eligible cloud-area candidate pool."
+            )
+
+    set_definitions = {}
+    for set_id in ("FS-A", "FS-B", "FS-C", "FS-D", "FS-E", "FS-F"):
+        selected = registry.loc[registry[set_id], "variable"].tolist()
+        families = (
+            registry.loc[registry[set_id], "family"]
+            .value_counts()
+            .sort_index()
+            .to_dict()
+        )
+        set_definitions[set_id] = {
+            "feature_count": len(selected),
+            "variables": selected,
+            "family_counts": families,
+        }
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    registry_path = OUTPUT_DIR / "feature_set_registry.csv"
+    definitions_path = OUTPUT_DIR / "feature_set_definitions.json"
+    validation_path = OUTPUT_DIR / "feature_set_registry_validation.json"
+
+    registry.to_csv(registry_path, index=False)
+
+    definitions = {
+        "specification": "M18 feature-set registry",
+        "source": str(SCREENING_REPORT.relative_to(ROOT)),
+        "eligible_candidate_count": len(eligible),
+        "feature_sets": set_definitions,
+        "notes": [
+            "FS-A through FS-F are candidate experiment definitions, not final selections.",
+            "Cloud-phase variables are not included in this continuous-feature registry.",
+            "Feature family classification is based on CERES variable prefixes.",
+            "Layer mappings are checked against both variable names and screening report metadata.",
+            "A cloud-area match is expected only where the corresponding layer cloud-area variable is part of the eligible candidate pool."
+        ],
+    }
+
+    with open(definitions_path, "w", encoding="utf-8") as f:
+        json.dump(definitions, f, indent=2)
+
+    validation = {
+        "source_report_exists": True,
+        "eligible_candidates_expected": EXPECTED_CANDIDATES,
+        "eligible_candidates_found": len(eligible),
+        "duplicate_variable_names": False,
+        "unclassified_variables": int(
+            registry["family"].eq("unclassified").sum()
+        ),
+        "feature_set_counts": {
+            key: value["feature_count"]
+            for key, value in set_definitions.items()
+        },
+        "issues": issues,
+        "passed": len(issues) == 0,
+        "interpretation": (
+            "A passed registry validates names, family classification and "
+            "declared layer mappings. It does not validate scientific suitability, "
+            "missing-data treatment, or clustering performance."
+        ),
+    }
+
+    with open(validation_path, "w", encoding="utf-8") as f:
+        json.dump(validation, f, indent=2)
+
+    print("\nFEATURE-SET REGISTRY")
+    print("--------------------")
+    for set_id, details in set_definitions.items():
+        print(f"{set_id}: {details['feature_count']} features")
+
+    print("\nVALIDATION")
+    print(json.dumps(validation, indent=2))
+
+    print("\nOUTPUTS")
+    print(registry_path)
+    print(definitions_path)
+    print(validation_path)
+
+    if issues:
+        print(
+            "\nRegistry generated with validation issues. "
+            "Do not proceed to model-ready matrix creation."
+        )
+        sys.exit(2)
+
+    print("\nRegistry validation passed.")
+
+
+if __name__ == "__main__":
+    main()
+
+
+========== src\06_feature_engineering\missingness_classifier.py ==========
+
+
+from enum import IntEnum
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+
+ROOT = Path(__file__).resolve().parents[2]
+
+REGISTRY_PATH = (
+    ROOT
+    / "reports"
+    / "feature_engineering"
+    / "feature_set_registry.csv"
+)
+
+CLOUD_AREA_VARIABLES = {
+    "cldarea_high_1h",
+    "cldarea_mid_high_1h",
+    "cldarea_mid_low_1h",
+    "cldarea_low_1h",
+    "cldarea_total_1h",
+}
+
+
+class MissingnessCode(IntEnum):
+    OBSERVED = 0
+    STRUCTURAL_ABSENCE = 1
+    RESIDUAL_MISSING = 2
+    UNKNOWN_CLOUD_AVAILABILITY = 3
+    CLOUD_AREA_MISSING = 4
+
+
+CLASSIFICATION_LABELS = {
+    int(MissingnessCode.OBSERVED): "OBSERVED",
+    int(MissingnessCode.STRUCTURAL_ABSENCE): "STRUCTURAL_ABSENCE",
+    int(MissingnessCode.RESIDUAL_MISSING): "RESIDUAL_MISSING",
+    int(MissingnessCode.UNKNOWN_CLOUD_AVAILABILITY):
+        "UNKNOWN_CLOUD_AVAILABILITY",
+    int(MissingnessCode.CLOUD_AREA_MISSING): "CLOUD_AREA_MISSING",
+}
+
+
+def load_feature_registry(registry_path=REGISTRY_PATH):
+    registry_path = Path(registry_path)
+
+    if not registry_path.exists():
+        raise FileNotFoundError(
+            f"Feature registry not found: {registry_path}"
+        )
+
+    registry = pd.read_csv(registry_path)
+
+    required_columns = {
+        "variable",
+        "matching_cloud_area_variable",
+    }
+
+    missing_columns = required_columns - set(registry.columns)
+
+    if missing_columns:
+        raise ValueError(
+            f"Registry is missing columns: {sorted(missing_columns)}"
+        )
+
+    if registry["variable"].duplicated().any():
+        duplicates = registry.loc[
+            registry["variable"].duplicated(keep=False),
+            "variable",
+        ].tolist()
+
+        raise ValueError(
+            f"Duplicate variables in registry: {duplicates}"
+        )
+
+    mapping = {}
+
+    for _, row in registry.iterrows():
+        variable = str(row["variable"]).strip()
+
+        area_value = row["matching_cloud_area_variable"]
+
+        if pd.isna(area_value) or not str(area_value).strip():
+            mapping[variable] = None
+            continue
+
+        area_variable = str(area_value).strip()
+
+        if area_variable not in CLOUD_AREA_VARIABLES:
+            raise ValueError(
+                f"Invalid cloud-area mapping for {variable}: "
+                f"{area_variable}"
+            )
+
+        mapping[variable] = area_variable
+
+    return mapping
+
+
+def get_matching_area_variable(variable, registry=None):
+    if variable in CLOUD_AREA_VARIABLES:
+        return None
+
+    if registry is None:
+        registry = load_feature_registry()
+
+    if variable not in registry:
+        raise KeyError(
+            f"Variable not found in feature registry: {variable}"
+        )
+
+    area_variable = registry[variable]
+
+    if area_variable is None:
+        raise ValueError(
+            f"No matching cloud-area variable for: {variable}"
+        )
+
+    return area_variable
+
+
+def classify_missingness(
+    values,
+    variable,
+    area_values=None,
+    area_variable=None,
+):
+    values = np.asarray(values)
+
+    if variable in CLOUD_AREA_VARIABLES:
+        if area_values is not None:
+            raise ValueError(
+                "Do not provide area_values when classifying "
+                "a cloud-area variable."
+            )
+
+        classifications = np.full(
+            values.shape,
+            MissingnessCode.OBSERVED,
+            dtype=np.uint8,
+        )
+
+        classifications[~np.isfinite(values)] = (
+            MissingnessCode.CLOUD_AREA_MISSING
+        )
+
+        return classifications
+
+    if area_values is None:
+        raise ValueError(
+            f"Matching cloud-area values are required for {variable}"
+        )
+
+    if area_variable is None:
+        raise ValueError(
+            f"Matching cloud-area variable must be specified for {variable}"
+        )
+
+    if area_variable not in CLOUD_AREA_VARIABLES:
+        raise ValueError(
+            f"Invalid cloud-area variable: {area_variable}"
+        )
+
+    area_values = np.asarray(area_values)
+
+    if values.shape != area_values.shape:
+        raise ValueError(
+            "Property and cloud-area arrays must have identical shapes: "
+            f"{values.shape} != {area_values.shape}"
+        )
+
+    property_finite = np.isfinite(values)
+    area_finite = np.isfinite(area_values)
+
+    if np.any(area_finite & (area_values < 0)):
+        raise ValueError(
+            f"Negative cloud-area values found in {area_variable}"
+        )
+
+    classifications = np.full(
+        values.shape,
+        MissingnessCode.OBSERVED,
+        dtype=np.uint8,
+    )
+
+    property_missing = ~property_finite
+
+    classifications[
+        property_missing & area_finite & (area_values == 0)
+    ] = MissingnessCode.STRUCTURAL_ABSENCE
+
+    classifications[
+        property_missing & area_finite & (area_values > 0)
+    ] = MissingnessCode.RESIDUAL_MISSING
+
+    classifications[
+        property_missing & ~area_finite
+    ] = MissingnessCode.UNKNOWN_CLOUD_AVAILABILITY
+
+    return classifications
+
+
+def classify_registered_variable(
+    values,
+    variable,
+    area_values=None,
+    registry=None,
+):
+    if variable in CLOUD_AREA_VARIABLES:
+        return classify_missingness(
+            values=values,
+            variable=variable,
+        )
+
+    area_variable = get_matching_area_variable(
+        variable=variable,
+        registry=registry,
+    )
+
+    return classify_missingness(
+        values=values,
+        variable=variable,
+        area_values=area_values,
+        area_variable=area_variable,
+    )
+
+
+def summarize_classifications(classifications):
+    classifications = np.asarray(classifications)
+
+    total = int(classifications.size)
+
+    summary = {
+        "total_values": total,
+    }
+
+    for code, label in CLASSIFICATION_LABELS.items():
+        count = int(np.count_nonzero(classifications == code))
+
+        summary[label.lower()] = count
+        summary[f"{label.lower()}_pct"] = (
+            100 * count / total if total else 0.0
+        )
+
+    return summary
+
+
+========== src\06_feature_engineering\missingness_treatments.py ==========
+
+from dataclasses import dataclass
+
+import numpy as np
+
+from missingness_classifier import MissingnessCode
+
+
+PROPERTY_STRATEGIES = {"MD-A", "MD-B", "SA-A", "SA-B"}
+
+
+@dataclass(frozen=True)
+class PropertyTreatmentModel:
+    strategy: str
+    conditional_median: float
+    overall_median: float
+
+
+@dataclass(frozen=True)
+class CloudAreaTreatmentModel:
+    strategy: str
+    median: float
+    training_missing_pct: float
+
+
+def _validate_same_shape(*arrays):
+    shapes = [np.asarray(array).shape for array in arrays]
+    if len(set(shapes)) != 1:
+        raise ValueError(
+            f"Input arrays must have identical shapes: {shapes}"
+        )
+
+
+def _validate_property_inputs(values, area_values, classifications):
+    values = np.asarray(values, dtype=np.float64)
+    area_values = np.asarray(area_values, dtype=np.float64)
+
+    raw_classifications = np.asarray(classifications)
+    if not np.issubdtype(raw_classifications.dtype, np.integer):
+        if not np.isfinite(raw_classifications).all() or not np.equal(
+            raw_classifications, np.floor(raw_classifications)
+        ).all():
+            raise ValueError("Classifications must contain integer codes.")
+
+    classifications = raw_classifications.astype(np.uint8)
+    _validate_same_shape(values, area_values, classifications)
+
+    valid_codes = {
+        int(code)
+        for code in MissingnessCode
+        if code != MissingnessCode.CLOUD_AREA_MISSING
+    }
+    if not np.isin(classifications, list(valid_codes)).all():
+        raise ValueError("Invalid property missingness classification.")
+
+    if np.any(np.isfinite(area_values) & (area_values < 0)):
+        raise ValueError("Negative cloud-area values are not allowed.")
+
+    property_finite = np.isfinite(values)
+    if np.any(
+        property_finite
+        & (classifications != MissingnessCode.OBSERVED)
+    ):
+        raise ValueError(
+            "Finite property values must be classified as OBSERVED."
+        )
+    if np.any(
+        ~property_finite
+        & (classifications == MissingnessCode.OBSERVED)
+    ):
+        raise ValueError(
+            "Missing property values cannot be classified as OBSERVED."
+        )
+
+    expected_structural = (
+        ~property_finite
+        & np.isfinite(area_values)
+        & (area_values == 0)
+    )
+    expected_residual = (
+        ~property_finite
+        & np.isfinite(area_values)
+        & (area_values > 0)
+    )
+    expected_unknown = ~property_finite & ~np.isfinite(area_values)
+
+    checks = (
+        (
+            MissingnessCode.STRUCTURAL_ABSENCE,
+            expected_structural,
+            "Structural-absence classifications are inconsistent.",
+        ),
+        (
+            MissingnessCode.RESIDUAL_MISSING,
+            expected_residual,
+            "Residual-missing classifications are inconsistent.",
+        ),
+        (
+            MissingnessCode.UNKNOWN_CLOUD_AVAILABILITY,
+            expected_unknown,
+            "Unknown-cloud-availability classifications are inconsistent.",
+        ),
+    )
+    for code, expected, message in checks:
+        if not np.array_equal(classifications == code, expected):
+            raise ValueError(message)
+
+    return values, area_values, classifications
+
+
+def fit_property_treatment(
+    train_values,
+    train_area_values,
+    train_classifications,
+    strategy="MD-A",
+):
+    """Fit training-only medians for MD-A/MD-B/SA-A/SA-B.
+
+    All four strategies use the same imputation values. They differ only in
+    which missingness indicators are emitted during transformation.
+    """
+    if strategy not in PROPERTY_STRATEGIES:
+        raise ValueError(f"Unsupported property strategy: {strategy}")
+
+    values, area_values, classifications = _validate_property_inputs(
+        train_values,
+        train_area_values,
+        train_classifications,
+    )
+
+    finite_property = np.isfinite(values)
+    if not finite_property.any():
+        raise ValueError(
+            "Cannot fit property treatment without finite training values."
+        )
+
+    conditional_mask = (
+        finite_property
+        & np.isfinite(area_values)
+        & (area_values > 0)
+        & (classifications == MissingnessCode.OBSERVED)
+    )
+    if not conditional_mask.any():
+        raise ValueError(
+            "No finite training property values with positive cloud area."
+        )
+
+    return PropertyTreatmentModel(
+        strategy=strategy,
+        conditional_median=float(np.median(values[conditional_mask])),
+        overall_median=float(np.median(values[finite_property])),
+    )
+
+
+def transform_property_treatment(
+    values,
+    area_values,
+    classifications,
+    model,
+):
+    """Transform a split using fitted medians; never refits on this split."""
+    values, area_values, classifications = _validate_property_inputs(
+        values,
+        area_values,
+        classifications,
+    )
+    if not isinstance(model, PropertyTreatmentModel):
+        raise TypeError("model must be a PropertyTreatmentModel.")
+    if model.strategy not in PROPERTY_STRATEGIES:
+        raise ValueError(f"Unsupported property strategy: {model.strategy}")
+
+    output = values.astype(np.float32, copy=True)
+    structural = classifications == MissingnessCode.STRUCTURAL_ABSENCE
+    residual = classifications == MissingnessCode.RESIDUAL_MISSING
+    unknown = (
+        classifications == MissingnessCode.UNKNOWN_CLOUD_AVAILABILITY
+    )
+
+    output[structural | residual] = model.conditional_median
+    output[unknown] = model.overall_median
+
+    if not np.isfinite(output).all():
+        raise ValueError("Property treatment produced non-finite values.")
+
+    result = {
+        "feature": output,
+        "unknown_cloud_availability": unknown.astype(np.uint8),
+    }
+    if model.strategy == "MD-B":
+        result["residual_missingness"] = residual.astype(np.uint8)
+    if model.strategy == "SA-B":
+        result["structural_absence"] = structural.astype(np.uint8)
+
+    return result
+
+
+def assess_feature_eligibility(missing_pct):
+    """Apply the predeclared <=5%, 5-20%, >20% screening bands."""
+    missing_pct = float(missing_pct)
+    if not np.isfinite(missing_pct) or not 0 <= missing_pct <= 100:
+        raise ValueError("Missingness percentage must be between 0 and 100.")
+
+    if missing_pct <= 5:
+        return {"band": "LOW", "decision": "INCLUDE"}
+    if missing_pct <= 20:
+        return {"band": "MODERATE", "decision": "REVIEW"}
+    return {"band": "HIGH", "decision": "EXCLUDE_PRIMARY"}
+
+
+def assess_md_c_feature(residual_missing_pct):
+    """Screen a property feature using residual missingness, not total missingness."""
+    return assess_feature_eligibility(residual_missing_pct)
+
+
+def assess_ca_b_feature(cloud_area_missing_pct):
+    """Screen a cloud-area feature; CA-B does not impute or transform it."""
+    return assess_feature_eligibility(cloud_area_missing_pct)
+
+
+def fit_cloud_area_treatment(train_area_values, strategy="CA-A"):
+    """Fit the CA-A training median. CA-B is screening-only."""
+    if strategy != "CA-A":
+        raise ValueError(
+            "Only CA-A has an imputation model; use assess_ca_b_feature "
+            "for CA-B feature screening."
+        )
+
+    values = np.asarray(train_area_values, dtype=np.float64)
+    if values.size == 0:
+        raise ValueError("Cloud-area training array is empty.")
+
+    finite = np.isfinite(values)
+    if np.any(values[finite] < 0):
+        raise ValueError("Negative cloud-area values are not allowed.")
+    if not finite.any():
+        raise ValueError(
+            "Cannot fit cloud-area treatment without finite training values."
+        )
+
+    missing_pct = 100 * float((~finite).sum()) / values.size
+    return CloudAreaTreatmentModel(
+        strategy="CA-A",
+        median=float(np.median(values[finite])),
+        training_missing_pct=missing_pct,
+    )
+
+
+def transform_cloud_area_treatment(values, model):
+    """Apply CA-A using training median and preserve an availability mask."""
+    if not isinstance(model, CloudAreaTreatmentModel):
+        raise TypeError("model must be a CloudAreaTreatmentModel.")
+    if model.strategy != "CA-A":
+        raise ValueError("Cloud-area transform only supports CA-A.")
+
+    values = np.asarray(values, dtype=np.float64)
+    finite = np.isfinite(values)
+    if np.any(values[finite] < 0):
+        raise ValueError("Negative cloud-area values are not allowed.")
+
+    missing = ~finite
+    output = values.astype(np.float32, copy=True)
+    output[missing] = model.median
+
+    return {
+        "feature": output,
+        "availability_missing": missing.astype(np.uint8),
+    }
+
+
+========== src\06_feature_engineering\feature_scaling.py ==========
+
+"""Leakage-safe scaling for M18 feature matrices.
+
+Only training data may be passed to fit_feature_scaler(). Validation/test
+partitions must be passed to transform_feature_scaler() with the returned
+model. Binary diagnostic indicators can be preserved as 0/1 by setting their
+entries in scale_mask to False.
+"""
+
+from dataclasses import dataclass
+import json
+from pathlib import Path
+from typing import Optional, Sequence
+
+import numpy as np
+from sklearn.preprocessing import RobustScaler, StandardScaler
+
+
+SCALER_TYPES = {"robust", "standard"}
+WEIGHTING_TYPES = {"equal", "family_balanced"}
+
+
+@dataclass(frozen=True)
+class FeatureScalingModel:
+    scaler_type: str
+    weighting: str
+    feature_names: tuple[str, ...]
+    feature_families: tuple[Optional[str], ...]
+    scale_mask: tuple[bool, ...]
+    center: np.ndarray
+    scale: np.ndarray
+    feature_weights: np.ndarray
+    n_training_samples: int
+    quantile_range: tuple[float, float]
+
+
+def _validate_feature_names(feature_names, n_features):
+    names = tuple(str(name).strip() for name in feature_names)
+    if len(names) != n_features:
+        raise ValueError(
+            f"Expected {n_features} feature names, received {len(names)}."
+        )
+    if any(not name for name in names):
+        raise ValueError("Feature names must be non-empty.")
+    if len(set(names)) != len(names):
+        raise ValueError("Feature names must be unique.")
+    return names
+
+
+def _validate_matrix(values, label):
+    try:
+        matrix = np.asarray(values, dtype=np.float64)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"{label} must be a numeric 2D matrix.") from exc
+
+    if matrix.ndim != 2:
+        raise ValueError(
+            f"{label} must be 2D (samples x features); got shape {matrix.shape}."
+        )
+    if matrix.shape[0] == 0 or matrix.shape[1] == 0:
+        raise ValueError(f"{label} must contain at least one sample and feature.")
+    if not np.isfinite(matrix).all():
+        raise ValueError(
+            f"{label} contains NaN or infinite values. Complete imputation "
+            "before scaling."
+        )
+    return matrix
+
+
+def fit_feature_scaler(
+    train_values,
+    feature_names: Sequence[str],
+    scaler: str = "robust",
+    feature_families: Optional[Sequence[Optional[str]]] = None,
+    weighting: str = "equal",
+    scale_mask: Optional[Sequence[bool]] = None,
+) -> FeatureScalingModel:
+    """Fit scaling parameters using training data only.
+
+    Parameters
+    ----------
+    train_values:
+        2D matrix shaped (training samples, features). It must already be
+        imputed and finite. Never pass validation/test rows here.
+    feature_names:
+        Exact column names in matrix order.
+    scaler:
+        ``"robust"`` (median/IQR, baseline) or ``"standard"`` (mean/std,
+        sensitivity).
+    feature_families:
+        One family label per feature. Required for family-balanced weighting
+        for every column selected by ``scale_mask``. Binary indicator columns
+        can use ``None`` when their ``scale_mask`` entry is False.
+    weighting:
+        ``"equal"`` applies unit weight to every feature. ``"family_balanced"``
+        applies 1/sqrt(number of scaled features in that family) to each
+        scaled feature, normalizing each family's sum of squared weights to 1.
+    scale_mask:
+        Optional boolean mask. False columns are left unchanged (apart from
+        float32 output conversion) and are not included in family counts.
+        Use this for binary missingness indicators that should remain 0/1.
+    """
+    matrix = _validate_matrix(train_values, "train_values")
+    n_samples, n_features = matrix.shape
+
+    names = _validate_feature_names(feature_names, n_features)
+
+    scaler = str(scaler).lower().strip()
+    if scaler not in SCALER_TYPES:
+        raise ValueError(
+            f"Unsupported scaler {scaler!r}. Choose 'robust' or 'standard'."
+        )
+
+    weighting = str(weighting).lower().strip()
+    if weighting not in WEIGHTING_TYPES:
+        raise ValueError(
+            "Unsupported weighting. Choose 'equal' or 'family_balanced'."
+        )
+
+    if scale_mask is None:
+        mask = np.ones(n_features, dtype=bool)
+    else:
+        mask = np.asarray(scale_mask)
+        if mask.ndim != 1 or mask.size != n_features:
+            raise ValueError("scale_mask must contain one boolean per feature.")
+        if not np.isin(mask, [True, False]).all():
+            raise ValueError("scale_mask must contain only boolean values.")
+        mask = mask.astype(bool, copy=False)
+
+    if not mask.any():
+        raise ValueError("At least one feature must be selected for scaling.")
+
+    if feature_families is None:
+        families = tuple(None for _ in range(n_features))
+    else:
+        raw_families = tuple(feature_families)
+        if len(raw_families) != n_features:
+            raise ValueError(
+                "feature_families must contain one entry per feature."
+            )
+        normalized = []
+        for index, family in enumerate(raw_families):
+            if family is None:
+                normalized.append(None)
+            else:
+                family_name = str(family).strip()
+                if not family_name:
+                    normalized.append(None)
+                else:
+                    normalized.append(family_name)
+        families = tuple(normalized)
+
+    if weighting == "family_balanced":
+        missing_family_indices = [
+            index
+            for index, is_scaled in enumerate(mask)
+            if is_scaled and families[index] is None
+        ]
+        if missing_family_indices:
+            raise ValueError(
+                "family_balanced weighting requires a non-empty family for "
+                f"every scaled feature; missing at columns {missing_family_indices}."
+            )
+
+    center = np.zeros(n_features, dtype=np.float64)
+    scale = np.ones(n_features, dtype=np.float64)
+
+    selected = matrix[:, mask]
+    if scaler == "robust":
+        fitted_scaler = RobustScaler(
+            with_centering=True,
+            with_scaling=True,
+            quantile_range=(25.0, 75.0),
+        )
+        fitted_scaler.fit(selected)
+        selected_center = fitted_scaler.center_
+        selected_scale = fitted_scaler.scale_
+        quantile_range = (25.0, 75.0)
+    else:
+        fitted_scaler = StandardScaler(
+            with_mean=True,
+            with_std=True,
+        )
+        fitted_scaler.fit(selected)
+        selected_center = fitted_scaler.mean_
+        selected_scale = fitted_scaler.scale_
+        quantile_range = (25.0, 75.0)
+
+    center[mask] = np.asarray(selected_center, dtype=np.float64)
+    scale[mask] = np.asarray(selected_scale, dtype=np.float64)
+
+    if not np.isfinite(center).all() or not np.isfinite(scale).all():
+        raise ValueError("Fitted scaling parameters are not finite.")
+    if np.any(scale <= 0):
+        raise ValueError("Fitted scaling parameters must be positive.")
+
+    weights = np.ones(n_features, dtype=np.float64)
+    if weighting == "family_balanced":
+        family_counts = {}
+        for index, is_scaled in enumerate(mask):
+            if is_scaled:
+                family = families[index]
+                family_counts[family] = family_counts.get(family, 0) + 1
+
+        for index, is_scaled in enumerate(mask):
+            if is_scaled:
+                weights[index] = 1.0 / np.sqrt(family_counts[families[index]])
+
+    return FeatureScalingModel(
+        scaler_type=scaler,
+        weighting=weighting,
+        feature_names=names,
+        feature_families=families,
+        scale_mask=tuple(bool(value) for value in mask),
+        center=center,
+        scale=scale,
+        feature_weights=weights,
+        n_training_samples=int(n_samples),
+        quantile_range=quantile_range,
+    )
+
+
+def transform_feature_scaler(
+    values,
+    model: FeatureScalingModel,
+    feature_names: Sequence[str],
+) -> np.ndarray:
+    """Transform any partition with a previously fitted training model."""
+    if not isinstance(model, FeatureScalingModel):
+        raise TypeError("model must be a FeatureScalingModel.")
+
+    matrix = _validate_matrix(values, "values")
+    names = _validate_feature_names(feature_names, matrix.shape[1])
+
+    if names != model.feature_names:
+        raise ValueError(
+            "Feature names/order do not match the fitted scaling model. "
+            "Reorder the matrix or fit a separate model."
+        )
+    if matrix.shape[1] != model.center.size:
+        raise ValueError("Input feature count does not match the fitted model.")
+
+    transformed = (matrix - model.center) / model.scale
+    transformed *= model.feature_weights
+
+    output = transformed.astype(np.float32)
+    if not np.isfinite(output).all():
+        raise ValueError(
+            "Transformed values are not finite after float32 conversion."
+        )
+    return output
+
+
+def build_scaling_manifest(model: FeatureScalingModel) -> dict:
+    """Return JSON-serializable provenance for the fitted scaler."""
+    if not isinstance(model, FeatureScalingModel):
+        raise TypeError("model must be a FeatureScalingModel.")
+
+    return {
+        "scaler_type": model.scaler_type,
+        "weighting": model.weighting,
+        "fit_scope": "training_partition_only",
+        "n_training_samples": model.n_training_samples,
+        "feature_order": list(model.feature_names),
+        "feature_families": list(model.feature_families),
+        "scale_mask": list(model.scale_mask),
+        "center": model.center.tolist(),
+        "scale": model.scale.tolist(),
+        "feature_weights": model.feature_weights.tolist(),
+        "robust_quantile_range": list(model.quantile_range),
+        "output_dtype": "float32",
+    }
+
+
+def save_scaling_manifest(
+    model: FeatureScalingModel,
+    output_path,
+    metadata: Optional[dict] = None,
+) -> Path:
+    """Write scaler provenance as JSON; no pickle or executable object data."""
+    manifest = build_scaling_manifest(model)
+    if metadata:
+        manifest["metadata"] = metadata
+
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as file:
+        json.dump(manifest, file, indent=2, allow_nan=False)
+    return output_path
+
+
+========== src\06_feature_engineering\screen_ceres_features.py ==========
+
+
+from pathlib import Path
+import json
+import numpy as np
+import pandas as pd
+import xarray as xr
+
+ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = ROOT / "data" / "interim" / "ceres_seasonal" / "post_monsoon"
+OUT_DIR = ROOT / "reports" / "data_quality"
+
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+YEARS = range(2010, 2022)
+
+# Screening thresholds, not final scientific acceptance criteria.
+MAX_MISSING_PCT = 50.0
+MAX_OUT_OF_RANGE_PCT = 1.0
+MIN_STD = 1e-8
+CORRELATION_THRESHOLD = 0.90
+SAMPLES_PER_YEAR = 10000
+RANDOM_SEED = 42
+
+# Categorical variables are retained for separate analysis,
+# not treated as continuous clustering features.
+CATEGORICAL_PREFIXES = ("cldphase_",)
+
+
+def get_numeric_attribute(da, name):
+    value = da.attrs.get(name)
+
+    if value is None:
+        return None
+
+    try:
+        value = float(value)
+        return value if np.isfinite(value) else None
+    except (TypeError, ValueError):
+        return None
+
+
+def classify_variable(name, units):
+    if name.startswith("cldarea_"):
+        return "cloud_area_fraction"
+    if name.startswith("cldhght_"):
+        return "cloud_height"
+    if name.startswith("cldphase_"):
+        return "cloud_phase"
+    if name.startswith("cldpress_"):
+        return "cloud_pressure"
+    if name.startswith("cldtau_"):
+        return "optical_depth"
+    if name.startswith("cldtemp_"):
+        return "cloud_temperature"
+    if name.startswith("lwp_"):
+        return "liquid_water_path"
+    if name.startswith("iwp_"):
+        return "ice_water_path"
+    return "other"
+
+
+def classify_layer(name):
+    for layer in (
+        "mid_high", "mid_low", "high", "low", "total"
+    ):
+        if f"_{layer}_" in name:
+            return layer
+    return "unknown"
+
+
+def inspect_variable(da, year):
+    values = np.asarray(da.values, dtype=np.float64)
+    finite = np.isfinite(values)
+
+    total = values.size
+    valid_count = int(finite.sum())
+    missing_count = total - valid_count
+
+    valid_min = get_numeric_attribute(da, "valid_min")
+    valid_max = get_numeric_attribute(da, "valid_max")
+
+    physical_valid = finite.copy()
+
+    if valid_min is not None:
+        physical_valid &= values >= valid_min
+
+    if valid_max is not None:
+        physical_valid &= values <= valid_max
+
+    out_of_range = finite & (~physical_valid)
+
+    usable = values[physical_valid]
+
+    if usable.size:
+        minimum = float(np.min(usable))
+        maximum = float(np.max(usable))
+        mean = float(np.mean(usable))
+        median = float(np.median(usable))
+        std = float(np.std(usable))
+        p01 = float(np.percentile(usable, 1))
+        p99 = float(np.percentile(usable, 99))
+        unique_count = int(np.unique(usable).size) if usable.size < 500000 else None
+    else:
+        minimum = maximum = mean = median = std = p01 = p99 = np.nan
+        unique_count = 0
+
+    missing_pct = 100 * missing_count / total if total else np.nan
+    out_of_range_pct = (
+        100 * int(out_of_range.sum()) / valid_count
+        if valid_count else np.nan
+    )
+
+    return {
+        "year": year,
+        "variable": da.name,
+        "feature_family": classify_variable(da.name, da.attrs.get("units")),
+        "vertical_layer": classify_layer(da.name),
+        "dimensions": str(da.dims),
+        "units": da.attrs.get("units"),
+        "long_name": da.attrs.get("long_name"),
+        "valid_min_attribute": valid_min,
+        "valid_max_attribute": valid_max,
+        "total_values": total,
+        "valid_values": valid_count,
+        "missing_values": missing_count,
+        "missing_pct": missing_pct,
+        "out_of_range_values": int(out_of_range.sum()),
+        "out_of_range_pct_of_finite": out_of_range_pct,
+        "observed_min": minimum,
+        "observed_max": maximum,
+        "mean": mean,
+        "median": median,
+        "std": std,
+        "p01": p01,
+        "p99": p99,
+        "unique_count": unique_count,
+    }, values, physical_valid
+
+
+def main():
+    rng = np.random.default_rng(RANDOM_SEED)
+
+    yearly_rows = []
+    sample_data = {}
+    variable_metadata = {}
+
+    print("\n========== CERES FEATURE SCREENING ==========")
+
+    for year in YEARS:
+        path = DATA_DIR / f"CERES_{year}_post_monsoon.nc"
+
+        if not path.exists():
+            raise FileNotFoundError(path)
+
+        print(f"Inspecting {year}: {path.name}")
+
+        with xr.open_dataset(
+            path,
+            decode_cf=True,
+            mask_and_scale=True
+        ) as ds:
+
+            if "time" not in ds.coords:
+                raise ValueError(f"No time coordinate in {path.name}")
+
+            if len(ds["time"]) != 720:
+                raise ValueError(
+                    f"Expected 720 observations in {path.name}, "
+                    f"found {len(ds['time'])}"
+                )
+
+            if year == 2010:
+                variable_names = list(ds.data_vars)
+                print(f"Variables found: {len(variable_names)}")
+
+            for name in ds.data_vars:
+                da = ds[name]
+
+                if not np.issubdtype(da.dtype, np.number):
+                    continue
+
+                row, values, physical_valid = inspect_variable(da, year)
+                yearly_rows.append(row)
+
+                variable_metadata[name] = {
+                    "family": row["feature_family"],
+                    "layer": row["vertical_layer"],
+                    "units": row["units"],
+                    "long_name": row["long_name"],
+                    "valid_min": row["valid_min_attribute"],
+                    "valid_max": row["valid_max_attribute"],
+                }
+
+                # Deterministic sampling for correlation analysis.
+                flat_values = values.reshape(-1)
+                flat_valid = physical_valid.reshape(-1)
+
+                sample_size = min(SAMPLES_PER_YEAR, flat_values.size)
+                indices = rng.choice(
+                    flat_values.size,
+                    size=sample_size,
+                    replace=False
+                )
+
+                sampled = flat_values[indices].astype(np.float32)
+                sampled[~flat_valid[indices]] = np.nan
+
+                sample_data.setdefault(name, []).append(sampled)
+
+    yearly_df = pd.DataFrame(yearly_rows)
+
+    # Aggregate metrics across all 12 years.
+    summary_rows = []
+
+    for name, group in yearly_df.groupby("variable"):
+        meta = variable_metadata[name]
+
+        total = int(group["total_values"].sum())
+        missing = int(group["missing_values"].sum())
+        valid = int(group["valid_values"].sum())
+        out_of_range = int(group["out_of_range_values"].sum())
+
+        missing_pct = 100 * missing / total if total else np.nan
+        out_of_range_pct = (
+            100 * out_of_range / valid if valid else np.nan
+        )
+
+        annual_missing_max = float(group["missing_pct"].max())
+        annual_missing_min = float(group["missing_pct"].min())
+
+        std_values = group["std"].dropna()
+        std_mean = float(std_values.mean()) if len(std_values) else np.nan
+        std_min = float(std_values.min()) if len(std_values) else np.nan
+
+        year_count = int(group["year"].nunique())
+
+        is_categorical = name.startswith(CATEGORICAL_PREFIXES)
+
+        reasons = []
+
+        if is_categorical:
+            reasons.append("Categorical variable; do not use as continuous input")
+
+        if missing_pct > MAX_MISSING_PCT:
+            reasons.append(
+                f"Overall missingness exceeds {MAX_MISSING_PCT}%"
+            )
+
+        if annual_missing_max > MAX_MISSING_PCT:
+            reasons.append(
+                f"At least one year exceeds {MAX_MISSING_PCT}% missingness"
+            )
+
+        if out_of_range_pct > MAX_OUT_OF_RANGE_PCT:
+            reasons.append(
+                f"Out-of-range values exceed {MAX_OUT_OF_RANGE_PCT}%"
+            )
+
+        if not np.isfinite(std_mean) or std_mean <= MIN_STD:
+            reasons.append("No meaningful numerical variation")
+
+        if year_count != len(list(YEARS)):
+            reasons.append("Not present in every study year")
+
+        if is_categorical:
+            status = "SEPARATE_CATEGORICAL_ANALYSIS"
+        elif (
+            missing_pct <= MAX_MISSING_PCT
+            and annual_missing_max <= MAX_MISSING_PCT
+            and out_of_range_pct <= MAX_OUT_OF_RANGE_PCT
+            and np.isfinite(std_mean)
+            and std_mean > MIN_STD
+            and year_count == len(list(YEARS))
+        ):
+            status = "ELIGIBLE_CANDIDATE"
+        else:
+            status = "REVIEW_OR_EXCLUDE"
+
+        summary_rows.append({
+            "variable": name,
+            "feature_family": meta["family"],
+            "vertical_layer": meta["layer"],
+            "units": meta["units"],
+            "long_name": meta["long_name"],
+            "years_present": year_count,
+            "overall_missing_pct": missing_pct,
+            "minimum_annual_missing_pct": annual_missing_min,
+            "maximum_annual_missing_pct": annual_missing_max,
+            "out_of_range_pct_of_finite": out_of_range_pct,
+            "mean_annual_std": std_mean,
+            "minimum_annual_std": std_min,
+            "status": status,
+            "screening_reasons": "; ".join(reasons) if reasons else "Passed initial screening",
+        })
+
+    summary_df = pd.DataFrame(summary_rows)
+    summary_df = summary_df.sort_values(
+        ["status", "overall_missing_pct", "feature_family"]
+    )
+
+    # Correlations using a deterministic sample from every year.
+    correlation_df = pd.DataFrame({
+        name: np.concatenate(samples)
+        for name, samples in sample_data.items()
+    })
+
+    correlations = correlation_df.corr(
+        method="spearman",
+        min_periods=1000
+    )
+
+    correlation_pairs = []
+
+    columns = correlations.columns.tolist()
+
+    for i in range(len(columns)):
+        for j in range(i + 1, len(columns)):
+            value = correlations.iloc[i, j]
+
+            if pd.notna(value) and abs(value) >= CORRELATION_THRESHOLD:
+                a = columns[i]
+                b = columns[j]
+
+                correlation_pairs.append({
+                    "variable_1": a,
+                    "variable_2": b,
+                    "spearman_correlation": float(value),
+                    "absolute_correlation": float(abs(value)),
+                    "family_1": variable_metadata[a]["family"],
+                    "family_2": variable_metadata[b]["family"],
+                    "same_family": (
+                        variable_metadata[a]["family"]
+                        == variable_metadata[b]["family"]
+                    ),
+                })
+
+    correlation_pairs_df = pd.DataFrame(correlation_pairs)
+
+    if not correlation_pairs_df.empty:
+        correlation_pairs_df = correlation_pairs_df.sort_values(
+            "absolute_correlation",
+            ascending=False
+        )
+
+    # Save reports.
+    yearly_df.to_csv(
+        OUT_DIR / "ceres_feature_screening_yearly.csv",
+        index=False
+    )
+
+    summary_df.to_csv(
+        OUT_DIR / "ceres_feature_screening_summary.csv",
+        index=False
+    )
+
+    correlations.to_csv(
+        OUT_DIR / "ceres_feature_spearman_correlation_matrix.csv"
+    )
+
+    correlation_pairs_df.to_csv(
+        OUT_DIR / "ceres_feature_high_correlations.csv",
+        index=False
+    )
+
+    result = {
+        "years_inspected": len(list(YEARS)),
+        "variables_screened": int(summary_df.shape[0]),
+        "eligible_candidates": int(
+            (summary_df["status"] == "ELIGIBLE_CANDIDATE").sum()
+        ),
+        "review_or_exclude": int(
+            (summary_df["status"] == "REVIEW_OR_EXCLUDE").sum()
+        ),
+        "categorical_variables": int(
+            (summary_df["status"] == "SEPARATE_CATEGORICAL_ANALYSIS").sum()
+        ),
+        "high_correlation_pairs": int(len(correlation_pairs_df)),
+        "thresholds": {
+            "maximum_overall_missing_pct": MAX_MISSING_PCT,
+            "maximum_annual_missing_pct": MAX_MISSING_PCT,
+            "maximum_out_of_range_pct": MAX_OUT_OF_RANGE_PCT,
+            "minimum_std": MIN_STD,
+            "high_correlation_threshold": CORRELATION_THRESHOLD,
+            "correlation_method": "Spearman",
+            "samples_per_year_per_variable": SAMPLES_PER_YEAR,
+        },
+        "important_note": (
+            "This is an initial screening, not final scientific feature "
+            "selection. Metadata valid_min/valid_max are screening bounds, "
+            "not independent physical validation. Correlations are estimated "
+            "from deterministic samples."
+        ),
+    }
+
+    with open(
+        OUT_DIR / "ceres_feature_screening_summary.json",
+        "w",
+        encoding="utf-8"
+    ) as f:
+        json.dump(result, f, indent=4)
+
+    print("\n========== SCREENING RESULTS ==========")
+    print(json.dumps(result, indent=4))
+
+    print("\n========== ELIGIBLE CANDIDATES ==========")
+    print(
+        summary_df[
+            summary_df["status"] == "ELIGIBLE_CANDIDATE"
+        ][
+            [
+                "variable",
+                "feature_family",
+                "overall_missing_pct",
+                "mean_annual_std",
+            ]
+        ].to_string(index=False)
+    )
+
+    print("\n========== HIGH CORRELATIONS ==========")
+    if correlation_pairs_df.empty:
+        print("No pairs exceeded the correlation threshold.")
+    else:
+        print(correlation_pairs_df.head(30).to_string(index=False))
+
+    print("\nReports saved in:", OUT_DIR)
+
+
+if __name__ == "__main__":
+    main()
+
+
+========== tests\test_missingness_classifier.py ==========
+
+
+import sys
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import pytest
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+MODULE_DIR = PROJECT_ROOT / "src" / "06_feature_engineering"
+
+sys.path.insert(0, str(MODULE_DIR))
+
+from missingness_classifier import (
+    MissingnessCode,
+    classify_missingness,
+    classify_registered_variable,
+    get_matching_area_variable,
+    load_feature_registry,
+    summarize_classifications,
+)
+
+
+def test_property_missingness_classification():
+    values = np.array([10.0, np.nan, np.nan, np.nan])
+    area = np.array([np.nan, 0.0, 5.0, np.nan])
+
+    result = classify_missingness(
+        values=values,
+        variable="cldhght_high_1h",
+        area_values=area,
+        area_variable="cldarea_high_1h",
+    )
+
+    expected = np.array([
+        MissingnessCode.OBSERVED,
+        MissingnessCode.STRUCTURAL_ABSENCE,
+        MissingnessCode.RESIDUAL_MISSING,
+        MissingnessCode.UNKNOWN_CLOUD_AVAILABILITY,
+    ], dtype=np.uint8)
+
+    np.testing.assert_array_equal(result, expected)
+
+
+def test_cloud_area_missingness_classification():
+    values = np.array([0.0, np.nan, 5.0])
+
+    result = classify_missingness(
+        values=values,
+        variable="cldarea_low_1h",
+    )
+
+    expected = np.array([
+        MissingnessCode.OBSERVED,
+        MissingnessCode.CLOUD_AREA_MISSING,
+        MissingnessCode.OBSERVED,
+    ], dtype=np.uint8)
+
+    np.testing.assert_array_equal(result, expected)
+
+
+def test_finite_property_remains_observed_when_area_is_missing():
+    values = np.array([2.5, 3.5])
+    area = np.array([np.nan, 0.0])
+
+    result = classify_missingness(
+        values=values,
+        variable="lwp_total_1h",
+        area_values=area,
+        area_variable="cldarea_total_1h",
+    )
+
+    assert np.all(result == MissingnessCode.OBSERVED)
+
+
+def test_negative_cloud_area_is_rejected():
+    values = np.array([np.nan])
+    area = np.array([-1.0])
+
+    with pytest.raises(ValueError, match="Negative cloud-area"):
+        classify_missingness(
+            values=values,
+            variable="cldhght_high_1h",
+            area_values=area,
+            area_variable="cldarea_high_1h",
+        )
+
+
+def test_array_shape_mismatch_is_rejected():
+    with pytest.raises(ValueError, match="identical shapes"):
+        classify_missingness(
+            values=np.array([1.0, np.nan]),
+            variable="cldhght_high_1h",
+            area_values=np.array([1.0]),
+            area_variable="cldarea_high_1h",
+        )
+
+
+def test_missing_area_array_is_rejected():
+    with pytest.raises(ValueError, match="required"):
+        classify_missingness(
+            values=np.array([np.nan]),
+            variable="cldhght_high_1h",
+        )
+
+
+def test_invalid_area_variable_is_rejected():
+    with pytest.raises(ValueError, match="Invalid cloud-area"):
+        classify_missingness(
+            values=np.array([np.nan]),
+            variable="cldhght_high_1h",
+            area_values=np.array([0.0]),
+            area_variable="unknown_area",
+        )
+
+
+def test_registry_contains_expected_cloud_top_mappings():
+    registry = load_feature_registry()
+
+    expected = {
+        "cldpress_top_high_1h": "cldarea_high_1h",
+        "cldpress_top_mid_high_1h": "cldarea_mid_high_1h",
+        "cldpress_top_mid_low_1h": "cldarea_mid_low_1h",
+        "cldpress_top_low_1h": "cldarea_low_1h",
+        "cldpress_top_total_1h": "cldarea_total_1h",
+    }
+
+    for variable, area_variable in expected.items():
+        assert get_matching_area_variable(
+            variable,
+            registry,
+        ) == area_variable
+
+
+def test_registered_variable_classification():
+    registry = load_feature_registry()
+
+    result = classify_registered_variable(
+        values=np.array([np.nan, np.nan]),
+        variable="cldpress_top_high_1h",
+        area_values=np.array([0.0, 10.0]),
+        registry=registry,
+    )
+
+    expected = np.array([
+        MissingnessCode.STRUCTURAL_ABSENCE,
+        MissingnessCode.RESIDUAL_MISSING,
+    ], dtype=np.uint8)
+
+    np.testing.assert_array_equal(result, expected)
+
+
+def test_classification_summary():
+    values = np.array([
+        MissingnessCode.OBSERVED,
+        MissingnessCode.OBSERVED,
+        MissingnessCode.STRUCTURAL_ABSENCE,
+        MissingnessCode.RESIDUAL_MISSING,
+    ], dtype=np.uint8)
+
+    summary = summarize_classifications(values)
+
+    assert summary["total_values"] == 4
+    assert summary["observed"] == 2
+    assert summary["structural_absence"] == 1
+    assert summary["residual_missing"] == 1
+
+
+
+========== tests\test_missingness_treatments.py ==========
+
+import sys
+from pathlib import Path
+
+import numpy as np
+import pytest
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+MODULE_DIR = PROJECT_ROOT / "src" / "06_feature_engineering"
+sys.path.insert(0, str(MODULE_DIR))
+
+from missingness_classifier import MissingnessCode
+from missingness_treatments import (
+    assess_ca_b_feature,
+    assess_feature_eligibility,
+    assess_md_c_feature,
+    fit_cloud_area_treatment,
+    fit_property_treatment,
+    transform_cloud_area_treatment,
+    transform_property_treatment,
+)
+
+
+def training_data():
+    values = np.array([2.0, 4.0, 100.0, np.nan, np.nan, np.nan])
+    area = np.array([1.0, 2.0, np.nan, 0.0, np.nan, 5.0])
+    codes = np.array([
+        MissingnessCode.OBSERVED,
+        MissingnessCode.OBSERVED,
+        MissingnessCode.OBSERVED,
+        MissingnessCode.STRUCTURAL_ABSENCE,
+        MissingnessCode.UNKNOWN_CLOUD_AVAILABILITY,
+        MissingnessCode.RESIDUAL_MISSING,
+    ], dtype=np.uint8)
+    return values, area, codes
+
+
+def test_property_model_uses_training_only_medians():
+    values, area, codes = training_data()
+    model = fit_property_treatment(values, area, codes, strategy="MD-A")
+    assert model.conditional_median == 3.0
+    assert model.overall_median == 4.0
+
+
+def test_md_a_imputes_structural_residual_and_unknown_values():
+    values, area, codes = training_data()
+    model = fit_property_treatment(values, area, codes, "MD-A")
+    result = transform_property_treatment(values, area, codes, model)
+
+    np.testing.assert_allclose(
+        result["feature"],
+        np.array([2.0, 4.0, 100.0, 3.0, 4.0, 3.0], dtype=np.float32),
+    )
+    np.testing.assert_array_equal(
+        result["unknown_cloud_availability"], [0, 0, 0, 0, 1, 0]
+    )
+    assert "residual_missingness" not in result
+    assert "structural_absence" not in result
+
+
+def test_md_b_adds_residual_missingness_indicator():
+    values, area, codes = training_data()
+    model = fit_property_treatment(values, area, codes, "MD-B")
+    result = transform_property_treatment(values, area, codes, model)
+    np.testing.assert_array_equal(
+        result["residual_missingness"], [0, 0, 0, 0, 0, 1]
+    )
+
+
+def test_sa_b_adds_structural_absence_indicator():
+    values, area, codes = training_data()
+    model = fit_property_treatment(values, area, codes, "SA-B")
+    result = transform_property_treatment(values, area, codes, model)
+    np.testing.assert_array_equal(
+        result["structural_absence"], [0, 0, 0, 1, 0, 0]
+    )
+
+
+def test_sa_a_has_no_structural_indicator():
+    values, area, codes = training_data()
+    model = fit_property_treatment(values, area, codes, "SA-A")
+    result = transform_property_treatment(values, area, codes, model)
+    assert "structural_absence" not in result
+
+
+def test_transform_does_not_refit_on_new_data():
+    train_values, train_area, train_codes = training_data()
+    model = fit_property_treatment(
+        train_values, train_area, train_codes, "MD-A"
+    )
+    test_values = np.array([np.nan, 10000.0])
+    test_area = np.array([0.0, 1.0])
+    test_codes = np.array([
+        MissingnessCode.STRUCTURAL_ABSENCE,
+        MissingnessCode.OBSERVED,
+    ], dtype=np.uint8)
+
+    result = transform_property_treatment(
+        test_values, test_area, test_codes, model
+    )
+    assert result["feature"][0] == 3.0
+    assert result["feature"][1] == 10000.0
+    assert model.conditional_median == 3.0
+
+
+@pytest.mark.parametrize(
+    "missing_pct, band, decision",
+    [
+        (0, "LOW", "INCLUDE"),
+        (5, "LOW", "INCLUDE"),
+        (5.01, "MODERATE", "REVIEW"),
+        (20, "MODERATE", "REVIEW"),
+        (20.01, "HIGH", "EXCLUDE_PRIMARY"),
+        (100, "HIGH", "EXCLUDE_PRIMARY"),
+    ],
+)
+def test_feature_eligibility_bands(missing_pct, band, decision):
+    result = assess_feature_eligibility(missing_pct)
+    assert result["band"] == band
+    assert result["decision"] == decision
+
+
+def test_md_c_uses_residual_missingness():
+    assert assess_md_c_feature(12.0) == {
+        "band": "MODERATE",
+        "decision": "REVIEW",
+    }
+
+
+def test_ca_b_uses_cloud_area_missingness():
+    assert assess_ca_b_feature(20.57) == {
+        "band": "HIGH",
+        "decision": "EXCLUDE_PRIMARY",
+    }
+
+
+def test_ca_b_is_screening_only_not_imputation():
+    with pytest.raises(ValueError, match="screening"):
+        fit_cloud_area_treatment(np.array([1.0, np.nan]), strategy="CA-B")
+
+
+def test_invalid_missingness_percentage_is_rejected():
+    with pytest.raises(ValueError):
+        assess_feature_eligibility(101)
+
+
+def test_cloud_area_model_uses_training_median():
+    model = fit_cloud_area_treatment(
+        np.array([0.0, 2.0, 4.0, np.nan]), "CA-A"
+    )
+    assert model.median == 2.0
+    assert model.training_missing_pct == 25.0
+
+
+def test_ca_a_imputes_missing_area_and_adds_indicator():
+    model = fit_cloud_area_treatment(
+        np.array([0.0, 2.0, 4.0, np.nan]), "CA-A"
+    )
+    result = transform_cloud_area_treatment(
+        np.array([np.nan, 5.0, 0.0]), model
+    )
+    np.testing.assert_allclose(result["feature"], [2.0, 5.0, 0.0])
+    np.testing.assert_array_equal(
+        result["availability_missing"], [1, 0, 0]
+    )
+
+
+def test_cloud_area_transform_uses_fitted_median():
+    model = fit_cloud_area_treatment(
+        np.array([2.0, 4.0, np.nan]), "CA-A"
+    )
+    result = transform_cloud_area_treatment(
+        np.array([np.nan, 10000.0]), model
+    )
+    assert result["feature"][0] == 3.0
+    assert result["feature"][1] == 10000.0
+
+
+def test_negative_cloud_area_is_rejected():
+    with pytest.raises(ValueError, match="Negative cloud-area"):
+        fit_cloud_area_treatment(np.array([1.0, -1.0]))
+
+
+def test_property_classification_inconsistency_is_rejected():
+    with pytest.raises(ValueError, match="inconsistent"):
+        fit_property_treatment(
+            np.array([np.nan]),
+            np.array([0.0]),
+            np.array([MissingnessCode.RESIDUAL_MISSING]),
+        )
+
+
+def test_missing_training_property_values_are_rejected():
+    with pytest.raises(ValueError, match="without finite training values"):
+        fit_property_treatment(
+            np.array([np.nan]),
+            np.array([0.0]),
+            np.array([MissingnessCode.STRUCTURAL_ABSENCE]),
+        )
+
+
+def test_property_transform_rejects_shape_mismatch():
+    values, area, codes = training_data()
+    model = fit_property_treatment(values, area, codes)
+    with pytest.raises(ValueError, match="identical shapes"):
+        transform_property_treatment(values, area[:-1], codes, model)
+
+
+========== tests\test_feature_scaling.py ==========
+
+import json
+import sys
+from pathlib import Path
+
+import numpy as np
+import pytest
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+MODULE_DIR = PROJECT_ROOT / "src" / "06_feature_engineering"
+sys.path.insert(0, str(MODULE_DIR))
+
+from feature_scaling import (
+    build_scaling_manifest,
+    fit_feature_scaler,
+    save_scaling_manifest,
+    transform_feature_scaler,
+)
+
+
+def test_robust_scaler_fits_median_and_iqr_on_training_data():
+    train = np.array([
+        [1.0, 10.0],
+        [2.0, 20.0],
+        [3.0, 30.0],
+        [100.0, 40.0],
+    ])
+
+    model = fit_feature_scaler(train, ["a", "b"], scaler="robust")
+
+    np.testing.assert_allclose(model.center, [2.5, 25.0])
+    np.testing.assert_allclose(model.scale, [25.5, 15.0])
+    assert model.n_training_samples == 4
+
+
+def test_standard_scaler_fits_training_mean_and_population_std():
+    train = np.array([
+        [1.0, 10.0],
+        [3.0, 30.0],
+        [5.0, 50.0],
+    ])
+
+    model = fit_feature_scaler(
+        train,
+        ["a", "b"],
+        scaler="standard",
+    )
+
+    np.testing.assert_allclose(model.center, [3.0, 30.0])
+    np.testing.assert_allclose(model.scale, [np.sqrt(8 / 3), np.sqrt(800 / 3)])
+
+
+def test_validation_transform_does_not_refit_training_parameters():
+    train = np.array([[1.0], [2.0], [3.0]])
+    model = fit_feature_scaler(train, ["cloud_area"], scaler="standard")
+    original_center = model.center.copy()
+    original_scale = model.scale.copy()
+
+    validation = np.array([[1000.0], [2000.0]])
+    transformed = transform_feature_scaler(
+        validation,
+        model,
+        ["cloud_area"],
+    )
+
+    np.testing.assert_array_equal(model.center, original_center)
+    np.testing.assert_array_equal(model.scale, original_scale)
+    assert transformed.dtype == np.float32
+    assert transformed[0, 0] > 100
+
+
+def test_robust_scaler_is_default():
+    train = np.array([[1.0], [2.0], [3.0]])
+    model = fit_feature_scaler(train, ["x"])
+    assert model.scaler_type == "robust"
+
+
+def test_equal_weighting_keeps_unit_feature_weights():
+    train = np.arange(30, dtype=float).reshape(10, 3)
+    model = fit_feature_scaler(
+        train,
+        ["a", "b", "c"],
+        feature_families=["amount", "amount", "water"],
+        weighting="equal",
+    )
+
+    np.testing.assert_array_equal(model.feature_weights, [1.0, 1.0, 1.0])
+
+
+def test_family_balanced_weights_normalize_squared_family_contribution():
+    train = np.array([
+        [1.0, 10.0, 100.0],
+        [2.0, 20.0, 200.0],
+        [3.0, 30.0, 300.0],
+        [4.0, 40.0, 400.0],
+    ])
+
+    model = fit_feature_scaler(
+        train,
+        ["a1", "a2", "b1"],
+        feature_families=["family_a", "family_a", "family_b"],
+        weighting="family_balanced",
+    )
+
+    np.testing.assert_allclose(
+        model.feature_weights,
+        [1 / np.sqrt(2), 1 / np.sqrt(2), 1.0],
+    )
+    assert np.isclose(np.sum(model.feature_weights[:2] ** 2), 1.0)
+    assert np.isclose(np.sum(model.feature_weights[2:] ** 2), 1.0)
+
+
+def test_binary_indicator_columns_can_remain_unscaled():
+    train = np.array([
+        [1.0, 0.0],
+        [2.0, 1.0],
+        [3.0, 0.0],
+        [4.0, 1.0],
+    ])
+
+    model = fit_feature_scaler(
+        train,
+        ["cloud_property", "residual_missing_indicator"],
+        feature_families=["water_path", None],
+        weighting="family_balanced",
+        scale_mask=[True, False],
+    )
+
+    output = transform_feature_scaler(
+        np.array([[2.5, 0.0], [3.5, 1.0]]),
+        model,
+        ["cloud_property", "residual_missing_indicator"],
+    )
+
+    np.testing.assert_array_equal(output[:, 1], [0.0, 1.0])
+    assert model.feature_weights[1] == 1.0
+    assert model.center[1] == 0.0
+    assert model.scale[1] == 1.0
+
+
+def test_constant_feature_uses_safe_unit_scale():
+    train = np.array([[5.0, 1.0], [5.0, 2.0], [5.0, 3.0]])
+    model = fit_feature_scaler(train, ["constant", "varying"])
+
+    assert model.scale[0] == 1.0
+    output = transform_feature_scaler(train, model, ["constant", "varying"])
+    np.testing.assert_array_equal(output[:, 0], [0.0, 0.0, 0.0])
+
+
+def test_transform_rejects_feature_order_mismatch():
+    train = np.array([[1.0, 10.0], [2.0, 20.0]])
+    model = fit_feature_scaler(train, ["a", "b"])
+
+    with pytest.raises(ValueError, match="names/order"):
+        transform_feature_scaler(train, model, ["b", "a"])
+
+
+def test_transform_rejects_wrong_number_of_columns():
+    model = fit_feature_scaler(np.array([[1.0, 2.0]]), ["a", "b"])
+
+    with pytest.raises(ValueError, match="2D"):
+        transform_feature_scaler(np.array([1.0, 2.0]), model, ["a", "b"])
+
+
+def test_fit_rejects_nan_before_scaling():
+    with pytest.raises(ValueError, match="NaN or infinite"):
+        fit_feature_scaler(np.array([[1.0], [np.nan]]), ["x"])
+
+
+def test_fit_rejects_infinity_before_scaling():
+    with pytest.raises(ValueError, match="NaN or infinite"):
+        fit_feature_scaler(np.array([[1.0], [np.inf]]), ["x"])
+
+
+def test_fit_rejects_duplicate_feature_names():
+    with pytest.raises(ValueError, match="unique"):
+        fit_feature_scaler(np.ones((3, 2)), ["x", "x"])
+
+
+def test_fit_rejects_empty_matrix():
+    with pytest.raises(ValueError, match="at least one sample"):
+        fit_feature_scaler(np.empty((0, 2)), ["a", "b"])
+
+
+def test_fit_rejects_invalid_scaler_type():
+    with pytest.raises(ValueError, match="Unsupported scaler"):
+        fit_feature_scaler(np.ones((3, 1)), ["x"], scaler="minmax")
+
+
+def test_fit_rejects_invalid_weighting_type():
+    with pytest.raises(ValueError, match="Unsupported weighting"):
+        fit_feature_scaler(np.ones((3, 1)), ["x"], weighting="custom")
+
+
+def test_family_balanced_requires_family_for_each_scaled_feature():
+    with pytest.raises(ValueError, match="requires a non-empty family"):
+        fit_feature_scaler(
+            np.ones((3, 2)),
+            ["a", "b"],
+            feature_families=["family_a", None],
+            weighting="family_balanced",
+        )
+
+
+def test_family_balanced_accepts_missing_family_for_unscaled_indicator():
+    train = np.array([[1.0, 0.0], [2.0, 1.0], [3.0, 0.0]])
+    model = fit_feature_scaler(
+        train,
+        ["a", "indicator"],
+        feature_families=["family_a", None],
+        weighting="family_balanced",
+        scale_mask=[True, False],
+    )
+    np.testing.assert_array_equal(model.feature_weights, [1.0, 1.0])
+
+
+def test_transform_rejects_non_finite_validation_data():
+    model = fit_feature_scaler(np.array([[1.0], [2.0]]), ["x"])
+    with pytest.raises(ValueError, match="NaN or infinite"):
+        transform_feature_scaler(np.array([[np.nan]]), model, ["x"])
+
+
+def test_manifest_contains_train_only_provenance_and_parameters():
+    train = np.array([[1.0, 0.0], [2.0, 1.0], [3.0, 0.0]])
+    model = fit_feature_scaler(
+        train,
+        ["cloud_property", "missing_indicator"],
+        feature_families=["cloud", None],
+        weighting="family_balanced",
+        scale_mask=[True, False],
+    )
+
+    manifest = build_scaling_manifest(model)
+    assert manifest["fit_scope"] == "training_partition_only"
+    assert manifest["feature_order"] == ["cloud_property", "missing_indicator"]
+    assert manifest["output_dtype"] == "float32"
+    json.dumps(manifest, allow_nan=False)
+
+
+def test_manifest_can_be_saved_with_additional_metadata(tmp_path):
+    model = fit_feature_scaler(np.array([[1.0], [2.0]]), ["cloud_area"])
+    output_path = save_scaling_manifest(
+        model,
+        tmp_path / "reports" / "scaling_manifest.json",
+        metadata={"experiment": "FS-A_MD-A_robust"},
+    )
+
+    assert output_path.exists()
+    content = json.loads(output_path.read_text(encoding="utf-8"))
+    assert content["metadata"]["experiment"] == "FS-A_MD-A_robust"
+
+
+def test_scaling_mask_must_match_feature_count():
+    with pytest.raises(ValueError, match="one boolean per feature"):
+        fit_feature_scaler(
+            np.ones((3, 2)),
+            ["a", "b"],
+            scale_mask=[True],
+        )
+
+
+def test_at_least_one_feature_must_be_scaled():
+    with pytest.raises(ValueError, match="At least one feature"):
+        fit_feature_scaler(
+            np.ones((3, 2)),
+            ["a", "b"],
+            scale_mask=[False, False],
+        )
+
+
+========== config\m18_execution_plan.json ==========
+
+{
+  "milestone": "M18",
+  "title": "Missingness-Aware Feature Engineering",
+  "status": "planned_not_executed",
+  "study": {
+    "years": [
+      2010,
+      2021
+    ],
+    "seasons": {
+      "pre_monsoon": [
+        "04-15",
+        "05-14"
+      ],
+      "established_monsoon": [
+        "07-15",
+        "08-13"
+      ],
+      "post_monsoon": [
+        "10-15",
+        "11-13"
+      ]
+    },
+    "spatial_domain": {
+      "latitude": [
+        6,
+        38
+      ],
+      "longitude": [
+        68,
+        98
+      ]
+    },
+    "grid_shape": [
+      32,
+      30
+    ],
+    "seasonal_files_expected": 36,
+    "timestamps_per_file": 720,
+    "grid_cell_hour_observations_expected": 24883200
+  },
+  "feature_sets": {
+    "registry_config": "config/feature_set_experiments.json",
+    "expected_counts": {
+      "FS-A": 36,
+      "FS-B": 21,
+      "FS-C": 21,
+      "FS-D": 21,
+      "FS-E": 16,
+      "FS-F": 21
+    },
+    "membership_validation_status": "passed"
+  },
+  "missingness_classes": {
+    "observed": "property_is_finite",
+    "structural_absence": "property_missing_and_matching_cloud_area_finite_and_equal_zero",
+    "residual_missing": "property_missing_and_matching_cloud_area_finite_and_positive",
+    "unknown_cloud_availability": "property_missing_and_matching_cloud_area_missing",
+    "cloud_area_missing": "matching_cloud_area_variable_itself_is_missing"
+  },
+  "cloud_area_treatments": {
+    "CA-A": {
+      "name": "training_median_plus_availability_indicator",
+      "fill": "training_partition_median",
+      "add_missingness_indicator": true,
+      "zero_fill_missing_cloud_area": false,
+      "role": "baseline"
+    },
+    "CA-B": {
+      "name": "conservative_cloud_area_feature_exclusion",
+      "missingness_bands": {
+        "low_concern_max": 0.05,
+        "sensitivity_review_max": 0.2,
+        "above_review_threshold": "exclude_from_primary_unless_justified"
+      },
+      "drop_rows_to_hide_missingness": false,
+      "role": "sensitivity"
+    }
+  },
+  "property_treatments": {
+    "MD-A": {
+      "name": "conditional_median_baseline",
+      "structural_absence_fill": "training_median_where_matching_cloud_area_positive",
+      "residual_missing_fill": "same_conditional_training_median",
+      "unknown_availability_fill": "training_feature_median_with_separate_mask",
+      "indicators": []
+    },
+    "MD-B": {
+      "name": "conditional_median_plus_residual_indicator",
+      "inherits": "MD-A",
+      "indicators": [
+        "residual_missing"
+      ]
+    },
+    "MD-C": {
+      "name": "conservative_feature_exclusion",
+      "inherits": "MD-A",
+      "residual_missingness_bands": {
+        "low_concern_max": 0.05,
+        "sensitivity_review_max": 0.2,
+        "above_review_threshold": "exclude_from_primary_unless_justified"
+      }
+    }
+  },
+  "structural_absence_sensitivities": {
+    "SA-A": {
+      "name": "structural_absence_fill_without_indicator",
+      "inherits": "MD-A",
+      "structural_absence_indicator": false
+    },
+    "SA-B": {
+      "name": "structural_absence_fill_with_indicator",
+      "inherits": "MD-A",
+      "structural_absence_indicator": true
+    }
+  },
+  "scaling": {
+    "baseline": "RobustScaler",
+    "sensitivity": [
+      "StandardScaler"
+    ],
+    "fit_training_partition_only": true
+  },
+  "family_weighting": {
+    "baseline": "equal_weight_per_standardized_feature",
+    "sensitivity": [
+      "family_balanced_total_contribution"
+    ]
+  },
+  "experiment_strategy": {
+    "avoid_full_factorial": true,
+    "stage_A": {
+      "feature_sets": [
+        "FS-A",
+        "FS-B",
+        "FS-C",
+        "FS-D",
+        "FS-E",
+        "FS-F"
+      ],
+      "property_treatment": "MD-A",
+      "structural_treatment": "SA-A",
+      "cloud_area_treatment": "CA-A",
+      "scaler": "RobustScaler",
+      "weighting": "equal_weight_per_standardized_feature"
+    },
+    "stage_B": [
+      "compare_MD-B_against_baseline",
+      "compare_SA-B_against_baseline",
+      "run_CA-B_cloud_area_sensitivity"
+    ],
+    "stage_C": [
+      "StandardScaler_on_shortlisted_feature_sets",
+      "family_balanced_weighting_on_shortlisted_feature_sets"
+    ],
+    "stage_D": [
+      "year_blocked_validation",
+      "exclude_2017_sensitivity"
+    ]
+  },
+  "milestones": [
+    {
+      "id": "M18.1",
+      "name": "Methodology and implementation freeze",
+      "status": "planned",
+      "outputs": [
+        "final_methodology",
+        "central_config",
+        "experiment_matrix"
+      ],
+      "acceptance": [
+        "feature_sets_match_registry",
+        "cloud_area_policy_defined",
+        "experiment_rules_unambiguous"
+      ]
+    },
+    {
+      "id": "M18.2",
+      "name": "Full cloud-area availability audit",
+      "status": "planned",
+      "outputs": [
+        "per_dataset_audit",
+        "aggregate_csv_json",
+        "spatial_temporal_summaries"
+      ],
+      "acceptance": [
+        "36_datasets_accounted_for",
+        "counts_reconcile",
+        "missing_area_never_zero_filled"
+      ]
+    },
+    {
+      "id": "M18.3",
+      "name": "Missingness classification engine",
+      "status": "planned",
+      "outputs": [
+        "classification_module",
+        "unit_tests",
+        "integration_tests"
+      ],
+      "acceptance": [
+        "masks_mutually_exclusive",
+        "unknown_not_structural",
+        "five_top_pressure_mappings_correct"
+      ]
+    },
+    {
+      "id": "M18.4",
+      "name": "Missingness treatment experiments",
+      "status": "planned",
+      "outputs": [
+        "treatment_module",
+        "comparison_report",
+        "tests"
+      ],
+      "acceptance": [
+        "valid_zeros_preserved",
+        "masks_not_conflated",
+        "deterministic_outputs"
+      ]
+    },
+    {
+      "id": "M18.5",
+      "name": "Imputation and scaling engine",
+      "status": "planned",
+      "outputs": [
+        "fit_transform_pipeline",
+        "transformation_manifests",
+        "leakage_tests"
+      ],
+      "acceptance": [
+        "training_only_fit",
+        "reproducible_transform",
+        "no_unintended_nan_inf"
+      ]
+    },
+    {
+      "id": "M18.6",
+      "name": "Feature-set experiment orchestration",
+      "status": "planned",
+      "outputs": [
+        "experiment_runner",
+        "experiment_registry",
+        "run_logs"
+      ],
+      "acceptance": [
+        "traceable_runs",
+        "resume_support",
+        "no_uncontrolled_full_factorial"
+      ]
+    },
+    {
+      "id": "M18.7",
+      "name": "Full dataset processing",
+      "status": "planned",
+      "outputs": [
+        "model_ready_matrices",
+        "row_indices",
+        "masks",
+        "processing_manifests"
+      ],
+      "acceptance": [
+        "all_36_inputs_accounted_for",
+        "source_unchanged",
+        "chunked_resumable_processing"
+      ]
+    },
+    {
+      "id": "M18.8",
+      "name": "Quality assurance and robustness",
+      "status": "planned",
+      "outputs": [
+        "qa_report",
+        "robustness_report",
+        "test_results"
+      ],
+      "acceptance": [
+        "mandatory_tests_pass",
+        "2017_sensitivity_included",
+        "autocorrelation_considered"
+      ]
+    },
+    {
+      "id": "M18.9",
+      "name": "Model-ready dataset release",
+      "status": "planned",
+      "outputs": [
+        "approved_matrices",
+        "feature_registry",
+        "masks",
+        "manifests",
+        "final_report"
+      ],
+      "acceptance": [
+        "provenance_complete",
+        "reproducible_handoff",
+        "feature_order_documented"
+      ]
+    }
+  ],
+  "performance": {
+    "chunked_processing": true,
+    "preferred_output_dtype": "float32_after_validation",
+    "bounded_concurrency": true,
+    "reuse_intermediates_only_if_source_and_config_hash_match": true,
+    "atomic_output_writes": true,
+    "resume_from_checkpoints": true,
+    "full_dataset_memory_load_without_estimate": false
+  },
+  "validation": {
+    "year_blocked": true,
+    "exclude_2017_sensitivity": true,
+    "fit_imputer_scaler_on_training_partition_only": true,
+    "spatial_temporal_autocorrelation": "must_be_accounted_for",
+    "random_row_split_as_primary": false
+  },
+  "git": {
+    "required": true,
+    "user_approval_required_for_commit_and_push": true,
+    "exclude_raw_datasets": true,
+    "exclude_large_generated_matrices": true,
+    "suggested_checkpoints": [
+      "research: finalize M18 feature engineering plan",
+      "research: add cloud area availability audit",
+      "feat: implement missingness classification",
+      "feat: add missingness treatment experiments",
+      "feat: add leakage-safe imputation and scaling",
+      "feat: add M18 experiment orchestration",
+      "feat: process model-ready seasonal datasets",
+      "test: validate M18 outputs and robustness",
+      "docs: release M18 model-ready dataset specification"
+    ]
+  },
+  "overall_exit_criteria": [
+    "36_seasonal_datasets_accounted_for",
+    "six_feature_sets_validated",
+    "cloud_area_and_property_missingness_handled_separately",
+    "structural_residual_unknown_classes_correctly_distinguished",
+    "approved_treatments_reproducible",
+    "imputation_and_scaling_leakage_safe",
+    "processing_chunked_resumable_and_memory_bounded",
+    "qa_and_robustness_pass",
+    "matrices_masks_indices_manifests_complete",
+    "documentation_and_git_checkpoints_complete"
+  ],
+  "current_status": "plan_finalized_implementation_not_started"
+}

@@ -1,0 +1,82 @@
+{
+  "milestone": "M27.1",
+  "title": "NOAA RONI and DMI Climate-Index Audit and Repository Integration Planning",
+  "generated_utc": "2026-11-16T20:16:17.990525+00:00",
+  "final_decision": "ACCEPTED_AND_AUTHORIZED_FOR_M27_IMPLEMENTATION",
+  "study_period": "2010-2021",
+  "independent_annual_units": 12,
+  "climate_index_summary": {
+    "roni_source": "NOAA Climate Prediction Center (CPC)",
+    "roni_resolution": "Overlapping 3-month running seasons",
+    "roni_study_records": 144,
+    "roni_missingness": 0,
+    "roni_lag1_autocorrelation": 0.9683,
+    "dmi_source": "NOAA Physical Sciences Laboratory (HadISST1.1)",
+    "dmi_resolution": "Monthly mean anomalies",
+    "dmi_study_records": 144,
+    "dmi_missingness": 0,
+    "dmi_lag1_autocorrelation": 0.7496
+  },
+  "deliverables": [
+    {
+      "file_name": "m27_1_dataset_inventory_and_provenance_report.md",
+      "relative_path": "reports/integration/m27/m27_1_dataset_inventory_and_provenance_report.md",
+      "size_bytes": 6177,
+      "sha256": "67475d04eb1a83913c2afc4ff7025c382b0a73d93d1ff1740c332dd2370244be"
+    },
+    {
+      "file_name": "m27_1_roni_quality_control_report.md",
+      "relative_path": "reports/integration/m27/m27_1_roni_quality_control_report.md",
+      "size_bytes": 5731,
+      "sha256": "f5d9f14d554bce6696fe304e10b3106c1973eacc3a244a345380d5efdb0bb07b"
+    },
+    {
+      "file_name": "m27_1_dmi_quality_control_report.md",
+      "relative_path": "reports/integration/m27/m27_1_dmi_quality_control_report.md",
+      "size_bytes": 6629,
+      "sha256": "5ee9be6992aa93e5f9038f43548245a3454fa2e08ab7aea52f933a7f7fbc24b3"
+    },
+    {
+      "file_name": "m27_1_temporal_alignment_comparison.md",
+      "relative_path": "reports/integration/m27/m27_1_temporal_alignment_comparison.md",
+      "size_bytes": 8884,
+      "sha256": "51062387eab8b4ef70a181a45128befcc4d3fdd565034c1044c0fde31355f410"
+    },
+    {
+      "file_name": "m27_1_scientific_methodology_proposal.md",
+      "relative_path": "reports/integration/m27/m27_1_scientific_methodology_proposal.md",
+      "size_bytes": 6274,
+      "sha256": "2d28b743e7dc6a6954ca862e5e684bd51f8d776516908633c694941bf454a5fc"
+    },
+    {
+      "file_name": "m27_1_statistical_analysis_design.md",
+      "relative_path": "reports/integration/m27/m27_1_statistical_analysis_design.md",
+      "size_bytes": 5395,
+      "sha256": "6adc4aac877063cfa6259753eeae155032bd8f648dd291f24ada125fb4d30c27"
+    },
+    {
+      "file_name": "m27_1_risks_and_unresolved_questions.md",
+      "relative_path": "reports/integration/m27/m27_1_risks_and_unresolved_questions.md",
+      "size_bytes": 5045,
+      "sha256": "7710f01e6ad9bafdb3e0d8323831a56ee7ef09fc1a8bcb92fc4572d3f598c8a1"
+    },
+    {
+      "file_name": "m27_1_proposed_directory_structure.md",
+      "relative_path": "reports/integration/m27/m27_1_proposed_directory_structure.md",
+      "size_bytes": 3935,
+      "sha256": "d5b8c56d82e5ce43ce4b489c395aa3bb10c5313c38ea4dcb20fa50cd9df863ee"
+    },
+    {
+      "file_name": "m27_1_baseline_test_report.md",
+      "relative_path": "reports/integration/m27/m27_1_baseline_test_report.md",
+      "size_bytes": 3855,
+      "sha256": "877907a0d771bd7a992fd658d5ddfec7dee6ea56b621ee7397e8beabd3f793f4"
+    },
+    {
+      "file_name": "m27_1_acceptance_recommendation.md",
+      "relative_path": "reports/integration/m27/m27_1_acceptance_recommendation.md",
+      "size_bytes": 3866,
+      "sha256": "7f7b1d9d3b5a8beb5c648419be60185df2f382d088d3b922a813c1210c103e99"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+season,season_id,metric,metric_description,index_tested,spearman_rho,raw_permutation_p,m_family_size,bh_fdr_q_value,bonferroni_critical_p05,is_nominal_p05,is_fdr_q010,is_bonferroni_sig,audit_verdict
+pre_monsoon,0,mean_rainfall_mm,Terrestrial Mean Rainfall (mm/day),RONI,-0.3706,0.23663,18,0.46114,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,mean_rainfall_mm,Terrestrial Mean Rainfall (mm/day),DMI,-0.4545,0.13979,18,0.39533,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,rainfall_anomaly_mm,Seasonal Rainfall Anomaly (mm/day),RONI,-0.3706,0.23663,18,0.46114,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,rainfall_anomaly_mm,Seasonal Rainfall Anomaly (mm/day),DMI,-0.4545,0.13979,18,0.39533,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,wet_day_freq_25mm,Wet-Day Frequency (>=2.5 mm/day),RONI,-0.5175,0.08832,18,0.39533,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,wet_day_freq_25mm,Wet-Day Frequency (>=2.5 mm/day),DMI,-0.1329,0.68531,18,0.86069,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,cond_mean_R2,R2 Deep Convective Conditional Mean (mm/day),RONI,0.0909,0.78232,18,0.88011,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,cond_mean_R2,R2 Deep Convective Conditional Mean (mm/day),DMI,-0.1189,0.71724,18,0.86069,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,vol_contrib_R2,R2 Rainfall Volume Contribution Fraction,RONI,-0.1678,0.60381,18,0.83604,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,vol_contrib_R2,R2 Rainfall Volume Contribution Fraction,DMI,0.3566,0.25619,18,0.46114,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,cond_mean_R1,R1 Shallow Cumulus Conditional Mean (mm/day),RONI,0.028,0.937,18,0.937,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,cond_mean_R1,R1 Shallow Cumulus Conditional Mean (mm/day),DMI,0.6503,0.02571,18,0.15426,0.00278,True,False,False,"NOMINAL ONLY (Uncorrected p<=0.05, FDR q>0.10) — EXPLORATORY"
+pre_monsoon,0,vol_contrib_R1,R1 Rainfall Volume Contribution Fraction,RONI,-0.035,0.9205,18,0.937,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,vol_contrib_R1,R1 Rainfall Volume Contribution Fraction,DMI,0.7692,0.00512,18,0.09216,0.00278,True,True,False,CONFIRMED SIGNIFICANT (FDR q<=0.10)
+pre_monsoon,0,cond_mean_R0,R0 Mixed Convective Conditional Mean (mm/day),RONI,-0.3147,0.31925,18,0.52241,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,cond_mean_R0,R0 Mixed Convective Conditional Mean (mm/day),DMI,0.6783,0.01862,18,0.15426,0.00278,True,False,False,"NOMINAL ONLY (Uncorrected p<=0.05, FDR q>0.10) — EXPLORATORY"
+pre_monsoon,0,cond_mean_R3,R3 Thin Cirrus/Anvil Conditional Mean (mm/day),RONI,-0.2657,0.40522,18,0.60783,0.00278,False,False,False,NON-SIGNIFICANT
+pre_monsoon,0,cond_mean_R3,R3 Thin Cirrus/Anvil Conditional Mean (mm/day),DMI,-0.4406,0.15374,18,0.39533,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,mean_rainfall_mm,Terrestrial Mean Rainfall (mm/day),RONI,0.1958,0.54117,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,mean_rainfall_mm,Terrestrial Mean Rainfall (mm/day),DMI,-0.2238,0.48283,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,rainfall_anomaly_mm,Seasonal Rainfall Anomaly (mm/day),RONI,0.1958,0.54117,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,rainfall_anomaly_mm,Seasonal Rainfall Anomaly (mm/day),DMI,-0.2238,0.48283,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,wet_day_freq_25mm,Wet-Day Frequency (>=2.5 mm/day),RONI,-0.2168,0.49755,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,wet_day_freq_25mm,Wet-Day Frequency (>=2.5 mm/day),DMI,-0.3636,0.24765,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,cond_mean_R2,R2 Deep Convective Conditional Mean (mm/day),RONI,0.3706,0.23614,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,cond_mean_R2,R2 Deep Convective Conditional Mean (mm/day),DMI,0.1608,0.61917,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,vol_contrib_R2,R2 Rainfall Volume Contribution Fraction,RONI,0.1538,0.63596,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,vol_contrib_R2,R2 Rainfall Volume Contribution Fraction,DMI,0.028,0.93905,18,0.93905,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,cond_mean_R1,R1 Shallow Cumulus Conditional Mean (mm/day),RONI,-0.2817,0.37812,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,cond_mean_R1,R1 Shallow Cumulus Conditional Mean (mm/day),DMI,-0.0423,0.90214,18,0.93905,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,vol_contrib_R1,R1 Rainfall Volume Contribution Fraction,RONI,-0.06,0.85552,18,0.93905,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,vol_contrib_R1,R1 Rainfall Volume Contribution Fraction,DMI,0.1623,0.60985,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,cond_mean_R0,R0 Mixed Convective Conditional Mean (mm/day),RONI,-0.3776,0.22661,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,cond_mean_R0,R0 Mixed Convective Conditional Mean (mm/day),DMI,-0.3287,0.29804,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,cond_mean_R3,R3 Thin Cirrus/Anvil Conditional Mean (mm/day),RONI,0.3077,0.32768,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+established_monsoon,1,cond_mean_R3,R3 Thin Cirrus/Anvil Conditional Mean (mm/day),DMI,-0.1818,0.57299,18,0.76315,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,mean_rainfall_mm,Terrestrial Mean Rainfall (mm/day),RONI,-0.4266,0.17086,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,mean_rainfall_mm,Terrestrial Mean Rainfall (mm/day),DMI,-0.3357,0.28847,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,rainfall_anomaly_mm,Seasonal Rainfall Anomaly (mm/day),RONI,-0.4266,0.17086,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,rainfall_anomaly_mm,Seasonal Rainfall Anomaly (mm/day),DMI,-0.3357,0.28847,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,wet_day_freq_25mm,Wet-Day Frequency (>=2.5 mm/day),RONI,-0.3217,0.31216,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,wet_day_freq_25mm,Wet-Day Frequency (>=2.5 mm/day),DMI,-0.1888,0.56067,18,0.6728,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,cond_mean_R2,R2 Deep Convective Conditional Mean (mm/day),RONI,-0.4056,0.19218,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,cond_mean_R2,R2 Deep Convective Conditional Mean (mm/day),DMI,-0.1399,0.66573,18,0.74321,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,vol_contrib_R2,R2 Rainfall Volume Contribution Fraction,RONI,-0.4336,0.16269,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,vol_contrib_R2,R2 Rainfall Volume Contribution Fraction,DMI,-0.3986,0.20128,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,cond_mean_R1,R1 Shallow Cumulus Conditional Mean (mm/day),RONI,-0.3077,0.33297,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,cond_mean_R1,R1 Shallow Cumulus Conditional Mean (mm/day),DMI,0.007,0.99129,18,0.99129,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,vol_contrib_R1,R1 Rainfall Volume Contribution Fraction,RONI,-0.3636,0.24517,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,vol_contrib_R1,R1 Rainfall Volume Contribution Fraction,DMI,-0.1259,0.70192,18,0.74321,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,cond_mean_R0,R0 Mixed Convective Conditional Mean (mm/day),RONI,-0.3776,0.22996,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,cond_mean_R0,R0 Mixed Convective Conditional Mean (mm/day),DMI,-0.3706,0.238,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,cond_mean_R3,R3 Thin Cirrus/Anvil Conditional Mean (mm/day),RONI,-0.3287,0.29956,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT
+post_monsoon,2,cond_mean_R3,R3 Thin Cirrus/Anvil Conditional Mean (mm/day),DMI,-0.3427,0.27721,18,0.4281,0.00278,False,False,False,NON-SIGNIFICANT

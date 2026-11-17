@@ -1,0 +1,14 @@
+metric,value
+Total File Observations Audited (365/366 days x 1155 cells x 12 yrs),"5,062,365"
+Study Window Observations (1080 days x 960 cells),"1,036,800"
+Valid On-Land Study Observations (1080 days x 357 cells),"385,560"
+Masked Ocean/Foreign Observations (1080 days x 603 cells),"651,240"
+Negative Value Count (excluding -999.0 sentinel),0 (0.000%)
+Minimum Valid Rainfall,0.0 mm
+Median Valid Rainfall (Monsoon Window),2.44 mm
+Mean Valid Rainfall (Monsoon Window),9.18 mm
+90th Percentile Rainfall (Monsoon Window),26.85 mm
+99th Percentile Rainfall (Monsoon Window),78.42 mm
+Maximum Valid Rainfall Recorded,495.08 mm (2018-08-08 Kerala flood spell)
+Temporal Mask Stability,100.0% (Zero mask drift across 12 years)
+Overall Value Quality Status,PASSED_HIGH_INTEGRITY

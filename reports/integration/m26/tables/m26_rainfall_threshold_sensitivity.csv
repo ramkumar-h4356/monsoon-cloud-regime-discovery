@@ -1,0 +1,17 @@
+season,regime_id,regime_name,observations,p_rain_gt_0,p_exceed_0_1_mm,p_exceed_1_0_mm,p_exceed_2_5_mm,p_exceed_5_0_mm,p_exceed_10_0_mm,p_exceed_15_6_mm,p_exceed_35_5_mm,p_exceed_64_5_mm
+all_seasons,0,R0: Mixed Convective & Congestus,56445,34.01,34.01,25.48,19.51,14.29,8.91,5.72,1.67,0.43
+all_seasons,1,R1: Boundary-Layer Shallow Cumulus,46723,6.44,6.44,4.38,3.3,2.44,1.49,0.89,0.19,0.04
+all_seasons,2,R2: Deep Convective Storm Cores,2454,62.96,62.96,55.26,47.35,39.49,29.58,22.66,10.35,4.03
+all_seasons,3,R3: Thin Cirrus & Anvil Outflow,236810,38.85,38.85,30.67,24.73,19.26,13.07,9.15,3.32,1.04
+pre_monsoon,0,R0: Mixed Convective & Congestus,18794,21.84,21.84,14.72,10.54,7.32,4.25,2.49,0.48,0.06
+pre_monsoon,1,R1: Boundary-Layer Shallow Cumulus,12125,6.61,6.61,3.83,2.6,1.65,0.82,0.45,0.02,0.0
+pre_monsoon,2,R2: Deep Convective Storm Cores,287,21.6,21.6,14.63,11.15,9.41,6.97,4.88,1.74,0.7
+pre_monsoon,3,R3: Thin Cirrus & Anvil Outflow,82938,23.31,23.31,16.3,12.07,8.63,5.16,3.16,0.77,0.13
+established_monsoon,0,R0: Mixed Convective & Congestus,16865,60.82,60.82,47.6,37.28,27.58,17.46,11.51,3.72,0.93
+established_monsoon,1,R1: Boundary-Layer Shallow Cumulus,445,18.43,18.43,11.69,8.99,6.74,4.72,2.47,0.67,0.0
+established_monsoon,2,R2: Deep Convective Storm Cores,1381,87.26,87.26,78.71,67.78,56.34,42.14,32.3,14.05,5.43
+established_monsoon,3,R3: Thin Cirrus & Anvil Outflow,95453,65.68,65.68,54.2,44.83,35.75,25.0,18.0,6.91,2.29
+post_monsoon,0,R0: Mixed Convective & Congestus,20786,23.26,23.26,17.28,13.2,9.82,6.2,3.95,1.07,0.34
+post_monsoon,1,R1: Boundary-Layer Shallow Cumulus,34153,6.22,6.22,4.49,3.47,2.67,1.68,1.03,0.25,0.06
+post_monsoon,2,R2: Deep Convective Storm Cores,786,35.37,35.37,28.88,24.68,20.87,15.78,12.21,7.0,2.8
+post_monsoon,3,R3: Thin Cirrus & Anvil Outflow,58419,17.06,17.06,12.62,9.88,7.41,4.79,3.18,1.06,0.3

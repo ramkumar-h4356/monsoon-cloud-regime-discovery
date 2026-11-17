@@ -1,0 +1,17 @@
+{
+  "project_root": "D:/Project Simulator/monsoon_cloud_research",
+  "output_dir": "D:/Project Simulator/monsoon_cloud_research/reports/seasons/post_monsoon/m19_verification",
+  "years": [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021],
+  "ceres_dir": "data/interim/ceres_seasonal/post_monsoon",
+  "imd_dir": "raw_data/IMD_Rainfall",
+  "roni_original": "raw_data/NOAA_RONI/RONI.ascii.txt",
+  "dmi_original": "raw_data/NOAA_DMI/dmi.had.long.csv",
+  "roni_processed": "data/interim/climate_indices/roni_2010_2021.csv",
+  "dmi_processed": "data/interim/climate_indices/dmi_2010_2021.csv",
+  "ceres_expected_time_records": 720,
+  "hourly_tolerance_minutes": 10,
+  "latitude_min": 6.0,
+  "latitude_max": 39.0,
+  "longitude_min": 66.0,
+  "longitude_max": 101.0
+}

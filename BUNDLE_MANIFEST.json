@@ -1,0 +1,79 @@
+{
+  "bundle": "monsoon_cloud_research_consolidated_handoff",
+  "version": "1.0",
+  "created_utc": "2026-11-14T19:54:01Z",
+  "source_basis": "Files uploaded or generated in the current conversation working session.",
+  "data_quality_reports_included": [
+    "ceres_2015_2018_cloud_area_conditioned_missingness.csv",
+    "ceres_2015_2018_discontinuity_audit_summary.json",
+    "ceres_2015_2018_missingness_by_utc_hour.csv",
+    "ceres_2015_2018_missingness_year_contrasts.csv",
+    "ceres_2015_2018_spatial_missingness_by_region.csv",
+    "ceres_actual_utc_hour_missingness_by_season.csv",
+    "ceres_annual_correlation_pairs.csv",
+    "ceres_correlation_stability_summary.csv",
+    "ceres_correlation_stability_summary.json",
+    "ceres_cross_season_annual_correlations.csv",
+    "ceres_cross_season_correlation_comparison.csv",
+    "ceres_cross_season_pooled_correlations.csv",
+    "ceres_cross_season_summary.json",
+    "ceres_feature_high_correlations.csv",
+    "ceres_feature_screening_summary.csv",
+    "ceres_feature_screening_summary.json",
+    "ceres_feature_screening_yearly.csv",
+    "ceres_feature_spearman_correlation_matrix.csv",
+    "ceres_latitude_coordinates.csv",
+    "ceres_longitude_coordinates.csv",
+    "ceres_missingness_area_association.csv",
+    "ceres_missingness_by_dataset.csv",
+    "ceres_missingness_hourly_by_season.csv",
+    "ceres_missingness_spatial_by_season.csv",
+    "ceres_missingness_summary.json",
+    "ceres_missingness_variable_summary.csv",
+    "ceres_paired_correlation_pairs.csv",
+    "ceres_paired_correlation_summary.json",
+    "ceres_paired_high_correlations.csv",
+    "ceres_product_metadata_by_dataset.csv",
+    "ceres_time_metadata_audit_summary.json",
+    "ceres_timestamp_audit.csv",
+    "imd_rainfall_file_quality.csv",
+    "imd_rainfall_variable_quality.csv",
+    "imd_spatial_validity_mask.csv",
+    "post_monsoon_ceres_file_quality.csv",
+    "post_monsoon_ceres_variable_quality.csv",
+    "spatial_metadata_compatibility_summary.json",
+    "spatial_metadata_file_summary.csv",
+    "spatial_metadata_variable_attributes.csv"
+  ],
+  "registry": {
+    "eligible_candidates": 36,
+    "feature_set_counts": {
+      "FS-A": 36,
+      "FS-B": 21,
+      "FS-C": 21,
+      "FS-D": 21,
+      "FS-E": 16,
+      "FS-F": 21
+    },
+    "validation_passed": true
+  },
+  "raw_data_included": false,
+  "git_commit_or_push_performed": false,
+  "pending": [
+    "missingness transformation implementation",
+    "model-ready matrices",
+    "clustering and validation",
+    "rainfall and climate-index association analysis",
+    "final research interpretation and write-up"
+  ],
+  "included_scripts": [
+    "src/02_validation/audit_ceres_2015_2018_discontinuity.py",
+    "src/06_feature_engineering/build_feature_set_registry.py"
+  ],
+  "local_scripts_not_repacked": [
+    "src/02_validation/audit_ceres_time_and_product_metadata.py",
+    "src/02_validation/audit_post_monsoon_and_supporting_data.py",
+    "src/02_validation/audit_spatial_and_metadata_compatibility.py",
+    "Earlier feature-screening, correlation, correlation-stability, cross-season-correlation and missingness scripts."
+  ]
+}

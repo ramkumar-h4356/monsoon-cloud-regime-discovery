@@ -1,0 +1,29 @@
+season,season_id,variable,variable_description,beta_interaction_ols,p_interaction_perm,is_significant_p05
+pre_monsoon,0,mean_rainfall_mm,Terrestrial Mean Rainfall,0.00667,0.99336,False
+pre_monsoon,0,wet_day_freq_25mm,Wet-Day Frequency (>=2.5mm),-0.04101,0.364,False
+pre_monsoon,0,p_R0_domain,R0 Mixed Convective Fraction,-0.06117,0.53131,False
+pre_monsoon,0,p_R1_domain,R1 Shallow Cumulus Fraction,0.02268,0.80502,False
+pre_monsoon,0,p_R2_domain,R2 Deep Convective Fraction,-0.00421,0.58257,False
+pre_monsoon,0,p_R3_domain,R3 Thin Cirrus/Anvil Fraction,0.0427,0.7193,False
+pre_monsoon,0,cond_mean_R2,R2 Conditional Mean Intensity,1.80761,0.82783,False
+established_monsoon,1,mean_rainfall_mm,Terrestrial Mean Rainfall,0.30807,0.9022,False
+established_monsoon,1,wet_day_freq_25mm,Wet-Day Frequency (>=2.5mm),-0.00698,0.93232,False
+established_monsoon,1,p_R0_domain,R0 Mixed Convective Fraction,0.02947,0.40334,False
+established_monsoon,1,p_R1_domain,R1 Shallow Cumulus Fraction,-0.00651,0.66142,False
+established_monsoon,1,p_R2_domain,R2 Deep Convective Fraction,-0.02349,0.03685,True
+established_monsoon,1,p_R3_domain,R3 Thin Cirrus/Anvil Fraction,0.00053,0.98245,False
+established_monsoon,1,cond_mean_R2,R2 Conditional Mean Intensity,-15.12767,0.27762,False
+post_monsoon,2,mean_rainfall_mm,Terrestrial Mean Rainfall,2.45469,0.0322,True
+post_monsoon,2,wet_day_freq_25mm,Wet-Day Frequency (>=2.5mm),0.1848,0.01195,True
+post_monsoon,2,p_R0_domain,R0 Mixed Convective Fraction,0.00323,0.86538,False
+post_monsoon,2,p_R1_domain,R1 Shallow Cumulus Fraction,-0.0225,0.3694,False
+post_monsoon,2,p_R2_domain,R2 Deep Convective Fraction,-0.00025,0.93809,False
+post_monsoon,2,p_R3_domain,R3 Thin Cirrus/Anvil Fraction,0.01951,0.39655,False
+post_monsoon,2,cond_mean_R2,R2 Conditional Mean Intensity,1.74566,0.76269,False
+pooled_three_seasons,-1,mean_rainfall_mm,Terrestrial Mean Rainfall,1.65993,0.59775,False
+pooled_three_seasons,-1,wet_day_freq_25mm,Wet-Day Frequency (>=2.5mm),0.09277,0.52446,False
+pooled_three_seasons,-1,p_R0_domain,R0 Mixed Convective Fraction,0.00975,0.60146,False
+pooled_three_seasons,-1,p_R1_domain,R1 Shallow Cumulus Fraction,-0.01034,0.88241,False
+pooled_three_seasons,-1,p_R2_domain,R2 Deep Convective Fraction,-0.0015,0.71638,False
+pooled_three_seasons,-1,p_R3_domain,R3 Thin Cirrus/Anvil Fraction,0.00209,0.97449,False
+pooled_three_seasons,-1,cond_mean_R2,R2 Conditional Mean Intensity,2.37452,0.72909,False

@@ -1,0 +1,17 @@
+season,fraction_variable,regime_name,observations,spearman_rho,spearman_pvalue,pearson_r,pearson_pvalue
+all_seasons,frac_r0,R0: Mixed Convective & Congestus,342432,0.0055,0.00117615797504276,-0.0387,6.482607734139297e-114
+all_seasons,frac_r1,R1: Boundary-Layer Shallow Cumulus,342432,-0.3766,0.0,-0.1575,0.0
+all_seasons,frac_r2,R2: Deep Convective Storm Cores,342432,0.0944,0.0,0.0916,0.0
+all_seasons,frac_r3,R3: Thin Cirrus & Anvil Outflow (Baseline),342432,0.214,0.0,0.1336,0.0
+pre_monsoon,frac_r0,R0: Mixed Convective & Congestus,114144,0.016,6.564243928440577e-08,0.0066,0.026083668758346987
+pre_monsoon,frac_r1,R1: Boundary-Layer Shallow Cumulus,114144,-0.228,0.0,-0.1146,0.0
+pre_monsoon,frac_r2,R2: Deep Convective Storm Cores,114144,0.0089,0.0026050244840663157,0.0321,2.0125934386684826e-27
+pre_monsoon,frac_r3,R3: Thin Cirrus & Anvil Outflow (Baseline),114144,0.1289,0.0,0.079,1.4321572508762422e-157
+established_monsoon,frac_r0,R0: Mixed Convective & Congestus,114144,-0.1264,0.0,-0.1104,1.5680778357449605e-306
+established_monsoon,frac_r1,R1: Boundary-Layer Shallow Cumulus,114144,-0.1274,0.0,-0.07,5.015485913200409e-124
+established_monsoon,frac_r2,R2: Deep Convective Storm Cores,114144,0.0706,4.468275628611511e-126,0.0708,1.1736507602861376e-126
+established_monsoon,frac_r3,R3: Thin Cirrus & Anvil Outflow (Baseline),114144,0.1025,4.520305174872105e-264,0.085,4.1457728726340545e-182
+post_monsoon,frac_r0,R0: Mixed Convective & Congestus,114144,0.1494,0.0,0.066,1.7507907165203588e-110
+post_monsoon,frac_r1,R1: Boundary-Layer Shallow Cumulus,114144,-0.2201,0.0,-0.1057,4.861938400231812e-281
+post_monsoon,frac_r2,R2: Deep Convective Storm Cores,114144,0.1264,0.0,0.1093,1.979533883381177e-300
+post_monsoon,frac_r3,R3: Thin Cirrus & Anvil Outflow (Baseline),114144,0.0557,5.047055290826745e-79,0.0302,1.7892408237723926e-24

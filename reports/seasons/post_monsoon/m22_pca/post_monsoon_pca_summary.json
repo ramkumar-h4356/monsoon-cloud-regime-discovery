@@ -1,0 +1,219 @@
+{
+  "milestone": "M22",
+  "title": "Post-Monsoon Principal Component Analysis (Stage A Baseline)",
+  "created_utc": "2026-11-16T10:36:01.809719+00:00",
+  "elapsed_seconds": 3.34,
+  "feature_set": "FS-A",
+  "total_features": 36,
+  "sample_counts": {
+    "total_observations": 8294400,
+    "training_samples": 4838400,
+    "holdout_samples": 3456000
+  },
+  "kaiser_criterion": {
+    "eigenvalues_greater_than_1": 17
+  },
+  "variance_thresholds": {
+    "70%": 2,
+    "80%": 2,
+    "85%": 3,
+    "90%": 5,
+    "95%": 8,
+    "99%": 16
+  },
+  "out_of_sample_generalization": {
+    "holdout_variance_explained_ratio": 0.9989,
+    "subspace_congruence_5d": 0.9998
+  },
+  "component_congruence": [
+    {
+      "component": "PC1",
+      "train_variance_ratio": 0.6236485242843628,
+      "holdout_variance_ratio": 0.7501663565635681,
+      "congruence_cosine_similarity": 0.9974057078361511,
+      "sign": "+"
+    },
+    {
+      "component": "PC2",
+      "train_variance_ratio": 0.17635470628738403,
+      "holdout_variance_ratio": 0.09697863459587097,
+      "congruence_cosine_similarity": 0.9038876891136169,
+      "sign": "+"
+    },
+    {
+      "component": "PC3",
+      "train_variance_ratio": 0.0666271299123764,
+      "holdout_variance_ratio": 0.036190684884786606,
+      "congruence_cosine_similarity": 0.09418020397424698,
+      "sign": "+"
+    },
+    {
+      "component": "PC4",
+      "train_variance_ratio": 0.030021797865629196,
+      "holdout_variance_ratio": 0.028976287692785263,
+      "congruence_cosine_similarity": 0.7144907712936401,
+      "sign": "+"
+    },
+    {
+      "component": "PC5",
+      "train_variance_ratio": 0.022892549633979797,
+      "holdout_variance_ratio": 0.018118049949407578,
+      "congruence_cosine_similarity": 0.15008051693439484,
+      "sign": "+"
+    },
+    {
+      "component": "PC6",
+      "train_variance_ratio": 0.01767749898135662,
+      "holdout_variance_ratio": 0.017103224992752075,
+      "congruence_cosine_similarity": 0.9426019191741943,
+      "sign": "+"
+    },
+    {
+      "component": "PC7",
+      "train_variance_ratio": 0.012153667397797108,
+      "holdout_variance_ratio": 0.011051037348806858,
+      "congruence_cosine_similarity": 0.9387809038162231,
+      "sign": "-"
+    },
+    {
+      "component": "PC8",
+      "train_variance_ratio": 0.01068408228456974,
+      "holdout_variance_ratio": 0.00857464224100113,
+      "congruence_cosine_similarity": 0.3471217155456543,
+      "sign": "-"
+    },
+    {
+      "component": "PC9",
+      "train_variance_ratio": 0.007621091324836016,
+      "holdout_variance_ratio": 0.008273872546851635,
+      "congruence_cosine_similarity": 0.3769366443157196,
+      "sign": "+"
+    },
+    {
+      "component": "PC10",
+      "train_variance_ratio": 0.005179785192012787,
+      "holdout_variance_ratio": 0.005337497219443321,
+      "congruence_cosine_similarity": 0.8663970232009888,
+      "sign": "+"
+    },
+    {
+      "component": "PC11",
+      "train_variance_ratio": 0.004307457711547613,
+      "holdout_variance_ratio": 0.0030993716791272163,
+      "congruence_cosine_similarity": 0.7147809267044067,
+      "sign": "+"
+    },
+    {
+      "component": "PC12",
+      "train_variance_ratio": 0.004004002548754215,
+      "holdout_variance_ratio": 0.0024066148325800896,
+      "congruence_cosine_similarity": 0.366510272026062,
+      "sign": "+"
+    },
+    {
+      "component": "PC13",
+      "train_variance_ratio": 0.0028784784954041243,
+      "holdout_variance_ratio": 0.002294782781973481,
+      "congruence_cosine_similarity": 0.2805810868740082,
+      "sign": "+"
+    },
+    {
+      "component": "PC14",
+      "train_variance_ratio": 0.0025420007295906544,
+      "holdout_variance_ratio": 0.0022160199005156755,
+      "congruence_cosine_similarity": 0.0258709155023098,
+      "sign": "+"
+    },
+    {
+      "component": "PC15",
+      "train_variance_ratio": 0.0020924571435898542,
+      "holdout_variance_ratio": 0.0016885838704183698,
+      "congruence_cosine_similarity": 0.8711323738098145,
+      "sign": "+"
+    }
+  ],
+  "component_diagnostics": [
+    {
+      "component": "PC1",
+      "variance_explained": 0.6236485242843628,
+      "cumulative_variance": 0.6236485242843628,
+      "top_positive_features": {
+        "cldtau_high_1h": 0.6909,
+        "iwp_high_1h": 0.673,
+        "iwp_total_1h": 0.1658
+      },
+      "top_negative_features": {
+        "cldpress_top_mid_high_1h": -0.012,
+        "cldpress_mid_high_1h": -0.0103,
+        "cldtemp_total_1h": -0.0086
+      }
+    },
+    {
+      "component": "PC2",
+      "variance_explained": 0.17635470628738403,
+      "cumulative_variance": 0.8000032305717468,
+      "top_positive_features": {
+        "iwp_mid_high_1h": 0.7112,
+        "lwp_mid_low_1h": 0.4566,
+        "cldtau_mid_high_1h": 0.3025
+      },
+      "top_negative_features": {
+        "cldtau_high_1h": -0.1626,
+        "iwp_high_1h": -0.1186,
+        "cldtemp_mid_low_1h": -0.0263
+      }
+    },
+    {
+      "component": "PC3",
+      "variance_explained": 0.0666271299123764,
+      "cumulative_variance": 0.8666303753852844,
+      "top_positive_features": {
+        "lwp_mid_low_1h": 0.6513,
+        "cldtau_mid_low_1h": 0.3683,
+        "lwp_total_1h": 0.2368
+      },
+      "top_negative_features": {
+        "iwp_mid_high_1h": -0.5824,
+        "cldtau_mid_high_1h": -0.1176,
+        "iwp_total_1h": -0.0508
+      }
+    },
+    {
+      "component": "PC4",
+      "variance_explained": 0.030021797865629196,
+      "cumulative_variance": 0.8966521620750427,
+      "top_positive_features": {
+        "lwp_low_1h": 0.6554,
+        "cldtau_low_1h": 0.6479,
+        "cldhght_low_1h": 0.1493
+      },
+      "top_negative_features": {
+        "cldtemp_low_1h": -0.1943,
+        "cldpress_top_low_1h": -0.1462,
+        "cldpress_low_1h": -0.14
+      }
+    },
+    {
+      "component": "PC5",
+      "variance_explained": 0.022892549633979797,
+      "cumulative_variance": 0.9195446968078613,
+      "top_positive_features": {
+        "iwp_high_1h": 0.6843,
+        "lwp_mid_low_1h": 0.1111,
+        "iwp_total_1h": 0.0931
+      },
+      "top_negative_features": {
+        "cldtau_high_1h": -0.6559,
+        "cldtau_mid_high_1h": -0.1652,
+        "cldtau_total_1h": -0.1593
+      }
+    }
+  ],
+  "output_artifacts": {
+    "scores_npy_path": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\post_monsoon\\pca\\post_monsoon_pca_FS-A_top10_scores.npy",
+    "scores_npy_bytes": 331776128,
+    "variance_csv_path": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\seasons\\post_monsoon\\m22_pca\\post_monsoon_pca_variance.csv",
+    "loadings_csv_path": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\seasons\\post_monsoon\\m22_pca\\post_monsoon_pca_loadings.csv"
+  },
+  "status": "COMPLETED_READY_FOR_CLUSTERING"
+}

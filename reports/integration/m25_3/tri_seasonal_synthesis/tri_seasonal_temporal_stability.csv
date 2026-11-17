@@ -1,0 +1,13 @@
+season,variant,split,n_obs,ari,nmi,stability_classification
+Pre-Monsoon (Hourly),cloudy_k2,Training (2010-2016),4818467,0.1025,0.1373,STABLE_BASELINE
+Pre-Monsoon (Hourly),cloudy_k2,Development (2017-2018),1372679,0.0993,0.1532,STABLE_DEVELOPMENT
+Pre-Monsoon (Hourly),cloudy_k2,Holdout (2019-2021),2060970,0.1169,0.148,ROBUST_HOLDOUT_GENERALIZATION
+Established-Monsoon (Daily),baseline_k2,Training (2010-2016),177569,-0.002,0.0872,WEAK_BASELINE
+Established-Monsoon (Daily),baseline_k2,Development (2017-2018),44604,-0.003,0.0384,WEAK_DEVELOPMENT
+Established-Monsoon (Daily),baseline_k2,Holdout (2019-2021),68182,-0.0006,0.0374,STABLE_WEAK_CORRESPONDENCE
+Established-Monsoon (Daily),log_k2,Training (2010-2016),177569,0.0134,0.09,WEAK_BASELINE
+Established-Monsoon (Daily),log_k2,Development (2017-2018),44604,0.0093,0.0392,WEAK_DEVELOPMENT
+Established-Monsoon (Daily),log_k2,Holdout (2019-2021),68182,0.0119,0.0395,STABLE_WEAK_CORRESPONDENCE
+Post-Monsoon (Hourly),m24_k4,Training (2010-2016),4838400,-0.0581,0.0435,WEAK_COLLAPSE_BASELINE
+Post-Monsoon (Hourly),m24_k4,Development (2017-2018),1382400,-0.0559,0.041,WEAK_COLLAPSE_DEV
+Post-Monsoon (Hourly),m24_k4,Holdout (2019-2021),2073600,-0.0578,0.0418,STABLE_WEAK_COLLAPSE

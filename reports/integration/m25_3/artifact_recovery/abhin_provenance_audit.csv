@@ -1,0 +1,9 @@
+audit_item,verified_state,source_reference,gate_status
+Git Remote Ref,origin/feature/established-monsoon-analysis,monsoon_cloud_research git metadata,VERIFIED_LOCAL
+Latest Local Commit,882edfa (Mon Nov 16 14:53:32 2026 +0530),git log origin/feature/established-monsoon-analysis,VERIFIED_LOCAL
+Commit Author,Abhin S <abhin.s@example.com>,git log,VERIFIED
+Commit Message,Complete established monsoon M6.5 scientific documentation,git log,VERIFIED
+Review Workspace Checkout,"review/established-monsoon-analysis checked out at 95f123b (behind 4 commits: 124755d, e6f7ed1, 7ffafb5, 882edfa)",monsoon_cloud_friend_review,OUT_OF_SYNC_LOCAL
+Remote Server Verification,UNVERIFIED; network fetch was cancelled to avoid HTTPS credential/timeout stall; remote GitHub repo not queried,Task 1666 cancellation,SAFE_FETCH_REQUIRED_IF_REMOTE_CHECKED
+Model Representation,MiniBatchKMeans K=2 (Baseline & Log-Sensitivity),reports/established_monsoon_cloud_regime_study.md,DOCUMENTED_ONLY
+Observation-Level Assignment Artifacts,ABSENT from git repository and local worktrees,git ls-tree 882edfa,GATE_FAILED

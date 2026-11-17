@@ -1,0 +1,12 @@
+{
+  "daily_cloud_aggregation_seconds": 3.45,
+  "imd_rainfall_extraction_seconds": 1.45,
+  "spatial_temporal_join_seconds": 1.87,
+  "regime_statistics_seconds": 0.65,
+  "continuous_fraction_seconds": 0.93,
+  "spatial_temporal_dynamics_seconds": 1.02,
+  "sensitivity_suite_seconds": 0.46,
+  "block_bootstrap_seconds": 21.34,
+  "figure_generation_seconds": 2.29,
+  "total_pipeline_duration_seconds": 33.47
+}

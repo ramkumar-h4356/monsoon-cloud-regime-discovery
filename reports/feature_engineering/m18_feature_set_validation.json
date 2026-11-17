@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "registry_variables": 36,
+  "results": [
+    {
+      "feature_set": "FS-A",
+      "config_count": 36,
+      "registry_count": 36,
+      "matches_registry": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "feature_set": "FS-B",
+      "config_count": 21,
+      "registry_count": 21,
+      "matches_registry": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "feature_set": "FS-C",
+      "config_count": 21,
+      "registry_count": 21,
+      "matches_registry": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "feature_set": "FS-D",
+      "config_count": 21,
+      "registry_count": 21,
+      "matches_registry": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "feature_set": "FS-E",
+      "config_count": 16,
+      "registry_count": 16,
+      "matches_registry": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "feature_set": "FS-F",
+      "config_count": 21,
+      "registry_count": 21,
+      "matches_registry": true,
+      "missing": [],
+      "extra": []
+    }
+  ]
+}

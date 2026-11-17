@@ -1,0 +1,65 @@
+{
+  "milestone": "M25.1",
+  "title": "Scientific Validation of Combined Three-Season Cloud Regimes",
+  "timestamp_utc": "2026-11-16T14:21:39.627423+00:00",
+  "input_dataset": {
+    "total_observations": 24883200,
+    "train_observations": 14515200,
+    "holdout_observations": 10368000,
+    "n_features": 36,
+    "study_years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "seasons": [
+      "pre_monsoon",
+      "established_monsoon",
+      "post_monsoon"
+    ]
+  },
+  "anomalies_resolved": [
+    {
+      "anomaly_id": 1,
+      "description": "Regime 3 named Fair-Weather despite 71% cloud area and 8.44 km height.",
+      "resolution": "Renamed to 'Upper-Tropospheric Thin Cirrus & Anvil Outflow Debris' with physical evidence.",
+      "status": "RESOLVED"
+    },
+    {
+      "anomaly_id": 2,
+      "description": "iwp_total_1h_median identical at 28.48 across all clusters due to clear-sky median imputation.",
+      "resolution": "Computed raw-observation NaN-masked and in-cloud conditional distributions in iwp_lwp_missingness_deep_dive.csv.",
+      "status": "RESOLVED"
+    },
+    {
+      "anomaly_id": 3,
+      "description": "PC1 dominated by cldtau_low_1h and lwp_low_1h due to small IQR denominator in RobustScaler.",
+      "resolution": "Conducted 4-way PCA sensitivity analysis proving low cloud dominance is an IQR numerical artifact; validated alternative scalings.",
+      "status": "RESOLVED"
+    }
+  ],
+  "validation_findings": {
+    "cluster_stability_k4_mean_ari": 0.7402040484467067,
+    "cluster_stability_k4_min_ari": 0.6534944668902019,
+    "cluster_stability_verdict": "MODERATE/UNSTABLE",
+    "pca_holdout_recon_pct": 98.52774047851562,
+    "max_temporal_regime_drift_pct": 4.373677248677248
+  },
+  "generated_artifacts": [
+    "D:\\Project Simulator\\post_monsoon_research\\reports\\integration\\m25_1_validation\\raw_vs_imputed_cluster_profiles.csv",
+    "D:\\Project Simulator\\post_monsoon_research\\reports\\integration\\m25_1_validation\\iwp_lwp_missingness_deep_dive.csv",
+    "D:\\Project Simulator\\post_monsoon_research\\reports\\integration\\m25_1_validation\\cluster_stability_ari_analysis.csv",
+    "D:\\Project Simulator\\post_monsoon_research\\reports\\integration\\m25_1_validation\\pca_representation_sensitivity.csv",
+    "D:\\Project Simulator\\post_monsoon_research\\reports\\integration\\m25_1_validation\\temporal_generalization_evaluation.csv",
+    "D:\\Project Simulator\\post_monsoon_research\\reports\\integration\\m25_1_validation\\revised_regime_taxonomy.csv"
+  ]
+}

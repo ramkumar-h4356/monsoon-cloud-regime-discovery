@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "M25_IMD_Daily_Rainfall_Integration_Table",
+  "description": "Standardized schema for daily gridded IMD rainfall coupled to M25 cloud regimes.",
+  "type": "object",
+  "required": [
+    "year",
+    "date",
+    "latitude",
+    "longitude",
+    "rainfall_mm",
+    "quality_flag"
+  ],
+  "properties": {
+    "year": {
+      "type": "integer",
+      "minimum": 2010,
+      "maximum": 2021
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date YYYY-MM-DD"
+    },
+    "season": {
+      "type": "string",
+      "enum": [
+        "pre_monsoon",
+        "established_monsoon",
+        "post_monsoon"
+      ]
+    },
+    "latitude": {
+      "type": "number",
+      "minimum": 6.5,
+      "maximum": 37.5,
+      "description": "Cell center latitude (deg N)"
+    },
+    "longitude": {
+      "type": "number",
+      "minimum": 68.5,
+      "maximum": 97.5,
+      "description": "Cell center longitude (deg E)"
+    },
+    "cell_id": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 959,
+      "description": "Canonical M25 cell index"
+    },
+    "rainfall_mm": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1500.0,
+      "description": "Daily rainfall depth in mm/day (NaN if masked/ocean)"
+    },
+    "rainfall_unit": {
+      "type": "string",
+      "enum": [
+        "mm/day"
+      ]
+    },
+    "is_on_land": {
+      "type": "boolean",
+      "description": "True if cell is within IMD terrestrial rain-gauge mask"
+    },
+    "spatial_aggregation_source": {
+      "type": "string",
+      "enum": [
+        "native_1deg_direct",
+        "area_weighted_0.25deg"
+      ]
+    },
+    "valid_fine_grid_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16,
+      "description": "Number of valid 0.25 deg sub-cells (16 for 1deg native)"
+    },
+    "expected_fine_grid_count": {
+      "type": "integer",
+      "default": 16
+    },
+    "spatial_coverage_fraction": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "quality_flag": {
+      "type": "string",
+      "enum": [
+        "VALID_ON_LAND_MEASUREMENT",
+        "VALID_ZERO_DRY_DAY",
+        "PARTIAL_COASTAL_CELL",
+        "OCEAN_STRUCTURAL_ABSENCE",
+        "FOREIGN_LAND_STRUCTURAL_ABSENCE",
+        "INVALID_OR_CORRUPT"
+      ]
+    }
+  }
+}

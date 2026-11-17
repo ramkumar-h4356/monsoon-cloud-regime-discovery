@@ -1,0 +1,7 @@
+season,variant,temporal_scale,matched_observations,coverage_pct,ari,nmi,dominant_m25_regime,correspondence_behavior,design_comparability_note
+Pre-Monsoon,cloudy_only_k2,Hourly,8252116,99.49,0.1055,0.142,R3 (Thin Cirrus / Anvil) 67.45%,Moderate structured alignment: C0 captures 95.2% of R1; C1 is 84.4% R3,Direct hourly matching (clear sky excluded)
+Pre-Monsoon,all_observations_k3,Hourly,8294400,100.0,0.1011,0.1415,R3 (Thin Cirrus / Anvil) 67.63%,Clear sky (-1) collapses 100% into M25 R3,Clear sky included as 3rd category
+Established-Monsoon,baseline_k2,Daily Aggregation,290355,84.01,-0.0023,0.0698,R3 (Thin Cirrus / Anvil) 93.08% daily mode,"Near-zero hard modal ARI due to R3 dominance; soft mixture shows C1=92.4% R3, C0=18.1% R0",NOT DIRECTLY COMPARABLE: Daily modal aggregation on 14-feature complete cases
+Established-Monsoon,log_k2,Daily Aggregation,290355,84.01,0.0142,0.0732,R3 (Thin Cirrus / Anvil) 93.08% daily mode,"Numerical labels inverted relative to baseline_k2 (C0=91.9% R3, C1=18.5% R0)",NOT DIRECTLY COMPARABLE: Log-transformed 14-feature space
+Established-Monsoon,log_k3,Daily Aggregation,290355,84.01,0.0274,0.0584,R3 (Thin Cirrus / Anvil) 93.08% daily mode,"C2 is convective core (92.7% R3), C1 is suppressed (20.6% R0, 4.5% R1)",NOT DIRECTLY COMPARABLE: 3-cluster partition
+Post-Monsoon,m24_baseline_k4,Hourly,8294400,100.0,-0.0576,0.0422,R3 (Thin Cirrus / Anvil) 66.49%,"Many-to-one collapse: M24 C0, C1, C2 (17% total) collapse into M25 R3 (79.5%-89.1%)",Direct hourly matching on 36-feature complete domain

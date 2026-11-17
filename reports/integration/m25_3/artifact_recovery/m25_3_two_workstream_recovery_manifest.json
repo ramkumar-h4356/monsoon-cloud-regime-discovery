@@ -1,0 +1,53 @@
+{
+  "milestone": "M25.3",
+  "phase": "Phase 2 & Phase 3",
+  "generated_utc": "2026-11-16T17:51:26.294171+00:00",
+  "workstreams": {
+    "noshin_pre_monsoon": {
+      "classification": "VERIFIED_AND_READY_FOR_CORRESPONDENCE",
+      "source_archive": "media_1794848995665_57d9ff2b.zip",
+      "git_commit": "28927f2292c62a6673a5afce77ff2720c6fc8f19",
+      "branch": "origin/feature/pre-monsoon-analysis",
+      "files_verified": 21,
+      "netcdf_label_files": 12,
+      "total_observations": 8294400,
+      "valid_cloudy_observations": 8252116,
+      "clear_sky_observations": 42284,
+      "coordinate_match_raw_ceres": true,
+      "coordinate_match_m25": true,
+      "model_bundle_verified": true,
+      "model_bundle_sha256": "4c26f58fcc842aa4c7da5d6547225a1d9ae25171f29f083014c31e4849233569",
+      "matching_gate": "PASSED"
+    },
+    "abhin_established_monsoon": {
+      "classification": "BLOCKED_MISSING_ASSIGNMENT_ARTIFACTS",
+      "latest_local_commit": "882edfa41f1750e39a3f2d2b51296ceca23bc624",
+      "branch": "origin/feature/established-monsoon-analysis",
+      "remote_fetch_status": "UNVERIFIED_SAFE_FETCH_REQUIRED",
+      "friend_review_workspace_status": "behind_4_commits",
+      "raw_observations": 345600,
+      "complete_cases": 290355,
+      "features_retained": 14,
+      "imputation_strategy": "None (complete-case)",
+      "k_clusters": 2,
+      "assignment_file_status": "MISSING (established_monsoon_fixed_cluster_assignments.csv not committed)",
+      "model_bundle_status": "MISSING",
+      "matching_gate": "BLOCKED"
+    }
+  },
+  "deliverables": [
+    "noshin_artifact_inventory.csv",
+    "noshin_checksum_verification.csv",
+    "noshin_provenance_audit.csv",
+    "noshin_label_coverage.csv",
+    "noshin_observation_matching.csv",
+    "abhin_artifact_inventory.csv",
+    "abhin_checksum_verification.csv",
+    "abhin_provenance_audit.csv",
+    "abhin_label_coverage.csv",
+    "abhin_complete_case_audit.csv",
+    "abhin_observation_matching.csv",
+    "m25_3_two_workstream_recovery_manifest.json",
+    "m25_3_two_workstream_recovery_report.md"
+  ]
+}

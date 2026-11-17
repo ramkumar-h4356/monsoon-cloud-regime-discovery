@@ -1,0 +1,42 @@
+{
+  "milestone": "M25.3_Phase2",
+  "season": "pre_monsoon",
+  "generated_utc": "2026-11-16T18:31:38.768832+00:00",
+  "total_observations": 8294400,
+  "valid_cloudy_observations": 8252116,
+  "clear_sky_observations": 42284,
+  "cloudy_metrics": {
+    "ari": 0.1055,
+    "nmi": 0.142
+  },
+  "all_obs_metrics": {
+    "ari": 0.1011,
+    "nmi": 0.1415
+  },
+  "splits": {
+    "Training (2010-2016)": {
+      "ari": 0.1025,
+      "nmi": 0.1373
+    },
+    "Development (2017-2018)": {
+      "ari": 0.0993,
+      "nmi": 0.1532
+    },
+    "Holdout (2019-2021)": {
+      "ari": 0.1169,
+      "nmi": 0.148
+    },
+    "Stage2 Dev (2010-2018)": {
+      "ari": 0.1019,
+      "nmi": 0.1405
+    },
+    "Stage3 Holdout (2019-2021)": {
+      "ari": 0.1169,
+      "nmi": 0.148
+    },
+    "Pooled (2010-2021)": {
+      "ari": 0.1055,
+      "nmi": 0.142
+    }
+  }
+}
