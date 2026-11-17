@@ -1,0 +1,302 @@
+{
+  "milestone": "M27.7.1",
+  "title": "Independent Implementation, Numerical Reproducibility and Scientific Acceptance Verification",
+  "project": "Satellite-Based Cloud-Regime Discovery over the Indian Monsoon Domain",
+  "acceptance_verdict": "ACCEPTED WITH REPORTING CORRECTIONS",
+  "execution_timestamp_utc": "2026-11-16T21:53:07.866303+00:00",
+  "pipeline_duration_seconds": 2.24,
+  "environment": {
+    "python_version": "3.13.15",
+    "platform": "win32",
+    "numpy_version": "2.4.2",
+    "pandas_version": "3.0.2",
+    "scipy_version": "1.17.1"
+  },
+  "random_seeds": {
+    "freedman_lane_seed": 42,
+    "spatial_field_permutation_seed": 42,
+    "year_block_permutation_seed": 42,
+    "synthetic_corner_cases_seed": 101
+  },
+  "deliverables": {
+    "reports": [
+      {
+        "filename": "m27_7_1_clr_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_clr_verification.md",
+        "size_bytes": 1977,
+        "sha256": "430aa8f451fffffbb30047919cdf953cfa6998b840ca0ac7ba2f0af68d263287"
+      },
+      {
+        "filename": "m27_7_1_discrepancy_and_errata_register.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_discrepancy_and_errata_register.md",
+        "size_bytes": 1543,
+        "sha256": "00e3a639a4d3baae20904d4d134e5dd4431efd07d2c51c7eebe3f563d17e87e6"
+      },
+      {
+        "filename": "m27_7_1_fdr_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_fdr_verification.md",
+        "size_bytes": 1567,
+        "sha256": "6e758c642259a860a88f5e7ef9177c2ba52565e1a4912d099163bd4b6644b2ab"
+      },
+      {
+        "filename": "m27_7_1_figure_report_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_figure_report_verification.md",
+        "size_bytes": 1150,
+        "sha256": "785a6e490b72bc4b6409827fda9bbd236cb86584e7f24c8f77f732253078c755"
+      },
+      {
+        "filename": "m27_7_1_freedman_lane_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_freedman_lane_verification.md",
+        "size_bytes": 1684,
+        "sha256": "d402a2a7e4ff6738db9940c3076bd5db482095d422f0408722b94dac2a992ae7"
+      },
+      {
+        "filename": "m27_7_1_independent_acceptance_decision.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_independent_acceptance_decision.md",
+        "size_bytes": 1869,
+        "sha256": "2e344b7b763b84554b1fdff55a1f5eb9f09c7f339ee5e6b721405a9d65da3524"
+      },
+      {
+        "filename": "m27_7_1_integrity_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_integrity_verification.md",
+        "size_bytes": 1773,
+        "sha256": "291054d266dc64c1b28a68bbca5d62908f408cb0b2cedff6368caa5df39adbff"
+      },
+      {
+        "filename": "m27_7_1_partial_spearman_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_partial_spearman_verification.md",
+        "size_bytes": 1942,
+        "sha256": "d8de052446dec856c8bf38f501135e274171bb74a73ebd77a2cd7ecdad942edc"
+      },
+      {
+        "filename": "m27_7_1_phase_matrix_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_phase_matrix_verification.md",
+        "size_bytes": 1144,
+        "sha256": "595ba779a2ca647650af244fa6407e766147097ba442de0ced6ac3f6dc2e91b0"
+      },
+      {
+        "filename": "m27_7_1_spatial_field_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_spatial_field_verification.md",
+        "size_bytes": 1359,
+        "sha256": "b69940e3ae8172cf2e674b40eb04d2a21d2235fb794d08e6c2d8b544f6fe5700"
+      },
+      {
+        "filename": "m27_7_1_synthetic_test_report.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_synthetic_test_report.md",
+        "size_bytes": 1422,
+        "sha256": "8272511765a48e9a16fa0903117cb4f60ddb56ff4546daf75c98a6344b8d512f"
+      },
+      {
+        "filename": "m27_7_1_verification_scope.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_verification_scope.md",
+        "size_bytes": 1924,
+        "sha256": "9f2932dd26bbd3b2ba758fbc24a1ecbe7be9d6e0bacad52e5a6a07b450a66c79"
+      },
+      {
+        "filename": "m27_7_1_year_dependence_verification.md",
+        "relative_path": "reports/integration/m27_7_1/m27_7_1_year_dependence_verification.md",
+        "size_bytes": 1144,
+        "sha256": "445d1e4ba58f6d7cc02559aee99b522aa7eee0ab9b3426350439e1ebd38a258d"
+      }
+    ],
+    "tables": [
+      {
+        "filename": "m27_7_1_artifact_integrity_registry.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_artifact_integrity_registry.csv",
+        "size_bytes": 5283,
+        "sha256": "62fd262be22fdc852165a586beaef2bd99eda23c83019477f0f710e44f7015ca",
+        "row_count": 35,
+        "column_count": 5
+      },
+      {
+        "filename": "m27_7_1_clr_numerical_comparison.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_clr_numerical_comparison.csv",
+        "size_bytes": 2627,
+        "sha256": "76f17dcfc8baa1e7e734a90b523989428b166c8bbb98cf82e1d96d7c9bba49b4",
+        "row_count": 24,
+        "column_count": 13
+      },
+      {
+        "filename": "m27_7_1_dual_repo_parity.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_dual_repo_parity.csv",
+        "size_bytes": 7367,
+        "sha256": "e1c3155934b760d7320cb29b1b79c7e06ff5fb5ac8a850297806b632a62d40cf",
+        "row_count": 36,
+        "column_count": 4
+      },
+      {
+        "filename": "m27_7_1_fdr_family_reconstruction.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_fdr_family_reconstruction.csv",
+        "size_bytes": 4577,
+        "sha256": "428323c3d45679d01cc96f9de47014b2644bef95611280fcffa832a0d8168a07",
+        "row_count": 24,
+        "column_count": 16
+      },
+      {
+        "filename": "m27_7_1_figure_annotation_verification.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_figure_annotation_verification.csv",
+        "size_bytes": 2512,
+        "sha256": "2fd8e3ad8368bc724400756a78427fdcd85a7e2d714a4159c6ea4d3afdd33452",
+        "row_count": 10,
+        "column_count": 7
+      },
+      {
+        "filename": "m27_7_1_final_acceptance_matrix.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_final_acceptance_matrix.csv",
+        "size_bytes": 2715,
+        "sha256": "4eefa1e751882853a03e9e7119bc5f08d17952d483b0fac91bb781ad0b5a322c",
+        "row_count": 17,
+        "column_count": 4
+      },
+      {
+        "filename": "m27_7_1_interaction_multiplicity_verification.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_interaction_multiplicity_verification.csv",
+        "size_bytes": 3608,
+        "sha256": "edb988ecb8f2e9611e9bc6086951e8e475de641f9722e64dfb75d91908331dd2",
+        "row_count": 21,
+        "column_count": 13
+      },
+      {
+        "filename": "m27_7_1_joint_matrix_reconstruction.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_joint_matrix_reconstruction.csv",
+        "size_bytes": 480,
+        "sha256": "48ae742088088d77ca5199008064a54ef95daf8e16e4c8168591e27a0a78bfcb",
+        "row_count": 4,
+        "column_count": 11
+      },
+      {
+        "filename": "m27_7_1_partial_spearman_numerical_reproduction.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_partial_spearman_numerical_reproduction.csv",
+        "size_bytes": 3928,
+        "sha256": "9431ad7b89aaae301faf4482901ca284e846591375431949beaf97a67351df68",
+        "row_count": 24,
+        "column_count": 14
+      },
+      {
+        "filename": "m27_7_1_phase_group_reconstruction.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_phase_group_reconstruction.csv",
+        "size_bytes": 1667,
+        "sha256": "83740a315ab125abc610e04d4fb4a041d629c8855240ca30be0e2274e5689e06",
+        "row_count": 12,
+        "column_count": 12
+      },
+      {
+        "filename": "m27_7_1_rainfall_multiplicity_verification.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_rainfall_multiplicity_verification.csv",
+        "size_bytes": 7786,
+        "sha256": "edc8c003b04b1eb15a80cbcb353970f8afc23ef5e3585993b27ef49471683916",
+        "row_count": 54,
+        "column_count": 13
+      },
+      {
+        "filename": "m27_7_1_spatial_field_permutation_reproduction.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_spatial_field_permutation_reproduction.csv",
+        "size_bytes": 1983,
+        "sha256": "d8b264ca103a326f3a3ba6dcf22a0a020ea9a31020369465dabdd5e2b1bd3e3b",
+        "row_count": 12,
+        "column_count": 15
+      },
+      {
+        "filename": "m27_7_1_statement_to_evidence_audit.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_statement_to_evidence_audit.csv",
+        "size_bytes": 2373,
+        "sha256": "74f95b8b94914ce9b98e1410b00967471700a3c6ec1d8ebf9e1b72a1891752fe",
+        "row_count": 9,
+        "column_count": 5
+      },
+      {
+        "filename": "m27_7_1_synthetic_corner_cases.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_synthetic_corner_cases.csv",
+        "size_bytes": 1086,
+        "sha256": "95d716fcb7ec341746a0961c0abf05c9daafd629c7ee0f68442c3690e9b58b57",
+        "row_count": 9,
+        "column_count": 7
+      },
+      {
+        "filename": "m27_7_1_year_block_permutation_comparison.csv",
+        "relative_path": "reports/integration/m27_7_1/tables/m27_7_1_year_block_permutation_comparison.csv",
+        "size_bytes": 2923,
+        "sha256": "21b761664f1b3615394b6a839e391a62bccc3fab3d14289435bfd567c349c729",
+        "row_count": 20,
+        "column_count": 15
+      }
+    ],
+    "code": [
+      {
+        "filename": "__init__.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/__init__.py",
+        "size_bytes": 112,
+        "sha256": "4fd09f1d237582fe1d4b6baff6baca7c1452e723bc65e06c85bf66297243111a"
+      },
+      {
+        "filename": "m27_7_1_fdr_and_multiplicity_verifier.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/m27_7_1_fdr_and_multiplicity_verifier.py",
+        "size_bytes": 7953,
+        "sha256": "040b0ad9bd0bdec8e86959d3bdc28219180b15023b6b17e9166f4e95af7ca5fe"
+      },
+      {
+        "filename": "m27_7_1_figure_and_report_verifier.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/m27_7_1_figure_and_report_verifier.py",
+        "size_bytes": 16537,
+        "sha256": "7f6dc0cd5278ea21184b2003d839fe203ee420bcab08ba881426ac8a40f2018d"
+      },
+      {
+        "filename": "m27_7_1_integrity_verifier.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/m27_7_1_integrity_verifier.py",
+        "size_bytes": 11715,
+        "sha256": "d3ae0bc15fc2b65f9e2ad4ad441e31fa9417b418a04ebd96c17c49e4733b90e4"
+      },
+      {
+        "filename": "m27_7_1_interactions_and_clr_verifier.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/m27_7_1_interactions_and_clr_verifier.py",
+        "size_bytes": 10232,
+        "sha256": "20e74d35ef93a79c4c77886abe0c95ccaa6389461d1aba0ba8c442758b3253e5"
+      },
+      {
+        "filename": "m27_7_1_orchestrator.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/m27_7_1_orchestrator.py",
+        "size_bytes": 11371,
+        "sha256": "ab96239c62fcbfdaf69e2fd2184e6af00288893c9c14285d917ecd229e00183c"
+      },
+      {
+        "filename": "m27_7_1_partial_spearman_verifier.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/m27_7_1_partial_spearman_verifier.py",
+        "size_bytes": 16401,
+        "sha256": "a49ec4d604d1397a08dd85dae4f5e43e7102bb95350e4785c100bab8a16527b5"
+      },
+      {
+        "filename": "m27_7_1_report_generator.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/m27_7_1_report_generator.py",
+        "size_bytes": 23993,
+        "sha256": "82b213284632d8464e403e9b27cac01ad579c1bb63d4be9936d71a5fa8a2a6bd"
+      },
+      {
+        "filename": "m27_7_1_spatial_and_temporal_verifier.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/m27_7_1_spatial_and_temporal_verifier.py",
+        "size_bytes": 13343,
+        "sha256": "33442a04cda5c67696f2d16f4a7101a5b98e0be8de614d7f1db1655632a8149b"
+      },
+      {
+        "filename": "mirror_m27_7_1_to_post_monsoon.py",
+        "relative_path": "src/integration/climate_association/m27_7_1/mirror_m27_7_1_to_post_monsoon.py",
+        "size_bytes": 3464,
+        "sha256": "0e5acc0680737f06228d6c6e9e8349508d36860d45eeadb704c8805b78522657"
+      }
+    ],
+    "tests": [
+      {
+        "filename": "test_m27_7_1_verification.py",
+        "relative_path": "tests/integration/test_m27_7_1_verification.py",
+        "size_bytes": 18300,
+        "sha256": "1e46650a5d814ce5667c36efc11d27c5b79db362e578e0d2c9973e5542110912"
+      }
+    ]
+  },
+  "summary_counts": {
+    "num_reports": 13,
+    "num_tables": 15,
+    "num_code_modules": 10,
+    "num_test_files": 1,
+    "total_deliverables": 39
+  }
+}

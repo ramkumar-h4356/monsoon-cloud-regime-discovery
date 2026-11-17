@@ -1,0 +1,97 @@
+{
+  "manifest_id": "M25_3_POST_MONSOON_CORRESPONDENCE_001",
+  "generated_utc": "2026-11-16T16:33:48.156321+00:00",
+  "milestone": "M25.3_Phase1",
+  "status": "CORRESPONDENCE_EVALUATION_COMPLETED",
+  "input_artifacts": {
+    "m24_labels": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\post_monsoon\\clustering\\post_monsoon_cluster_labels_k4.npy",
+      "size_bytes": 8294528,
+      "sha256": "c686143fde3675266d581c54c55d58abdbb6e263734cbcdff5c5b83464d108ff"
+    },
+    "m24_npz": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\post_monsoon\\model_ready\\post_monsoon_FS-A_scaled.npz",
+      "size_bytes": 812285681,
+      "sha256": "2e4ddefd1df65ac22990e3f2293000c4214a2ebcbca690cb014cb59917975845"
+    },
+    "m24_summary": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\seasons\\post_monsoon\\m24_clustering\\post_monsoon_clustering_summary.json",
+      "size_bytes": 4483,
+      "sha256": "7c01d89eca51c8d9cc144adc4be3586f87b2a059cd00269c60b26cb3330ac4b2"
+    },
+    "m24_profiles": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\seasons\\post_monsoon\\m24_clustering\\post_monsoon_cluster_profiles.csv",
+      "size_bytes": 857,
+      "sha256": "5e53c91c3b3a9ef5d384755a3797430991ebd6376b59d17f1f87768bd874d9bb"
+    },
+    "m25_labels": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\combined_3season\\combined_3season_cluster_labels.npy",
+      "size_bytes": 24883328,
+      "sha256": "903fffc4d5962882decc2995b620db5e81044260b8c82aff3a585f03097adcaa"
+    },
+    "m25_years": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\combined_3season\\combined_3season_years.npy",
+      "size_bytes": 49766528,
+      "sha256": "a55949386956c095153de9d7e3c6df0ab7e23a3aac163401b9c4cc62b31e1620"
+    },
+    "m25_seasons": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\combined_3season\\combined_3season_season_ids.npy",
+      "size_bytes": 24883328,
+      "sha256": "80b43aa542842d63c4f62de98164daedefde7e9f8073ca48bd7235ec7b40c3dd"
+    },
+    "m25_cells": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\data\\processed\\combined_3season\\combined_3season_cell_indices.npy",
+      "size_bytes": 49766528,
+      "sha256": "8cb06353a13bb7a4f09e7e5b7aed6d91c97ebb2df590dfdafb50713c98aac15f"
+    },
+    "m25_summary": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\integration\\combined_3season\\combined_3season_summary.json",
+      "size_bytes": 2110,
+      "sha256": "4d3770f05b003f4553c9fa84895f7bc118225f8dcc82af17a05362f5ccdae142"
+    },
+    "m25_scaling": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\integration\\combined_3season\\combined_3season_scaling_manifest.json",
+      "size_bytes": 3045,
+      "sha256": "46357a5a823e259eafbe360114e70cbf22a59ca944b2361f2c796c4708f93ae3"
+    },
+    "m25_profiles": {
+      "path": "D:\\Project Simulator\\monsoon_cloud_research\\reports\\integration\\combined_3season\\combined_3season_cluster_profiles.csv",
+      "size_bytes": 7424,
+      "sha256": "c9d654ecdb7efb71336d12f8c5600de3df527ab0ecebb5fd49f4373a630988f0"
+    }
+  },
+  "matching_verification": {
+    "total_m24_observations": 8294400,
+    "total_m25_post_monsoon_observations": 8294400,
+    "matched_pairs": 8294400,
+    "unmatched_m24": 0,
+    "unmatched_m25": 0,
+    "coverage_percentage": 100.0,
+    "space_time_key_definition": "(Year, Month, Day, UTC_Hour, Latitude, Longitude)",
+    "years_aligned": true,
+    "cells_aligned": true,
+    "total_years": 12,
+    "grid_cells": 960,
+    "hours_per_season_year": 720
+  },
+  "preprocessing_distinction": {
+    "imputation_strategy": "CA-A for cloud area, SA-A for properties in both workflows",
+    "m24_scaling_domain": "Post-Monsoon 2010-2016 only (4,838,400 samples)",
+    "m25_scaling_domain": "Combined 3-Season 2010-2016 (1,451,520 sampled observations)",
+    "mean_abs_center_diff": 8.6019,
+    "mean_abs_scale_diff": 8.8833,
+    "max_center_diff_variable": "cldpress_top_total_1h",
+    "max_scale_diff_variable": "cldpress_top_total_1h"
+  },
+  "global_results": {
+    "adjusted_rand_index": -0.0576,
+    "normalized_mutual_info": 0.0422,
+    "classification": "WEAK_CORRESPONDENCE_WITH_MANY_TO_ONE_COLLAPSE",
+    "yearly_ari_range": [
+      -0.077,
+      -0.0298
+    ],
+    "spatial_land_mean_ari": 0.0134,
+    "spatial_ocean_mean_ari": -0.0149
+  }
+}

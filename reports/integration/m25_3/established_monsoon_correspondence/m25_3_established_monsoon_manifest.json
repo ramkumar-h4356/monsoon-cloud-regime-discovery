@@ -1,0 +1,47 @@
+{
+  "milestone": "M25.3",
+  "phase": "Phase 3: Established-Monsoon Artifact Verification & Scientific Interpretation Audit",
+  "generated_utc": "2026-11-16T23:55:00Z",
+  "audited_git_commit": "51d3efea7db093b8cc3a9ab55ce8c43f93255d94",
+  "source_branch": "origin/feature/established-monsoon-analysis",
+  "m25_regime_taxonomy_mapping": {
+    "R0": "Multi-Layer Mixed Convective & Congestus Systems",
+    "R1": "Boundary-Layer Shallow Cumulus & Fair-Weather Low Clouds",
+    "R2": "Deep Convective Storm Cores & Heavy Monsoonal Depressions",
+    "R3": "Upper-Tropospheric Thin Cirrus & Anvil Outflow Debris"
+  },
+  "matching_results": {
+    "m25_daily_total_obs": 345600,
+    "abhin_complete_case_obs": 290355,
+    "matched_exact_obs": 290355,
+    "excluded_incomplete_obs": 55245,
+    "retention_rate_pct": 84.01
+  },
+  "observation_counts": {
+    "m25_daily_grid_days": 345600,
+    "abhin_complete_cases": 290355,
+    "matched_exact": 290355,
+    "excluded_incomplete": 55245,
+    "retention_rate_pct": 84.01
+  },
+  "global_metrics": {
+    "pooled_baseline_k2": {
+      "ari": -0.0023,
+      "nmi": 0.0698
+    },
+    "pooled_log_k2": {
+      "ari": 0.0142,
+      "nmi": 0.0732
+    },
+    "pooled_log_k3": {
+      "ari": 0.0274,
+      "nmi": 0.0584
+    },
+    "holdout_log_k2": {
+      "ari": 0.0119,
+      "nmi": 0.0395,
+      "interpretation": "stable_weak_correspondence"
+    }
+  },
+  "audit_status": "AUDIT_VERIFIED_AND_CORRECTED"
+}

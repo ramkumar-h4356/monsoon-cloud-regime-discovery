@@ -1,0 +1,14 @@
+artifact_name,path,category,git_ref,availability,status_note
+established_monsoon_cloud_regime_study.md,reports/established_monsoon_cloud_regime_study.md,Integrated Scientific Report,882edfa,PRESENT,Comprehensive 12-year synthesis report
+M6.5_integrated_scientific_interpretation.md,docs/milestones/M6.5_integrated_scientific_interpretation.md,Milestone Documentation,882edfa,PRESENT,M6.5 milestone documentation
+established_monsoon_rainfall_cluster_year_coverage.csv,reports/data_quality/established_monsoon_rainfall_cluster_year_coverage.csv,Quality Control / Coverage,882edfa,PRESENT,"Yearly cluster observation counts for baseline_k2, log_k2, log_k3"
+established_monsoon_integrated_feature_evidence.csv,results/tables/06_feature_engineering/established_monsoon_integrated_feature_evidence.csv,Feature Engineering,882edfa,PRESENT,Screening evidence for Group B 14 variables
+established_monsoon_variable_screening.csv,results/tables/06_feature_engineering/established_monsoon_variable_screening.csv,Feature Engineering,882edfa,PRESENT,Feature missingness and retention metrics
+established_monsoon_daily_aggregation_2010.csv to 2021.csv,reports/preprocessing/established_monsoon_daily_aggregation_*.csv (12 files),Preprocessing Aggregation,882edfa,PRESENT,Daily aggregated CERES observations
+imd_rainfall_daily_2010.csv to 2021.csv,reports/preprocessing/imd_rainfall_daily_*.csv (12 files),Rainfall Preprocessing,882edfa,PRESENT,Matched IMD daily rainfall observations across 357 cells
+established_monsoon_rainfall_pooled.csv,results/tables/07_clustering/rainfall_association/established_monsoon_rainfall_pooled.csv,Rainfall Association,882edfa,PRESENT,Pooled rainfall distribution across clusters
+established_monsoon_annual_pairwise_contrasts.csv,results/tables/07_clustering/rainfall_association/established_monsoon_annual_pairwise_contrasts.csv,Rainfall Association,882edfa,PRESENT,Annual rainfall contrast statistics
+established_monsoon_rainfall_alignment_audit.csv,results/tables/07_clustering/assignments/established_monsoon_rainfall_alignment_audit.csv,Alignment Audit,882edfa,PRESENT,Audit table of rainfall matching rates
+established_monsoon_fixed_cluster_assignments.csv,results/tables/07_clustering/assignments/established_monsoon_fixed_cluster_assignments.csv,Clustering Assignments,882edfa,MISSING,"CRITICAL MISSING ARTIFACT: 290,355 observation assignment table not committed to Git"
+established_monsoon_k2_model.joblib,results/models/established_monsoon/established_monsoon_k2_model.joblib,Model Serialization,882edfa,MISSING,Fitted K-means model object not committed to Git
+CERES_established_monsoon_labels_*.nc,data/processed/model_ready/established_monsoon/CERES_*_labels.nc,Spatial Grid Labels,882edfa,MISSING,No gridded NetCDF label arrays committed

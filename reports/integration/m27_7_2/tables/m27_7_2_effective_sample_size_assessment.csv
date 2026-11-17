@@ -1,0 +1,11 @@
+parameter,calculated_value,nominal_units,methodological_interpretation,audit_verdict
+total_calendar_years,12,years,Strict upper bound on independent interannual realisations,VERIFIED_EXACT
+nominal_pooled_observations,36,seasonal_grid_aggregates,12 years x 3 30-day sampling windows (clustered within years),VERIFIED_EXACT
+intra_year_r_pre_est,0.93,pearson_r,Pre-monsoon to Established Monsoon R0 correlation,VERIFIED_EXACT
+intra_year_r_est_post,0.7441,pearson_r,Established to Post-monsoon R0 correlation,VERIFIED_EXACT
+intra_year_r_pre_post,0.8347,pearson_r,Pre-monsoon to Post-monsoon R0 correlation,VERIFIED_EXACT
+mean_intra_year_persistence,0.8363,pearson_r,Average pairwise correlation across seasonal triplet,VERIFIED_EXACT
+correlation_matrix_positive_semidefinite,True,boolean,"Eigenvalues: [0.0553, 0.2698, 2.6749]; matrix is valid",VERIFIED_VALID
+variance_inflation_factor_vif,2.6726,multiplier,Kish repeated-measures design effect VIF = 1 + (k - 1) * r_mean,VERIFIED_EXACT
+effective_sample_size_neff,13.4703,effective_observations,Approximate effective observation count under design effect (NOT independent years),CORRECTED_INTERPRETATION
+effective_degrees_of_freedom_dfeff,11.4703,approx_df,Descriptive heuristic only; not inferentially valid for parametric tests,CORRECTED_INTERPRETATION

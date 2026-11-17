@@ -1,0 +1,21 @@
+season,regime_id,regime_name,sample_size,clusters_count,bootstrap_replicates,point_mean_mm,bootstrap_se_mean,ci95_mean_lower_mm,ci95_mean_upper_mm,point_median_mm,ci95_median_lower_mm,ci95_median_upper_mm,point_wet_day_25_pct,bootstrap_se_wet,ci95_wet_lower_pct,ci95_wet_upper_pct
+all_seasons,R0,R0: Mixed Convective & Congestus,56445,3816,1000,3.023,0.075,2.88,3.177,0.0,0.0,0.0,19.51,0.35,18.82,20.2
+all_seasons,R1,R1: Boundary-Layer Shallow Cumulus,46723,3816,1000,0.461,0.036,0.392,0.537,0.0,0.0,0.0,3.3,0.23,2.87,3.79
+all_seasons,R2,R2: Deep Convective Storm Cores,2454,3816,1000,11.988,0.704,10.601,13.394,1.979,1.446,2.629,47.35,1.59,44.34,50.48
+all_seasons,R3,R3: Thin Cirrus & Anvil Outflow,236810,3816,1000,4.733,0.075,4.589,4.884,0.0,0.0,0.0,24.73,0.24,24.27,25.19
+all_seasons,CONTRAST_R2_MINUS_R1,Deep Convective vs. Shallow Cumulus Contrast,49177,3816,1000,11.527,0.703,10.149,12.94,,,,,,,
+pre_monsoon,R0,R0: Mixed Convective & Congestus,18794,3816,1000,1.345,0.063,1.226,1.464,0.0,0.0,0.0,10.54,0.39,9.77,11.24
+pre_monsoon,R1,R1: Boundary-Layer Shallow Cumulus,12125,3816,1000,0.271,0.024,0.226,0.323,0.0,0.0,0.0,2.6,0.21,2.19,3.03
+pre_monsoon,R2,R2: Deep Convective Storm Cores,287,3816,1000,2.477,0.982,1.033,4.662,0.0,0.0,0.0,11.15,2.24,7.1,15.61
+pre_monsoon,R3,R3: Thin Cirrus & Anvil Outflow,82938,3816,1000,1.67,0.06,1.559,1.788,0.0,0.0,0.0,12.07,0.31,11.47,12.7
+pre_monsoon,CONTRAST_R2_MINUS_R1,Deep Convective vs. Shallow Cumulus Contrast,12412,3816,1000,2.206,0.982,0.745,4.392,,,,,,,
+established_monsoon,R0,R0: Mixed Convective & Congestus,16865,3816,1000,6.024,0.192,5.657,6.398,0.764,0.628,0.907,37.28,0.75,35.94,38.79
+established_monsoon,R1,R1: Boundary-Layer Shallow Cumulus,445,3816,1000,1.296,0.307,0.772,1.927,0.0,0.0,0.0,8.99,1.83,5.76,12.96
+established_monsoon,R2,R2: Deep Convective Storm Cores,1381,3816,1000,16.675,1.026,14.783,18.722,7.003,5.566,8.518,67.78,1.83,64.13,71.33
+established_monsoon,R3,R3: Thin Cirrus & Anvil Outflow,95453,3816,1000,9.256,0.17,8.92,9.606,1.563,1.407,1.704,44.83,0.45,43.95,45.66
+established_monsoon,CONTRAST_R2_MINUS_R1,Deep Convective vs. Shallow Cumulus Contrast,1826,3816,1000,15.379,1.068,13.406,17.585,,,,,,,
+post_monsoon,R0,R0: Mixed Convective & Congestus,20786,3816,1000,2.105,0.116,1.881,2.326,0.0,0.0,0.0,13.2,0.58,12.08,14.32
+post_monsoon,R1,R1: Boundary-Layer Shallow Cumulus,34153,3816,1000,0.518,0.047,0.428,0.613,0.0,0.0,0.0,3.47,0.3,2.89,4.1
+post_monsoon,R2,R2: Deep Convective Storm Cores,786,3816,1000,7.225,1.135,5.058,9.594,0.0,0.0,0.0,24.68,2.42,20.03,29.32
+post_monsoon,R3,R3: Thin Cirrus & Anvil Outflow,58419,3816,1000,1.693,0.082,1.528,1.859,0.0,0.0,0.0,9.88,0.37,9.16,10.64
+post_monsoon,CONTRAST_R2_MINUS_R1,Deep Convective vs. Shallow Cumulus Contrast,34939,3816,1000,6.707,1.132,4.551,9.042,,,,,,,

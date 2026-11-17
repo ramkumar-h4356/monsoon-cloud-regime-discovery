@@ -1,0 +1,76 @@
+{
+  "milestone": "M25.3",
+  "phase": "Phase 3 Established-Monsoon Correspondence",
+  "timestamp_utc": "2026-11-16T18:11:56.720017+00:00",
+  "total_matched_observations": 290355,
+  "splits": {
+    "Training (2010-2016)": {
+      "n_observations": 177569,
+      "variants": {
+        "baseline_k2": {
+          "ari": -0.002,
+          "nmi": 0.0872
+        },
+        "log_k2": {
+          "ari": 0.0134,
+          "nmi": 0.09
+        },
+        "log_k3": {
+          "ari": 0.0227,
+          "nmi": 0.0709
+        }
+      }
+    },
+    "Development (2017-2018)": {
+      "n_observations": 44604,
+      "variants": {
+        "baseline_k2": {
+          "ari": -0.003,
+          "nmi": 0.0384
+        },
+        "log_k2": {
+          "ari": 0.0093,
+          "nmi": 0.0392
+        },
+        "log_k3": {
+          "ari": 0.0095,
+          "nmi": 0.0263
+        }
+      }
+    },
+    "Holdout (2019-2021)": {
+      "n_observations": 68182,
+      "variants": {
+        "baseline_k2": {
+          "ari": -0.0006,
+          "nmi": 0.0374
+        },
+        "log_k2": {
+          "ari": 0.0119,
+          "nmi": 0.0395
+        },
+        "log_k3": {
+          "ari": 0.0125,
+          "nmi": 0.0288
+        }
+      }
+    },
+    "Pooled (2010-2021)": {
+      "n_observations": 290355,
+      "variants": {
+        "baseline_k2": {
+          "ari": -0.0023,
+          "nmi": 0.0698
+        },
+        "log_k2": {
+          "ari": 0.0142,
+          "nmi": 0.0732
+        },
+        "log_k3": {
+          "ari": 0.0274,
+          "nmi": 0.0584
+        }
+      }
+    }
+  }
+}

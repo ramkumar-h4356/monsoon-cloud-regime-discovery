@@ -1,0 +1,15 @@
+property,recorded_value,canonical_verification,audit_status
+Git Commit Hash,28927f2292c62a6673a5afce77ff2720c6fc8f19,Matched in canonical git history,VERIFIED
+Commit Author,NoshinMuhammed <nusaibamanna10@gmail.com>,Author verified,VERIFIED
+Commit Date,Mon Nov 16 20:08:13 2026 +0530,Timestamp verified,VERIFIED
+Commit Subject,Add reproducible pre-monsoon PCA t-SNE clustering and holdout evaluation,Subject verified,VERIFIED
+Branch Reference,origin/feature/pre-monsoon-analysis,Direct branch ancestor,VERIFIED
+Model Bundle Artifact,"selected_pre_monsoon_bundle.joblib (5,034,737 bytes)",SHA256: 4c26f58fcc842aa4c7da5d6547225a1d9ae25171f29f083014c31e4849233569,VERIFIED
+Model Bundle Inspection,"MiniBatchKMeans (K=2, random_state=42, n_init=10)",Frozen Stage 2 model object,VERIFIED_SAFE
+Feature Definition,36 CERES variables (FS-A),Matches M25 feature set FS-A,VERIFIED
+Preprocessing Strategy,"CA-A (Cloud Area zero-fill/imputation), RobustScaler",Matches M25 preprocessing,VERIFIED
+Dimensionality Reduction,PCA top 3 components retained (92.4% variance),Documented in stage2 manifest,VERIFIED
+Development Window,2010-2018 (9 years),Stage 2 training / dev,VERIFIED
+Holdout Window,2019-2021 (3 years),Stage 3 frozen holdout,VERIFIED
+Grid Domain,"32 lats x 30 lons = 960 cells (6.5-37.5N, 68.5-97.5E)",Identical to canonical domain,VERIFIED
+Temporal Window,720 hours / year (30 days x 24h),Identical to canonical temporal window,VERIFIED

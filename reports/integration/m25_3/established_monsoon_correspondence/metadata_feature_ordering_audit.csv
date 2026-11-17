@@ -1,0 +1,15 @@
+feature_index,feature_name,baseline_matrix_shape,log_matrix_shape,baseline_feature_header,log_feature_header,header_match,transformation
+0,cldarea_total_1h,"(290355, 14)","(290355, 14)",cldarea_total_1h,cldarea_total_1h,True,standard_robust
+1,cldhght_total_1h,"(290355, 14)","(290355, 14)",cldhght_total_1h,cldhght_total_1h,True,standard_robust
+2,cldphase_total_1h,"(290355, 14)","(290355, 14)",cldphase_total_1h,cldphase_total_1h,True,standard_robust
+3,cldpress_total_1h,"(290355, 14)","(290355, 14)",cldpress_total_1h,cldpress_total_1h,True,standard_robust
+4,cldtemp_total_1h,"(290355, 14)","(290355, 14)",cldtemp_total_1h,cldtemp_total_1h,True,standard_robust
+5,cldtau_total_1h,"(290355, 14)","(290355, 14)",cldtau_total_1h,cldtau_total_1h,True,log1p
+6,iwp_total_1h,"(290355, 14)","(290355, 14)",iwp_total_1h,iwp_total_1h,True,log1p
+7,cldarea_high_1h,"(290355, 14)","(290355, 14)",cldarea_high_1h,cldarea_high_1h,True,standard_robust
+8,cldhght_high_1h,"(290355, 14)","(290355, 14)",cldhght_high_1h,cldhght_high_1h,True,standard_robust
+9,cldphase_high_1h,"(290355, 14)","(290355, 14)",cldphase_high_1h,cldphase_high_1h,True,standard_robust
+10,cldpress_high_1h,"(290355, 14)","(290355, 14)",cldpress_high_1h,cldpress_high_1h,True,standard_robust
+11,cldtemp_high_1h,"(290355, 14)","(290355, 14)",cldtemp_high_1h,cldtemp_high_1h,True,standard_robust
+12,cldtau_high_1h,"(290355, 14)","(290355, 14)",cldtau_high_1h,cldtau_high_1h,True,log1p
+13,iwp_high_1h,"(290355, 14)","(290355, 14)",iwp_high_1h,iwp_high_1h,True,log1p

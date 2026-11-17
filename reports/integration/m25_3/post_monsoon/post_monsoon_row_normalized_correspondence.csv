@@ -1,0 +1,5 @@
+m24_cluster_id,m24_cluster_label,p_m25_r0_given_m24,p_m25_r1_given_m24,p_m25_r2_given_m24,p_m25_r3_given_m24,dominant_m25_regime,dominant_m25_conditional_prob
+0,Deep Convection / Thick Cirrus Anvil Shield,0.1511,0.0169,0.0365,0.7954,3,0.7954
+1,Deep Convection / Thick Cirrus Anvil Shield (Core),0.0704,0.0101,0.0286,0.8909,3,0.8909
+2,Deep Convection / Thick Cirrus Anvil Shield (Intermediate),0.1013,0.0146,0.022,0.862,3,0.862
+3,Boundary-Layer Inversion / Low Stratus & Shallow Cumulus,0.1269,0.2274,0.0114,0.6343,3,0.6343

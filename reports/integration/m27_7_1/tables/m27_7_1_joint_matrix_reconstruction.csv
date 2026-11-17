@@ -1,0 +1,5 @@
+season,total_cells,empty_n0,single_n1,two_n2,robust_ge3,underpowered_pct,recomputed_pct,discrepancy,sparsity_designation,verification_status
+pre_monsoon,9,4,2,0,3,66.7,66.7,0.0,HIGHLY_SPARSE_DESCRIPTIVE_ONLY,EXACT_MATCH
+established_monsoon,9,4,2,0,3,66.7,66.7,0.0,HIGHLY_SPARSE_DESCRIPTIVE_ONLY,EXACT_MATCH
+post_monsoon,9,4,2,1,2,77.8,77.8,0.0,HIGHLY_SPARSE_DESCRIPTIVE_ONLY,EXACT_MATCH
+pooled_three_seasons,9,2,1,2,4,55.6,55.6,0.0,HIGHLY_SPARSE_DESCRIPTIVE_ONLY,EXACT_MATCH

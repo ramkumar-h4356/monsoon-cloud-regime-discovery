@@ -1,0 +1,7 @@
+file_path,git_blob_sha,bytes,verification_method,status
+reports/established_monsoon_cloud_regime_study.md,d38ef8013e8b09335ef00a202df67ef5e2528172,12075,Git tree inspection at 882edfa,VERIFIED_PRESENT
+docs/milestones/M6.5_integrated_scientific_interpretation.md,0225d3dfae3671fc0f8cf89feadcebdafa3ba6be,10564,Git tree inspection at 882edfa,VERIFIED_PRESENT
+reports/data_quality/established_monsoon_rainfall_cluster_year_coverage.csv,1c74eb5de537bb2153df9098ae8a8fa372691fa6,2841,Git tree inspection at 882edfa,VERIFIED_PRESENT
+results/tables/07_clustering/assignments/established_monsoon_rainfall_alignment_audit.csv,c005b4b7fa71587a8bcf1bb1736b4ff0fa324026,1420,Git tree inspection at 882edfa,VERIFIED_PRESENT
+results/tables/07_clustering/assignments/established_monsoon_fixed_cluster_assignments.csv,NONE,0,Git tree inspection at 882edfa,CONFIRMED_MISSING
+results/models/established_monsoon/k2_bundle.joblib,NONE,0,Git tree inspection at 882edfa,CONFIRMED_MISSING

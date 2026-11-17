@@ -1,0 +1,256 @@
+{
+  "milestone": "M27 \u2014 Integrated ENSO\u2013IOD Climate Teleconnection and Cloud-Regime Analysis",
+  "study_period": "2010\u20132021",
+  "sample_size": "N=12 independent annual seasons",
+  "spatial_domain": "328 Tier 1 Indian terrestrial grid cells (6\u00b0N\u201338\u00b0N, 68\u00b0E\u201398\u00b0E)",
+  "frozen_dependencies": {
+    "m25_cloud_regimes": "combined_3season_cluster_labels.npy (K=4: R0, R1, R2, R3)",
+    "m26_rainfall_validation": "m26_cloud_rainfall_matched_primary.parquet (342,432 rows)",
+    "noaa_roni": "RONI.ascii.txt (SHA256: 1297887f...)",
+    "noaa_dmi": "dmi.had.long.csv (SHA256: 6f5772b2...)"
+  },
+  "timestamp_utc": "2026-11-16T20:41:45Z",
+  "artifact_count": 40,
+  "artifacts": [
+    {
+      "category": "processed_data",
+      "relative_path": "data/processed/climate_indices/m27_climate_indices_aligned.parquet",
+      "size_bytes": 9062,
+      "sha256": "e4fdab3ec790896e24777b18083eff912c7f7f0c9587a0647050e8ddd933509b"
+    },
+    {
+      "category": "processed_data",
+      "relative_path": "data/processed/climate_indices/m27_joint_enso_iod_matrix.parquet",
+      "size_bytes": 11734,
+      "sha256": "553ab119209161a5f829c41d582bb4d5424fbc9d28cc1f62886debe8fd0bc4b6"
+    },
+    {
+      "category": "processed_data",
+      "relative_path": "data/processed/climate_indices/m27_rainfall_annual_seasonal_modulation.parquet",
+      "size_bytes": 25753,
+      "sha256": "23e6f1fad00d617313b746935705c963357908c895a7c32f4def1ed4d7f27401"
+    },
+    {
+      "category": "processed_data",
+      "relative_path": "data/processed/climate_indices/m27_regime_annual_seasonal_prevalence.parquet",
+      "size_bytes": 10252,
+      "sha256": "74e800de21c62cafa93e6f427daa77463573a2007f053ba45267c839e133d02c"
+    },
+    {
+      "category": "processed_data",
+      "relative_path": "data/processed/climate_indices/m27_spatial_teleconnections.parquet",
+      "size_bytes": 98739,
+      "sha256": "3598b3e09d3ffbda6d0daf4669109ef53e1032e606d1983fbf798f160feecb10"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_climate_indices_aligned.csv",
+      "size_bytes": 6086,
+      "sha256": "b9704aa583b81038a817c1b825398507347f4c0fa01ed121bcf2d78bbba65442"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_joint_enso_iod_case_studies.csv",
+      "size_bytes": 4358,
+      "sha256": "aa5b20f51e430b89d38a2fd23f84b98193579194b22e2083236b28d1292fcffe"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_joint_enso_iod_phase_matrix.csv",
+      "size_bytes": 4522,
+      "sha256": "b8163376ab59a77d442477f26e22aa91ced457c9cf0a1673497ca0d115878c92"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_joint_interaction_effects.csv",
+      "size_bytes": 2455,
+      "sha256": "c18934689cfa38ea1241e51aca83fbeb28d3987872a2124f2f4f6cea197c6b40"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_r2_r1_phase_contrasts.csv",
+      "size_bytes": 1343,
+      "sha256": "2e2cc12688aa6d3ca2c165fe12792da9a5ea51eae1d7fa39f3ea010295a37100"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_rainfall_annual_seasonal_metrics.csv",
+      "size_bytes": 7614,
+      "sha256": "34dbc422623c07bc39da4a68b64de277ac2c9ad3fedbf07e748702e19d3f7223"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_rainfall_climate_modulation.csv",
+      "size_bytes": 7990,
+      "sha256": "409972f5e400257e4d91e510bcd2639fd9960f61d0335008742b6b40839b9509"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_rainfall_loocv_sensitivity.csv",
+      "size_bytes": 26339,
+      "sha256": "18987506aae2886127da541e738a6c01fb6015a7af08008c066ea8ebc019203a"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_regime_annual_seasonal_prevalence.csv",
+      "size_bytes": 6879,
+      "sha256": "a4ad698563a1652ffbaf4d606033406ea64d7d92e112117166c8e33d4a7afb55"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_regime_climate_correlations.csv",
+      "size_bytes": 3372,
+      "sha256": "7f1217f728a789ef5d47ca800e812971b849d5e3711b4811ed6912f879bf7a13"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_regime_climate_loocv.csv",
+      "size_bytes": 9904,
+      "sha256": "968e643542378c68f42910c168754c6b0b653533f12003c50fa22be6808cda0d"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_regime_clr_correlations.csv",
+      "size_bytes": 1199,
+      "sha256": "b63c42c1ac91692a17b474dd7324592933c078235a241a82161a50ed7bdf4997"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_spatial_field_significance.csv",
+      "size_bytes": 949,
+      "sha256": "a40151bcdfe6eef186747536d2cd74385c2775e6df7602dbfe8a95f4a695c98c"
+    },
+    {
+      "category": "tables",
+      "relative_path": "reports/integration/m27/tables/m27_spatial_teleconnection_anomalies.csv",
+      "size_bytes": 160268,
+      "sha256": "69dc87f09b895f8ae4cc7048bb2bf6ad0837c1508b1ee27a3fcfe7448404f152"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig01_annual_roni_dmi_timeseries.png",
+      "size_bytes": 378691,
+      "sha256": "6a549c8aa8a7a872b8ae41a2bca12f6cde38c817d1c63948ccdd7b652c4857cc"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig02_annual_seasonal_alignment_matrix.png",
+      "size_bytes": 253755,
+      "sha256": "a2be8e80453024bd225b73cd539764529af28243816f64b8c716e9a74c6093e6"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig03_regime_prevalence_vs_climate_indices.png",
+      "size_bytes": 414819,
+      "sha256": "2050607f2a91973c703c25198cdd91f4d9ee0e36af16a5ec3787aa585c4950a3"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig04_partial_rank_correlations.png",
+      "size_bytes": 192315,
+      "sha256": "4e633403452814815ae65b7220c8b8636e1725875e461509c0ef290e6d3e8c0f"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig05_seasonal_rainfall_vs_climate_indices.png",
+      "size_bytes": 190004,
+      "sha256": "85b300e8006b1e054fc2862382a53e308c5c520461bebab2f6351bd4b05abae4"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig06_regime_conditional_rainfall_response.png",
+      "size_bytes": 126246,
+      "sha256": "9bf9c9675af6c86db62ddf2cb95060588843a2b1b12ec3cc2b247d4828ab470a"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig07_enso_phase_composite_maps.png",
+      "size_bytes": 516518,
+      "sha256": "803636c613e2dd320f4983282ecfdf8345ba840a3195cf9f9e90ad99ccbe233c"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig08_iod_phase_composite_maps.png",
+      "size_bytes": 489092,
+      "sha256": "218339a5a0ec3927a002e0fdfb44b0de04edaf3cbd4ba53e8ff24a1eceec9d1b"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig09_joint_enso_iod_phase_matrix.png",
+      "size_bytes": 112506,
+      "sha256": "096f9751cdf64f353746c3dace79fbe8208c2945a0cbfcaf44e51cbd52bce74e"
+    },
+    {
+      "category": "figures",
+      "relative_path": "reports/integration/m27/figures/fig10_sensitivity_loocv_diagnostics.png",
+      "size_bytes": 128189,
+      "sha256": "e5449eb2a1f2d6324a9c414cd071e67d724d07910c7a7f8b1ce9cdd4e3026e38"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/m27_climate_index_loader.py",
+      "size_bytes": 8935,
+      "sha256": "1e4b26d73765b3103891493ec241241da5f3a25174cdb66129b51f9e8cd28033"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/m27_joint_climate_analysis.py",
+      "size_bytes": 12483,
+      "sha256": "a36d21a6abeeb4253f8f244710e248190f78136f4fb3d99943661768c63da6b2"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/m27_orchestrator.py",
+      "size_bytes": 10856,
+      "sha256": "467ee721d1b8663d4e3a36a4ed5a86f484d6ae5ea5165779786c20e87cfdba5a"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/m27_rainfall_modulation.py",
+      "size_bytes": 15550,
+      "sha256": "f07931615c7fd0bacd5afd0a0be3fb4289ce3521f1b6aa961bcd7d0aa5a49ac9"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/m27_regime_climate_correlation.py",
+      "size_bytes": 14111,
+      "sha256": "cf9cdda55f318b7db269634049ecb1a2ea97fc2b8bda0ed14a5ed9d5529c192e"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/m27_spatial_teleconnections.py",
+      "size_bytes": 12155,
+      "sha256": "a198510231b9234efd137cf45651dadfdd64e6545952862faa087f83b580667c"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/m27_statistical_validation.py",
+      "size_bytes": 9134,
+      "sha256": "b908dd59e9eacd8be29e0326580a72d4bf6e402642469fa2cf14419a0ba9e76a"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/generate_m27_figures.py",
+      "size_bytes": 20767,
+      "sha256": "83da4e8e9dc0e270a03efe0f0715daa525490524f99aeaaf5ec9f93f81a393d8"
+    },
+    {
+      "category": "source_code",
+      "relative_path": "src/integration/climate_association/mirror_m27_to_post_monsoon.py",
+      "size_bytes": 3126,
+      "sha256": "b775504f8e21b7fc7d2f3621d7b7981c1a012eeca2342f8fb53f7c7a165a64fb"
+    },
+    {
+      "category": "tests",
+      "relative_path": "tests/integration/test_m27_1_climate_index_readiness.py",
+      "size_bytes": 8521,
+      "sha256": "a96252cea3de3ff731e18fe3bb81debc2e8cfc7220aba53ebfa4dc77945c4239"
+    },
+    {
+      "category": "tests",
+      "relative_path": "tests/integration/test_m27_climate_modulation.py",
+      "size_bytes": 9837,
+      "sha256": "80a6219413400ede6cbcd3a3bb310d21483765f77f1d28a07f437ca41470d893"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "milestone": "M25.3",
+  "phase": "Integrated Tri-Seasonal Correspondence, Scientific Audit & Synthesis",
+  "generated_utc": "2026-11-16T18:31:39.325060+00:00",
+  "workstreams": {
+    "pre_monsoon": {
+      "phase": "Phase 2",
+      "observations": 8252116,
+      "clear_sky_excluded": 42284,
+      "ari": 0.1055,
+      "nmi": 0.142,
+      "temporal_resolution": "Hourly",
+      "status": "COMPLETED_AND_VERIFIED"
+    },
+    "established_monsoon": {
+      "phase": "Phase 3",
+      "observations": 290355,
+      "incomplete_excluded": 55245,
+      "ari_baseline_k2": -0.0023,
+      "nmi_baseline_k2": 0.0698,
+      "ari_log_k2": 0.0142,
+      "nmi_log_k2": 0.0732,
+      "temporal_resolution": "Daily Aggregation",
+      "status": "COMPLETED_AND_AUDITED"
+    },
+    "post_monsoon": {
+      "phase": "Phase 1",
+      "observations": 8294400,
+      "ari": -0.0576,
+      "nmi": 0.0422,
+      "temporal_resolution": "Hourly",
+      "status": "COMPLETED_AND_VERIFIED"
+    }
+  },
+  "m25_regimes": {
+    "R0": "Multi-Layer Mixed Convective & Congestus Systems",
+    "R1": "Boundary-Layer Shallow Cumulus & Fair-Weather Low Clouds",
+    "R2": "Deep Convective Storm Cores & Precipitating Depressions",
+    "R3": "Upper-Tropospheric Thin Cirrus & Anvil Outflow Debris"
+  },
+  "deliverables": [
+    "tri_seasonal_artifact_inventory.csv",
+    "tri_seasonal_methodology_comparison.csv",
+    "tri_seasonal_correspondence_summary.csv",
+    "tri_seasonal_cluster_profiles.csv",
+    "tri_seasonal_temporal_stability.csv",
+    "tri_seasonal_scientific_audit.md",
+    "tri_seasonal_synthesis_report.md",
+    "tri_seasonal_manifest.json",
+    "figures/tri_seasonal_metrics_comparison.png",
+    "figures/tri_seasonal_temporal_stability_trend.png"
+  ],
+  "milestone_status": "M25_3_COMPLETED"
+}

@@ -1,0 +1,8 @@
+metric,value,pct
+M25 Daily Grid-Days (12 years x 30 days x 960 cells),345600,100.0
+Abhin Complete-Case Observations,290355,84.01
+Exact Space-Time Key Matches,290355,100.0
+M25 Observations Excluded by Abhin Complete-Case Filter,55245,15.99
+Duplicate Keys in Abhin,0,0.0
+Duplicate Keys in M25,0,0.0
+Tie Occurrences in M25 Daily Dominant Regime,3001,1.03

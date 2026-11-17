@@ -1,0 +1,13 @@
+temporal_split,variant,n_observations,ari,nmi
+Training (2010-2016),baseline_k2,177569,-0.002,0.0872
+Training (2010-2016),log_k2,177569,0.0134,0.09
+Training (2010-2016),log_k3,177569,0.0227,0.0709
+Development (2017-2018),baseline_k2,44604,-0.003,0.0384
+Development (2017-2018),log_k2,44604,0.0093,0.0392
+Development (2017-2018),log_k3,44604,0.0095,0.0263
+Holdout (2019-2021),baseline_k2,68182,-0.0006,0.0374
+Holdout (2019-2021),log_k2,68182,0.0119,0.0395
+Holdout (2019-2021),log_k3,68182,0.0125,0.0288
+Pooled (2010-2021),baseline_k2,290355,-0.0023,0.0698
+Pooled (2010-2021),log_k2,290355,0.0142,0.0732
+Pooled (2010-2021),log_k3,290355,0.0274,0.0584

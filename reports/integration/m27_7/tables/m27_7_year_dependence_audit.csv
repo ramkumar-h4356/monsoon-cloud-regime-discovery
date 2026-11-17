@@ -1,0 +1,21 @@
+target_type,metric,metric_description,climate_index,pooled_n,rho_spearman,orig_p_naive_perm,r_pre_est,r_est_post,r_pre_post,intra_year_mean_r,effective_n,effective_df,p_neff_adjusted,p_year_block_perm,q_year_block_fdr,audit_verdict
+regime_prevalence,R0,R0: Mixed Convective & Congestus,RONI,36,0.052,0.7628,0.93004,0.74413,0.83467,0.83628,13.47026,11.47026,0.8631,0.80199,0.86639,NON_SIGNIFICANT
+regime_prevalence,R0,R0: Mixed Convective & Congestus,DMI,36,-0.47799,0.00351,0.93004,0.74413,0.83467,0.83628,13.47026,11.47026,0.0913,0.01248,0.2496,EXPLORATORY_TENDENCY
+regime_prevalence,R1,R1: Boundary-Layer Shallow Cumulus,RONI,36,0.1112,0.51872,0.29585,-0.03692,0.35071,0.20321,25.59683,23.59683,0.59184,0.3129,0.66898,NON_SIGNIFICANT
+regime_prevalence,R1,R1: Boundary-Layer Shallow Cumulus,DMI,36,0.16139,0.34545,0.29585,-0.03692,0.35071,0.20321,25.59683,23.59683,0.43488,0.11608,0.54539,NON_SIGNIFICANT
+regime_prevalence,R2,R2: Deep Convective Storm Cores,RONI,36,-0.08726,0.60794,-0.09637,-0.41082,0.77469,0.08917,30.55156,28.55156,0.64329,0.57461,0.82088,NON_SIGNIFICANT
+regime_prevalence,R2,R2: Deep Convective Storm Cores,DMI,36,-0.20566,0.23008,-0.09637,-0.41082,0.77469,0.08917,30.55156,28.55156,0.27082,0.13635,0.54539,NON_SIGNIFICANT
+regime_prevalence,R3,R3: Thin Cirrus & Anvil Outflow,RONI,36,-0.05882,0.73307,0.47456,0.2696,0.5887,0.44429,19.062,17.062,0.81061,0.61637,0.82183,NON_SIGNIFICANT
+regime_prevalence,R3,R3: Thin Cirrus & Anvil Outflow,DMI,36,0.16139,0.34654,0.47456,0.2696,0.5887,0.44429,19.062,17.062,0.50841,0.13562,0.54539,NON_SIGNIFICANT
+rainfall_metric,mean_rainfall_mm,Terrestrial Mean Rainfall (mm/day),RONI,36,-0.09293,0.58594,0.18309,-0.61305,-0.15442,-0.19479,36.0,34.0,0.58985,0.40336,0.67226,NON_SIGNIFICANT
+rainfall_metric,mean_rainfall_mm,Terrestrial Mean Rainfall (mm/day),DMI,36,-0.16705,0.32941,0.18309,-0.61305,-0.15442,-0.19479,36.0,34.0,0.33015,0.08683,0.54539,NON_SIGNIFICANT
+rainfall_metric,rainfall_anomaly_mm,Rainfall Anomaly (mm/day),RONI,36,-0.0408,0.81254,0.18309,-0.61305,-0.15442,-0.19479,36.0,34.0,0.81323,0.80769,0.86639,NON_SIGNIFICANT
+rainfall_metric,rainfall_anomaly_mm,Rainfall Anomaly (mm/day),DMI,36,-0.20824,0.22231,0.18309,-0.61305,-0.15442,-0.19479,36.0,34.0,0.22294,0.23091,0.65974,NON_SIGNIFICANT
+rainfall_metric,wet_day_freq_25mm,Wet-Day Frequency >= 25mm (fraction),RONI,36,-0.08842,0.60396,-0.21118,-0.41387,-0.01618,-0.21374,36.0,34.0,0.60808,0.3572,0.66898,NON_SIGNIFICANT
+rainfall_metric,wet_day_freq_25mm,Wet-Day Frequency >= 25mm (fraction),DMI,36,-0.10656,0.53539,-0.21118,-0.41387,-0.01618,-0.21374,36.0,34.0,0.53619,0.19737,0.65789,NON_SIGNIFICANT
+rainfall_metric,cond_mean_R2,R2 Regime Conditional Mean (mm/day),RONI,36,-0.12279,0.4726,-0.22883,-0.27066,0.1256,-0.12463,36.0,34.0,0.47558,0.36794,0.66898,NON_SIGNIFICANT
+rainfall_metric,cond_mean_R2,R2 Regime Conditional Mean (mm/day),DMI,36,-0.01158,0.94608,-0.22883,-0.27066,0.1256,-0.12463,36.0,34.0,0.94654,0.91778,0.91778,NON_SIGNIFICANT
+rainfall_metric,vol_contrib_R2,R2 Volume Contribution (%),RONI,36,-0.19049,0.26573,0.17547,-0.07915,0.37611,0.15748,27.37737,25.37737,0.33755,0.30834,0.66898,NON_SIGNIFICANT
+rainfall_metric,vol_contrib_R2,R2 Volume Contribution (%),DMI,36,0.03964,0.81576,0.17547,-0.07915,0.37611,0.15748,27.37737,25.37737,0.84319,0.787,0.86639,NON_SIGNIFICANT
+rainfall_metric,cond_mean_R1,R1 Regime Conditional Mean (mm/day),RONI,36,-0.15063,0.37964,0.5279,0.21283,0.5197,0.42014,19.56215,17.56215,0.53137,0.46297,0.71225,NON_SIGNIFICANT
+rainfall_metric,cond_mean_R1,R1 Regime Conditional Mean (mm/day),DMI,36,0.0484,0.77785,0.5279,0.21283,0.5197,0.42014,19.56215,17.56215,0.8414,0.82307,0.86639,NON_SIGNIFICANT

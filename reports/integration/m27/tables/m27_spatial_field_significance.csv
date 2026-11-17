@@ -1,0 +1,13 @@
+season,season_id,field_test,total_tier1_cells,significant_cells_p05,significant_percentage,null_expectation_pct,p_field_significance,achieves_field_significance
+pre_monsoon,0,Rainfall vs RONI,328,12,3.66,5.0,0.8976,False
+pre_monsoon,0,Rainfall vs DMI,328,13,3.96,5.0,0.83871,False
+pre_monsoon,0,R2 Convection vs RONI,328,7,2.13,5.0,0.99743,False
+pre_monsoon,0,R2 Convection vs DMI,328,78,23.78,5.0,0.0,True
+established_monsoon,1,Rainfall vs RONI,328,35,10.67,5.0,2e-05,True
+established_monsoon,1,Rainfall vs DMI,328,7,2.13,5.0,0.99743,False
+established_monsoon,1,R2 Convection vs RONI,328,7,2.13,5.0,0.99743,False
+established_monsoon,1,R2 Convection vs DMI,328,4,1.22,5.0,0.99995,False
+post_monsoon,2,Rainfall vs RONI,328,15,4.57,5.0,0.67416,False
+post_monsoon,2,Rainfall vs DMI,328,1,0.3,5.0,1.0,False
+post_monsoon,2,R2 Convection vs RONI,328,15,4.57,5.0,0.67416,False
+post_monsoon,2,R2 Convection vs DMI,328,17,5.18,5.0,0.47466,False

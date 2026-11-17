@@ -1,0 +1,5 @@
+season,season_id,total_matrix_cells,empty_cells_n0,single_year_cells_n1,two_year_cells_n2,robust_cells_n_ge_3,underpowered_cell_pct,matrix_usability_status
+pre_monsoon,0,9,4,2,0,3,66.7,HIGHLY_SPARSE_DESCRIPTIVE_ONLY
+established_monsoon,1,9,4,2,0,3,66.7,HIGHLY_SPARSE_DESCRIPTIVE_ONLY
+post_monsoon,2,9,4,2,1,2,77.8,HIGHLY_SPARSE_DESCRIPTIVE_ONLY
+pooled_three_seasons,-1,9,2,1,2,4,55.6,HIGHLY_SPARSE_DESCRIPTIVE_ONLY

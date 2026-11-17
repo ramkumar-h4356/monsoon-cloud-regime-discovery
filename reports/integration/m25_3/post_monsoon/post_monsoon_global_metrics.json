@@ -1,0 +1,45 @@
+{
+  "milestone": "M25.3_Phase1",
+  "timestamp_utc": "2026-11-16T16:33:48.154499+00:00",
+  "total_matched_observations": 8294400,
+  "coverage_percentage": 100.0,
+  "adjusted_rand_index": -0.0576,
+  "normalized_mutual_information": 0.0422,
+  "shannon_entropy_m24_nats": 0.5745,
+  "shannon_entropy_m25_nats": 0.9148,
+  "mutual_information_nats": 0.0314,
+  "contingency_matrix_counts": [
+    [
+      157756,
+      17693,
+      38127,
+      830508
+    ],
+    [
+      4462,
+      640,
+      1815,
+      56495
+    ],
+    [
+      30900,
+      4453,
+      6714,
+      262855
+    ],
+    [
+      873106,
+      1565212,
+      78434,
+      4365230
+    ]
+  ],
+  "correspondence_classification": "WEAK_CORRESPONDENCE_WITH_MANY_TO_ONE_COLLAPSE",
+  "predefined_thresholds": {
+    "strong_one_to_one": "ARI >= 0.70 and max conditional prob >= 0.75 reciprocally",
+    "moderate_one_to_one": "0.40 <= ARI < 0.70 and max conditional prob >= 0.60",
+    "many_to_one_collapse": "Multiple independent clusters collapse predominantly (>= 0.70) into single combined cluster",
+    "weak_correspondence": "ARI < 0.20 or NMI < 0.20"
+  },
+  "interpretative_summary": "Independent post-monsoon M24 clustering partitions the post-monsoon domain into fine gradations of convective/cirrus scenes (Clusters 0, 1, 2 = 17.0% total) against a massive background of fair-weather scenes (Cluster 3 = 83.0%). In contrast, the common three-season M25 model maps 79.5% to 89.1% of M24 Clusters 0, 1, 2 into Combined Regime 3 (thin cirrus & anvil debris), while partitioning M24 Cluster 3 across Combined Regimes 3 (63.4%), 1 (22.7%), and 0 (12.7%). This produces near-zero global agreement (ARI = -0.0576, NMI = 0.0422)."
+}

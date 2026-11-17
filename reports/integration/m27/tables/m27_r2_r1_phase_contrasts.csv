@@ -1,0 +1,13 @@
+season,metric,n_el_nino,mean_el_nino,n_la_nina,mean_la_nina,diff_el_nino_minus_la_nina,p_perm_enso_contrast,n_pos_iod,mean_pos_iod,n_neg_iod,mean_neg_iod,diff_pos_minus_neg_iod,p_perm_iod_contrast
+pre_monsoon,mean_rainfall_mm,3,1.3654,3,1.5475,-0.1821,0.19895,1,1.1103,1,1.8408,-0.7305,1.0
+pre_monsoon,cond_mean_R2,3,2.0056,3,1.2828,0.7228,0.29799,1,6.9974,1,1.7774,5.22,1.0
+pre_monsoon,cond_mean_R1,3,0.1744,3,0.2728,-0.0984,0.70178,1,0.2572,1,0.1033,0.1539,1.0
+pre_monsoon,vol_contrib_R2,3,0.0031,3,0.0038,-0.0007,0.79976,1,0.0311,1,0.0008,0.0303,1.0
+established_monsoon,mean_rainfall_mm,1,8.8082,4,8.2289,0.5793,0.80131,3,9.2217,1,10.8227,-1.601,0.25135
+established_monsoon,cond_mean_R2,1,22.4403,4,12.3182,10.1221,0.20089,3,16.9948,1,11.6894,5.3054,0.50016
+established_monsoon,cond_mean_R1,1,2.1103,4,1.7955,0.3148,0.59962,3,0.2952,1,2.1,-1.8048,0.25135
+established_monsoon,vol_contrib_R2,1,0.0115,4,0.0133,-0.0018,0.79995,3,0.0327,1,0.0023,0.0304,0.50016
+post_monsoon,mean_rainfall_mm,2,0.6497,6,1.6996,-1.05,0.46386,3,1.1427,1,4.9778,-3.8351,0.25248
+post_monsoon,cond_mean_R2,2,0.7944,6,8.9335,-8.139,0.21248,3,6.7045,1,7.4708,-0.7663,1.0
+post_monsoon,cond_mean_R1,2,0.1334,6,1.1597,-1.0264,0.53608,3,0.2422,1,5.7706,-5.5284,0.25248
+post_monsoon,vol_contrib_R2,2,0.0059,6,0.0471,-0.0411,0.17676,3,0.018,1,0.0202,-0.0022,1.0

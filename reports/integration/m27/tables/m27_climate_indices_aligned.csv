@@ -1,0 +1,37 @@
+year,season,season_id,season_window,roni_quarter,roni_anomaly,enso_phase,dmi_months,dmi_anomaly,iod_phase,joint_phase,source_roni,source_dmi
+2010,pre_monsoon,0,April 15 - May 14,MAM,0.1,Neutral,04-05,0.1705,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2010,established_monsoon,1,July 15 - August 13,JJA,-1.21,La Niña,07-08,-0.031,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2010,post_monsoon,2,October 15 - November 13,SON,-1.61,La Niña,10-11,-0.466,Negative IOD,La Niña + Negative IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2011,pre_monsoon,0,April 15 - May 14,MAM,-0.76,La Niña,04-05,0.0325,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2011,established_monsoon,1,July 15 - August 13,JJA,-0.29,Neutral,07-08,0.2835,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2011,post_monsoon,2,October 15 - November 13,SON,-0.91,La Niña,10-11,0.346,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2012,pre_monsoon,0,April 15 - May 14,MAM,-0.42,Neutral,04-05,-0.3205,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2012,established_monsoon,1,July 15 - August 13,JJA,0.33,Neutral,07-08,0.599,Positive IOD,Neutral + Positive IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2012,post_monsoon,2,October 15 - November 13,SON,0.21,Neutral,10-11,0.0055,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2013,pre_monsoon,0,April 15 - May 14,MAM,-0.44,Neutral,04-05,-0.4015,Negative IOD,Neutral + Negative IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2013,established_monsoon,1,July 15 - August 13,JJA,-0.48,Neutral,07-08,-0.1875,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2013,post_monsoon,2,October 15 - November 13,SON,-0.22,Neutral,10-11,0.0155,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2014,pre_monsoon,0,April 15 - May 14,MAM,0.11,Neutral,04-05,-0.075,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2014,established_monsoon,1,July 15 - August 13,JJA,-0.14,Neutral,07-08,-0.3675,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2014,post_monsoon,2,October 15 - November 13,SON,0.35,Neutral,10-11,0.075,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2015,pre_monsoon,0,April 15 - May 14,MAM,0.72,El Niño,04-05,0.116,Neutral,El Niño + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2015,established_monsoon,1,July 15 - August 13,JJA,1.27,El Niño,07-08,0.3965,Neutral,El Niño + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2015,post_monsoon,2,October 15 - November 13,SON,2.03,El Niño,10-11,0.4145,Positive IOD,El Niño + Positive IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2016,pre_monsoon,0,April 15 - May 14,MAM,0.65,El Niño,04-05,0.0165,Neutral,El Niño + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2016,established_monsoon,1,July 15 - August 13,JJA,-0.7,La Niña,07-08,-0.6,Negative IOD,La Niña + Negative IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2016,post_monsoon,2,October 15 - November 13,SON,-0.96,La Niña,10-11,-0.3765,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2017,pre_monsoon,0,April 15 - May 14,MAM,-0.1,Neutral,04-05,0.517,Positive IOD,Neutral + Positive IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2017,established_monsoon,1,July 15 - August 13,JJA,-0.23,Neutral,07-08,0.4345,Positive IOD,Neutral + Positive IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2017,post_monsoon,2,October 15 - November 13,SON,-0.82,La Niña,10-11,0.152,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2018,pre_monsoon,0,April 15 - May 14,MAM,-0.69,La Niña,04-05,0.0195,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2018,established_monsoon,1,July 15 - August 13,JJA,0.08,Neutral,07-08,0.087,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2018,post_monsoon,2,October 15 - November 13,SON,0.62,El Niño,10-11,0.592,Positive IOD,El Niño + Positive IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2019,pre_monsoon,0,April 15 - May 14,MAM,0.53,El Niño,04-05,0.399,Neutral,El Niño + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2019,established_monsoon,1,July 15 - August 13,JJA,0.04,Neutral,07-08,0.5165,Positive IOD,Neutral + Positive IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2019,post_monsoon,2,October 15 - November 13,SON,0.15,Neutral,10-11,0.8995,Positive IOD,Neutral + Positive IOD,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2020,pre_monsoon,0,April 15 - May 14,MAM,-0.25,Neutral,04-05,0.1435,Neutral,Neutral + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2020,established_monsoon,1,July 15 - August 13,JJA,-0.76,La Niña,07-08,0.068,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2020,post_monsoon,2,October 15 - November 13,SON,-1.37,La Niña,10-11,0.047,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2021,pre_monsoon,0,April 15 - May 14,MAM,-0.89,La Niña,04-05,0.1295,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2021,established_monsoon,1,July 15 - August 13,JJA,-0.6,La Niña,07-08,-0.164,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv
+2021,post_monsoon,2,October 15 - November 13,SON,-1.08,La Niña,10-11,-0.011,Neutral,La Niña + Neutral,NOAA CPC RONI.ascii.txt,NOAA PSL HadISST1.1 dmi.had.long.csv

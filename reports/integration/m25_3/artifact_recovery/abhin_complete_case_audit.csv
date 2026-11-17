@@ -1,0 +1,9 @@
+dimension,metric,value,implication
+Raw Daily Observations,Total Candidate Grid-Days,"345,600",12 years x 30 days x 960 grid cells
+Complete Case Retained,Observations with 14 Valid Features,"290,355","84.01% retention rate; used for PCA, t-SNE and K-means"
+Excluded Incomplete,Observations with >=1 Missing Feature,"55,245",15.99% attrition rate; excluded without imputation
+Imputation Treatment,Strategy,None (Strict Complete-Case),Differs from M25 CA-A / SA-A zero-fill / median imputation
+Feature Group B,Number of Variables,14,"Total & high cloud coverage, height, phase, pressure, temp, optical depth, IWP"
+Excluded CERES Variables,Omitted from Group B,22 variables,"Low, mid-low, mid-high layered properties and LWP omitted due to missingness"
+Rainfall Matched Population,Matched Land Cells,357 of 960 cells,37.19% spatial coverage of Indian land domain
+Rainfall Matched Observations,Matched Complete Cases,"110,314","37.99% of 290,355 complete-case cloud observations"

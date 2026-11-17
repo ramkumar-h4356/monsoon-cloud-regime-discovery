@@ -1,0 +1,17 @@
+season,parameter,coefficient,std_error,t_statistic,p_value,vif,model_r_squared,observations
+all_seasons,Intercept (Pure R3 Baseline),5.871,0.0341,172.08,0.0,,0.0394,342432
+all_seasons,beta_R0 (Mixed Congestus),-5.5,0.1018,-54.0,0.0,1.08,0.0394,342432
+all_seasons,beta_R1 (Shallow Cumulus),-9.054,0.0906,-99.91,0.0,1.06,0.0394,342432
+all_seasons,beta_R2 (Deep Convection),16.605,0.2999,55.37,0.0,1.03,0.0394,342432
+pre_monsoon,Intercept (Pure R3 Baseline),2.033,0.0294,69.03,0.0,,0.0144,114144
+pre_monsoon,beta_R0 (Mixed Congestus),-0.713,0.0865,-8.24,2.220446049250313e-16,1.07,0.0144,114144
+pre_monsoon,beta_R1 (Shallow Cumulus),-3.336,0.0847,-39.38,0.0,1.06,0.0144,114144
+pre_monsoon,beta_R2 (Deep Convection),3.411,0.3414,9.99,0.0,1.02,0.0144,114144
+established_monsoon,Intercept (Pure R3 Baseline),10.639,0.0767,138.74,0.0,,0.0251,114144
+established_monsoon,beta_R0 (Mixed Congestus),-10.818,0.2557,-42.3,0.0,1.03,0.0251,114144
+established_monsoon,beta_R1 (Shallow Cumulus),-23.314,1.0074,-23.14,0.0,1.0,0.0251,114144
+established_monsoon,beta_R2 (Deep Convection),19.586,0.6343,30.88,0.0,1.03,0.0251,114144
+post_monsoon,Intercept (Pure R3 Baseline),1.695,0.0413,41.06,0.0,,0.0211,114144
+post_monsoon,beta_R0 (Mixed Congestus),0.481,0.1072,4.49,7.224492309720887e-06,1.19,0.0211,114144
+post_monsoon,beta_R1 (Shallow Cumulus),-2.249,0.0783,-28.72,0.0,1.16,0.0211,114144
+post_monsoon,beta_R2 (Deep Convection),10.388,0.3194,32.52,0.0,1.04,0.0211,114144

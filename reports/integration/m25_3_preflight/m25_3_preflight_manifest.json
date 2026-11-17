@@ -1,0 +1,83 @@
+{
+  "manifest_id": "M25_3_PREFLIGHT_001",
+  "generated_utc": "2026-11-16T16:22:42.412649+00:00",
+  "milestone": "M25.3_Preflight",
+  "overall_feasibility_status": "PARTIALLY_READY_POST_MONSOON_EXECUTABLE",
+  "scientific_review_corrections": {
+    "status": "APPLIED_ADDITIVE_NOTE",
+    "document_path": "reports/integration/m25_2/m25_2_scientific_review_corrections.md",
+    "methodology_amended": "docs/methodology/M25_2_three_season_methodological_reconciliation.md",
+    "corrections_count": 8,
+    "key_amendments": [
+      "K=2 vs K=4 explanation designated as hypothesis",
+      "Complete-case filtering cloud-genre removal designated as unprofiled",
+      "PCA differences framed as scaling sensitivity",
+      "CA-A verified as training-median conditional imputation with availability mask",
+      "K=4 framed as candidate cloud-regime patterns identified by the combined clustering model",
+      "Discrete 30-day windows separated from continuous annual lifecycle",
+      "M25.3 correspondence strictly evaluated within matching seasons and space-time coordinates",
+      "GAP-01 (Feature-Space Sensitivity) formally kept OPEN"
+    ]
+  },
+  "workstream_readiness": {
+    "pre_monsoon": {
+      "season_name": "pre_monsoon",
+      "combined_season_id": 0,
+      "feasibility_status": "BLOCKED_MISSING_ASSIGNMENT_ARTIFACT",
+      "matching_feasible": false,
+      "blocker": "selected_pre_monsoon_bundle.joblib (SHA256: 4c26f58f...) and CERES_YYYY_pre_monsoon_labels.nc omitted from git and absent locally.",
+      "reproducibility_status": "SOURCE_AND_FROZEN_CONFIG_PRESERVED"
+    },
+    "established_monsoon": {
+      "season_name": "established_monsoon",
+      "combined_season_id": 1,
+      "feasibility_status": "BLOCKED_MISSING_ASSIGNMENT_ARTIFACT",
+      "matching_feasible": false,
+      "blocker": "established_monsoon_fixed_cluster_assignments.csv missing from local worktree; 290,355 complete cases present only in summary tables.",
+      "reproducibility_status": "SUMMARY_AUDIT_TABLES_PRESERVED"
+    },
+    "post_monsoon": {
+      "season_name": "post_monsoon",
+      "combined_season_id": 2,
+      "feasibility_status": "READY",
+      "matching_feasible": true,
+      "label_artifact": "data/processed/post_monsoon/clustering/post_monsoon_cluster_labels_k4.npy",
+      "label_size_bytes": 8294528,
+      "label_sha256": "c686143fde3675266d581c54c55d58abdbb6e263734cbcdff5c5b83464d108ff",
+      "matched_observation_count": 8294400,
+      "reproducibility_status": "FULLY_VERIFIED_ON_DISK"
+    },
+    "combined_3season": {
+      "season_name": "combined_3season",
+      "feasibility_status": "READY",
+      "matching_feasible": true,
+      "label_artifact": "data/processed/combined_3season/combined_3season_cluster_labels.npy",
+      "label_size_bytes": 24883328,
+      "label_sha256": "903fffc4d5962882decc2995b620db5e81044260b8c82aff3a585f03097adcaa",
+      "total_observation_count": 24883200,
+      "reproducibility_status": "FULLY_VERIFIED_ON_DISK"
+    }
+  },
+  "matching_protocol": {
+    "key_definition": "(Year, Month, Day, UTC_Hour, Latitude, Longitude)",
+    "latitude_bounds": [
+      6.5,
+      37.5
+    ],
+    "longitude_bounds": [
+      68.5,
+      97.5
+    ],
+    "spatial_resolution_degrees": 1.0,
+    "grid_cells": 960,
+    "hours_per_season_year": 720,
+    "coordinate_rounding_decimals": 2,
+    "missingness_handling": "Observations dropped in complete-case workflows must be flagged with is_complete_case=False rather than silently imputed or dropped without tracking."
+  },
+  "recommended_m25_3_execution_plan": [
+    "Step 1: Execute Post-Monsoon vs Combined M25 correspondence immediately (100% data ready on disk, 8.29M obs).",
+    "Step 2: Materialize Pre-Monsoon labels using preserved frozen config (reports/phase3/pre_monsoon/stage3_v1/freeze/frozen.json) and stage2 model.",
+    "Step 3: Recover or reconstruct Established Monsoon observation-level CSV to complete the 3-season cross-tabulation.",
+    "Step 4: Author M25.3 Cross-Season Correspondence Audit Report."
+  ]
+}

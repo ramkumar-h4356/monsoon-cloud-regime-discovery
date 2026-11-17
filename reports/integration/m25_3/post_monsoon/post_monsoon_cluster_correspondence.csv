@@ -1,0 +1,5 @@
+m24_cluster_id,m24_cluster_label,m24_observation_count,m24_percentage,dominant_m25_regime_id,dominant_m25_regime_label,conditional_probability_m25_given_m24,reciprocal_probability_m24_given_m25,secondary_m25_regime_id,secondary_m25_conditional_prob,structural_classification
+0,Deep Convection / Thick Cirrus Anvil Shield,1044084,12.59,3,Upper-Tropospheric Thin Cirrus & Anvil Outflow Debris,0.7954,0.1506,0,0.1511,MANY_TO_ONE_COLLAPSE
+1,Deep Convection / Thick Cirrus Anvil Shield (Core),63412,0.76,3,Upper-Tropospheric Thin Cirrus & Anvil Outflow Debris,0.8909,0.0102,0,0.0704,MANY_TO_ONE_COLLAPSE
+2,Deep Convection / Thick Cirrus Anvil Shield (Intermediate),304922,3.68,3,Upper-Tropospheric Thin Cirrus & Anvil Outflow Debris,0.862,0.0477,0,0.1013,MANY_TO_ONE_COLLAPSE
+3,Boundary-Layer Inversion / Low Stratus & Shallow Cumulus,6881982,82.97,3,Upper-Tropospheric Thin Cirrus & Anvil Outflow Debris,0.6343,0.7915,1,0.2274,MULTI_WAY_SPLIT

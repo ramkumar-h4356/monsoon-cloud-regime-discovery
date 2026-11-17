@@ -1,0 +1,8 @@
+season,workstream,file_path,sha256,bytes,verification_status
+Post-Monsoon,Phase 1 (M24 Post-Monsoon),data/processed/post_monsoon/clustering/post_monsoon_cluster_labels_k4.npy,4c8f5f8be357da8e70a4a821e3f8fe4391b7d59a72df216bb8d56b4d32a0c4f8,16588928,VERIFIED_PRESENT
+Post-Monsoon,Phase 1 Correspondence,reports/integration/m25_3/post_monsoon/post_monsoon_contingency_matrix.csv,3f38103f467741c98f38d000833141c3085caa18ed416d868f3e8720810bd3ef,459,VERIFIED_PRESENT
+Pre-Monsoon,Phase 2 (Noshin Pre-Monsoon),reports/integration/m25_3/artifact_recovery/noshin_extracted/results/models/phase2/pre_monsoon/stage2_v1/selected_pre_monsoon_bundle.joblib,4c26f58fcc842aa4c7da5d6547225a1d9ae25171f29f083014c31e4849233569,5034737,VERIFIED_PRESENT
+Pre-Monsoon,Phase 2 NetCDF Labels (2010-2021),reports/integration/m25_3/artifact_recovery/noshin_extracted/data/processed/model_ready/*/*.nc (12 files),VERIFIED_MATCH_ALL_12,1344406,VERIFIED_PRESENT
+Established-Monsoon,Phase 3 (Abhin Commit 51d3efe),reports/integration/m25_3/established_monsoon_correspondence/recovered_artifacts/established_monsoon_fixed_cluster_assignments.csv,04080908143d53543f49b9eb4fa2d34b3188ae9a80a12eb902fdecf7cdca965c,9251384,VERIFIED_PRESENT
+Established-Monsoon,Phase 3 Model Reconstruction (Commit ad52044),origin/feature/established-monsoon-analysis:recovery_output/RECONSTRUCTED_baseline_k2.joblib,GIT_COMMIT_ad52044,1162615,VERIFIED_PRESENT
+Combined 3-Season,M25 Common Baseline,data/processed/combined_3season/combined_3season_cluster_labels.npy,903fffc4d5962882decc2995b620db5e81044260b8c82aff3a585f03097adcaa,24883328,VERIFIED_PRESENT

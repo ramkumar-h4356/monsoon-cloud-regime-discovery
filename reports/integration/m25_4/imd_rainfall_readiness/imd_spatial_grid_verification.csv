@@ -1,0 +1,6 @@
+parameter,imd_1deg_dataset,canonical_m25_ceres_grid,intended_imd_025deg_dataset,alignment_status
+Latitude Span & Coordinates,33 points: 6.5N to 38.5N (spacing 1.0 deg),32 points: 6.5N to 37.5N (spacing 1.0 deg),129 points: 6.5N to 38.5N (spacing 0.25 deg),EXACT 1-TO-1 MATCH FOR 1.0 DEG. M25 uses indices 0..31 of IMD latitude.
+Longitude Span & Coordinates,35 points: 66.5E to 100.5E (spacing 1.0 deg),30 points: 68.5E to 97.5E (spacing 1.0 deg),135 points: 66.5E to 100.0E (spacing 0.25 deg),EXACT 1-TO-1 MATCH FOR 1.0 DEG. M25 uses indices 2..31 of IMD longitude.
+Grid Cell Count & Overlap,1155 total cells (33 x 35),960 cells (32 x 30),"17,415 cells (129 x 135)",All 960 M25 cells lie strictly inside IMD bounding box.
+Land vs Ocean Cell Coverage in M25 Domain,357 on-land rain gauge cells (37.2%); 603 ocean/masked cells (62.8%),960 total domain cells,"~5,700 on-land 0.25 deg cells inside M25 domain",Rainfall evaluation restricted to the 357 on-land Indian cells. Ocean cells have no gauge data.
+Spatial Aggregation Requirement,NONE REQUIRED (Direct 1-to-1 coordinate lookup on lat/lon),Target 1.0 deg grid,Conservative area-weighted mean of 16 fine cells (4x4) per 1.0 deg cell,1.0 deg dataset is ready for direct join; 0.25 deg requires aggregation pipeline when acquired.

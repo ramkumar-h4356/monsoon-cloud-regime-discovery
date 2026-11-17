@@ -1,0 +1,13 @@
+season_name,dominant_regime,regime_name,observations,prevalence_pct,mean_rainfall_mm,std_rainfall_mm,median_rainfall_mm,iqr_rainfall_mm,q25_rainfall_mm,q75_rainfall_mm,q90_rainfall_mm,q95_rainfall_mm,q99_rainfall_mm,max_rainfall_mm,dry_day_pct,positive_rain_pct,wet_day_25_pct,wet_day_conditional_mean_mm,volume_contribution_pct
+established_monsoon,0,R0: Mixed Convective & Congestus,16865,14.78,6.024,13.385,0.764,5.995,0.0,5.995,17.605,29.556,62.925,240.647,39.18,60.82,37.28,9.904,10.07
+established_monsoon,1,R1: Boundary-Layer Shallow Cumulus,445,0.39,1.296,5.344,0.0,0.0,0.0,0.0,1.732,8.205,27.81,54.569,81.57,18.43,8.99,7.033,0.06
+established_monsoon,2,R2: Deep Convective Storm Cores,1381,1.21,16.675,25.302,7.003,20.446,1.582,22.028,43.098,66.616,120.714,297.51,12.74,87.26,67.78,19.111,2.28
+established_monsoon,3,R3: Thin Cirrus & Anvil Outflow,95453,83.63,9.256,19.153,1.563,10.0,0.0,10.0,27.35,43.159,91.1,495.084,34.32,65.68,44.83,14.092,87.59
+post_monsoon,0,R0: Mixed Convective & Congestus,20786,18.21,2.105,8.701,0.0,0.0,0.0,0.0,4.822,12.646,37.982,343.258,76.74,23.26,13.2,9.048,26.35
+post_monsoon,1,R1: Boundary-Layer Shallow Cumulus,34153,29.92,0.518,3.753,0.0,0.0,0.0,0.0,0.0,0.613,15.866,126.804,93.78,6.22,3.47,8.33,10.66
+post_monsoon,2,R2: Deep Convective Storm Cores,786,0.69,7.225,21.63,0.0,2.42,0.0,2.42,22.261,42.42,100.736,287.311,64.63,35.37,24.68,20.428,3.42
+post_monsoon,3,R3: Thin Cirrus & Anvil Outflow,58419,51.18,1.693,8.133,0.0,0.0,0.0,0.0,2.4,9.528,36.872,340.8,82.94,17.06,9.88,9.923,59.57
+pre_monsoon,0,R0: Mixed Convective & Congestus,18794,16.47,1.345,5.128,0.0,0.0,0.0,0.0,2.809,8.369,25.883,110.937,78.16,21.84,10.54,6.158,15.07
+pre_monsoon,1,R1: Boundary-Layer Shallow Cumulus,12125,10.62,0.271,1.921,0.0,0.0,0.0,0.0,0.0,0.419,8.455,59.755,93.39,6.61,2.6,4.101,1.96
+pre_monsoon,2,R2: Deep Convective Storm Cores,287,0.25,2.477,9.7,0.0,0.0,0.0,0.0,4.213,14.592,57.44,80.1,78.4,21.6,11.15,11.468,0.42
+pre_monsoon,3,R3: Thin Cirrus & Anvil Outflow,82938,72.66,1.67,6.24,0.0,0.0,0.0,0.0,3.8,10.255,31.657,171.982,76.69,23.31,12.07,7.162,82.55

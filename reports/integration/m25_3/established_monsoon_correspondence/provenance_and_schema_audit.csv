@@ -1,0 +1,15 @@
+dimension,observed_value,expected_value,status
+Assignments Row Count,290355,290355,VERIFIED
+Assignments Column Count,7,7,VERIFIED
+Assignments Columns,"['year', 'date', 'latitude', 'longitude', 'baseline_k2', 'log_k2', 'log_k3']","['year', 'date', 'latitude', 'longitude', 'baseline_k2', 'log_k2', 'log_k3']",VERIFIED
+Missing Values in Assignments,0,0,VERIFIED
+Space-Time Key Duplicates,0,0,VERIFIED
+Metadata Row Count,290355,290355,VERIFIED
+Metadata-Assignments Key Alignment,True,True,VERIFIED_IDENTICAL
+Year Coverage,2010-2021 (12 years),2010-2021,VERIFIED
+Seasonal Window Dates,07-15 to 08-13 (30 days/year),30 days/year,VERIFIED
+Latitude Coordinates,6.5 to 37.5 (32 points),6.5 to 37.5 (32 points),VERIFIED
+Longitude Coordinates,68.5 to 97.5 (30 points),68.5 to 97.5 (30 points),VERIFIED
+Cluster Distribution baseline_k2,"{0: np.int64(155834), 1: np.int64(134521)}","{0: 155834, 1: 134521}",VERIFIED
+Cluster Distribution log_k2,"{0: np.int64(145290), 1: np.int64(145065)}","{0: 145290, 1: 145065}",VERIFIED
+Cluster Distribution log_k3,"{2: np.int64(116007), 0: np.int64(93646), 1: np.int64(80702)}","{2: 116007, 0: 93646, 1: 80702}",VERIFIED

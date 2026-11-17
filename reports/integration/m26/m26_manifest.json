@@ -1,0 +1,202 @@
+{
+  "milestone": "M26",
+  "title": "Physical Rainfall Validation of CERES-Derived Cloud Regimes using IMD 1.0-deg Gridded Daily Rainfall (2010-2021)",
+  "generated_utc": "2026-11-16T19:54:26.464280+00:00",
+  "final_decision": "READY_TO_FREEZE_WITH_DOCUMENTED_LIMITATIONS",
+  "core_results_summary": {
+    "pooled_observations_tier1": 342432,
+    "monsoon_observations_tier1": 114144,
+    "tier1_terrestrial_cells": 328,
+    "tier2_coastal_cells": 29,
+    "tier4_ocean_cells_nan": 603,
+    "r2_deep_convection_mean_mm_pooled": 11.988,
+    "r1_shallow_cumulus_mean_mm_pooled": 0.461,
+    "contrast_ratio_pooled": 26.0,
+    "r2_deep_convection_mean_mm_monsoon": 16.675,
+    "r1_shallow_cumulus_mean_mm_monsoon": 1.296,
+    "contrast_ratio_monsoon": 12.87,
+    "strict_majority_contrast_ratio": 38.39,
+    "r3_volumetric_rainfall_share_monsoon_discrete_pct": 87.59,
+    "r3_volumetric_rainfall_share_monsoon_continuous_pct": 79.39,
+    "regression_beta_r2_monsoon": 19.586,
+    "regression_beta_r1_monsoon": -23.314,
+    "bootstrap_ci95_monsoon_contrast_r2_minus_r1": [
+      13.406,
+      17.585
+    ],
+    "bootstrap_se_monsoon_contrast_mm": 1.068,
+    "bootstrap_p_value_empirical_resolution": "< 0.001"
+  },
+  "deliverables": {
+    "reports": [
+      {
+        "file_name": "m26_rainfall_validation_synthesis_report.md",
+        "relative_path": "reports/integration/m26/m26_rainfall_validation_synthesis_report.md",
+        "size_bytes": 17961,
+        "sha256": "c13a43b4e7de97ed1bd967e6a0f394669c212116a3b57929215f94cc1e282b31"
+      },
+      {
+        "file_name": "m26_scientific_acceptance_report.md",
+        "relative_path": "reports/integration/m26/m26_scientific_acceptance_report.md",
+        "size_bytes": 11994,
+        "sha256": "1ec8521af55cad8390162b0fa78da7ec6b73a994d081a0c50b39e5ea04f30f35"
+      },
+      {
+        "file_name": "m26_1_scientific_results_audit_and_acceptance_review.md",
+        "relative_path": "reports/integration/m26/m26_1_scientific_results_audit_and_acceptance_review.md",
+        "size_bytes": 28074,
+        "sha256": "7216bc2d992c7f70ab501d269ccb5c8aebdffaa7e9a0b16413d864e8bde00d39"
+      },
+      {
+        "file_name": "m26_execution_timings.json",
+        "relative_path": "reports/integration/m26/m26_execution_timings.json",
+        "size_bytes": 415,
+        "sha256": "1ac744fd2b982cf8105948aa32f02b87e886aaa224c50ab0fad8101610f61168"
+      }
+    ],
+    "tables": [
+      {
+        "file_name": "m26_block_bootstrap_confidence_intervals.csv",
+        "relative_path": "reports/integration/m26/tables/m26_block_bootstrap_confidence_intervals.csv",
+        "size_bytes": 2814,
+        "sha256": "066839318c80eb397a836279f16b8933538c77b9319f730634e4337e7d92cf72"
+      },
+      {
+        "file_name": "m26_continuous_fraction_correlations.csv",
+        "relative_path": "reports/integration/m26/tables/m26_continuous_fraction_correlations.csv",
+        "size_bytes": 1855,
+        "sha256": "91b4ed04768e3abf7c8592e0e20f377cc156ddc6e371c9163577948fa607e19f"
+      },
+      {
+        "file_name": "m26_continuous_fraction_regressions.csv",
+        "relative_path": "reports/integration/m26/tables/m26_continuous_fraction_regressions.csv",
+        "size_bytes": 1471,
+        "sha256": "80264735070fef606d85e4d65df02877c7d8948c00d137c527ce6e52c5bddca9"
+      },
+      {
+        "file_name": "m26_convective_decile_composites.csv",
+        "relative_path": "reports/integration/m26/tables/m26_convective_decile_composites.csv",
+        "size_bytes": 1217,
+        "sha256": "3b99e8be817b5724c2d7b1a43e2f916936bd42a64fa0078a98d9f1ec5057241e"
+      },
+      {
+        "file_name": "m26_extreme_event_attribution.csv",
+        "relative_path": "reports/integration/m26/tables/m26_extreme_event_attribution.csv",
+        "size_bytes": 1671,
+        "sha256": "bff4f92b927681bb778300c325a7fed886c04e4cc5ddfb5d3c7f9f8910d69eba"
+      },
+      {
+        "file_name": "m26_partial_spearman_correlations.csv",
+        "relative_path": "reports/integration/m26/tables/m26_partial_spearman_correlations.csv",
+        "size_bytes": 1220,
+        "sha256": "51ee80303b55e9e631fb1d67e588953714e59dce23775b8a5e5c604393d00e63"
+      },
+      {
+        "file_name": "m26_rainfall_threshold_sensitivity.csv",
+        "relative_path": "reports/integration/m26/tables/m26_rainfall_threshold_sensitivity.csv",
+        "size_bytes": 1852,
+        "sha256": "09a0c7e4bf5a79d01193fa801f1eac7627e11a346d2d32262fcdc65be758724a"
+      },
+      {
+        "file_name": "m26_regime_rainfall_by_season.csv",
+        "relative_path": "reports/integration/m26/tables/m26_regime_rainfall_by_season.csv",
+        "size_bytes": 2095,
+        "sha256": "a26a64c66bcfd70e311a4569a4550684f7ab7cb78b23caeb4dc3a25ff0bd43dc"
+      },
+      {
+        "file_name": "m26_regime_rainfall_by_year.csv",
+        "relative_path": "reports/integration/m26/tables/m26_regime_rainfall_by_year.csv",
+        "size_bytes": 21117,
+        "sha256": "e0ed0e52dce6dbd01d5e559039f0f2d257809bffbccb6877b0d63b5f0948aa18"
+      },
+      {
+        "file_name": "m26_regime_rainfall_pooled_summary.csv",
+        "relative_path": "reports/integration/m26/tables/m26_regime_rainfall_pooled_summary.csv",
+        "size_bytes": 860,
+        "sha256": "1917c22a64be49161ad6cddcf501eaf7bab21eeaf48d5fe4bcff198463984b94"
+      },
+      {
+        "file_name": "m26_sensitivity_analysis_results.csv",
+        "relative_path": "reports/integration/m26/tables/m26_sensitivity_analysis_results.csv",
+        "size_bytes": 2548,
+        "sha256": "d74b58f7755ebf55dbe1443fa71f1b9ab3330d30afc31300092ec4543ddb2430"
+      },
+      {
+        "file_name": "m26_spatial_regime_rainfall_by_cell.csv",
+        "relative_path": "reports/integration/m26/tables/m26_spatial_regime_rainfall_by_cell.csv",
+        "size_bytes": 123649,
+        "sha256": "8f7ec9b5580d74eeb42ca6e10b7432ccf8dcbc24225838ddd83676106fa2cf21"
+      },
+      {
+        "file_name": "m26_temporal_regime_transitions.csv",
+        "relative_path": "reports/integration/m26/tables/m26_temporal_regime_transitions.csv",
+        "size_bytes": 4621,
+        "sha256": "56a0b304abf39785de9da49764f3baae97e5869fa34c9945810bf64460c75184"
+      }
+    ],
+    "figures": [
+      {
+        "file_name": "fig1_regime_rainfall_distributions_by_season.png",
+        "relative_path": "reports/integration/m26/figures/fig1_regime_rainfall_distributions_by_season.png",
+        "size_bytes": 461256,
+        "sha256": "ec6fae8a2da38dad0d1b09a289f9185a3ea00dc5d4cf3334fc3bee61512b409d"
+      },
+      {
+        "file_name": "fig2_spatial_rainfall_composites_by_regime.png",
+        "relative_path": "reports/integration/m26/figures/fig2_spatial_rainfall_composites_by_regime.png",
+        "size_bytes": 236645,
+        "sha256": "8f243461e5a92a533d96cdac413e81ac780b874d895970635be016d9390f1bfc"
+      },
+      {
+        "file_name": "fig3_convective_fraction_vs_rainfall_deciles.png",
+        "relative_path": "reports/integration/m26/figures/fig3_convective_fraction_vs_rainfall_deciles.png",
+        "size_bytes": 313715,
+        "sha256": "a34e15c0ecd75d42fc3acece94f165d23d0ff9e31fd5ed8ab59a7ef405f15895"
+      },
+      {
+        "file_name": "fig4_sensitivity_comparison_matrix.png",
+        "relative_path": "reports/integration/m26/figures/fig4_sensitivity_comparison_matrix.png",
+        "size_bytes": 217479,
+        "sha256": "1fa3c7f31ba53ffda8fc0d389b244480e4abc0864322746e7b316b640a3befbb"
+      }
+    ],
+    "datasets": [
+      {
+        "file_name": "m26_cloud_rainfall_matched_calendar.parquet",
+        "relative_path": "data/processed/rainfall_validation/m26_cloud_rainfall_matched_calendar.parquet",
+        "size_bytes": 3009852,
+        "sha256": "82ebe8bd06d5a4bc843c1f881a2502d27083b8cc3f7af750bb1c223210700c75"
+      },
+      {
+        "file_name": "m26_cloud_rainfall_matched_primary.parquet",
+        "relative_path": "data/processed/rainfall_validation/m26_cloud_rainfall_matched_primary.parquet",
+        "size_bytes": 2553297,
+        "sha256": "8e2994a371e3c4217880d0928f112732edfca745d227e66edd76ac1276543b2e"
+      },
+      {
+        "file_name": "m26_cloud_rainfall_matched_s1_all_land.parquet",
+        "relative_path": "data/processed/rainfall_validation/m26_cloud_rainfall_matched_s1_all_land.parquet",
+        "size_bytes": 2913278,
+        "sha256": "b8a95f456a6321a8de41476d5233275045cc8b9452f57283349b10c90434c9f1"
+      },
+      {
+        "file_name": "m26_daily_regime_aggregation_calendar.parquet",
+        "relative_path": "data/processed/rainfall_validation/m26_daily_regime_aggregation_calendar.parquet",
+        "size_bytes": 4112880,
+        "sha256": "6af6ee31d2623228d80d96c5bbd7f5b3c0b0d13b788075d61fdb70cac4e70c28"
+      },
+      {
+        "file_name": "m26_daily_regime_aggregation_primary.parquet",
+        "relative_path": "data/processed/rainfall_validation/m26_daily_regime_aggregation_primary.parquet",
+        "size_bytes": 3978024,
+        "sha256": "af96ed212f353b7ea8dbe19b0b24219a81a6ea982cbe1f03b961c771800840a4"
+      },
+      {
+        "file_name": "m26_imd_rainfall_daily.parquet",
+        "relative_path": "data/processed/rainfall_validation/m26_imd_rainfall_daily.parquet",
+        "size_bytes": 1501769,
+        "sha256": "1ab9197e751a13e185acd1b7d3adf4b263bca9886b0c876638b23b271c6f5640"
+      }
+    ]
+  }
+}

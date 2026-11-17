@@ -1,0 +1,10 @@
+case_id,description,sample_size,formula_rho,residual_rho,abs_difference,passed
+SYN_01_RANDOM_N12,Standard random normal Gaussian variables (N=12),12,-0.268695,-0.268695,5.551115123125783e-17,True
+SYN_02_POSITIVE_PARTIAL,Known strong positive partial association (rho > +0.70),12,0.896831,0.896831,0.0,True
+SYN_03_NEGATIVE_PARTIAL,Known strong negative partial association (rho < -0.70),12,-0.94352,-0.94352,3.3306690738754696e-16,True
+SYN_04_ZERO_PARTIAL,Spurious correlation induced by Z (partial rho ~ 0),12,-0.218596,-0.218596,3.0531133177191805e-16,True
+SYN_05_TIED_RANKS,Heavy tied ranks with discrete integer categories,12,0.999087,0.999087,2.220446049250313e-16,True
+SYN_06_CONSTANT_VAR,Degenerate variable with zero variance (returns NaN),12,,,0.0,True
+SYN_07_MISSING_DATA,Arrays containing NaN missing sentinels (pairwise complete),10,-0.216837,-0.216837,2.7755575615628914e-17,True
+SYN_08_COLLINEARITY,Near-perfect rank collinearity between X and Z,12,,,0.0,True
+SYN_09_SMALL_SAMPLE_N4,Small sample boundary test with N=4 (df=1),4,1.0,1.0,2.220446049250313e-16,True

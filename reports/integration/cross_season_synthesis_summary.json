@@ -3,10 +3,10 @@
   "study_period": "2010-2021",
   "domain": "India (6-38N, 68-98E, 32x30 grid)",
   "datasets": {
-    "pre_monsoon_files": 0,
-    "established_monsoon_files": 0,
-    "post_monsoon_files": 0,
-    "total_seasonal_netcdf": 0,
+    "pre_monsoon_files": 12,
+    "established_monsoon_files": 12,
+    "post_monsoon_files": 12,
+    "total_seasonal_netcdf": 36,
     "expected_seasonal_netcdf": 36
   },
   "feature_registry": {

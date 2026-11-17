@@ -1,0 +1,51 @@
+{
+  "milestone": "M25.3.1",
+  "title": "Final Scientific Consistency and Acceptance Audit",
+  "parent_milestone": "M25.3",
+  "auditor": "Senior Scientific Research Auditor, Atmospheric Data Scientist & ML Researcher",
+  "generated_utc": "2026-11-16T18:45:01.733666+00:00",
+  "final_decision": "READY_TO_FREEZE_WITH_DOCUMENTED_LIMITATIONS",
+  "audited_dimensions": {
+    "seasonal_date_windows": {
+      "pre_monsoon": "April 15 - May 14 (Verified in NetCDF; M25.3 text erratum corrected)",
+      "established_monsoon": "July 15 - August 13 (Verified in NetCDF; Aligned)",
+      "post_monsoon": "October 15 - November 13 (Verified in NetCDF; M25.3 text erratum corrected)"
+    },
+    "spatial_grid": {
+      "latitude_points": 32,
+      "longitude_points": 30,
+      "total_grid_cells": 960,
+      "resolution": "1.0 deg regular lat-lon (CERES SYN1deg native)"
+    },
+    "established_population": {
+      "complete_cases": 290355,
+      "incomplete_cases_excluded": 55245,
+      "baseline_k2_c0": 155834,
+      "baseline_k2_c1": 134521,
+      "log_k2_c0": 145290,
+      "log_k2_c1": 145065
+    },
+    "premonsoon_clear_sky": {
+      "clear_sky_count": 42284,
+      "cloud_area_pct": 0.0,
+      "m25_regime_mapping": "R3 (Methodological continuous K-means absorption, not physical cirrus equivalence)"
+    },
+    "temporal_stability": {
+      "pre_monsoon_holdout_nmi": 0.148,
+      "established_monsoon_holdout_nmi": 0.0395,
+      "post_monsoon_holdout_nmi": 0.0418,
+      "reclassification": "Temporal consistency of weak correspondence (Not robust physical generalization)"
+    }
+  },
+  "deliverables": [
+    "m25_3_final_acceptance_audit.md",
+    "m25_3_evidence_matrix.csv",
+    "seasonal_window_verification.csv",
+    "spatial_grid_verification.csv",
+    "established_population_reconciliation.csv",
+    "premonsoon_clear_sky_semantics_audit.md",
+    "temporal_stability_claim_audit.md",
+    "statistical_claim_audit.csv",
+    "m25_3_acceptance_manifest.json"
+  ]
+}

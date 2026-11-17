@@ -1,0 +1,13 @@
+season,target_fraction,regime_name,controlled_variables,partial_spearman_rho
+all_seasons,frac_r0,R0: Mixed Convective & Congestus,other 2 non-baseline fractions,-0.0485
+all_seasons,frac_r1,R1: Boundary-Layer Shallow Cumulus,other 2 non-baseline fractions,-0.3782
+all_seasons,frac_r2,R2: Deep Convective Storm Cores,other 2 non-baseline fractions,0.1034
+pre_monsoon,frac_r0,R0: Mixed Convective & Congestus,other 2 non-baseline fractions,-0.0024
+pre_monsoon,frac_r1,R1: Boundary-Layer Shallow Cumulus,other 2 non-baseline fractions,-0.2276
+pre_monsoon,frac_r2,R2: Deep Convective Storm Cores,other 2 non-baseline fractions,0.0108
+established_monsoon,frac_r0,R0: Mixed Convective & Congestus,other 2 non-baseline fractions,-0.1486
+established_monsoon,frac_r1,R1: Boundary-Layer Shallow Cumulus,other 2 non-baseline fractions,-0.1141
+established_monsoon,frac_r2,R2: Deep Convective Storm Cores,other 2 non-baseline fractions,0.1264
+post_monsoon,frac_r0,R0: Mixed Convective & Congestus,other 2 non-baseline fractions,0.0671
+post_monsoon,frac_r1,R1: Boundary-Layer Shallow Cumulus,other 2 non-baseline fractions,-0.1951
+post_monsoon,frac_r2,R2: Deep Convective Storm Cores,other 2 non-baseline fractions,0.0876

@@ -1,0 +1,13 @@
+dimension,pre_monsoon,established_monsoon,post_monsoon
+Seasonal Period Analyzed,May 15 - June 13 (30 days/yr),July 15 - August 13 (30 days/yr),October 1 - October 30 (30 days/yr)
+Temporal Resolution,Hourly (720 h/yr),Daily Aggregation (30 d/yr),Hourly (720 h/yr)
+Raw Study Observations,"8,294,400 grid-hours","345,600 daily grid-cells","8,294,400 grid-hours"
+Complete Case / Retention,"8,252,116 cloudy obs (99.49%) + 42,284 clear","290,355 complete cases (84.01%)","8,294,400 retained (100.0%)"
+Excluded Incomplete Obs,"42,284 clear-sky obs separated","55,245 incomplete grid-days dropped",0 obs dropped (imputed)
+Feature Space Count,36 features (FS-A),14 features (Group B: total & high),36 features (FS-A)
+Feature Transformation,"CA-A imputation, RobustScaler",StandardScaler / log1p sensitivity,"CA-A/SA-A imputation, RobustScaler"
+Dimensionality Reduction,PCA top 3 PCs (92.4% variance),PCA top 4 PCs (94.0% variance),PCA top 10 PCs (91.8% variance)
+Independent Cluster Count,K = 2 (and -1 clear sky),K = 2 (baseline/log) & K = 3 (log),K = 4
+M25 Unified Baseline Count,"K = 4 (R0, R1, R2, R3)","K = 4 (R0, R1, R2, R3)","K = 4 (R0, R1, R2, R3)"
+M25 Matching Mechanism,Hourly exact space-time matching,Daily regime fraction aggregation,Hourly exact space-time matching
+Direct Design Comparability,DIRECTLY COMPARABLE TO POST-MONSOON,NOT DIRECTLY COMPARABLE (DAILY AGGREGATION & REDUCED SUBSPACE),DIRECTLY COMPARABLE TO PRE-MONSOON
