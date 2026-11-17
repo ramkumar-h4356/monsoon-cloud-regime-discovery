@@ -1,0 +1,272 @@
+{
+  "project": "Established Monsoon",
+  "artifact_type": "Reconstructed candidate models",
+  "warning": "These are newly reconstructed estimators, not verified original serialized fitted estimators.",
+  "random_state": 11,
+  "batch_size": 4096,
+  "n_init": 10,
+  "max_iter": 200,
+  "reassignment_ratio": 0.01,
+  "results": {
+    "baseline_k2": {
+      "ARI": 1.0,
+      "exact_label_match": true,
+      "partition_match": true,
+      "original_counts": {
+        "0": 155834,
+        "1": 134521
+      },
+      "predicted_counts": {
+        "0": 155834,
+        "1": 134521
+      }
+    },
+    "log_k2": {
+      "ARI": 1.0,
+      "exact_label_match": true,
+      "partition_match": true,
+      "original_counts": {
+        "0": 145290,
+        "1": 145065
+      },
+      "predicted_counts": {
+        "0": 145290,
+        "1": 145065
+      }
+    },
+    "log_k3": {
+      "ARI": 1.0,
+      "exact_label_match": true,
+      "partition_match": true,
+      "original_counts": {
+        "0": 93646,
+        "1": 80702,
+        "2": 116007
+      },
+      "predicted_counts": {
+        "0": 93646,
+        "1": 80702,
+        "2": 116007
+      }
+    }
+  },
+  "scalers": {
+    "baseline": {
+      "matrix_mean": [
+        -2.2025208158962405e-14,
+        -3.780161135867894e-17,
+        -1.316522502478839e-15,
+        -1.2449807868709054e-16,
+        -6.548707990139193e-16,
+        7.522357007106271e-16,
+        2.757821447152174e-16,
+        -3.117350094278725e-16,
+        1.057085419372222e-16,
+        6.918068222221529e-14,
+        -5.933952316771805e-15,
+        3.199193936232847e-16,
+        5.207091476308698e-16,
+        -9.216504843632658e-16
+      ],
+      "matrix_std": [
+        0.999999999999972,
+        1.0000000000000027,
+        0.9999999999999937,
+        0.9999999999999942,
+        1.0000000000000095,
+        1.000000000000011,
+        0.9999999999999958,
+        0.999999999999996,
+        1.0000000000000158,
+        0.9999999999999493,
+        1.0000000000000016,
+        0.9999999999999916,
+        0.9999999999999962,
+        1.0000000000000087
+      ],
+      "original_scaler_recovered": false
+    },
+    "log_sensitivity": {
+      "matrix_mean": [
+        -2.2025208158962405e-14,
+        -3.780161135867894e-17,
+        -1.316522502478839e-15,
+        -1.2449807868709054e-16,
+        -6.548707990139193e-16,
+        -1.588277935523058e-17,
+        -9.57817474850848e-16,
+        -3.117350094278725e-16,
+        1.057085419372222e-16,
+        6.918068222221529e-14,
+        -5.933952316771805e-15,
+        3.199193936232847e-16,
+        -6.317819225974754e-16,
+        -7.139978080855338e-16
+      ],
+      "matrix_std": [
+        0.999999999999972,
+        1.0000000000000027,
+        0.9999999999999937,
+        0.9999999999999942,
+        1.0000000000000095,
+        1.0000000000000082,
+        0.9999999999999911,
+        0.999999999999996,
+        1.0000000000000158,
+        0.9999999999999493,
+        1.0000000000000016,
+        0.9999999999999916,
+        1.0000000000000062,
+        1.0000000000000049
+      ],
+      "original_scaler_recovered": false
+    }
+  },
+  "all_partition_match": true,
+  "all_exact_label_match": true,
+  "checks": [
+    {
+      "check": "Metadata rows",
+      "passed": true,
+      "detail": "290355"
+    },
+    {
+      "check": "Assignment rows",
+      "passed": true,
+      "detail": "290355"
+    },
+    {
+      "check": "Baseline dimensions",
+      "passed": true,
+      "detail": "(290355, 14)"
+    },
+    {
+      "check": "Log dimensions",
+      "passed": true,
+      "detail": "(290355, 14)"
+    },
+    {
+      "check": "Feature order",
+      "passed": true,
+      "detail": "['cldarea_total_1h', 'cldhght_total_1h', 'cldphase_total_1h', 'cldpress_total_1h', 'cldtemp_total_1h', 'cldtau_total_1h', 'iwp_total_1h', 'cldarea_high_1h', 'cldhght_high_1h', 'cldphase_high_1h', 'cldpress_high_1h', 'cldtemp_high_1h', 'cldtau_high_1h', 'iwp_high_1h']"
+    },
+    {
+      "check": "Finite baseline matrix",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Finite log matrix",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Metadata-assignment row alignment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preprocessing source: StandardScaler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preprocessing source: np.log1p",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preprocessing source: baseline_scaler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preprocessing source: log_scaler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preprocessing source: baseline_matrix",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preprocessing source: log_sensitivity_matrix",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exporter source: MiniBatchKMeans",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exporter source: random_state=SEED",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exporter source: batch_size=4096",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exporter source: n_init=10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exporter source: max_iter=200",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Exporter source: reassignment_ratio=0.01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_k2 partition reproduction",
+      "passed": true,
+      "detail": "ARI=1.000000000000; exact numeric labels=True"
+    },
+    {
+      "check": "log_k2 partition reproduction",
+      "passed": true,
+      "detail": "ARI=1.000000000000; exact numeric labels=True"
+    },
+    {
+      "check": "log_k3 partition reproduction",
+      "passed": true,
+      "detail": "ARI=1.000000000000; exact numeric labels=True"
+    },
+    {
+      "check": "baseline matrix standardized",
+      "passed": true,
+      "detail": "Means approximately zero; standard deviations approximately one"
+    },
+    {
+      "check": "log_sensitivity matrix standardized",
+      "passed": true,
+      "detail": "Means approximately zero; standard deviations approximately one"
+    },
+    {
+      "check": "All three reconstructed partitions match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "All three numeric cluster labels match exactly",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "input_sha256": {
+    "data\\processed\\clustering\\established_monsoon\\established_monsoon_group_B_metadata.csv": "8664486ecbc4387a69ac1e1db1732fe9d173e927423e0e47b968ef638733ce74",
+    "data\\processed\\clustering\\established_monsoon\\established_monsoon_group_B_baseline.npz": "6466001a690c9cf4903f285cfb5337bbe93eabc5027e55dde5bd9513c8069635",
+    "data\\processed\\clustering\\established_monsoon\\established_monsoon_group_B_log_sensitivity.npz": "8d4d583e903f95aef25bcd4f09dba11f98ca6cd8d51a9737e51ed84b713e0b74",
+    "results\\tables\\07_clustering\\assignments\\established_monsoon_fixed_cluster_assignments.csv": "7ad95d31f3df438eaa2ed4ed08daddc22e5b5a0167f201903cff94a458278bc5",
+    "src\\06_feature_engineering\\prepare_established_monsoon_group_b_m3.py": "ad4707eb982a5700a14e4df36ab0b855b1bd208163e062f79301e9294be5cf51",
+    "src\\07_clustering\\established_monsoon_export_fixed_assignments.py": "857245459038f069e9a594fe4b7f7100236dba22041cc82f807ed64ae67551ec"
+  }
+}

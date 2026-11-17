@@ -1,0 +1,93 @@
+{
+  "project": "Established Monsoon",
+  "purpose": "M25 handover to compare daily established-monsoon assignments with combined-model daily regime fractions",
+  "branch": "feature/established-monsoon-analysis",
+  "daily_assignment_candidates": [],
+  "possible_unverified_daily_files": [],
+  "possible_daily_generation_scripts": [
+    "src\\02_validation\\validate_established_monsoon_rainfall_pipeline.py",
+    "src\\06_feature_engineering\\established_monsoon_annual_spatial_availability.py",
+    "src\\06_feature_engineering\\established_monsoon_correlation_analysis.py",
+    "src\\06_feature_engineering\\established_monsoon_initial_feature_screening.py",
+    "src\\06_feature_engineering\\established_monsoon_prepare_group_b.py",
+    "src\\06_feature_engineering\\established_monsoon_spatial_representativeness.py",
+    "src\\06_feature_engineering\\prepare_established_monsoon_group_b_m3.py",
+    "src\\07_clustering\\established_monsoon_period_comparison.py",
+    "src\\07_clustering\\established_monsoon_physical_cluster_profiles.py",
+    "src\\07_clustering\\established_monsoon_rainfall_alignment_audit.py",
+    "src\\07_clustering\\established_monsoon_rainfall_association.py",
+    "src\\07_clustering\\established_monsoon_temporal_spatial_prevalence.py"
+  ],
+  "verified_reconstructed_models": [
+    "baseline_k2",
+    "log_k2",
+    "log_k3"
+  ],
+  "all_three_models_exactly_reproduce_hourly_assignments": true,
+  "original_hourly_assignment_file": "results\\tables\\07_clustering\\assignments\\established_monsoon_fixed_cluster_assignments.csv",
+  "original_hourly_assignment_rows": 290355,
+  "original_daily_assignments_confirmed": false,
+  "warning": "Reconstructed models are not original serialized fitted estimators. Daily assignment candidates are only accepted when date, latitude, longitude, labels, unique daily grid keys, and all years 2010-2021 are verified. No daily labels are generated from hourly labels.",
+  "checks": [
+    {
+      "check": "Original artifact exists: data\\processed\\clustering\\established_monsoon\\established_monsoon_group_B_metadata.csv",
+      "passed": true,
+      "detail": "7799584"
+    },
+    {
+      "check": "Original artifact exists: data\\processed\\clustering\\established_monsoon\\established_monsoon_group_B_baseline.npz",
+      "passed": true,
+      "detail": "30272360"
+    },
+    {
+      "check": "Original artifact exists: data\\processed\\clustering\\established_monsoon\\established_monsoon_group_B_log_sensitivity.npz",
+      "passed": true,
+      "detail": "30288003"
+    },
+    {
+      "check": "Original artifact exists: results\\tables\\07_clustering\\assignments\\established_monsoon_fixed_cluster_assignments.csv",
+      "passed": true,
+      "detail": "9541740"
+    },
+    {
+      "check": "Hourly metadata row count",
+      "passed": true,
+      "detail": "290355"
+    },
+    {
+      "check": "Hourly assignment row count",
+      "passed": true,
+      "detail": "290355"
+    },
+    {
+      "check": "Hourly metadata/assignment key order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Baseline matrix shape",
+      "passed": true,
+      "detail": "(290355, 14)"
+    },
+    {
+      "check": "Log matrix shape",
+      "passed": true,
+      "detail": "(290355, 14)"
+    },
+    {
+      "check": "baseline_k2 exact original assignment reproduction",
+      "passed": true,
+      "detail": "ARI=1.000000000000; exact labels=True"
+    },
+    {
+      "check": "log_k2 exact original assignment reproduction",
+      "passed": true,
+      "detail": "ARI=1.000000000000; exact labels=True"
+    },
+    {
+      "check": "log_k3 exact original assignment reproduction",
+      "passed": true,
+      "detail": "ARI=1.000000000000; exact labels=True"
+    }
+  ]
+}

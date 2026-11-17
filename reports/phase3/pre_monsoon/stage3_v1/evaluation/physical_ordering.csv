@@ -1,0 +1,13 @@
+period,variable,expected,cluster_0_median,cluster_1_median,result
+2019,cldarea_total_1h,cluster_1_greater,17.202178955078125,96.12403869628906,supported
+2019,cldtau_total_1h,cluster_1_greater,1.219202995300293,2.7118167877197266,supported
+2019,cldpress_top_total_1h,cluster_1_less,703.7821044921875,341.1579895019531,supported
+2020,cldarea_total_1h,cluster_1_greater,16.901409149169922,96.07830810546875,supported
+2020,cldtau_total_1h,cluster_1_greater,1.2169387340545654,2.8536527156829834,supported
+2020,cldpress_top_total_1h,cluster_1_less,677.4684448242188,314.45782470703125,supported
+2021,cldarea_total_1h,cluster_1_greater,19.549896240234375,96.06741333007812,supported
+2021,cldtau_total_1h,cluster_1_greater,1.1601887941360474,2.5444533824920654,supported
+2021,cldpress_top_total_1h,cluster_1_less,665.20458984375,326.15301513671875,supported
+pooled,cldarea_total_1h,cluster_1_greater,17.840375900268555,96.07856750488281,supported
+pooled,cldtau_total_1h,cluster_1_greater,1.202219009399414,2.69840407371521,supported
+pooled,cldpress_top_total_1h,cluster_1_less,683.43212890625,326.5147399902344,supported

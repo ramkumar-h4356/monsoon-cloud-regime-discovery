@@ -1,0 +1,50 @@
+============================================================================
+ESTABLISHED MONSOON — RAM M25 HANDOVER AUDIT
+============================================================================
+Repository: C:\Users\grees\OneDrive\Desktop\Monsoon cluod study\monsoon-cloud-regime-discovery
+Branch: feature/established-monsoon-analysis
+Latest commit: 51d3efe Add original established monsoon clustering artifacts
+[PASS] Original artifact exists: data\processed\clustering\established_monsoon\established_monsoon_group_B_metadata.csv: 7799584
+[PASS] Original artifact exists: data\processed\clustering\established_monsoon\established_monsoon_group_B_baseline.npz: 30272360
+[PASS] Original artifact exists: data\processed\clustering\established_monsoon\established_monsoon_group_B_log_sensitivity.npz: 30288003
+[PASS] Original artifact exists: results\tables\07_clustering\assignments\established_monsoon_fixed_cluster_assignments.csv: 9541740
+[PASS] Hourly metadata row count: 290355
+[PASS] Hourly assignment row count: 290355
+[PASS] Hourly metadata/assignment key order:
+[PASS] Baseline matrix shape: (290355, 14)
+[PASS] Log matrix shape: (290355, 14)
+
+MODEL VERIFICATION
+[PASS] baseline_k2 exact original assignment reproduction: ARI=1.000000000000; exact labels=True
+[PASS] log_k2 exact original assignment reproduction: ARI=1.000000000000; exact labels=True
+[PASS] log_k3 exact original assignment reproduction: ARI=1.000000000000; exact labels=True
+
+DAILY ASSIGNMENT DISCOVERY
+
+DAILY LABEL GENERATION SOURCE SEARCH
+Possible generator: src\02_validation\validate_established_monsoon_rainfall_pipeline.py
+Possible generator: src\06_feature_engineering\established_monsoon_annual_spatial_availability.py
+Possible generator: src\06_feature_engineering\established_monsoon_correlation_analysis.py
+Possible generator: src\06_feature_engineering\established_monsoon_initial_feature_screening.py
+Possible generator: src\06_feature_engineering\established_monsoon_prepare_group_b.py
+Possible generator: src\06_feature_engineering\established_monsoon_spatial_representativeness.py
+Possible generator: src\06_feature_engineering\prepare_established_monsoon_group_b_m3.py
+Possible generator: src\07_clustering\established_monsoon_period_comparison.py
+Possible generator: src\07_clustering\established_monsoon_physical_cluster_profiles.py
+Possible generator: src\07_clustering\established_monsoon_rainfall_alignment_audit.py
+Possible generator: src\07_clustering\established_monsoon_rainfall_association.py
+Possible generator: src\07_clustering\established_monsoon_temporal_spatial_prevalence.py
+
+DAILY ASSIGNMENT FINDINGS
+NO ORIGINAL DAILY ASSIGNMENT FILE PASSED ALL VALIDATION RULES.
+
+============================================================================
+FINAL HANDOVER STATUS
+============================================================================
+Verified reconstructed models: 3/3
+Original daily assignment candidates: 0
+Possible unverified daily files: 0
+Possible daily-generation scripts: 12
+Daily assignments: NOT CONFIRMED.
+Do not tell Ram that original daily assignments were found.
+Reconstructed model files are eligible for a clearly labelled handover.

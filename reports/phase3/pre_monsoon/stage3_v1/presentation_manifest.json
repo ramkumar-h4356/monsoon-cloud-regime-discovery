@@ -1,0 +1,9 @@
+{
+  "statistics_unchanged": true,
+  "model_refitted": false,
+  "purpose": "Matched categorical colors/integer year ticks only; original evaluation figure retained.",
+  "script_sha256": "bca132a2b55e612923e517f01ce7dd80b9d9873997f6abccbfda3ab07ddfe222",
+  "input_sha256": "158af28570f861230352dc0a278b43c5d306afe248503d4ff17cb4f7f5c66b09",
+  "output_path": "results\\figures\\phase3\\pre_monsoon\\stage3_v1_presentation\\occurrence_uncertainty.png",
+  "output_sha256": "88c5b853311582e1b24f052b6cdef4d43988c8393a4b8e90441a4a0c83b80df2"
+}

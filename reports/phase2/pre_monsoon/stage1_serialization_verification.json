@@ -1,0 +1,9 @@
+{
+  "annual_files_verified": 12,
+  "sample_ids_verified": 90000,
+  "output_hashes_verified": 20,
+  "total_rows": 8294400,
+  "phase1_preserved": true,
+  "fitted_objects": [],
+  "holdout_evaluated": false
+}

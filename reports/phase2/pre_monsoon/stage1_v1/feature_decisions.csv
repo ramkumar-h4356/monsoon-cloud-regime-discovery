@@ -1,0 +1,46 @@
+variable,input_units,valid_min,valid_max,selected,output,transform,reason
+cldarea_high_1h,percent,0,100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldarea_mid_high_1h,percent,0,100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldarea_mid_low_1h,percent,0,100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldarea_low_1h,percent,0,100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldarea_total_1h,percent,0,100,True,cloud_area_fraction,percent_to_fraction,"Complementary coverage, optical thickness or vertical location"
+cldtau_high_1h,dimensionless,0,400,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldtau_mid_high_1h,dimensionless,0,400,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldtau_mid_low_1h,dimensionless,0,400,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldtau_low_1h,dimensionless,0,400,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldtau_total_1h,dimensionless,0,400,True,log1p_optical_depth,log1p,"Complementary coverage, optical thickness or vertical location"
+cldpress_top_high_1h,hPa,0,1100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldpress_top_mid_high_1h,hPa,0,1100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldpress_top_mid_low_1h,hPa,0,1100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldpress_top_low_1h,hPa,0,1100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldpress_top_total_1h,hPa,0,1100,True,cloud_top_pressure_hpa,identity,"Complementary coverage, optical thickness or vertical location"
+cldpress_high_1h,hPa,0,1100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldpress_mid_high_1h,hPa,0,1100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldpress_mid_low_1h,hPa,0,1100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldpress_low_1h,hPa,0,1100,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldpress_total_1h,hPa,0,1100,False,,,Avoid duplicate weighting of strongly correlated vertical structure; diagnostic only.
+cldtemp_high_1h,K,100,350,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldtemp_mid_high_1h,K,100,350,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldtemp_mid_low_1h,K,100,350,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldtemp_low_1h,K,100,350,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldtemp_total_1h,K,100,350,False,,,Avoid duplicate weighting of strongly correlated vertical structure; diagnostic only.
+cldhght_high_1h,km,0,20,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldhght_mid_high_1h,km,0,20,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldhght_mid_low_1h,km,0,20,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldhght_low_1h,km,0,20,False,,,Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.
+cldhght_total_1h,km,0,20,False,,,Avoid duplicate weighting of strongly correlated vertical structure; diagnostic only.
+cldphase_high_1h,dimensionless,1,2,False,,,"Aggregated phase index; reserve for sensitivity analysis, not a categorical liquid/ice label."
+cldphase_mid_high_1h,dimensionless,1,2,False,,,"Aggregated phase index; reserve for sensitivity analysis, not a categorical liquid/ice label."
+cldphase_mid_low_1h,dimensionless,1,2,False,,,"Aggregated phase index; reserve for sensitivity analysis, not a categorical liquid/ice label."
+cldphase_low_1h,dimensionless,1,2,False,,,"Aggregated phase index; reserve for sensitivity analysis, not a categorical liquid/ice label."
+cldphase_total_1h,dimensionless,1,2,False,,,"Aggregated phase index; reserve for sensitivity analysis, not a categorical liquid/ice label."
+iwp_high_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+iwp_mid_high_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+iwp_mid_low_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+iwp_low_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+iwp_total_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+lwp_high_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+lwp_mid_high_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+lwp_mid_low_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+lwp_low_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.
+lwp_total_1h,g m-2,0,10000,False,,,Phase-dependent retrieval availability; missing is not zero. Diagnostic only.

@@ -1,0 +1,3 @@
+cluster,label,median_cloud_area_percent,median_optical_depth,median_cloud_top_pressure_hpa,caution
+0,mid-topped; optically thin,21.291475296020508,0.8063516616821289,660.1943359375,"Descriptive median bins only; not validated cloud types, convection or precipitation classes. Broad gridded mixtures and overlapping within-cluster distributions remain."
+1,high-topped; optically thin,94.43673706054688,2.4504127502441406,333.5875244140625,"Descriptive median bins only; not validated cloud types, convection or precipitation classes. Broad gridded mixtures and overlapping within-cluster distributions remain."

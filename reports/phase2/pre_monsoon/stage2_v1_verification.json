@@ -1,0 +1,14 @@
+{
+  "status": "verified",
+  "stage2_output_hashes": 84,
+  "stage2_code_hashes": 31,
+  "input_files": 18,
+  "training_fitted_rows": 70000,
+  "sample_predictions_verified": 90000,
+  "population_rows": 6220800,
+  "population_eligible_rows": 6191146,
+  "annual_label_files": 9,
+  "phase1_stage1_preserved": true,
+  "holdout_accessed": false,
+  "verification_script_sha256": "79bd7806353aa245bc3606d07bfa5da8bf5627a862068ed2bb28cd32124202d8"
+}

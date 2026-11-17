@@ -1,0 +1,8 @@
+{
+  "run_id": "stage3_v1",
+  "source_sha256": "158af28570f861230352dc0a278b43c5d306afe248503d4ff17cb4f7f5c66b09",
+  "output_sha256": "7bfdcf78f657d21d54801c5ab34fdf901b69c8fd3b60cdd2496f5a0140aba9b1",
+  "statistics_changed": false,
+  "evaluation_rerun": false,
+  "script_sha256": "708e6df5cdbe883180b16fb79d158042e4a999ebcc86d6dda1b7a0dd84a4d6a0"
+}

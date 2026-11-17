@@ -1,0 +1,20 @@
+# Preserve byte-hashed research files; no scientific artifact normalization.
+* -text
+# CRLF is a terminator, not trailing whitespace; retain other whitespace checks.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Existing Phase 1 text blobs are LF in Git and CRLF in the frozen worktree.
+/.gitignore text eol=crlf
+/setup_project.py text eol=crlf
+/src/01_inventory/*.py text eol=crlf
+/src/02_validation/*.py text eol=crlf
+/src/03_extraction/create_seasonal_datasets.py text eol=crlf
+/src/03_extraction/extract_ceres_windows.py text eol=crlf
+/src/09_visualization/pre_monsoon_eda.py text eol=crlf
+/reports/analysis/*.md text eol=crlf
+/reports/data_quality/*.csv text eol=crlf
+/reports/feature_analysis/*.csv text eol=crlf
+/reports/inventory/*.txt text eol=crlf
+/reports/iwp_investigation/** text eol=crlf
+/reports/scientific_checks/*.csv text eol=crlf
+/results/figures/pre_monsoon/*.csv text eol=crlf

@@ -1,0 +1,10 @@
+year,feature,standardized_rmse,interpretation
+2019,cloud_area_fraction,4.213253646319903e-16,algebraically near zero at full dimension; not validation
+2019,log1p_optical_depth,4.952281881841157e-16,algebraically near zero at full dimension; not validation
+2019,cloud_top_pressure_hpa,6.058062239372257e-16,algebraically near zero at full dimension; not validation
+2020,cloud_area_fraction,4.172819643006142e-16,algebraically near zero at full dimension; not validation
+2020,log1p_optical_depth,5.150419234666471e-16,algebraically near zero at full dimension; not validation
+2020,cloud_top_pressure_hpa,5.803218488540016e-16,algebraically near zero at full dimension; not validation
+2021,cloud_area_fraction,4.0250254769387466e-16,algebraically near zero at full dimension; not validation
+2021,log1p_optical_depth,5.085100591872221e-16,algebraically near zero at full dimension; not validation
+2021,cloud_top_pressure_hpa,5.619806558493448e-16,algebraically near zero at full dimension; not validation

@@ -1,0 +1,189 @@
+test_cli_routes_custom_input_and_output_ids (test_handoff_v2.HandoffTests.test_cli_routes_custom_input_and_output_ids) ... ok
+test_complete_artifact_verification_and_tamper_detection (test_handoff_v2.HandoffTests.test_complete_artifact_verification_and_tamper_detection) ... ok
+test_ids_paths_and_exclusive_outputs (test_handoff_v2.HandoffTests.test_ids_paths_and_exclusive_outputs) ... ok
+test_plot_uses_custom_run_years_and_refuses_overwrite (test_handoff_v2.HandoffTests.test_plot_uses_custom_run_years_and_refuses_overwrite) ... ok
+test_receipt_accepts_current_count_and_rejects_failures (test_handoff_v2.HandoffTests.test_receipt_accepts_current_count_and_rejects_failures) ... ok
+test_reference_lock_and_dependency_closure (test_handoff_v2.HandoffTests.test_reference_lock_and_dependency_closure) ... ok
+test_report_is_additive_and_qualifies_historical_record (test_handoff_v2.HandoffTests.test_report_is_additive_and_qualifies_historical_record) ... ok
+test_all_clear_period_never_calls_estimators (test_handoff_v2.RobustSupportTests.test_all_clear_period_never_calls_estimators) ... ok
+test_all_unavailable_and_zero_time_periods (test_handoff_v2.RobustSupportTests.test_all_unavailable_and_zero_time_periods) ... ok
+test_bootstrap_all_clear_and_positive_compatibility (test_handoff_v2.RobustSupportTests.test_bootstrap_all_clear_and_positive_compatibility) ... ok
+test_empty_bootstrap_and_unsupported_lengths_remain_undefined (test_handoff_v2.RobustSupportTests.test_empty_bootstrap_and_unsupported_lengths_remain_undefined) ... ok
+test_empty_distance_and_singleton_pc_statistics (test_handoff_v2.RobustSupportTests.test_empty_distance_and_singleton_pc_statistics) ... ok
+test_incomplete_eligible_and_invalid_status_rejected (test_handoff_v2.RobustSupportTests.test_incomplete_eligible_and_invalid_status_rejected) ... ok
+test_positive_distance_and_pc_statistics (test_handoff_v2.RobustSupportTests.test_positive_distance_and_pc_statistics) ... ok
+test_positive_population_and_predictions_match_historical (test_handoff_v2.RobustSupportTests.test_positive_population_and_predictions_match_historical) ... ok
+test_positive_profile_values_match_historical (test_handoff_v2.RobustSupportTests.test_positive_profile_values_match_historical) ... ok
+test_profiles_keep_empty_clusters_and_missing_retrievals (test_handoff_v2.RobustSupportTests.test_profiles_keep_empty_clusters_and_missing_retrievals) ... ok
+test_single_eligible_row_no_artificial_cluster_or_variance (test_handoff_v2.RobustSupportTests.test_single_eligible_row_no_artificial_cluster_or_variance) ... ok
+test_dimension_order_and_ids (test_stage1.FeatureTests.test_dimension_order_and_ids) ... ok
+test_fill_and_invalid_values_are_not_zero (test_stage1.FeatureTests.test_fill_and_invalid_values_are_not_zero) ... ok
+test_masks_and_stateless_transforms (test_stage1.FeatureTests.test_masks_and_stateless_transforms) ... ok
+test_registry_and_season_compatibility (test_stage1.FeatureTests.test_registry_and_season_compatibility) ... ok
+test_sampling_reproducibility_and_empty_population (test_stage1.FeatureTests.test_sampling_reproducibility_and_empty_population) ... ok
+test_schema_rejects_units_and_hour_duplicates (test_stage1.FeatureTests.test_schema_rejects_units_and_hour_duplicates) ... ok
+test_temporal_disjointness (test_stage1.FeatureTests.test_temporal_disjointness) ... ok
+test_full_run_preservation_holdout_isolation_and_no_overwrite (test_stage1.IntegrationTests.test_full_run_preservation_holdout_isolation_and_no_overwrite) ... Preparing 2010 (train)
+Preparing 2011 (train)
+Preparing 2012 (train)
+Preparing 2013 (train)
+Preparing 2014 (train)
+Preparing 2015 (train)
+Preparing 2016 (train)
+Preparing 2017 (development)
+Preparing 2018 (development)
+Preparing 2019 (holdout)
+Preparing 2020 (holdout)
+Preparing 2021 (holdout)
+             total  eligible_cloudy  clear  invalid_or_missing_area  incomplete_cloudy  sampled
+split                                                                                          
+train        20160            20132      7                        7                 14      140
+development   5760             5752      2                        2                  4       40
+holdout       8640             8628      3                        3                  6        0
+Preparing 2010 (train)
+Preparing 2011 (train)
+Preparing 2012 (train)
+Preparing 2013 (train)
+Preparing 2014 (train)
+Preparing 2015 (train)
+Preparing 2016 (train)
+Preparing 2017 (development)
+Preparing 2018 (development)
+Preparing 2019 (holdout)
+Preparing 2020 (holdout)
+Preparing 2021 (holdout)
+             total  eligible_cloudy  clear  invalid_or_missing_area  incomplete_cloudy  sampled
+split                                                                                          
+train        20160            20132      7                        7                 14      140
+development   5760             5752      2                        2                  4       40
+holdout       8640             8637      0                        0                  3        0
+ok
+test_synthetic_end_to_end_without_any_holdout_files (test_stage2.Stage2IntegrationTests.test_synthetic_end_to_end_without_any_holdout_files) ... K-Means k=2: main fit, metrics and initialization stability
+K-Means k=3: main fit, metrics and initialization stability
+Year-bootstrap seed=307, k=2
+Year-bootstrap seed=307, k=3
+Year-bootstrap seed=401, k=2
+Year-bootstrap seed=401, k=3
+t-SNE baseline_p5_s42
+t-SNE baseline_p5_s73
+t-SNE baseline_p10_s42
+t-SNE baseline_p10_s73
+Population diagnostics 2010 (train)
+Population diagnostics 2011 (train)
+Population diagnostics 2012 (train)
+Population diagnostics 2013 (train)
+Population diagnostics 2014 (train)
+Population diagnostics 2015 (train)
+Population diagnostics 2016 (train)
+Population diagnostics 2017 (development)
+Population diagnostics 2018 (development)
+{
+  "status": "complete",
+  "selected_n_components": 1,
+  "selected_k": 3,
+  "tsne": {
+    "display_perplexity": 10.0,
+    "mean_original_trust": 0.97934375,
+    "sample_size": 120,
+    "pca_dimensions": 2,
+    "experiments": 4
+  }
+}
+ok
+test_holdout_paths_are_forbidden (test_stage2.Stage2UnitTests.test_holdout_paths_are_forbidden) ... ok
+test_metrics_and_permutation_stability (test_stage2.Stage2UnitTests.test_metrics_and_permutation_stability) ... ok
+test_pca_criteria_and_full_dimension_distances (test_stage2.Stage2UnitTests.test_pca_criteria_and_full_dimension_distances) ... ok
+test_persistence_breaks_on_clear_and_never_crosses_years (test_stage2.Stage2UnitTests.test_persistence_breaks_on_clear_and_never_crosses_years) ... ok
+test_physical_profiles_keep_retrieval_denominators (test_stage2.Stage2UnitTests.test_physical_profiles_keep_retrieval_denominators) ... ok
+test_selection_does_not_silently_relax (test_stage2.Stage2UnitTests.test_selection_does_not_silently_relax) ... ok
+test_training_only_fit_and_imputation (test_stage2.Stage2UnitTests.test_training_only_fit_and_imputation) ... ok
+test_year_blocks_and_year_balanced_sampling (test_stage2.Stage2UnitTests.test_year_blocks_and_year_balanced_sampling) ... ok
+test_controlled_settings_and_random_seed_grid (test_stage2_tsne_sensitivity.TSNESensitivityTests.test_controlled_settings_and_random_seed_grid) ... ok
+test_saved_sample_sensitivity_without_holdout_or_preprocessing_fit (test_stage2_tsne_sensitivity.TSNESensitivityTests.test_saved_sample_sensitivity_without_holdout_or_preprocessing_fit) ... K-Means k=2: main fit, metrics and initialization stability
+K-Means k=3: main fit, metrics and initialization stability
+Year-bootstrap seed=307, k=2
+Year-bootstrap seed=307, k=3
+Year-bootstrap seed=401, k=2
+Year-bootstrap seed=401, k=3
+t-SNE baseline_p5_s42
+t-SNE baseline_p5_s73
+t-SNE baseline_p10_s42
+t-SNE baseline_p10_s73
+Population diagnostics 2010 (train)
+Population diagnostics 2011 (train)
+Population diagnostics 2012 (train)
+Population diagnostics 2013 (train)
+Population diagnostics 2014 (train)
+Population diagnostics 2015 (train)
+Population diagnostics 2016 (train)
+Population diagnostics 2017 (development)
+Population diagnostics 2018 (development)
+{
+  "status": "complete",
+  "selected_n_components": 1,
+  "selected_k": 3,
+  "tsne": {
+    "display_perplexity": 10.0,
+    "mean_original_trust": 0.97934375,
+    "sample_size": 120,
+    "pca_dimensions": 2,
+    "experiments": 4
+  }
+}
+Supplementary t-SNE: random_init_p5_s42
+Supplementary t-SNE: random_init_p5_s73
+Supplementary t-SNE: random_init_p10_s42
+Supplementary t-SNE: random_init_p10_s73
+Supplementary t-SNE: controlled_exaggeration_p5_s42
+                           tag  kl_divergence
+            random_init_p5_s42       0.367304
+            random_init_p5_s73       0.358973
+           random_init_p10_s42       0.223349
+           random_init_p10_s73       0.225974
+controlled_exaggeration_p5_s42       0.327607
+ perplexity               tag_a               tag_b  neighbor_overlap_mean
+          5  random_init_p5_s42  random_init_p5_s73               0.804167
+         10 random_init_p10_s42 random_init_p10_s73               0.942500
+ok
+test_bootstrap_ratios_preserve_counts_and_bounds (test_stage3.Stage3CalculationTests.test_bootstrap_ratios_preserve_counts_and_bounds) ... ok
+test_moving_blocks_are_contiguous_and_non_circular (test_stage3.Stage3CalculationTests.test_moving_blocks_are_contiguous_and_non_circular) ... ok
+test_nested_samples_reproducible_and_not_label_selected (test_stage3.Stage3CalculationTests.test_nested_samples_reproducible_and_not_label_selected) ... ok
+test_no_refit_guard (test_stage3.Stage3CalculationTests.test_no_refit_guard) ... ok
+test_undefined_metrics_and_ordering_failures_are_results (test_stage3.Stage3CalculationTests.test_undefined_metrics_and_ordering_failures_are_results) ... ok
+test_gate_freeze_evaluation_and_immutable_model (test_stage3.Stage3IntegrationTests.test_gate_freeze_evaluation_and_immutable_model) ... {
+  "status": "sealed_before_holdout",
+  "thresholds": {
+    "q95": 2.142171547918479,
+    "q99": 2.304373601473398
+  },
+  "training_rows": 140,
+  "seal_sha256": "d8b560e7d48d19deb362c503f3533f80195eb8a9dc24a76efdb0206931c780e4"
+}
+Evaluating reserved year 2019; frozen model only
+Evaluating reserved year 2020; frozen model only
+Evaluating reserved year 2021; frozen model only
+period  n  observed_clusters  minimum_cluster_fraction  silhouette  calinski_harabasz  davies_bouldin  negative_silhouette_fraction  status
+  2019 20                  2                  0.400000    0.279857           7.904608        1.446398                          0.05 defined
+  2020 20                  2                  0.300000    0.272365           6.298405        1.490261                          0.00 defined
+  2021 20                  2                  0.300000    0.367992          10.909031        1.027903                          0.00 defined
+pooled 24                  2                  0.458333    0.334209          12.118068        1.255330                          0.00 defined
+Complete: frozen temporal evaluation, no model refit or tuning.
+ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 225.630s
+
+OK
+{
+  "status": "verified",
+  "output_hashes": 36,
+  "sample_predictions": 120,
+  "population_rows": 12960,
+  "annual_files": 3,
+  "model_unchanged": true,
+  "existing_artifacts_preserved": true,
+  "thresholds_reproduced_from_training_only": true,
+  "nested_sampling_reproduced": true,
+  "frozen_seal_sha256": "d8b560e7d48d19deb362c503f3533f80195eb8a9dc24a76efdb0206931c780e4",
+  "verifier_sha256": "061b13a67bea6dc0952b98ea1dc058a3bb0106dd53032ab7a4c66c123fc3c7f2"
+}

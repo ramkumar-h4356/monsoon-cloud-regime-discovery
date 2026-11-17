@@ -1,0 +1,871 @@
+=====================================================================================
+ESTABLISHED MONSOON: NETCDF SCIENTIFIC METADATA INSPECTION
+=====================================================================================
+Files found: 12
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2010_established_monsoon.nc
+SIZE (MB): 63.91
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2010-07-15T00:29:52.968750016
+LAST TIME: 2010-08-13T23:30:07.031249984
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2011_established_monsoon.nc
+SIZE (MB): 64.89
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2011-07-15T00:30:14.062499968
+LAST TIME: 2011-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2012_established_monsoon.nc
+SIZE (MB): 65.6
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2012-07-15T00:30:14.062499968
+LAST TIME: 2012-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2013_established_monsoon.nc
+SIZE (MB): 64.71
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2013-07-15T00:30:14.062499968
+LAST TIME: 2013-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2014_established_monsoon.nc
+SIZE (MB): 64.8
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2014-07-15T00:30:14.062499968
+LAST TIME: 2014-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2015_established_monsoon.nc
+SIZE (MB): 66.06
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2015-07-15T00:30:14.062499968
+LAST TIME: 2015-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2016_established_monsoon.nc
+SIZE (MB): 65.69
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2016-07-15T00:30:14.062499968
+LAST TIME: 2016-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2017_established_monsoon.nc
+SIZE (MB): 68.07
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2017-07-15T00:30:14.062499968
+LAST TIME: 2017-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2018_established_monsoon.nc
+SIZE (MB): 67.49
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2018-07-15T00:30:14.062499968
+LAST TIME: 2018-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2019_established_monsoon.nc
+SIZE (MB): 67.05
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2019-07-15T00:30:14.062499968
+LAST TIME: 2019-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2020_established_monsoon.nc
+SIZE (MB): 66.47
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2020-07-15T00:30:14.062499968
+LAST TIME: 2020-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+-------------------------------------------------------------------------------------
+FILE: CERES_2021_established_monsoon.nc
+SIZE (MB): 68.4
+
+DIMENSIONS: {'time': 720, 'lat': 32, 'lon': 30}
+TIME COUNT: 720
+FIRST TIME: 2021-07-15T00:30:14.062499968
+LAST TIME: 2021-08-13T23:29:45.937500032
+UNIQUE TIMES: 720
+TIME ORDERED: True
+LAT: count=32, min=6.5, max=37.5
+LON: count=30, min=68.5, max=97.5
+
+DATA VARIABLE COUNT: 45
+VARIABLE SCHEMA MATCH: True
+
+VARIABLE METADATA:
+cldarea_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldarea_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=percent | long_name=Cloud Parameters: Cloud Area Fraction, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtau_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Visible Optical Depth, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+lwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Liquid Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+iwp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=g m-2 | long_name=Cloud Parameters: Ice Water Path, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_top_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Top Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldpress_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=hPa | long_name=Cloud Parameters: Cloud Effective Pressure, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldtemp_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=K | long_name=Cloud Parameters: Cloud Effective Temperature, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldhght_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=km | long_name=Cloud Parameters: Cloud Effective Height, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_high_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-High clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_mid_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Mid-Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_low_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Low clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+cldphase_total_1h | dtype=float32 | dims=('time', 'lat', 'lon') | shape=(720, 32, 30) | units=dimensionless | long_name=Cloud Parameters: Cloud Particle Phase, Total clouds, Hourly Daily Means | fill_value=NOT SPECIFIED
+
+GLOBAL ATTRIBUTES:
+title: CERES SYN1deg 1-Hourly data
+institution: NASA Langley Research Center
+Conventions: CF-1.4
+comment: Satellites used: Terra 3/2000 - 6/2002; Terra+Aqua 7/2002 - 3/2022; NOAA20 4/2022 - present
+Version: Edition 4.2: Release Date May 7, 2025
+DOI: 10.5067/Terra-Aqua-NOAA20/CERES/SYN1deg1Hour_L3.004B
+Fill_Value: Fill Value is -999.0
+
+=====================================================================================
+METADATA INSPECTION COMPLETED
+=====================================================================================

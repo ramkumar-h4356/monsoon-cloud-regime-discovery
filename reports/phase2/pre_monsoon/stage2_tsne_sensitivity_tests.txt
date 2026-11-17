@@ -1,0 +1,52 @@
+test_controlled_settings_and_random_seed_grid (test_stage2_tsne_sensitivity.TSNESensitivityTests.test_controlled_settings_and_random_seed_grid) ... ok
+test_saved_sample_sensitivity_without_holdout_or_preprocessing_fit (test_stage2_tsne_sensitivity.TSNESensitivityTests.test_saved_sample_sensitivity_without_holdout_or_preprocessing_fit) ... K-Means k=2: main fit, metrics and initialization stability
+K-Means k=3: main fit, metrics and initialization stability
+Year-bootstrap seed=307, k=2
+Year-bootstrap seed=307, k=3
+Year-bootstrap seed=401, k=2
+Year-bootstrap seed=401, k=3
+t-SNE baseline_p5_s42
+t-SNE baseline_p5_s73
+t-SNE baseline_p10_s42
+t-SNE baseline_p10_s73
+Population diagnostics 2010 (train)
+Population diagnostics 2011 (train)
+Population diagnostics 2012 (train)
+Population diagnostics 2013 (train)
+Population diagnostics 2014 (train)
+Population diagnostics 2015 (train)
+Population diagnostics 2016 (train)
+Population diagnostics 2017 (development)
+Population diagnostics 2018 (development)
+{
+  "status": "complete",
+  "selected_n_components": 1,
+  "selected_k": 3,
+  "tsne": {
+    "display_perplexity": 10.0,
+    "mean_original_trust": 0.97934375,
+    "sample_size": 120,
+    "pca_dimensions": 2,
+    "experiments": 4
+  }
+}
+Supplementary t-SNE: random_init_p5_s42
+Supplementary t-SNE: random_init_p5_s73
+Supplementary t-SNE: random_init_p10_s42
+Supplementary t-SNE: random_init_p10_s73
+Supplementary t-SNE: controlled_exaggeration_p5_s42
+                           tag  kl_divergence
+            random_init_p5_s42       0.367304
+            random_init_p5_s73       0.358973
+           random_init_p10_s42       0.223349
+           random_init_p10_s73       0.225974
+controlled_exaggeration_p5_s42       0.327607
+ perplexity               tag_a               tag_b  neighbor_overlap_mean
+          5  random_init_p5_s42  random_init_p5_s73               0.804167
+         10 random_init_p10_s42 random_init_p10_s73               0.942500
+ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 51.237s
+
+OK

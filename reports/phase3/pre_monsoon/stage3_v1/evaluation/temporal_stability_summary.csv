@@ -1,0 +1,7 @@
+endpoint,years,minimum,median,maximum,interpretation
+silhouette,3,0.40777140752600266,0.4150620172455733,0.415992426825843,three annual point estimates; not a confidence interval
+calinski_harabasz,3,2575.9975767913083,2674.3182171222106,2698.7624546274124,three annual point estimates; not a confidence interval
+davies_bouldin,3,0.95949840013693,0.9619862591570928,0.9760711054767509,three annual point estimates; not a confidence interval
+negative_silhouette_fraction,3,0.010666666666666666,0.015333333333333332,0.015666666666666666,three annual point estimates; not a confidence interval
+cloudy_fraction_cluster_0,3,0.4679142637642558,0.4778800978353706,0.5435502892940758,three annual population frequencies; not a confidence interval
+cloudy_fraction_cluster_1,3,0.45644971070592427,0.5221199021646294,0.5320857362357442,three annual population frequencies; not a confidence interval

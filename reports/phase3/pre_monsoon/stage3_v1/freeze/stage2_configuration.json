@@ -1,0 +1,95 @@
+{
+  "season": "pre_monsoon",
+  "stage1_run_id": "stage1_v1",
+  "seed": 42,
+  "threads": 1,
+  "pca_variance_target": 0.95,
+  "pca_max_development_feature_rmse": 0.25,
+  "k_values": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "kmeans_n_init": 30,
+  "kmeans_max_iter": 500,
+  "kmeans_tolerance": 0.0001,
+  "initialization_seeds": [
+    42,
+    73,
+    101,
+    137,
+    211
+  ],
+  "bootstrap_seeds": [
+    307,
+    401,
+    503,
+    601,
+    701
+  ],
+  "bootstrap_n_init": 10,
+  "metric_sample_size": 3000,
+  "minimum_cluster_fraction": 0.01,
+  "minimum_stability_ari": 0.8,
+  "silhouette_tolerance": 0.02,
+  "tsne_sample_size": 3000,
+  "tsne_seeds": [
+    42,
+    73,
+    101
+  ],
+  "tsne_perplexities": [
+    10,
+    30,
+    100
+  ],
+  "tsne_max_iter": 1500,
+  "tsne_trust_sample_size": 1000,
+  "trust_neighbors": [
+    5,
+    15,
+    30
+  ],
+  "tsne_sensitivities": [
+    {
+      "name": "learning_rate_200",
+      "learning_rate": 200,
+      "early_exaggeration": 12,
+      "init": "pca"
+    },
+    {
+      "name": "exaggeration_4",
+      "learning_rate": "auto",
+      "early_exaggeration": 4,
+      "init": "pca"
+    },
+    {
+      "name": "random_init",
+      "learning_rate": "auto",
+      "early_exaggeration": 12,
+      "init": "random"
+    }
+  ],
+  "prediction_batch_size": 100000,
+  "profile_variables": [
+    "cldarea_total_1h",
+    "cldtau_total_1h",
+    "cldpress_top_total_1h",
+    "cldpress_total_1h",
+    "cldtemp_total_1h",
+    "cldhght_total_1h",
+    "cldphase_total_1h",
+    "iwp_total_1h",
+    "lwp_total_1h",
+    "cldarea_high_1h",
+    "cldarea_mid_high_1h",
+    "cldarea_mid_low_1h",
+    "cldarea_low_1h"
+  ]
+}

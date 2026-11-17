@@ -1,0 +1,38 @@
+{
+  "run_id": "stage3_v1",
+  "post_evaluation_addendum": true,
+  "evaluation_code_frozen_before_access": true,
+  "all_postprocessing_code_frozen_before_access": false,
+  "model_refitted": false,
+  "evaluation_rerun": false,
+  "historical_artifacts_unchanged": true,
+  "audit": {
+    "status": "verified",
+    "run_id": "stage3_v1",
+    "unique_files_hashed": 277,
+    "manifest_result_counts": {
+      "stage1_v1": 20,
+      "stage2_v1": 84,
+      "stage2_supplementary": 16,
+      "stage3": 36
+    },
+    "sealed_files": 12,
+    "frozen_protected_files": 198,
+    "remediation_baseline_files": 251,
+    "model_sha256": "4c26f58fcc842aa4c7da5d6547225a1d9ae25171f29f083014c31e4849233569",
+    "historical_results_unchanged": true,
+    "netcdf_arrays_opened": false,
+    "model_loaded": false,
+    "estimators_fitted": false,
+    "evaluation_rerun": false,
+    "qualification": "Pre-access freeze covers evaluation/model-analysis code. Later presentation and completion helpers have separate post-evaluation hashes."
+  },
+  "tests": {
+    "passed": 43,
+    "seconds": 225.63,
+    "sha256": "24205e4bd537f1e4711d7c50c3480bfbfd179a9992a142683d2fcff53c5eb8ea"
+  },
+  "source_report_sha256": "9dfbfb66306a9e7be1ba569a2af54e95c2e1858c3ca282bd6d2e0cb37b6f8bd0",
+  "output_sha256": "df3ac68bd0c90177ba9d1cb4c7fc5e5a55db59b404b0de22fbe0c484356ec4ad",
+  "script_sha256": "708e6df5cdbe883180b16fb79d158042e4a999ebcc86d6dda1b7a0dd84a4d6a0"
+}

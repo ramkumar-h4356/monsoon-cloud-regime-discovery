@@ -1,0 +1,126 @@
+{
+  "version": "1.0.0",
+  "observation_unit": "one hourly CERES grid cell; original timestamp and coordinates retained",
+  "layers": [
+    "high",
+    "mid_high",
+    "mid_low",
+    "low",
+    "total"
+  ],
+  "families": {
+    "cldarea": {
+      "units": "percent",
+      "range": [
+        0,
+        100
+      ]
+    },
+    "cldtau": {
+      "units": "dimensionless",
+      "range": [
+        0,
+        400
+      ]
+    },
+    "cldpress_top": {
+      "units": "hPa",
+      "range": [
+        0,
+        1100
+      ]
+    },
+    "cldpress": {
+      "units": "hPa",
+      "range": [
+        0,
+        1100
+      ]
+    },
+    "cldtemp": {
+      "units": "K",
+      "range": [
+        100,
+        350
+      ]
+    },
+    "cldhght": {
+      "units": "km",
+      "range": [
+        0,
+        20
+      ]
+    },
+    "cldphase": {
+      "units": "dimensionless",
+      "range": [
+        1,
+        2
+      ]
+    },
+    "iwp": {
+      "units": "g m-2",
+      "range": [
+        0,
+        10000
+      ]
+    },
+    "lwp": {
+      "units": "g m-2",
+      "range": [
+        0,
+        10000
+      ]
+    }
+  },
+  "primary": [
+    {
+      "source": "cldarea_total_1h",
+      "output": "cloud_area_fraction",
+      "transform": "percent_to_fraction",
+      "units": "1"
+    },
+    {
+      "source": "cldtau_total_1h",
+      "output": "log1p_optical_depth",
+      "transform": "log1p",
+      "units": "1"
+    },
+    {
+      "source": "cldpress_top_total_1h",
+      "output": "cloud_top_pressure_hpa",
+      "transform": "identity",
+      "units": "hPa"
+    }
+  ],
+  "exclusions": {
+    "water_paths": "Phase-dependent retrieval availability; missing is not zero. Diagnostic only.",
+    "other_vertical_properties": "Avoid duplicate weighting of strongly correlated vertical structure; diagnostic only.",
+    "phase": "Aggregated phase index; reserve for sensitivity analysis, not a categorical liquid/ice label.",
+    "layer_properties": "Substantial layer-dependent missingness; no absent-cloud or layer-additivity assumptions.",
+    "coordinates_and_time": "Identifiers and audit strata only; never distance features."
+  },
+  "season_windows": {
+    "pre_monsoon": [
+      4,
+      15,
+      5,
+      14
+    ],
+    "established_monsoon": [
+      7,
+      15,
+      8,
+      13
+    ],
+    "post_monsoon": [
+      10,
+      15,
+      11,
+      13
+    ]
+  },
+  "missingness": "Complete valid cloudy cases only; retain all observations, missing/invalid masks and exclusion status. No imputation. Indicators are audit metadata, not model features.",
+  "clear_definition": "Valid total cloud area exactly zero; positive-area incomplete retrievals are not called clear.",
+  "seasonal_policy": "Identical feature definitions and order; future fitted objects must remain season-specific."
+}
